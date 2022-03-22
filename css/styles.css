@@ -15,4 +15,57 @@ img {
   width: 100%;
 }
 
+:root {
+  --z-back: -10;
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}
+
+.hamburger-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--color-main);
+  border-radius: 25px;
+}
+.hamburger-button__slide {
+  position: relative;
+  left: 30%;
+  background-color: #fff;
+  width: 40%;
+  height: 0.1rem;
+}
+.hamburger-button .first {
+  top: 0.9rem;
+  left: 30%;
+}
+.hamburger-button .second {
+  top: 1.1rem;
+}
+.hamburger-button .third {
+  top: 1.3rem;
+}
+.hamburger-button:hover {
+  cursor: pointer;
+}
+
+:root {
+  --color-main: #DD1335;
+  --color-secondary: #FF676B;
+  --color-details: #70B2DE;
+  --color-details-dark: #004D73;
+}
+
+.profile-card__image {
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  z-index: var(--z-back);
+}
+
 /*# sourceMappingURL=styles.css.map */

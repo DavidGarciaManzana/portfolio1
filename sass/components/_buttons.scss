@@ -1,0 +1,35 @@
+.hamburger-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--color-main);
+  border-radius: 25px;
+
+  &__slide {
+    position: relative;
+    left: 30%;
+    background-color: #fff;
+    width: 40%;
+    height: .1rem;
+  }
+
+  .first {
+    top: .9rem;
+    left: 30%;
+  }
+
+  .second {
+    top: 1.1rem;
+  }
+
+  .third {
+    top: 1.3rem;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
