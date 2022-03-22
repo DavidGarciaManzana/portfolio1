@@ -1,6 +1,17 @@
+//colors
 :root {
   --color-main: #DD1335;
   --color-secondary: #FF676B;
   --color-details: #70B2DE;
   --color-details-dark: #004D73;
+}
+
+.profile-card__title {
+  color: #fff;
+  text-shadow:  5px 5px 5px black , -5px -5px 5px black;
+}
+
+.profile-card__subtitle {
+  color: #fff;
+  text-shadow:  5px 5px 5px black , -5px -5px 5px black;
 }

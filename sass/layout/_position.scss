@@ -1,6 +1,18 @@
 .profile-card__image {
-  position: absolute;
+  background-image: url("../../media/images/profile1.jpeg");
+  background-size:400%;
+  background-position: 35% 60%;
   height: 100vh;
-  top: 0;
+  width: 100%;
   z-index: var(--z-back);
+}
+.profile-card__title {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+}
+.profile-card__subtitle {
+  position: absolute;
+  top: 47%;
+  left: 10%;
 }
