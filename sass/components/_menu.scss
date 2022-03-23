@@ -13,4 +13,19 @@
     transform: translateX(125%);
     transition: transform 1s;
   }
+
+  &__circle-picture {
+    position: relative;
+    top: 1rem;
+    margin: 0 auto;
+    background-image: url("../../media/images/profile2.jpeg");
+    background-size: cover;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 200px;
+
+  }
+  &__name {
+    text-align: center;
+  }
 }

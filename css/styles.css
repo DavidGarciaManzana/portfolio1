@@ -15,6 +15,10 @@ img {
   width: 100%;
 }
 
+ul, li {
+  list-style: none;
+}
+
 :root {
   --z-back: -10;
   --z-normal: 1;
@@ -125,6 +129,59 @@ img {
   position: fixed;
   transform: translateX(125%);
   transition: transform 1s;
+}
+.menu__circle-picture {
+  position: relative;
+  top: 1rem;
+  margin: 0 auto;
+  background-image: url("../../media/images/profile2.jpeg");
+  background-size: cover;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 200px;
+}
+.menu__name {
+  text-align: center;
+}
+
+.social-buttons {
+  position: relative;
+  right: 7%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.social-buttons li {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 200px;
+  background-color: var(--color-details-dark);
+}
+.social-buttons li:hover {
+  background-color: var(--color-details);
+}
+.social-buttons__github img {
+  width: 2rem;
+}
+.social-buttons__telegram img {
+  width: 2rem;
+}
+.social-buttons__email img {
+  position: relative;
+  top: 15%;
+  left: 10%;
+  width: 1.6rem;
+}
+.social-buttons__linkedin img {
+  position: relative;
+  top: 15%;
+  left: 18%;
+  width: 1.3rem;
+}
+.social-buttons__whatsapp img {
+  position: relative;
+  top: 10%;
+  left: 10%;
+  width: 1.6rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

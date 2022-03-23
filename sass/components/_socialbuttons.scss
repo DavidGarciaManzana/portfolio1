@@ -1,0 +1,44 @@
+.social-buttons {
+  position: relative;
+  right: 7%;
+  display: flex;
+  justify-content: space-evenly;
+
+  & li {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 200px;
+    background-color: (var(--color-details-dark));
+  }
+  & li:hover {
+    background-color: (var(--color-details));
+  }
+  &__github img {
+    width: 2rem;
+  }
+
+  &__telegram img {
+    width: 2rem;
+  }
+
+  &__email img {
+    position: relative;
+    top: 15%;
+    left: 10%;
+    width: 1.6rem;
+  }
+
+  &__linkedin img {
+    position: relative;
+    top: 15%;
+    left: 18%;
+    width: 1.3rem;
+  }
+
+  &__whatsapp img {
+    position: relative;
+    top: 10%;
+    left: 10%;
+    width: 1.6rem;
+  }
+}
