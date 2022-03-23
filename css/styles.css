@@ -209,4 +209,27 @@ ul, li {
   transition: 0.5s;
 }
 
+.about {
+  height: 100vh;
+}
+.about__title {
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+.about__line {
+  display: inline-block;
+  width: 2.5rem;
+  border-bottom: 3px solid var(--color-details-dark);
+  margin-left: 1rem;
+  position: relative;
+  top: -1rem;
+}
+.about__description {
+  margin: 0 1rem;
+}
+.about__image {
+  margin: 2rem 1rem;
+  width: 90%;
+}
+
 /*# sourceMappingURL=styles.css.map */
