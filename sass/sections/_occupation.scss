@@ -1,0 +1,29 @@
+.occupation {
+  height: 100vh;
+  &__title {
+    margin-left: 1rem;
+    white-space: pre-wrap;
+  }
+  &__description-initial, &__description-final {
+    margin: 0 1rem;
+  }
+  &__info {
+    display: flex;
+    margin: 1rem .7rem;
+    align-items: center;
+  }
+  strong+span {
+    margin-left: 1rem;
+  }
+  &__info::before {
+    display: block;
+    width: .5rem;
+    height: .5rem;
+    border-top: 2px solid var(--color-details-dark);
+    border-right: 2px solid var(--color-details-dark);
+    content: "";
+    transform: rotate(40deg) ;
+    margin-right: 1rem;
+    margin-left: .3em;
+  }
+}

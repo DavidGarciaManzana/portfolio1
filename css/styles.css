@@ -232,4 +232,34 @@ ul, li {
   width: 90%;
 }
 
+.occupation {
+  height: 100vh;
+}
+.occupation__title {
+  margin-left: 1rem;
+  white-space: pre-wrap;
+}
+.occupation__description-initial, .occupation__description-final {
+  margin: 0 1rem;
+}
+.occupation__info {
+  display: flex;
+  margin: 1rem 0.7rem;
+  align-items: center;
+}
+.occupation strong + span {
+  margin-left: 1rem;
+}
+.occupation__info::before {
+  display: block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-top: 2px solid var(--color-details-dark);
+  border-right: 2px solid var(--color-details-dark);
+  content: "";
+  transform: rotate(40deg);
+  margin-right: 1rem;
+  margin-left: 0.3em;
+}
+
 /*# sourceMappingURL=styles.css.map */
