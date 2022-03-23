@@ -1,0 +1,33 @@
+.navigation {
+  position: relative;
+  left: -10%;
+  top: 1rem;
+  & li {
+    padding: .7rem;
+    display: flex;
+    align-items: center;
+
+  }
+  & li:hover {
+    cursor: pointer;
+  }
+  &__svg {
+    width: 2rem;
+    height: 2rem;
+    margin-right: .5rem;
+    transform: scale(1);
+    transition: .5s;
+  }
+
+  & li:hover &__svg {
+    transform: scale(1.2);
+    transition: .5s;
+  }
+
+
+
+}
+
+
+
+

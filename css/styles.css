@@ -184,4 +184,29 @@ ul, li {
   width: 1.6rem;
 }
 
+.navigation {
+  position: relative;
+  left: -10%;
+  top: 1rem;
+}
+.navigation li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+}
+.navigation li:hover {
+  cursor: pointer;
+}
+.navigation__svg {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.5rem;
+  transform: scale(1);
+  transition: 0.5s;
+}
+.navigation li:hover .navigation__svg {
+  transform: scale(1.2);
+  transition: 0.5s;
+}
+
 /*# sourceMappingURL=styles.css.map */
