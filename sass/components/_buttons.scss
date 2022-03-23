@@ -1,5 +1,5 @@
 .hamburger-button {
-  position: absolute;
+  position: fixed;
   top: 1rem;
   right: 1rem;
   display: block;
@@ -31,5 +31,30 @@
 
   &:hover {
     cursor: pointer;
+  }
+
+  &.button-clicked {
+    .hamburger-button__slide {
+      position: relative;
+      left: 25%;
+      background-color: #fff;
+      width: 50%;
+      height: .1rem;
+    }
+    .first {
+      top: 1.2rem;
+      transform: rotate(45deg);
+
+    }
+
+    .second {
+      display: none;
+    }
+
+    .third {
+      top: 1.1rem;
+      transform: rotate(-45deg) ;
+
+    }
   }
 }

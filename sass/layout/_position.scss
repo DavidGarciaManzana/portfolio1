@@ -1,7 +1,8 @@
 .profile-card__image {
   background-image: url("../../media/images/profile1.jpeg");
-  background-size:400%;
-  background-position: 35% 60%;
+  background-size:200%;
+  background-position: 5% 80%;
+  background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
   z-index: var(--z-back);
@@ -15,4 +16,7 @@
   position: absolute;
   top: 47%;
   left: 10%;
+}
+.menu {
+  
 }

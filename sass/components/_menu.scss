@@ -1,0 +1,16 @@
+.menu {
+  background-color: var(--color-secondary);
+  position: absolute;
+  top: 0;
+  left: -100%;
+  height: 100vh;
+  width: 80%;
+  transition: transform 1s;
+
+  &-opened {
+    visibility: visible;
+    position: fixed;
+    transform: translateX(125%);
+    transition: transform 1s;
+  }
+}
