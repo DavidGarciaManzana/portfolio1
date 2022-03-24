@@ -262,4 +262,73 @@ ul, li {
   margin-left: 0.3em;
 }
 
+.skills {
+  height: 100vh;
+}
+.skills__title {
+  margin-left: 1rem;
+}
+.skills__line {
+  display: inline-block;
+  width: 2.5rem;
+  border-bottom: 3px solid var(--color-details-dark);
+  margin-left: 1rem;
+  position: relative;
+  top: -1rem;
+}
+.skills__description {
+  margin: 0 1rem;
+}
+
+.threed-cube {
+  border: 1px solid black;
+  width: 100%;
+  height: 22rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.threed-cube .cube {
+  position: relative;
+  width: 10rem;
+  height: 10rem;
+  border: 2px solid red;
+  animation: rotate 5s forwards;
+  transform-style: preserve-3d;
+}
+@keyframes rotate {
+  100% {
+    transform: rotateX(-25deg) rotateY(-225deg);
+  }
+}
+.threed-cube .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.threed-cube .front {
+  background-color: red;
+  transform: translateZ(5rem);
+}
+.threed-cube .back {
+  background-color: green;
+  transform: translateZ(-5rem) rotateY(180deg);
+}
+.threed-cube .right {
+  background-color: blue;
+  transform: translateX(5rem) rotateY(90deg);
+}
+.threed-cube .left {
+  background-color: purple;
+  transform: translateX(-5rem) rotateY(-90deg);
+}
+.threed-cube .top {
+  background-color: yellow;
+  transform: translateY(-5rem) rotateX(90deg);
+}
+.threed-cube .bottom {
+  background-color: cyan;
+  transform: translateY(5rem) rotateX(-90deg);
+}
+
 /*# sourceMappingURL=styles.css.map */

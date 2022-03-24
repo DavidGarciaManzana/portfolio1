@@ -1,0 +1,62 @@
+.threed-cube {
+  border: 1px solid black;
+  width: 100%;
+  height: 22rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  .cube {
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+    border: 2px solid red;
+    //perspective: 500px;
+    animation: rotate 5s forwards;
+    transform-style: preserve-3d;
+
+
+    @keyframes rotate {
+      0% {
+
+      }
+      50% {
+
+      }
+      100% {
+        transform:rotateX(-25deg) rotateY(-225deg) ;
+      }
+  }
+  }
+  .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  .front {
+    background-color: red;
+    transform: translateZ(5rem);
+  }
+  .back {
+    background-color: green;
+    transform: translateZ(-5rem) rotateY(180deg);
+  }
+  .right {
+    background-color: blue;
+    transform: translateX(5rem) rotateY(90deg);
+  }
+  .left {
+    background-color: purple;
+    transform: translateX(-5rem) rotateY(-90deg);
+  }
+  .top {
+    background-color: yellow;
+    transform: translateY(-5rem) rotateX(90deg);
+  }
+  .bottom {
+    background-color: cyan;
+    transform: translateY(5rem) rotateX(-90deg);
+  }
+
+}

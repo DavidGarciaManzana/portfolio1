@@ -1,0 +1,17 @@
+.skills {
+  height: 100vh;
+ &__title {
+    margin-left: 1rem;
+ }
+  &__line {
+    display: inline-block;
+    width: 2.5rem;
+    border-bottom: 3px solid var(--color-details-dark);
+    margin-left: 1rem;
+    position: relative;
+    top: -1rem;
+  }
+  &__description {
+    margin: 0 1rem;
+  }
+}
