@@ -81,6 +81,7 @@ ul, li {
   --color-secondary: #FF676B;
   --color-details: #70B2DE;
   --color-details-dark: #004D73;
+  --color-bone: #e3dac9;
 }
 
 .profile-card__title {
@@ -210,9 +211,6 @@ ul, li {
   transition: 0.5s;
 }
 
-.about {
-  height: 100vh;
-}
 .about__title {
   margin-top: 2rem;
   margin-left: 1rem;
@@ -229,13 +227,10 @@ ul, li {
   margin: 0 1rem;
 }
 .about__image {
-  margin: 2rem 1rem;
-  width: 90%;
+  margin: auto 1rem;
+  width: 18rem;
 }
 
-.occupation {
-  height: 100vh;
-}
 .occupation__title {
   margin-left: 1rem;
   white-space: pre-wrap;
@@ -284,13 +279,15 @@ ul, li {
 .threed-cube {
   background-color: var(--color-details-dark);
   border: 1px solid black;
-  width: 100%;
+  width: auto;
   height: 22rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  will-change: auto;
+  margin: 1rem;
 }
-.threed-cube .face {
+.threed-cube .threed-cube__face {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -299,12 +296,52 @@ ul, li {
   font-size: 1.5rem;
 }
 .threed-cube .front {
-  background-color: red;
+  background-image: url("../../media/images/skills.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   transform: translateZ(5rem);
+  backface-visibility: hidden;
+}
+.threed-cube .front-flip {
+  background-image: url("../../media/images/react-loading.png");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  transform: translateZ(5rem) rotateY(180deg);
+  backface-visibility: hidden;
 }
 .threed-cube .back {
-  background-color: green;
+  background-color: var(--color-bone);
   transform: translateZ(-5rem) rotateY(180deg);
+  backface-visibility: hidden;
+}
+.threed-cube .threed-cube__skills-bar {
+  color: black;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0.5rem 0;
+}
+.threed-cube .title {
+  margin-left: 0.5rem;
+}
+.threed-cube .bar {
+  margin: 0 auto;
+  width: 90%;
+  height: 0.5rem;
+  background-color: var(--color-details-dark);
+}
+.threed-cube .bar__css {
+  width: 54%;
+  margin-left: 0.5rem;
+}
+.threed-cube .bar__flexbox {
+  width: 72%;
+  transition: 2s;
+}
+.threed-cube .bar__js {
+  width: 54%;
+  margin: 0 0.5rem;
 }
 .threed-cube .left {
   background-color: transparent;
@@ -317,12 +354,13 @@ ul, li {
   transform: translateY(-5rem) rotateX(90deg) rotateZ(180deg);
   display: flex;
   align-items: flex-end;
+  white-space: pre-wrap;
 }
-.threed-cube .cube {
+.threed-cube .threed-cube__cube {
   position: relative;
   width: 10rem;
   height: 10rem;
-  animation: rotate 5s forwards;
+  animation: rotate 5s forwards 5s;
   transform-style: preserve-3d;
 }
 @keyframes rotate {

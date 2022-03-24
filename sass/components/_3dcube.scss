@@ -1,12 +1,15 @@
 .threed-cube {
   background-color: var(--color-details-dark);
   border: 1px solid black;
-  width: 100%;
+  width: auto;
   height: 22rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  .face {
+  will-change: auto;
+  margin: 1rem;
+
+  .threed-cube__face {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -14,37 +17,95 @@
     font-weight: bold;
     font-size: 1.5rem;
   }
+
   .front {
-    background-color: red;
+    background-image: url("../../media/images/skills.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     transform: translateZ(5rem);
+    backface-visibility: hidden;
   }
+
+  .front-flip {
+    background-image: url("../../media/images/react-loading.png");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    transform: translateZ(5rem) rotateY(180deg);
+    backface-visibility: hidden;
+  }
+
   .back {
-    background-color: green;
+    background-color: var(--color-bone);
     transform: translateZ(-5rem) rotateY(180deg);
+    backface-visibility: hidden;
+
+
   }
+
+  .threed-cube__skills-bar {
+    color: black;
+    font-size: .8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: .5rem 0;
+
+  }
+
+  .title {
+    margin-left: .5rem;
+  }
+
+  .bar {
+    margin: 0 auto;
+    width: 90%;
+    height: .5rem;
+    background-color: var(--color-details-dark);
+
+
+    &__css {
+      width: 54%;
+      margin-left: .5rem;
+
+    }
+
+    &__flexbox {
+      width: 72%;
+      transition: 2s;
+    }
+
+
+    &__js {
+      width: 54%;
+      margin: 0 .5rem;
+    }
+  }
+
   .left {
     background-color: transparent;
     transform: translateX(-5rem) rotateY(-90deg);
     display: flex;
     align-items: flex-end;
   }
+
   .top {
     background-color: transparent;
     transform: translateY(-5rem) rotateX(90deg) rotateZ(180deg);
     display: flex;
     align-items: flex-end;
+    white-space: pre-wrap;
   }
 
 
-  .cube {
+  .threed-cube__cube {
 
     position: relative;
     width: 10rem;
     height: 10rem;
     //perspective: 500px;
-    animation: rotate 5s forwards;
+    animation: rotate 5s forwards 5s;
     transform-style: preserve-3d;
-
+    //transform: rotateX(-25deg) rotateY(-225deg);
 
     @keyframes rotate {
       0% {
@@ -54,10 +115,12 @@
 
       }
       100% {
-        transform:rotateX(-25deg) rotateY(-225deg) ;
+        transform: rotateX(-25deg) rotateY(-225deg);
       }
-  }
-  }
 
+    }
 
+  }
 }
+
+

@@ -1,6 +1,4 @@
 .about {
-  height: 100vh;
-
   &__title {
     margin-top: 2rem;
     margin-left: 1rem;
@@ -14,13 +12,14 @@
     position: relative;
     top: -1rem;
   }
+
   &__description {
-    margin:0 1rem;
+    margin: 0 1rem;
   }
 
   &__image {
-    margin: 2rem 1rem;
-    width: 90%;
+    margin: auto 1rem;
+    width:18rem;
   }
 }
 
