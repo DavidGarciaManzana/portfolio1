@@ -82,6 +82,7 @@ ul, li {
   --color-details: #70B2DE;
   --color-details-dark: #004D73;
   --color-bone: #e3dac9;
+  --color-alert:#D82A00;
 }
 
 .profile-card__title {
@@ -326,22 +327,48 @@ ul, li {
   margin-left: 0.5rem;
 }
 .threed-cube .bar {
-  margin: 0 auto;
-  width: 90%;
+  margin-left: 0.5rem;
+  width: 0;
   height: 0.5rem;
-  background-color: var(--color-details-dark);
+  background-image: linear-gradient(90deg, var(--color-details-dark) 0rem, var(--color-details-dark) 9rem, var(--color-alert) 9rem);
+  background-repeat: no-repeat;
+}
+.threed-cube .bar__html {
+  width: 90%;
+  transition: 1s;
 }
 .threed-cube .bar__css {
   width: 54%;
   margin-left: 0.5rem;
+  transition: 1s 1s;
 }
 .threed-cube .bar__flexbox {
   width: 72%;
-  transition: 2s;
+  transition: 0.5s;
+}
+.threed-cube .bar__grid {
+  width: 90%;
+  transition: 0.5s;
+}
+.threed-cube .bar__sass {
+  width: 99%;
+  transition: 0.5s;
+}
+.threed-cube .bar__animations {
+  width: 108%;
+  transition: 0.5s;
+}
+.threed-cube .bar__rwd {
+  width: 117%;
+  transition: 0.5s;
 }
 .threed-cube .bar__js {
+  width: 36%;
+  transition: 1s 8s;
+}
+.threed-cube .bar__dom {
   width: 54%;
-  margin: 0 0.5rem;
+  transition: 0.5s;
 }
 .threed-cube .left {
   background-color: transparent;
@@ -360,7 +387,7 @@ ul, li {
   position: relative;
   width: 10rem;
   height: 10rem;
-  animation: rotate 5s forwards 5s;
+  animation: rotate 2s forwards 5s;
   transform-style: preserve-3d;
 }
 @keyframes rotate {
