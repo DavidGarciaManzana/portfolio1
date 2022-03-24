@@ -123,6 +123,7 @@ ul, li {
   height: 100vh;
   width: 80%;
   transition: transform 1s;
+  z-index: var(--z-modal);
 }
 .menu-opened {
   visibility: visible;
@@ -281,6 +282,7 @@ ul, li {
 }
 
 .threed-cube {
+  background-color: var(--color-details-dark);
   border: 1px solid black;
   width: 100%;
   height: 22rem;
@@ -288,23 +290,13 @@ ul, li {
   justify-content: center;
   align-items: center;
 }
-.threed-cube .cube {
-  position: relative;
-  width: 10rem;
-  height: 10rem;
-  border: 2px solid red;
-  animation: rotate 5s forwards;
-  transform-style: preserve-3d;
-}
-@keyframes rotate {
-  100% {
-    transform: rotateX(-25deg) rotateY(-225deg);
-  }
-}
 .threed-cube .face {
   position: absolute;
   width: 100%;
   height: 100%;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 .threed-cube .front {
   background-color: red;
@@ -314,21 +306,29 @@ ul, li {
   background-color: green;
   transform: translateZ(-5rem) rotateY(180deg);
 }
-.threed-cube .right {
-  background-color: blue;
-  transform: translateX(5rem) rotateY(90deg);
-}
 .threed-cube .left {
-  background-color: purple;
+  background-color: transparent;
   transform: translateX(-5rem) rotateY(-90deg);
+  display: flex;
+  align-items: flex-end;
 }
 .threed-cube .top {
-  background-color: yellow;
-  transform: translateY(-5rem) rotateX(90deg);
+  background-color: transparent;
+  transform: translateY(-5rem) rotateX(90deg) rotateZ(180deg);
+  display: flex;
+  align-items: flex-end;
 }
-.threed-cube .bottom {
-  background-color: cyan;
-  transform: translateY(5rem) rotateX(-90deg);
+.threed-cube .cube {
+  position: relative;
+  width: 10rem;
+  height: 10rem;
+  animation: rotate 5s forwards;
+  transform-style: preserve-3d;
+}
+@keyframes rotate {
+  100% {
+    transform: rotateX(-25deg) rotateY(-225deg);
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

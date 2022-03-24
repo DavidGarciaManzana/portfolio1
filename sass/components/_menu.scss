@@ -6,6 +6,7 @@
   height: 100vh;
   width: 80%;
   transition: transform 1s;
+  z-index: var(--z-modal);
 
   &-opened {
     visibility: visible;
