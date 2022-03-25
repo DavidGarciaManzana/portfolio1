@@ -15,7 +15,7 @@ img {
   width: 100%;
 }
 
-ul, li {
+li {
   list-style: none;
 }
 
@@ -82,7 +82,7 @@ ul, li {
   --color-details: #70B2DE;
   --color-details-dark: #004D73;
   --color-bone: #e3dac9;
-  --color-alert:#D82A00;
+  --color-alert: red;
 }
 
 .profile-card__title {
@@ -213,8 +213,7 @@ ul, li {
 }
 
 .about__title {
-  margin-top: 2rem;
-  margin-left: 1rem;
+  margin: 1rem;
 }
 .about__line {
   display: inline-block;
@@ -228,7 +227,7 @@ ul, li {
   margin: 0 1rem;
 }
 .about__image {
-  margin: auto 1rem;
+  margin: 1rem;
   width: 18rem;
 }
 
@@ -259,11 +258,8 @@ ul, li {
   margin-left: 0.3em;
 }
 
-.skills {
-  height: 100vh;
-}
 .skills__title {
-  margin-left: 1rem;
+  margin: 1rem;
 }
 .skills__line {
   display: inline-block;
@@ -387,13 +383,70 @@ ul, li {
   position: relative;
   width: 10rem;
   height: 10rem;
-  animation: rotate 2s forwards 5s;
   transform-style: preserve-3d;
 }
 @keyframes rotate {
   100% {
     transform: rotateX(-25deg) rotateY(-225deg);
   }
+}
+
+.resume__title {
+  margin: 1rem;
+}
+.resume__line {
+  display: inline-block;
+  width: 2.5rem;
+  border-bottom: 3px solid var(--color-details-dark);
+  margin-left: 1rem;
+  position: relative;
+  top: -1rem;
+}
+.resume__description {
+  margin: 0 1rem;
+}
+.resume__description {
+  margin-bottom: 4rem;
+}
+.resume__sumary-details {
+  position: absolute;
+  width: 3rem;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.resume__sumary-detail-circle {
+  display: block;
+  position: relative;
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid var(--color-details-dark);
+  border-radius: 100%;
+}
+.resume__sumary-detail-line {
+  display: block;
+  position: relative;
+  right: 0.3rem;
+  width: 0.6rem;
+  height: 13.5rem;
+  border-right: 2px solid var(--color-details-dark);
+}
+.resume__sumary-title {
+  margin: 1rem;
+}
+.resume__sumary-name, .resume__sumary-description {
+  margin-left: 3rem;
+}
+.resume__sumary-list {
+  padding: 0;
+  margin-left: 3rem;
+  list-style-position: inside;
+}
+.resume__sumary-list-item {
+  list-style: disc;
+  margin: 1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
