@@ -5,49 +5,18 @@
     margin-bottom: 4rem;
   }
 
-  &__sumary-details {
-    position: absolute;
-    width: 3rem;
-    height: 15rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  &__sumary-detail-circle {
-    display: block;
-    position: relative;
-    width: 1rem;
-    height: 1rem;
-    border: 2px solid var(--color-details-dark);
-    border-radius: 100%;
-  }
-
-  &__sumary-detail-line {
-    display: block;
-    position: relative;
-    right: .3rem;
-    width: .6rem;
-    height: 13.5rem;
-    border-right: 2px solid var(--color-details-dark);
-  }
+  //sumary
 
   &__sumary-title {
-    @include title;
+    @include l-margin1;
   }
 
-  &__sumary-name {
-    margin-left: 3rem;
-  }
-
-  &__sumary-description {
-    @extend .resume__sumary-name;
+  &__sumary-name, &__sumary-description, &__sumary-list {
+    @include l-margin3;
   }
 
   &__sumary-list {
     padding: 0;
-    margin-left: 3rem;
     list-style-position: inside;
   }
 
@@ -55,4 +24,61 @@
     list-style: disc;
     margin: 1rem;
   }
+
+  &__sumary-details {
+    @include details;
+  }
+
+  &__sumary-detail-circle {
+    @include details-circle;
+  }
+
+  &__sumary-detail-line {
+    @include details-line
+  }
+
+
+  //education
+  &__education-title {
+    @include l-margin1;
+  }
+
+  &__education-name, &__education-date, &__education-place, &__education-description {
+    @include l-margin3;
+  }
+
+  &__education-date {
+    width: 7rem;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: var(--color-details);
+    font-size: 1.2rem;
+    padding-top: .5em;
+    padding-bottom: .3em;
+  }
+
+  &__education-details {
+    @include details;
+    height: 15rem;
+    justify-content: flex-start;
+  }
+
+  &__education-detail-circle {
+    @include details-circle;
+  }
+
+  &__education-detail-line {
+    @include details-line;
+    position: absolute;
+    top: 1rem;
+    right: 1.4rem;
+    height: 14.3rem;
+  }
+
+
+
 }
