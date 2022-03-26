@@ -533,8 +533,11 @@ li {
 .resume__experience-title {
   margin-left: 1rem;
 }
-.resume__experience-date, .resume__experience-name, .resume__experience-place, .resume__experience-list-freelance {
+.resume__experience-date, .resume__experience-name, .resume__experience-place, .resume__experience-description, .resume__experience-description-final, .resume__experience-list-freelance {
   margin-left: 3rem;
+}
+.resume__experience-description-final {
+  margin-bottom: 4rem;
 }
 .resume__experience-list-freelance {
   padding: 0;
@@ -559,6 +562,82 @@ li {
   width: 9rem;
   padding-top: 0.9em;
   padding-bottom: 0.7em;
+}
+.resume__experience-details-freelance, .resume__experience-details-internship, .resume__experience-details-ecommerce {
+  position: absolute;
+  width: 3rem;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+}
+.resume__experience-detail-circle-freelance {
+  display: block;
+  position: relative;
+  right: -0.05rem;
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid var(--color-details-dark);
+  border-radius: 100%;
+  top: 0.2rem;
+}
+.resume__experience-detail-line-freelance {
+  display: block;
+  position: relative;
+  right: 0.2rem;
+  width: 0.6rem;
+  height: 13.5rem;
+  border-right: 2px solid var(--color-details-dark);
+  position: absolute;
+  right: 1.4rem;
+  top: 1.1rem;
+  height: 21.37rem;
+}
+.resume__experience-detail-circle-internship {
+  display: block;
+  position: relative;
+  right: -0.05rem;
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid var(--color-details-dark);
+  border-radius: 100%;
+  top: 0.35rem;
+}
+.resume__experience-detail-line-internship {
+  display: block;
+  position: relative;
+  right: 0.2rem;
+  width: 0.6rem;
+  height: 13.5rem;
+  border-right: 2px solid var(--color-details-dark);
+  position: absolute;
+  right: 1.4rem;
+  top: 1.3rem;
+  height: 12.6rem;
+}
+.resume__experience-detail-circle-ecommerce {
+  display: block;
+  position: relative;
+  right: -0.05rem;
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid var(--color-details-dark);
+  border-radius: 100%;
+  top: 0.35rem;
+}
+.resume__experience-detail-line-ecommerce {
+  display: block;
+  position: relative;
+  right: 0.2rem;
+  width: 0.6rem;
+  height: 13.5rem;
+  border-right: 2px solid var(--color-details-dark);
+  position: absolute;
+  right: 1.4rem;
+  top: 1.3rem;
+  height: 13rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

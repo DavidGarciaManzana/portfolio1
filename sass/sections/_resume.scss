@@ -91,8 +91,12 @@
     @include l-margin1;
   }
 
-  &__experience-date, &__experience-name, &__experience-place, &__experience-list-freelance {
+  &__experience-date, &__experience-name, &__experience-place, &__experience-description, &__experience-description-final,&__experience-list-freelance {
     @include l-margin3;
+  }
+
+  &__experience-description-final {
+    margin-bottom: 4rem;
   }
 
   &__experience-list-freelance {
@@ -109,5 +113,50 @@
     padding-top: 0.9em;
     padding-bottom: 0.7em;
   }
+
+  &__experience-details-freelance, &__experience-details-internship, &__experience-details-ecommerce {
+    @include details;
+    justify-content: flex-start;
+  }
+
+  &__experience-detail-circle-freelance {
+    @include details-circle;
+    top: 0.2rem;
+  }
+
+  &__experience-detail-line-freelance {
+    @include details-line;
+    position: absolute;
+    right: 1.4rem;
+    top: 1.1rem;
+    height: 21.37rem;
+  }
+
+  &__experience-detail-circle-internship {
+    @include details-circle;
+    top: 0.35rem;
+  }
+
+  &__experience-detail-line-internship {
+    @include details-line;
+    position: absolute;
+    right: 1.4rem;
+    top: 1.3rem;
+    height: 12.6rem;
+  }
+
+  &__experience-detail-circle-ecommerce {
+    @include details-circle;
+    top: 0.35rem;
+  }
+
+  &__experience-detail-line-ecommerce {
+    @include details-line;
+    position: absolute;
+    right: 1.4rem;
+    top: 1.3rem;
+    height: 13rem;
+  }
+
 }
 
