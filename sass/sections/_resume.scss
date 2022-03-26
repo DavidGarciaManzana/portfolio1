@@ -107,11 +107,16 @@
     @include resume-inside-list-item;
   }
 
-  &__experience-date {
+  &__experience-date-freelance {
     @include date;
+    @include l-margin3;
     width: 9rem;
     padding-top: 0.9em;
     padding-bottom: 0.7em;
+  }
+  &__experience-date-internship, &__experience-date-ecommerce {
+    @include date;
+    @include l-margin3;
   }
 
   &__experience-details-freelance, &__experience-details-internship, &__experience-details-ecommerce {

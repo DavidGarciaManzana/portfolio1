@@ -547,7 +547,7 @@ li {
   list-style: disc;
   margin: 1rem;
 }
-.resume__experience-date {
+.resume__experience-date-freelance {
   width: 7rem;
   height: 1.5rem;
   display: flex;
@@ -559,9 +559,24 @@ li {
   font-size: 1.2rem;
   padding-top: 0.5em;
   padding-bottom: 0.3em;
+  margin-left: 3rem;
   width: 9rem;
   padding-top: 0.9em;
   padding-bottom: 0.7em;
+}
+.resume__experience-date-internship, .resume__experience-date-ecommerce {
+  width: 7rem;
+  height: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: var(--color-details);
+  font-size: 1.2rem;
+  padding-top: 0.5em;
+  padding-bottom: 0.3em;
+  margin-left: 3rem;
 }
 .resume__experience-details-freelance, .resume__experience-details-internship, .resume__experience-details-ecommerce {
   position: absolute;
