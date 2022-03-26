@@ -16,13 +16,11 @@
   }
 
   &__sumary-list {
-    padding: 0;
-    list-style-position: inside;
+    @include resume-inside-list;
   }
 
   &__sumary-list-item {
-    list-style: disc;
-    margin: 1rem;
+    @include resume-inside-list-item;
   }
 
   &__sumary-details {
@@ -48,17 +46,7 @@
   }
 
   &__education-date {
-    width: 7rem;
-    height: 1.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0;
-    margin-bottom: 0;
-    background-color: var(--color-details);
-    font-size: 1.2rem;
-    padding-top: .5em;
-    padding-bottom: .3em;
+    @include date;
   }
 
   &__education-details {
@@ -69,16 +57,57 @@
 
   &__education-detail-circle {
     @include details-circle;
+    top: .2rem;
   }
 
   &__education-detail-line {
     @include details-line;
     position: absolute;
-    top: 1rem;
+    top: 1.2rem;
     right: 1.4rem;
-    height: 14.3rem;
+    height: 16.9rem;
+  }
+
+  &__education-details-english {
+    @include details;
+    justify-content: flex-start;
+  }
+
+  &__education-detail-circle-english {
+    @include details-circle;
+    top: .45rem;
+  }
+
+  &__education-detail-line-english {
+    @include details-line;
+    height: 14.5rem;
+    top: .4rem;
   }
 
 
+  //  experience
 
+  &__experience-title {
+    @include l-margin1;
+  }
+
+  &__experience-date, &__experience-name, &__experience-place, &__experience-list-freelance {
+    @include l-margin3;
+  }
+
+  &__experience-list-freelance {
+    @include resume-inside-list;
+  }
+
+  &__experience-list-item-freelance {
+    @include resume-inside-list-item;
+  }
+
+  &__experience-date {
+    @include date;
+    width: 9rem;
+    padding-top: 0.9em;
+    padding-bottom: 0.7em;
+  }
 }
+

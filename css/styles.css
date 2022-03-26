@@ -486,6 +486,7 @@ li {
   height: 1rem;
   border: 2px solid var(--color-details-dark);
   border-radius: 100%;
+  top: 0.2rem;
 }
 .resume__education-detail-line {
   display: block;
@@ -495,9 +496,69 @@ li {
   height: 13.5rem;
   border-right: 2px solid var(--color-details-dark);
   position: absolute;
-  top: 1rem;
+  top: 1.2rem;
   right: 1.4rem;
-  height: 14.3rem;
+  height: 16.9rem;
+}
+.resume__education-details-english {
+  position: absolute;
+  width: 3rem;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+}
+.resume__education-detail-circle-english {
+  display: block;
+  position: relative;
+  right: -0.05rem;
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid var(--color-details-dark);
+  border-radius: 100%;
+  top: 0.45rem;
+}
+.resume__education-detail-line-english {
+  display: block;
+  position: relative;
+  right: 0.2rem;
+  width: 0.6rem;
+  height: 13.5rem;
+  border-right: 2px solid var(--color-details-dark);
+  height: 14.5rem;
+  top: 0.4rem;
+}
+.resume__experience-title {
+  margin-left: 1rem;
+}
+.resume__experience-date, .resume__experience-name, .resume__experience-place, .resume__experience-list-freelance {
+  margin-left: 3rem;
+}
+.resume__experience-list-freelance {
+  padding: 0;
+  list-style-position: inside;
+}
+.resume__experience-list-item-freelance {
+  list-style: disc;
+  margin: 1rem;
+}
+.resume__experience-date {
+  width: 7rem;
+  height: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: var(--color-details);
+  font-size: 1.2rem;
+  padding-top: 0.5em;
+  padding-bottom: 0.3em;
+  width: 9rem;
+  padding-top: 0.9em;
+  padding-bottom: 0.7em;
 }
 
 /*# sourceMappingURL=styles.css.map */

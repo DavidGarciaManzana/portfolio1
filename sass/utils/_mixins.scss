@@ -27,6 +27,21 @@
   margin-left: 3rem;
 }
 
+
+//resume dates
+@mixin date {
+  width: 7rem;
+  height: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: var(--color-details);
+  font-size: 1.2rem;
+  padding-top: .5em;
+  padding-bottom: .3em;
+}
 //resume details line and circle
 
 @mixin details {
@@ -56,4 +71,14 @@
   width: .6rem;
   height: 13.5rem;
   border-right: 2px solid var(--color-details-dark);
+}
+
+//resume lists
+@mixin resume-inside-list {
+  padding: 0;
+  list-style-position: inside;
+}
+@mixin resume-inside-list-item {
+  list-style: disc;
+  margin: 1rem;
 }
