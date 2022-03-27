@@ -1,0 +1,14 @@
+.responsive-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(310px,1fr));
+  justify-items: center;
+  &__item {
+    width: 90%;
+    height: 15rem;
+    background-color: #fff;
+    border: 1px solid black;
+    margin-bottom: 1rem;
+  //  todo cuando crezca a tamano tablet, cambiar el margin bottom a 2rem
+
+  }
+}
