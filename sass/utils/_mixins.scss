@@ -38,9 +38,6 @@
   margin-top: 0;
   margin-bottom: 0;
   background-color: var(--color-details);
-  font-size: 1.2rem;
-  padding-top: .5em;
-  padding-bottom: .3em;
 }
 //resume details line and circle
 
@@ -62,6 +59,7 @@
   height: 1rem;
   border: 2px solid var(--color-details-dark);
   border-radius: 100%;
+  background-color: #fff;
 }
 
 @mixin details-line {

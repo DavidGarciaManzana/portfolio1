@@ -2,7 +2,7 @@
   @include underline;
 
   &__description {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
   }
 
   //sumary
@@ -110,9 +110,6 @@
   &__experience-date-freelance {
     @include date;
     @include l-margin3;
-    width: 9rem;
-    padding-top: 0.9em;
-    padding-bottom: 0.7em;
   }
   &__experience-date-internship, &__experience-date-ecommerce {
     @include date;

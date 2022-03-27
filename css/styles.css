@@ -406,7 +406,7 @@ li {
   margin: 0 1rem;
 }
 .resume__description {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 .resume__sumary-title {
   margin-left: 1rem;
@@ -439,6 +439,7 @@ li {
   height: 1rem;
   border: 2px solid var(--color-details-dark);
   border-radius: 100%;
+  background-color: #fff;
 }
 .resume__sumary-detail-line {
   display: block;
@@ -463,9 +464,6 @@ li {
   margin-top: 0;
   margin-bottom: 0;
   background-color: var(--color-details);
-  font-size: 1.2rem;
-  padding-top: 0.5em;
-  padding-bottom: 0.3em;
 }
 .resume__education-details {
   position: absolute;
@@ -486,6 +484,7 @@ li {
   height: 1rem;
   border: 2px solid var(--color-details-dark);
   border-radius: 100%;
+  background-color: #fff;
   top: 0.2rem;
 }
 .resume__education-detail-line {
@@ -518,6 +517,7 @@ li {
   height: 1rem;
   border: 2px solid var(--color-details-dark);
   border-radius: 100%;
+  background-color: #fff;
   top: 0.45rem;
 }
 .resume__education-detail-line-english {
@@ -556,13 +556,7 @@ li {
   margin-top: 0;
   margin-bottom: 0;
   background-color: var(--color-details);
-  font-size: 1.2rem;
-  padding-top: 0.5em;
-  padding-bottom: 0.3em;
   margin-left: 3rem;
-  width: 9rem;
-  padding-top: 0.9em;
-  padding-bottom: 0.7em;
 }
 .resume__experience-date-internship, .resume__experience-date-ecommerce {
   width: 7rem;
@@ -573,9 +567,6 @@ li {
   margin-top: 0;
   margin-bottom: 0;
   background-color: var(--color-details);
-  font-size: 1.2rem;
-  padding-top: 0.5em;
-  padding-bottom: 0.3em;
   margin-left: 3rem;
 }
 .resume__experience-details-freelance, .resume__experience-details-internship, .resume__experience-details-ecommerce {
@@ -596,6 +587,7 @@ li {
   height: 1rem;
   border: 2px solid var(--color-details-dark);
   border-radius: 100%;
+  background-color: #fff;
   top: 0.2rem;
 }
 .resume__experience-detail-line-freelance {
@@ -618,6 +610,7 @@ li {
   height: 1rem;
   border: 2px solid var(--color-details-dark);
   border-radius: 100%;
+  background-color: #fff;
   top: 0.35rem;
 }
 .resume__experience-detail-line-internship {
@@ -640,6 +633,7 @@ li {
   height: 1rem;
   border: 2px solid var(--color-details-dark);
   border-radius: 100%;
+  background-color: #fff;
   top: 0.35rem;
 }
 .resume__experience-detail-line-ecommerce {
