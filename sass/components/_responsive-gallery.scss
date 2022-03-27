@@ -17,14 +17,27 @@
 
   }
   &__item-image {
-    background-color: red;
     width: 16rem;
     height: 10rem;
     margin-bottom: .5rem;
   }
   &__item-name {
-    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 16rem;
     height: 3rem;
+  }
+  &__item-icon {
+    color: #fff;
+    font-size: 2rem;
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--color-main);
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
   }
 }

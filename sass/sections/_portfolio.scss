@@ -1,7 +1,6 @@
 .portfolio {
   @include underline;
   background-color: var(--color-darker-background);
-  height: 300vh;
 
   &__gif {
     width: 90%;
