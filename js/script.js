@@ -88,12 +88,33 @@ THREED_CUBE.addEventListener("animationend", jsBar)
 
 // ----------------------------------------------------PORTFOLIO-------------------------------------------------------------
 
+const responsiveGallery = document.getElementById("responsive-gallery")
+
 let projects = [
     ["../media/images/dog.webp", "../media/images/dog.webp", "../media/images/parrot.jpg", "Web", "Portfolio", "01/04/2022", "briandavid.nft", "HTML, CSS, Flexbox, Grid, Animations, RWD & JS", "My personal portfolio where I show all my projects and what technologies I like to implement to them."],
     ["../media/images/dog.webp", "../media/images/dog.webp", "../media/images/parrot.jpg", "Web", "Drilling Mud Mex", "17/02/2022", "davidgarxa.com/drilling-mud-mex/", "HTML, CSS, Flexbox, Animations & JS", "Petroleum Engineering web app that accurately describe the addition of weight material to clay/water muds."],
     ["../media/images/dog.webp", "../media/images/dog.webp", "../media/images/parrot.jpg", "Exercise", "Homer", "17/11/2021", "homer.com", "HTML & CSS", "Draw of homer using HTML & CSS"],
-    ["../media/images/dog.webp", "../media/images/dog.webp", "../media/images/parrot.jpg", "Exercise", "Profile Card", "02/09/2021", "davidgarxa.com", "HTML, CSS", "A profile card made with HTML & CSS"]
+    ["../media/images/dog.webp", "../media/images/dog.webp", "../media/images/parrot.jpg", "Exercise", "Profile Card", "02/09/2021", "davidgarxa.com", "HTML, CSS", "A profile card made with HTML & CSS"],
 
 ]
 
-console.log(projects)
+projects.forEach(
+    function (project){
+        let projectContainer = document.createElement("div")
+        projectContainer.classList.add("responsive-gallery__item")
+        responsiveGallery.appendChild(projectContainer)
+
+        let projectImage = document.createElement("img")
+        projectImage.classList.add("responsive-gallery__item-image")
+        projectContainer.appendChild(projectImage)
+
+        let projectName =  document.createElement("div")
+        projectName.classList.add("responsive-gallery__item-name")
+        projectContainer.appendChild(projectName)
+
+        // imprimer 4 veces lo que esta en la posicion 2 de todos los arrayas
+        // console.log(project[1])
+
+
+    }
+)

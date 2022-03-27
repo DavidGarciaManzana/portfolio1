@@ -695,6 +695,21 @@ li {
   background-color: #fff;
   border: 1px solid black;
   margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.responsive-gallery__item-image {
+  background-color: red;
+  width: 16rem;
+  height: 10rem;
+  margin-bottom: 0.5rem;
+}
+.responsive-gallery__item-name {
+  background-color: blue;
+  width: 16rem;
+  height: 3rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
