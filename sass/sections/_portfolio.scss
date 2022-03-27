@@ -1,0 +1,8 @@
+.portfolio {
+  @include underline;
+
+  &__gif {
+    width: 90%;
+    margin: auto 1rem;
+  }
+}

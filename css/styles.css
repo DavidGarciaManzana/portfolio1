@@ -649,4 +649,23 @@ li {
   height: 13rem;
 }
 
+.portfolio__title {
+  margin-left: 1rem;
+}
+.portfolio__line {
+  display: inline-block;
+  width: 2.5rem;
+  border-bottom: 3px solid var(--color-details-dark);
+  margin-left: 1rem;
+  position: relative;
+  top: -1rem;
+}
+.portfolio__description {
+  margin: 0 1rem;
+}
+.portfolio__gif {
+  width: 90%;
+  margin: auto 1rem;
+}
+
 /*# sourceMappingURL=styles.css.map */
