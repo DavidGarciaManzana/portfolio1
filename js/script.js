@@ -178,12 +178,10 @@ projects.forEach(
                     projectDetailsImageContainer.scrollTo(250, 0)
                     let swipeRightPlus = () => {
                         projectDetailsImageContainer.scrollTo(500, 0)
-
                     }
                     setTimeout(swipeRightPlus, 2000);
                 }
                 setTimeout(swipeRight, 2000);
-
             }
             swipeProjectImages()
 

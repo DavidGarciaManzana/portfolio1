@@ -746,15 +746,14 @@ li {
 }
 .responsive-gallery__item-close-icon {
   position: relative;
+  top: 0.5rem;
+  right: -17.5rem;
   color: #fff;
   font-size: 2rem;
   width: 2rem;
   height: 2rem;
   background-color: var(--color-main);
   border-radius: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   cursor: pointer;
 }
 .responsive-gallery__item-close-icon-first {
