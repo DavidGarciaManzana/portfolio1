@@ -1,14 +1,15 @@
 .responsive-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(310px,1fr));
+  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
   justify-items: center;
+
   &__item {
     width: 90%;
     height: 15rem;
     background-color: #fff;
-    border: 1px solid black;
+    box-shadow: 2px 2px 2px grey;
     margin-bottom: 1rem;
-  //  todo cuando crezca a tamano tablet, cambiar el margin bottom a 2rem
+    //  todo cuando crezca a tamano tablet, cambiar el margin bottom a 2rem
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,11 +17,13 @@
 
 
   }
+
   &__item-image {
     width: 16rem;
     height: 10rem;
     margin-bottom: .5rem;
   }
+
   &__item-name {
     display: flex;
     align-items: center;
@@ -28,6 +31,7 @@
     width: 16rem;
     height: 3rem;
   }
+
   &__item-icon {
     color: #fff;
     font-size: 2rem;
@@ -39,5 +43,36 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+  }
+
+  &__modal {
+    top: 50%;
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .display {
+    background-color: transparent;
+    animation: heighta 2s forwards;
+    @keyframes heighta {
+      100% {
+        top: 0%;
+        height: 100%;
+      }
+
+    }
+  }
+
+  &__modal-details {
+    width: 90%;
+    height: 90%;
+    background-color: hsl(0, 0, 0, .5);
+
   }
 }

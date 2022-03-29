@@ -692,7 +692,7 @@ li {
   width: 90%;
   height: 15rem;
   background-color: #fff;
-  border: 1px solid black;
+  box-shadow: 2px 2px 2px grey;
   margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
@@ -722,6 +722,31 @@ li {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+.responsive-gallery__modal {
+  top: 50%;
+  height: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.responsive-gallery .display {
+  background-color: transparent;
+  animation: heighta 2s forwards;
+}
+@keyframes heighta {
+  100% {
+    top: 0%;
+    height: 100%;
+  }
+}
+.responsive-gallery__modal-details {
+  width: 90%;
+  height: 90%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 /*# sourceMappingURL=styles.css.map */

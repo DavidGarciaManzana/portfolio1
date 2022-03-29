@@ -1,5 +1,4 @@
 // hamburger button
-
 const HAMBURGER_BUTTON = document.getElementById("hamburger-button")
 const MENU_OPENED = document.getElementById("menu")
 const showMenu = () => {
@@ -23,7 +22,6 @@ let barJs = document.getElementById("bar__js")
 const htmlBar = () => {
     htmlText.innerHTML = "<span class=\"title\">HTML</span> <span>100%</span>"
     barHtml.classList.add("bar__html")
-
 }
 THREED_CUBE.addEventListener("animationend", htmlBar)
 
@@ -94,7 +92,7 @@ let projects = [
     ["../media/images/dog.webp", "../media/images/cat.webp", "../media/images/parrot.jpg", "Web", "Portfolio", "01/04/2022", "briandavid.nft", "HTML, CSS, Flexbox, Grid, Animations, RWD & JS", "My personal portfolio where I show all my projects and what technologies I like to implement to them."],
     ["../media/images/cat.webp", "../media/images/dog.webp", "../media/images/parrot.jpg", "Web", "Drilling Mud Mex", "17/02/2022", "davidgarxa.com/drilling-mud-mex/", "HTML, CSS, Flexbox, Animations & JS", "Petroleum Engineering web app that accurately describe the addition of weight material to clay/water muds."],
     ["../media/images/dog.webp", "../media/images/cat.webp", "../media/images/parrot.jpg", "Exercise", "Homer", "17/11/2021", "homer.com", "HTML & CSS", "Draw of homer using HTML & CSS"],
-    ["../media/images/cat.webp", "../media/images/dog.webp", "../media/images/parrot.jpg", "Exercise", "Profile Card", "02/09/2021", "davidgarxa.com", "HTML, CSS", "A profile card made with HTML & CSS"],
+    ["../media/images/cat.webp", "../media/images/dog.webp", "../media/images/parrot.jpg", "Exercise", "Profile Card", "02/09/2021", "davidgarxa.com", "HTML & CSS", "A profile card made with HTML & CSS"],
 
 ]
 
@@ -106,6 +104,7 @@ projects.forEach(
 
         let projectImage = document.createElement("img")
         projectImage.classList.add("responsive-gallery__item-image")
+        projectImage.setAttribute("alt", project[8])
         projectImage.setAttribute("src", project[0])
         projectContainer.appendChild(projectImage)
 
@@ -114,15 +113,30 @@ projects.forEach(
         projectName.innerText = project[4]
         projectContainer.appendChild(projectName)
 
-        let itemIcon = document.createElement("div")
-        itemIcon.classList.add("responsive-gallery__item-icon")
-        itemIcon.innerText = "+"
-        projectName.appendChild(itemIcon)
+        let projectIcon = document.createElement("div")
+        projectIcon.classList.add("responsive-gallery__item-icon")
+        projectIcon.innerText = "+"
+        projectName.appendChild(projectIcon)
 
         //Put a different name to each "+" button
-        itemIcon.setAttribute("id", `responsive-gallery__item-icon-${index}`)
+        projectIcon.setAttribute("id", `responsive-gallery__item-icon-${index}`)
 
-
+        let projectDetailsFather = document.getElementById("responsive-gallery__modal")
+        const displayProjectDetails = () => {
+            projectDetailsFather.classList.add("display")
+            let projectDetails = document.createElement("div")
+            projectDetails.classList.add("responsive-gallery__modal-details")
+            projectDetailsFather.appendChild(projectDetails)
+            let buttonCloseProjectDetails = document.createElement("a")
+            buttonCloseProjectDetails.classList.add("responsive-gallery__item-icon")
+            projectDetails.appendChild(buttonCloseProjectDetails)
+            const closeProjectDetails = () => {
+                projectDetailsFather.removeChild(projectDetails)
+                projectDetailsFather.classList.remove("display")
+            }
+            buttonCloseProjectDetails.addEventListener("click", closeProjectDetails)
+        }
+        projectIcon.addEventListener("click", displayProjectDetails)
 
 
     }
