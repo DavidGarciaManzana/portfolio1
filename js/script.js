@@ -124,17 +124,95 @@ projects.forEach(
         let projectDetailsFather = document.getElementById("responsive-gallery__modal")
         const displayProjectDetails = () => {
             projectDetailsFather.classList.add("display")
+
             let projectDetails = document.createElement("div")
             projectDetails.classList.add("responsive-gallery__modal-details")
             projectDetailsFather.appendChild(projectDetails)
-            let buttonCloseProjectDetails = document.createElement("a")
-            buttonCloseProjectDetails.classList.add("responsive-gallery__item-icon")
+
+            let buttonCloseProjectDetails = document.createElement("div")
+            buttonCloseProjectDetails.innerHTML =
+                `
+                <div class="responsive-gallery__item-close-icon-first"></div>
+                <div class="responsive-gallery__item-close-icon-second"></div>
+                `
+            buttonCloseProjectDetails.classList.add("responsive-gallery__item-close-icon")
             projectDetails.appendChild(buttonCloseProjectDetails)
+
             const closeProjectDetails = () => {
+                //Here's where the magic happens
                 projectDetailsFather.removeChild(projectDetails)
                 projectDetailsFather.classList.remove("display")
             }
             buttonCloseProjectDetails.addEventListener("click", closeProjectDetails)
+
+            let projectDetailsWebsiteName = document.createElement("p")
+            projectDetailsWebsiteName.innerText = project[4]
+            projectDetails.appendChild(projectDetailsWebsiteName)
+
+            let projectDetailsImageContainer = document.createElement("div")
+            projectDetailsImageContainer.classList.add("responsive-gallery__image-container")
+            projectDetails.appendChild(projectDetailsImageContainer)
+
+
+            let projectDetailsFirstImage = document.createElement("img")
+            projectDetailsFirstImage.setAttribute("src", project[0])
+            projectDetailsFirstImage.setAttribute("alt", "Website Image")
+            projectDetailsFirstImage.classList.add("responsive-gallery__first-image")
+            projectDetailsImageContainer.appendChild(projectDetailsFirstImage)
+
+            let projectDetailsSecondImage = document.createElement("img")
+            projectDetailsSecondImage.setAttribute("src", project[1])
+            projectDetailsSecondImage.setAttribute("alt", "Mobile Image")
+            projectDetailsSecondImage.classList.add("responsive-gallery__second-image")
+            projectDetailsImageContainer.appendChild(projectDetailsSecondImage)
+
+            let projectDetailsThirdImage = document.createElement("img")
+            projectDetailsThirdImage.setAttribute("src", project[2])
+            projectDetailsThirdImage.setAttribute("alt", "Lighthouse Image")
+            projectDetailsThirdImage.classList.add("responsive-gallery__third-image")
+            projectDetailsImageContainer.appendChild(projectDetailsThirdImage)
+
+            //automatic swipe between images
+            let swipeProjectImages = () => {
+                let swipeRight = () => {
+                    projectDetailsImageContainer.scrollTo(250, 0)
+                    let swipeRightPlus = () => {
+                        projectDetailsImageContainer.scrollTo(500, 0)
+
+                    }
+                    setTimeout(swipeRightPlus, 2000);
+                }
+                setTimeout(swipeRight, 2000);
+
+            }
+            swipeProjectImages()
+
+
+            let projectDetailsInfo = document.createElement("p")
+            projectDetailsInfo.innerText = "Project information"
+            projectDetails.appendChild(projectDetailsInfo)
+
+            let projectDetailsCategory = document.createElement("p")
+            projectDetailsCategory.innerText = `Category: ${project[3]}`
+            projectDetails.appendChild(projectDetailsCategory)
+
+            let projectDetailsDate = document.createElement("p")
+            projectDetailsDate.innerText = `Released date: ${project[5]}`
+            projectDetails.appendChild(projectDetailsDate)
+
+            let projectDetailsUrl = document.createElement("p")
+            projectDetailsUrl.innerHTML = `Url: <a href="${project[6]}">${project[6]}</a>`
+            projectDetails.appendChild(projectDetailsUrl)
+
+            let projectDetailsTechnologies = document.createElement("p")
+            projectDetailsTechnologies.innerText = `Technologies used: ${project[7]}`
+            projectDetails.appendChild(projectDetailsTechnologies)
+
+            let projectDetailsDescription = document.createElement("p")
+            projectDetailsDescription.innerText = `Description: ${project[8]}`
+            projectDetails.appendChild(projectDetailsDescription)
+
+
         }
         projectIcon.addEventListener("click", displayProjectDetails)
 
