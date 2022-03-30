@@ -148,6 +148,11 @@ projects.forEach(
             }
             buttonCloseProjectDetails.addEventListener("click", closeProjectDetails)
 
+            let projectDetailsTitle = document.createElement("p")
+            projectDetailsTitle.innerText = "Portfolio Details"
+            projectDetailsTitle.classList.add("responsive-gallery__title")
+            projectDetails.appendChild(projectDetailsTitle)
+
             let projectDetailsWebsiteName = document.createElement("p")
             projectDetailsWebsiteName.innerText = project[4]
             projectDetails.appendChild(projectDetailsWebsiteName)
