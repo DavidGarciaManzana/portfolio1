@@ -129,6 +129,8 @@ projects.forEach(
             projectDetails.classList.add("responsive-gallery__modal-details")
             projectDetailsFather.appendChild(projectDetails)
 
+            document.body.style.overflow ="hidden"
+
             let buttonCloseProjectDetails = document.createElement("div")
             buttonCloseProjectDetails.innerHTML =
                 `
@@ -142,6 +144,7 @@ projects.forEach(
                 //Here's where the magic happens
                 projectDetailsFather.removeChild(projectDetails)
                 projectDetailsFather.classList.remove("display")
+                document.body.style.overflow ="scroll"
             }
             buttonCloseProjectDetails.addEventListener("click", closeProjectDetails)
 
@@ -207,7 +210,7 @@ projects.forEach(
             projectDetails.appendChild(projectDetailsTechnologies)
 
             let projectDetailsDescription = document.createElement("p")
-            projectDetailsDescription.innerText = `Description: ${project[8]}`
+            projectDetailsDescription.innerText = `Description: ${project[8]} aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa loaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa loaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa loaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa loaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa loaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa loaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa loaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa loaaaaaaaaaaaaaaaaa lorem`
             projectDetails.appendChild(projectDetailsDescription)
 
 
