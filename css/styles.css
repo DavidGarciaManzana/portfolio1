@@ -848,5 +848,17 @@ li {
   margin: 0;
   margin-bottom: 0.5rem;
 }
+.responsive-gallery__details-description-container {
+  background-color: #fff;
+  padding: 1em;
+}
+.responsive-gallery__details-footer {
+  background-color: black;
+  color: #fff;
+  min-height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /*# sourceMappingURL=styles.css.map */

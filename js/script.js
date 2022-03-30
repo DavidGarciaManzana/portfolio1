@@ -220,11 +220,19 @@ projects.forEach(
             projectDetailsInfoContainer.appendChild(projectDetailsTechnologies)
 
 
-
+            let projectDetailsDescriptionContainer = document.createElement("div")
+            projectDetailsDescriptionContainer.classList.add("responsive-gallery__details-description-container")
+            projectDetails.appendChild(projectDetailsDescriptionContainer)
 
             let projectDetailsDescription = document.createElement("p")
-            projectDetailsDescription.innerText = `Description: ${project[8]} aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa loaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa loaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa loaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa loaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa loaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa loaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa loaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa loaaaaaaaaaaaaaaaaa lorem`
-            projectDetails.appendChild(projectDetailsDescription)
+            projectDetailsDescription.innerHTML = `<h1>Description: </h1> <p>${project[8]}</p>`
+            projectDetailsDescriptionContainer.appendChild(projectDetailsDescription)
+
+            let projectDetailsFooter = document.createElement("footer")
+            projectDetailsFooter.classList.add("responsive-gallery__details-footer")
+            projectDetailsFooter.innerText = `© Copyright briandavid.nft`
+            projectDetails.appendChild(projectDetailsFooter)
+
 
 
         }

@@ -96,6 +96,7 @@
       border-right: 3.5px solid #fff;
       transform: rotateZ(45deg);
     }
+
     &-second {
       position: absolute;
       top: 37%;
@@ -122,6 +123,7 @@
       font-size: 2rem;
       margin-bottom: 1rem;
     }
+
     & h2 {
       margin: 0;
     }
@@ -140,6 +142,7 @@
     scroll-behavior: smooth;
 
   }
+
   &__image-container::-webkit-scrollbar {
     display: none;
   }
@@ -173,13 +176,31 @@
       font-size: 1.5rem;
       margin-bottom: 2rem;
     }
+
     & span {
       margin-right: 5rem;
     }
+
     & p {
       margin: 0;
       margin-bottom: .5rem;
     }
+  }
+
+  &__details-description-container {
+    background-color: #fff;
+    padding: 1em;
+
+
+  }
+
+  &__details-footer {
+    background-color: black;
+    color: #fff;
+    min-height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
