@@ -89,7 +89,7 @@ THREED_CUBE.addEventListener("animationend", jsBar)
 const responsiveGallery = document.getElementById("responsive-gallery")
 
 let projects = [
-    ["../media/images/dog.webp", "../media/images/cat.webp", "../media/images/parrot.jpg", "Web", "Portfolio", "01/04/2022", "briandavid.nft", "HTML, CSS, Flexbox, Grid, Animations, RWD & JS", "My personal portfolio where I show all my projects and what technologies I like to implement to them."],
+    ["../media/images/dog.webp", "../media/images/cat.webp", "../media/images/parrot.jpg", "Web", "Portfolio", "01/04/2022", "briandavid.nft", "HTML, CSS(SASS), Flexbox, Grid, Animations, RWD & JS", "My personal portfolio where I show all my projects and what technologies I like to implement to them."],
     ["../media/images/cat.webp", "../media/images/dog.webp", "../media/images/parrot.jpg", "Web", "Drilling Mud Mex", "17/02/2022", "davidgarxa.com/drilling-mud-mex/", "HTML, CSS, Flexbox, Animations & JS", "Petroleum Engineering web app that accurately describe the addition of weight material to clay/water muds."],
     ["../media/images/dog.webp", "../media/images/cat.webp", "../media/images/parrot.jpg", "Exercise", "Homer", "17/11/2021", "homer.com", "HTML & CSS", "Draw of homer using HTML & CSS"],
     ["../media/images/cat.webp", "../media/images/dog.webp", "../media/images/parrot.jpg", "Exercise", "Profile Card", "02/09/2021", "davidgarxa.com", "HTML & CSS", "A profile card made with HTML & CSS"],
@@ -195,26 +195,32 @@ projects.forEach(
             }
             swipeProjectImages()
 
+            let projectDetailsInfoContainer = document.createElement("div")
+            projectDetailsInfoContainer.classList.add("responsive-gallery__details-info-container")
+            projectDetails.appendChild(projectDetailsInfoContainer)
 
-            let projectDetailsInfo = document.createElement("p")
+            let projectDetailsInfo = document.createElement("h1")
             projectDetailsInfo.innerText = "Project information"
-            projectDetails.appendChild(projectDetailsInfo)
+            projectDetailsInfoContainer.appendChild(projectDetailsInfo)
 
             let projectDetailsCategory = document.createElement("p")
-            projectDetailsCategory.innerText = `Category: ${project[3]}`
-            projectDetails.appendChild(projectDetailsCategory)
+            projectDetailsCategory.innerHTML = `<p><strong>Category: </strong>${project[3]}</p>`
+            projectDetailsInfoContainer.appendChild(projectDetailsCategory)
 
             let projectDetailsDate = document.createElement("p")
-            projectDetailsDate.innerText = `Released date: ${project[5]}`
-            projectDetails.appendChild(projectDetailsDate)
+            projectDetailsDate.innerHTML = `<p><strong>Released date: </strong>${project[5]}</p>`
+            projectDetailsInfoContainer.appendChild(projectDetailsDate)
 
             let projectDetailsUrl = document.createElement("p")
-            projectDetailsUrl.innerHTML = `Url: <a href="${project[6]}">${project[6]}</a>`
-            projectDetails.appendChild(projectDetailsUrl)
+            projectDetailsUrl.innerHTML = `<strong>Url: </strong><a href="${project[6]}">${project[6]}</a>`
+            projectDetailsInfoContainer.appendChild(projectDetailsUrl)
 
             let projectDetailsTechnologies = document.createElement("p")
-            projectDetailsTechnologies.innerText = `Technologies used: ${project[7]}`
-            projectDetails.appendChild(projectDetailsTechnologies)
+            projectDetailsTechnologies.innerHTML = `<p><strong><span>Technologies used: </span></strong>${project[7]}</p>`
+            projectDetailsInfoContainer.appendChild(projectDetailsTechnologies)
+
+
+
 
             let projectDetailsDescription = document.createElement("p")
             projectDetailsDescription.innerText = `Description: ${project[8]} aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa loaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa loaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa loaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa loaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa loaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa loaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa loaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa loaaaaaaaaaaaaaaaaa lorem`
