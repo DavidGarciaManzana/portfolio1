@@ -96,6 +96,29 @@ let projects = [
 
 ]
 
+// filter button for finding projects
+let filterAll = document.getElementById("gallery-filter-all")
+let filterWeb = document.getElementById("gallery-filter-web")
+let filterExercises = document.getElementById("gallery-filter-exercises")
+let filter = ""
+
+
+// un includesel includes regresa true y false)
+
+
+let showWebProjects = () => {
+    projects.forEach(
+        function (project, index) {
+            if (project.includes("Web")) {
+                console.log(index)
+                return index
+            }
+        })
+}
+filterWeb.addEventListener("click", showWebProjects)
+
+
+// Projects with different information
 projects.forEach(
     function (project, index) {
         let projectContainer = document.createElement("div")
@@ -120,6 +143,18 @@ projects.forEach(
 
         //Put a different name to each "+" button
         projectIcon.setAttribute("id", `responsive-gallery__item-icon-${index}`)
+
+        let showWebProjects = (e) => {
+            e.preventDefault()
+            if (project.includes("Web")) {
+            } else {
+                // You can animate a class but you cant animate a removechild, which one is better?
+                // projectContainer.classList.add("disappear")
+                // responsiveGallery.removeChild(projectContainer)
+            }
+        }
+
+        filterWeb.addEventListener("click", showWebProjects)
 
         let projectDetailsFather = document.getElementById("responsive-gallery__modal")
         const displayProjectDetails = () => {
@@ -232,7 +267,6 @@ projects.forEach(
             projectDetailsFooter.classList.add("responsive-gallery__details-footer")
             projectDetailsFooter.innerText = `© Copyright briandavid.nft`
             projectDetails.appendChild(projectDetailsFooter)
-
 
 
         }

@@ -677,7 +677,8 @@ li {
   width: 90%;
   margin: auto 1rem;
 }
-.portfolio__filter {
+
+.gallery__filter {
   background-color: #fff;
   width: 15rem;
   height: 2rem;
@@ -859,6 +860,12 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.disappear {
+  height: 0;
+  width: 0;
+  transition: 1s;
 }
 
 /*# sourceMappingURL=styles.css.map */
