@@ -783,15 +783,22 @@ li {
   transform: rotateZ(-45deg);
 }
 .responsive-gallery__title {
-  background-color: rgba(255, 0, 0, 0.5);
+  background-color: var(--color-bone);
   position: relative;
-  top: -2rem;
+  top: -3rem;
   margin: 0;
   width: 100%;
-  height: 6rem;
+  height: 8rem;
   padding: 1rem;
-  font-size: 2rem;
   z-index: var(--z-modal-normal);
+}
+.responsive-gallery__title h1 {
+  margin: 0;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.responsive-gallery__title h2 {
+  margin: 0;
 }
 .responsive-gallery__image-container {
   display: flex;

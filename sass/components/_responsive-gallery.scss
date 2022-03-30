@@ -107,15 +107,23 @@
   }
 
   &__title {
-    background-color: hsl(0, 100%, 50%, .5);
+    background-color: var(--color-bone);
     position: relative;
-    top: -2rem;
+    top: -3rem;
     margin: 0;
     width: 100%;
-    height: 6rem;
+    height: 8rem;
     padding: 1rem;
-    font-size: 2rem;
     z-index: var(--z-modal-normal);
+
+    & h1 {
+      margin: 0;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    & h2 {
+      margin: 0;
+    }
   }
 
 
