@@ -81,6 +81,11 @@ li {
   transform: rotate(-45deg);
 }
 
+.contact__message-me-button {
+  display: block;
+  margin: 1rem auto;
+}
+
 :root {
   --color-main: #DD1335;
   --color-gradient1: #e42b3f;
@@ -1256,11 +1261,14 @@ li {
   margin-top: 0.7rem;
   text-align: center;
 }
+.contact__container-message-me {
+  min-height: 24rem;
+}
 .contact__message-me-form {
   width: 90%;
   background-color: #fff;
   margin: 1rem auto;
-  min-height: 23rem;
+  min-height: 22.8rem;
 }
 .contact__message-me-fieldset {
   padding: 1rem;
@@ -1284,10 +1292,6 @@ li {
 .contact__message-me-input.message::-webkit-input-placeholder {
   position: absolute;
   top: 0.5rem;
-}
-.contact__message-me-button {
-  display: block;
-  margin: 1rem auto;
 }
 
 /*# sourceMappingURL=styles.css.map */

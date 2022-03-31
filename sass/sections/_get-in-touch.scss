@@ -91,13 +91,14 @@
     text-align: center;
   }
 
-
+  &__container-message-me {
+    min-height: 24rem;
+  }
   &__message-me-form {
     width: 90%;
     background-color: #fff;
     margin: 1rem auto;
-    min-height: 23rem;
-
+    min-height: 22.8rem;
   }
 
   &__message-me-fieldset {
@@ -129,8 +130,5 @@
 
   }
 
-  &__message-me-button {
-    display: block;
-    margin: 1rem auto;
-  }
+
 }
