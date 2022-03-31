@@ -1,3 +1,23 @@
+.profile-card__button {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  &-link {
+    width: 2rem;
+    height: 2rem;
+  }
+  &-icon {
+    width: 2rem;
+  }
+}
+
+
+
+
+
 .hamburger-button {
   position: fixed;
   top: 1rem;

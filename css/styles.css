@@ -32,6 +32,22 @@ li {
   --z-modal-supreme: 10000;
 }
 
+.profile-card__button {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+.profile-card__button-link {
+  width: 2rem;
+  height: 2rem;
+}
+.profile-card__button-icon {
+  width: 2rem;
+}
+
 .hamburger-button {
   position: fixed;
   top: 1rem;
@@ -1305,7 +1321,6 @@ body.not-scrolling {
 }
 .contact__message-me-input {
   margin: 0.25rem;
-  min-height: 2rem;
   padding: 0.5rem;
   width: 100%;
   border: 1px solid var(--color-gray);
