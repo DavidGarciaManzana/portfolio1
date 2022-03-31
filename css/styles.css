@@ -673,6 +673,17 @@ li {
 .portfolio__description {
   margin: 0 1rem;
 }
+.portfolio__line {
+  top: 1rem;
+  margin-bottom: 2rem;
+}
+.portfolio__title {
+  margin: 0;
+  position: relative;
+  top: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
 .portfolio__gif {
   width: 90%;
   margin: auto 1rem;
