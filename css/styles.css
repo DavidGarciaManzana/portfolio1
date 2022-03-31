@@ -1294,4 +1294,13 @@ li {
   top: 0.5rem;
 }
 
+footer {
+  background-color: black;
+  color: #fff;
+  min-height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /*# sourceMappingURL=styles.css.map */
