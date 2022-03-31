@@ -4,7 +4,7 @@
 
 .creative-process__diagram {
   margin-top: 1rem;
-  background-color: gray;
+  background-color: var(--color-darker-background);
   min-height: 23.5rem;
   position: relative;
   display: flex;
@@ -12,9 +12,10 @@
   align-items: flex-start;
 
   &-head {
+    border-radius: 20px;
     position: relative;
     top: 2rem;
-    background-color: red;
+    background-color: var(--color-main);
     min-height: 5rem;
     min-width: 11%;
     clip-path: polygon(0% 0%, 50% 25%, 100% 0%, 100% 100%, 0% 100%);
@@ -24,26 +25,44 @@
     align-items: center;
 
     &-image {
-      margin-top: 2rem;
+      margin-top: 1.3rem;
       width: 2rem;
     }
+
     & p {
       margin: 0;
     }
   }
 
-  &-first-slash {
+  &-first-paragraph {
+    position: absolute;
+    top: 35%;
+    left: 2%;
+    width: 2.2rem;
+    min-height: 1rem;
+    text-align: center;
+
+    & h2 {
+      margin: 0;
+      font-size: 1rem;
+    }
+  }
+
+  &-head-slash {
+    border-radius: 20px;
     position: relative;
     top: 6.5rem;
-    background-color: red;
+    background-color: var(--color-gradient1);
     min-height: 1rem;
     min-width: 6%;
-    clip-path: polygon(0% 100% , 100% 0%, 100% 100%);
+    clip-path: polygon(0% 100%, 100% 0%, 100% 100%);
   }
+
   &-second {
+    border-radius: 20px;
     position: relative;
     top: 6.5rem;
-    background-color: red;
+    background-color: var(--color-gradient2);
     min-height: 3.75rem;
     min-width: 11%;
     display: flex;
@@ -52,24 +71,45 @@
     align-items: center;
 
     &-image {
-      width: 2rem;
+      width: 1.7rem;
     }
+
     & p {
       margin: 0;
     }
   }
+
+  &-second-paragraph {
+    position: absolute;
+    top: 48%;
+    left: 19%;
+    width: 2.2rem;
+    min-height: 1rem;
+
+
+    & h2 {
+      font-size: 1rem;
+      margin: 0;
+      position: absolute;
+      left: -20%;
+    }
+  }
+
   &-second-slash {
+    border-radius: 20px;
     position: relative;
     top: 9.2rem;
-    background-color: red;
+    background-color: var(--color-gradient3);
     min-height: 1rem;
     min-width: 6%;
-    clip-path: polygon(0% 100% , 100% 0%, 100% 100%);
+    clip-path: polygon(0% 100%, 100% 0%, 100% 100%);
   }
+
   &-third {
+    border-radius: 20px;
     position: relative;
     top: 9.2rem;
-    background-color: red;
+    background-color: var(--color-gradient4);
     min-height: 3.75rem;
     min-width: 11%;
     display: flex;
@@ -80,22 +120,43 @@
     &-image {
       width: 2rem;
     }
+
     & p {
       margin: 0;
     }
   }
+
+  &-third-paragraph {
+    position: absolute;
+    top: 59%;
+    left: 36%;
+    width: 2.2rem;
+    min-height: 1rem;
+
+
+    & h2 {
+      font-size: 1rem;
+      margin: 0;
+      position: absolute;
+      left: -15%;
+    }
+  }
+
   &-third-slash {
+    border-radius: 20px;
     position: relative;
     top: 12rem;
-    background-color: red;
+    background-color: var(--color-gradient5);
     min-height: 1rem;
     min-width: 6%;
-    clip-path: polygon(0% 100% , 100% 0%, 100% 100%);
+    clip-path: polygon(0% 100%, 100% 0%, 100% 100%);
   }
+
   &-fourth {
+    border-radius: 20px;
     position: relative;
     top: 12rem;
-    background-color: red;
+    background-color: var(--color-gradient6);
     min-height: 3.75rem;
     min-width: 11%;
     display: flex;
@@ -104,24 +165,45 @@
     align-items: center;
 
     &-image {
-      width: 2rem;
+      width: 1.8rem;
     }
+
     & p {
       margin: 0;
     }
   }
+
+  &-fourth-paragraph {
+    position: absolute;
+    top: 43%;
+    left: 53%;
+    width: 2.2rem;
+    min-height: 1rem;
+
+
+    & h2 {
+      font-size: 1rem;
+      margin: 0;
+      position: absolute;
+      left: -30%;
+    }
+  }
+
   &-fourth-slash {
+    border-radius: 20px;
     position: relative;
     top: 14.7rem;
-    background-color: red;
+    background-color: var(--color-gradient7);
     min-height: 1rem;
     min-width: 6%;
-    clip-path: polygon(0% 100% , 100% 0%, 100% 100%);
+    clip-path: polygon(0% 100%, 100% 0%, 100% 100%);
   }
+
   &-fifth {
+    border-radius: 20px;
     position: relative;
     top: 14.7rem;
-    background-color: red;
+    background-color: var(--color-gradient8);
     min-height: 3.75rem;
     min-width: 11%;
     display: flex;
@@ -130,24 +212,44 @@
     align-items: center;
 
     &-image {
-      width: 2rem;
+      width: 1.8rem;
     }
+
     & p {
       margin: 0;
     }
   }
+
+  &-fifth-paragraph {
+    position: absolute;
+    top: 54%;
+    left: 70%;
+    width: 2.2rem;
+    min-height: 1rem;
+
+    text-align: center;
+
+    & h2 {
+      font-size: 1rem;
+      margin: 0;
+    }
+  }
+
   &-fifth-slash {
+    border-radius: 20px;
     position: relative;
     top: 17.5rem;
-    background-color: red;
+    background-color: var(--color-gradient9);
     min-height: 1rem;
     min-width: 6%;
-    clip-path: polygon(0% 100% , 100% 0%, 100% 100%);
+    clip-path: polygon(0% 100%, 100% 0%, 100% 100%);
   }
+
   &-sixth {
+    border-radius: 20px;
     position: relative;
     top: 17.5rem;
-    background-color: red;
+    background-color: var(--color-gradient10);
     min-height: 3.75rem;
     min-width: 11%;
     display: flex;
@@ -156,10 +258,27 @@
     align-items: center;
 
     &-image {
-      width: 2rem;
+      width: 1.5rem;
     }
+
     & p {
       margin: 0;
+    }
+  }
+
+  &-sixth-paragraph {
+    position: absolute;
+    top: 67%;
+    left: 86%;
+    width: 2.2rem;
+    min-height: 1rem;
+
+
+    & h2 {
+      font-size: 1rem;
+      margin: 0;
+      position: absolute;
+      left: -23%;
     }
   }
 }

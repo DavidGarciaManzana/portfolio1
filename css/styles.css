@@ -83,8 +83,18 @@ li {
 
 :root {
   --color-main: #DD1335;
-  --color-secondary: #FF676B;
+  --color-gradient1: #e42b3f;
+  --color-gradient2: #ea3c49;
+  --color-gradient3: #f14a53;
+  --color-gradient4: #f7575d;
+  --color-gradient5: #fa5c79;
+  --color-gradient6: #f96694;
+  --color-gradient7: #f372ad;
+  --color-gradient8: #d486d2;
+  --color-gradient9: #ac99e6;
+  --color-gradient10: #85a8e9;
   --color-details: #70B2DE;
+  --color-secondary: #FF676B;
   --color-details-dark: #004D73;
   --color-bone: #e3dac9;
   --color-alert: red;
@@ -916,7 +926,7 @@ li {
 
 .creative-process__diagram {
   margin-top: 1rem;
-  background-color: gray;
+  background-color: var(--color-darker-background);
   min-height: 23.5rem;
   position: relative;
   display: flex;
@@ -924,9 +934,10 @@ li {
   align-items: flex-start;
 }
 .creative-process__diagram-head {
+  border-radius: 20px;
   position: relative;
   top: 2rem;
-  background-color: red;
+  background-color: var(--color-main);
   min-height: 5rem;
   min-width: 11%;
   clip-path: polygon(0% 0%, 50% 25%, 100% 0%, 100% 100%, 0% 100%);
@@ -936,24 +947,38 @@ li {
   align-items: center;
 }
 .creative-process__diagram-head-image {
-  margin-top: 2rem;
+  margin-top: 1.3rem;
   width: 2rem;
 }
 .creative-process__diagram-head p {
   margin: 0;
 }
-.creative-process__diagram-first-slash {
+.creative-process__diagram-first-paragraph {
+  position: absolute;
+  top: 35%;
+  left: 2%;
+  width: 2.2rem;
+  min-height: 1rem;
+  text-align: center;
+}
+.creative-process__diagram-first-paragraph h2 {
+  margin: 0;
+  font-size: 1rem;
+}
+.creative-process__diagram-head-slash {
+  border-radius: 20px;
   position: relative;
   top: 6.5rem;
-  background-color: red;
+  background-color: var(--color-gradient1);
   min-height: 1rem;
   min-width: 6%;
   clip-path: polygon(0% 100%, 100% 0%, 100% 100%);
 }
 .creative-process__diagram-second {
+  border-radius: 20px;
   position: relative;
   top: 6.5rem;
-  background-color: red;
+  background-color: var(--color-gradient2);
   min-height: 3.75rem;
   min-width: 11%;
   display: flex;
@@ -962,23 +987,38 @@ li {
   align-items: center;
 }
 .creative-process__diagram-second-image {
-  width: 2rem;
+  width: 1.7rem;
 }
 .creative-process__diagram-second p {
   margin: 0;
 }
+.creative-process__diagram-second-paragraph {
+  position: absolute;
+  top: 48%;
+  left: 19%;
+  width: 2.2rem;
+  min-height: 1rem;
+}
+.creative-process__diagram-second-paragraph h2 {
+  font-size: 1rem;
+  margin: 0;
+  position: absolute;
+  left: -20%;
+}
 .creative-process__diagram-second-slash {
+  border-radius: 20px;
   position: relative;
   top: 9.2rem;
-  background-color: red;
+  background-color: var(--color-gradient3);
   min-height: 1rem;
   min-width: 6%;
   clip-path: polygon(0% 100%, 100% 0%, 100% 100%);
 }
 .creative-process__diagram-third {
+  border-radius: 20px;
   position: relative;
   top: 9.2rem;
-  background-color: red;
+  background-color: var(--color-gradient4);
   min-height: 3.75rem;
   min-width: 11%;
   display: flex;
@@ -992,18 +1032,33 @@ li {
 .creative-process__diagram-third p {
   margin: 0;
 }
+.creative-process__diagram-third-paragraph {
+  position: absolute;
+  top: 59%;
+  left: 36%;
+  width: 2.2rem;
+  min-height: 1rem;
+}
+.creative-process__diagram-third-paragraph h2 {
+  font-size: 1rem;
+  margin: 0;
+  position: absolute;
+  left: -15%;
+}
 .creative-process__diagram-third-slash {
+  border-radius: 20px;
   position: relative;
   top: 12rem;
-  background-color: red;
+  background-color: var(--color-gradient5);
   min-height: 1rem;
   min-width: 6%;
   clip-path: polygon(0% 100%, 100% 0%, 100% 100%);
 }
 .creative-process__diagram-fourth {
+  border-radius: 20px;
   position: relative;
   top: 12rem;
-  background-color: red;
+  background-color: var(--color-gradient6);
   min-height: 3.75rem;
   min-width: 11%;
   display: flex;
@@ -1012,23 +1067,38 @@ li {
   align-items: center;
 }
 .creative-process__diagram-fourth-image {
-  width: 2rem;
+  width: 1.8rem;
 }
 .creative-process__diagram-fourth p {
   margin: 0;
 }
+.creative-process__diagram-fourth-paragraph {
+  position: absolute;
+  top: 43%;
+  left: 53%;
+  width: 2.2rem;
+  min-height: 1rem;
+}
+.creative-process__diagram-fourth-paragraph h2 {
+  font-size: 1rem;
+  margin: 0;
+  position: absolute;
+  left: -30%;
+}
 .creative-process__diagram-fourth-slash {
+  border-radius: 20px;
   position: relative;
   top: 14.7rem;
-  background-color: red;
+  background-color: var(--color-gradient7);
   min-height: 1rem;
   min-width: 6%;
   clip-path: polygon(0% 100%, 100% 0%, 100% 100%);
 }
 .creative-process__diagram-fifth {
+  border-radius: 20px;
   position: relative;
   top: 14.7rem;
-  background-color: red;
+  background-color: var(--color-gradient8);
   min-height: 3.75rem;
   min-width: 11%;
   display: flex;
@@ -1037,23 +1107,37 @@ li {
   align-items: center;
 }
 .creative-process__diagram-fifth-image {
-  width: 2rem;
+  width: 1.8rem;
 }
 .creative-process__diagram-fifth p {
   margin: 0;
 }
+.creative-process__diagram-fifth-paragraph {
+  position: absolute;
+  top: 54%;
+  left: 70%;
+  width: 2.2rem;
+  min-height: 1rem;
+  text-align: center;
+}
+.creative-process__diagram-fifth-paragraph h2 {
+  font-size: 1rem;
+  margin: 0;
+}
 .creative-process__diagram-fifth-slash {
+  border-radius: 20px;
   position: relative;
   top: 17.5rem;
-  background-color: red;
+  background-color: var(--color-gradient9);
   min-height: 1rem;
   min-width: 6%;
   clip-path: polygon(0% 100%, 100% 0%, 100% 100%);
 }
 .creative-process__diagram-sixth {
+  border-radius: 20px;
   position: relative;
   top: 17.5rem;
-  background-color: red;
+  background-color: var(--color-gradient10);
   min-height: 3.75rem;
   min-width: 11%;
   display: flex;
@@ -1062,10 +1146,23 @@ li {
   align-items: center;
 }
 .creative-process__diagram-sixth-image {
-  width: 2rem;
+  width: 1.5rem;
 }
 .creative-process__diagram-sixth p {
   margin: 0;
+}
+.creative-process__diagram-sixth-paragraph {
+  position: absolute;
+  top: 67%;
+  left: 86%;
+  width: 2.2rem;
+  min-height: 1rem;
+}
+.creative-process__diagram-sixth-paragraph h2 {
+  font-size: 1rem;
+  margin: 0;
+  position: absolute;
+  left: -23%;
 }
 
 /*# sourceMappingURL=styles.css.map */
