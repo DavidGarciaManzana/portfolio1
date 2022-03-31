@@ -99,7 +99,9 @@ li {
   --color-bone: #e3dac9;
   --color-alert: red;
   --color-darker-background: hsla(23, 100%, 95%, 100%);
+  --color-darker-background-secondary: #DDD1BE;
   --color-box-shadow: darkgray;
+  --color-gray: #ced4da;
 }
 
 .profile-card__title {
@@ -1163,6 +1165,129 @@ li {
   margin: 0;
   position: absolute;
   left: -23%;
+}
+
+.contact {
+  background-color: var(--color-darker-background-secondary);
+}
+.contact__title {
+  margin-left: 1rem;
+}
+.contact__line {
+  display: inline-block;
+  width: 2.5rem;
+  border-bottom: 3px solid var(--color-details-dark);
+  margin-left: 1rem;
+  position: relative;
+  top: -1rem;
+}
+.contact__description {
+  margin: 0 1rem;
+}
+.contact__title {
+  margin-top: 0;
+  position: relative;
+  top: 1rem;
+}
+.contact__line {
+  top: 0;
+}
+.contact__container-email-me {
+  background-color: #fff;
+  width: 90%;
+  min-height: 8rem;
+  margin: 1rem auto;
+}
+.contact__email-me-father-image {
+  position: relative;
+  top: 1rem;
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--color-secondary);
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+}
+.contact__email-me-image {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+.contact__email-me-title {
+  margin: 0;
+  margin-top: 1.8rem;
+  text-align: center;
+}
+.contact__email-me-description {
+  margin: 0;
+  margin-top: 0.7rem;
+  text-align: center;
+}
+.contact__container-call-me {
+  background-color: #fff;
+  width: 90%;
+  min-height: 8rem;
+  margin: 1rem auto;
+}
+.contact__call-me-father-image {
+  position: relative;
+  top: 1rem;
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--color-secondary);
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+}
+.contact__call-me-image {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+.contact__call-me-title {
+  margin: 0;
+  margin-top: 1.8rem;
+  text-align: center;
+}
+.contact__call-me-description {
+  margin: 0;
+  margin-top: 0.7rem;
+  text-align: center;
+}
+.contact__message-me-form {
+  width: 90%;
+  background-color: #fff;
+  margin: 1rem auto;
+  min-height: 23rem;
+}
+.contact__message-me-fieldset {
+  padding: 1rem;
+  padding-bottom: 0;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact__message-me-input {
+  margin: 0.25rem;
+  min-height: 2rem;
+  padding: 0.5rem;
+  width: 100%;
+  border: 1px solid var(--color-gray);
+}
+.contact__message-me-input.message {
+  min-height: 10rem;
+}
+.contact__message-me-input.message::-webkit-input-placeholder {
+  position: absolute;
+  top: 0.5rem;
+}
+.contact__message-me-button {
+  display: block;
+  margin: 1rem auto;
 }
 
 /*# sourceMappingURL=styles.css.map */

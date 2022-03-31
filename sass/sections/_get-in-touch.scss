@@ -1,0 +1,136 @@
+.contact {
+  background-color: var(--color-darker-background-secondary);
+  @include underline;
+
+  &__title {
+    margin-top: 0;
+    position: relative;
+    top: 1rem;
+  }
+
+  &__line {
+    top: 0;
+  }
+
+  &__container-email-me {
+    background-color: #fff;
+    width: 90%;
+    min-height: 8rem;
+    margin: 1rem auto;
+
+
+  }
+
+  &__email-me-father-image {
+    position: relative;
+    top: 1rem;
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--color-secondary);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+  }
+
+  &__email-me-image {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+
+  &__email-me-title {
+    margin: 0;
+    margin-top: 1.8rem;
+    text-align: center;
+  }
+
+  &__email-me-description {
+    margin: 0;
+    margin-top: 0.7rem;
+    text-align: center;
+  }
+
+
+  &__container-call-me {
+    background-color: #fff;
+    width: 90%;
+    min-height: 8rem;
+    margin: 1rem auto;
+
+
+  }
+
+  &__call-me-father-image {
+    position: relative;
+    top: 1rem;
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--color-secondary);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+  }
+
+  &__call-me-image {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+
+  &__call-me-title {
+    margin: 0;
+    margin-top: 1.8rem;
+    text-align: center;
+  }
+
+  &__call-me-description {
+    margin: 0;
+    margin-top: 0.7rem;
+    text-align: center;
+  }
+
+
+  &__message-me-form {
+    width: 90%;
+    background-color: #fff;
+    margin: 1rem auto;
+    min-height: 23rem;
+
+  }
+
+  &__message-me-fieldset {
+    padding: 1rem;
+    padding-bottom: 0;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+  }
+
+  &__message-me-input {
+    margin: .25rem;
+    min-height: 2rem;
+    padding: .5rem;
+    width: 100%;
+    border: 1px solid var(--color-gray);
+
+    &.message {
+      min-height: 10rem;
+    }
+
+    &.message::-webkit-input-placeholder {
+      position: absolute;
+      top: .5rem;
+    }
+
+  }
+
+  &__message-me-button {
+    display: block;
+    margin: 1rem auto;
+  }
+}
