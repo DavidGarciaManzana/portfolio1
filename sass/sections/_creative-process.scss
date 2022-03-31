@@ -1,0 +1,165 @@
+.creative-process {
+  @include underline;
+}
+
+.creative-process__diagram {
+  margin-top: 1rem;
+  background-color: gray;
+  min-height: 23.5rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  &-head {
+    position: relative;
+    top: 2rem;
+    background-color: red;
+    min-height: 5rem;
+    min-width: 11%;
+    clip-path: polygon(0% 0%, 50% 25%, 100% 0%, 100% 100%, 0% 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &-image {
+      margin-top: 2rem;
+      width: 2rem;
+    }
+    & p {
+      margin: 0;
+    }
+  }
+
+  &-first-slash {
+    position: relative;
+    top: 6.5rem;
+    background-color: red;
+    min-height: 1rem;
+    min-width: 6%;
+    clip-path: polygon(0% 100% , 100% 0%, 100% 100%);
+  }
+  &-second {
+    position: relative;
+    top: 6.5rem;
+    background-color: red;
+    min-height: 3.75rem;
+    min-width: 11%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &-image {
+      width: 2rem;
+    }
+    & p {
+      margin: 0;
+    }
+  }
+  &-second-slash {
+    position: relative;
+    top: 9.2rem;
+    background-color: red;
+    min-height: 1rem;
+    min-width: 6%;
+    clip-path: polygon(0% 100% , 100% 0%, 100% 100%);
+  }
+  &-third {
+    position: relative;
+    top: 9.2rem;
+    background-color: red;
+    min-height: 3.75rem;
+    min-width: 11%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &-image {
+      width: 2rem;
+    }
+    & p {
+      margin: 0;
+    }
+  }
+  &-third-slash {
+    position: relative;
+    top: 12rem;
+    background-color: red;
+    min-height: 1rem;
+    min-width: 6%;
+    clip-path: polygon(0% 100% , 100% 0%, 100% 100%);
+  }
+  &-fourth {
+    position: relative;
+    top: 12rem;
+    background-color: red;
+    min-height: 3.75rem;
+    min-width: 11%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &-image {
+      width: 2rem;
+    }
+    & p {
+      margin: 0;
+    }
+  }
+  &-fourth-slash {
+    position: relative;
+    top: 14.7rem;
+    background-color: red;
+    min-height: 1rem;
+    min-width: 6%;
+    clip-path: polygon(0% 100% , 100% 0%, 100% 100%);
+  }
+  &-fifth {
+    position: relative;
+    top: 14.7rem;
+    background-color: red;
+    min-height: 3.75rem;
+    min-width: 11%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &-image {
+      width: 2rem;
+    }
+    & p {
+      margin: 0;
+    }
+  }
+  &-fifth-slash {
+    position: relative;
+    top: 17.5rem;
+    background-color: red;
+    min-height: 1rem;
+    min-width: 6%;
+    clip-path: polygon(0% 100% , 100% 0%, 100% 100%);
+  }
+  &-sixth {
+    position: relative;
+    top: 17.5rem;
+    background-color: red;
+    min-height: 3.75rem;
+    min-width: 11%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &-image {
+      width: 2rem;
+    }
+    & p {
+      margin: 0;
+    }
+  }
+}

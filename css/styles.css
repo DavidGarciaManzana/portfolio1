@@ -899,4 +899,173 @@ li {
   display: none;
 }
 
+.creative-process__title {
+  margin-left: 1rem;
+}
+.creative-process__line {
+  display: inline-block;
+  width: 2.5rem;
+  border-bottom: 3px solid var(--color-details-dark);
+  margin-left: 1rem;
+  position: relative;
+  top: -1rem;
+}
+.creative-process__description {
+  margin: 0 1rem;
+}
+
+.creative-process__diagram {
+  margin-top: 1rem;
+  background-color: gray;
+  min-height: 23.5rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.creative-process__diagram-head {
+  position: relative;
+  top: 2rem;
+  background-color: red;
+  min-height: 5rem;
+  min-width: 11%;
+  clip-path: polygon(0% 0%, 50% 25%, 100% 0%, 100% 100%, 0% 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.creative-process__diagram-head-image {
+  margin-top: 2rem;
+  width: 2rem;
+}
+.creative-process__diagram-head p {
+  margin: 0;
+}
+.creative-process__diagram-first-slash {
+  position: relative;
+  top: 6.5rem;
+  background-color: red;
+  min-height: 1rem;
+  min-width: 6%;
+  clip-path: polygon(0% 100%, 100% 0%, 100% 100%);
+}
+.creative-process__diagram-second {
+  position: relative;
+  top: 6.5rem;
+  background-color: red;
+  min-height: 3.75rem;
+  min-width: 11%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.creative-process__diagram-second-image {
+  width: 2rem;
+}
+.creative-process__diagram-second p {
+  margin: 0;
+}
+.creative-process__diagram-second-slash {
+  position: relative;
+  top: 9.2rem;
+  background-color: red;
+  min-height: 1rem;
+  min-width: 6%;
+  clip-path: polygon(0% 100%, 100% 0%, 100% 100%);
+}
+.creative-process__diagram-third {
+  position: relative;
+  top: 9.2rem;
+  background-color: red;
+  min-height: 3.75rem;
+  min-width: 11%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.creative-process__diagram-third-image {
+  width: 2rem;
+}
+.creative-process__diagram-third p {
+  margin: 0;
+}
+.creative-process__diagram-third-slash {
+  position: relative;
+  top: 12rem;
+  background-color: red;
+  min-height: 1rem;
+  min-width: 6%;
+  clip-path: polygon(0% 100%, 100% 0%, 100% 100%);
+}
+.creative-process__diagram-fourth {
+  position: relative;
+  top: 12rem;
+  background-color: red;
+  min-height: 3.75rem;
+  min-width: 11%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.creative-process__diagram-fourth-image {
+  width: 2rem;
+}
+.creative-process__diagram-fourth p {
+  margin: 0;
+}
+.creative-process__diagram-fourth-slash {
+  position: relative;
+  top: 14.7rem;
+  background-color: red;
+  min-height: 1rem;
+  min-width: 6%;
+  clip-path: polygon(0% 100%, 100% 0%, 100% 100%);
+}
+.creative-process__diagram-fifth {
+  position: relative;
+  top: 14.7rem;
+  background-color: red;
+  min-height: 3.75rem;
+  min-width: 11%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.creative-process__diagram-fifth-image {
+  width: 2rem;
+}
+.creative-process__diagram-fifth p {
+  margin: 0;
+}
+.creative-process__diagram-fifth-slash {
+  position: relative;
+  top: 17.5rem;
+  background-color: red;
+  min-height: 1rem;
+  min-width: 6%;
+  clip-path: polygon(0% 100%, 100% 0%, 100% 100%);
+}
+.creative-process__diagram-sixth {
+  position: relative;
+  top: 17.5rem;
+  background-color: red;
+  min-height: 3.75rem;
+  min-width: 11%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.creative-process__diagram-sixth-image {
+  width: 2rem;
+}
+.creative-process__diagram-sixth p {
+  margin: 0;
+}
+
 /*# sourceMappingURL=styles.css.map */
