@@ -694,6 +694,7 @@ li {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
   justify-items: center;
+  transition: 1s;
 }
 .responsive-gallery__item {
   width: 90%;
@@ -862,10 +863,29 @@ li {
   align-items: center;
 }
 
-.disappear {
+.disappear-class {
+  margin-bottom: 0;
   height: 0;
-  width: 0;
   transition: 1s;
+}
+.disappear-class img {
+  height: 0;
+  opacity: 0;
+  transition: 1s;
+}
+.disappear-class div {
+  height: 0;
+  opacity: 0;
+  transition: 1s;
+}
+.disappear-class p {
+  height: 0;
+  opacity: 0;
+  transition: 1s;
+}
+
+.disappear-display {
+  display: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

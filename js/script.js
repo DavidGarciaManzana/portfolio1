@@ -90,8 +90,12 @@ const responsiveGallery = document.getElementById("responsive-gallery")
 
 let projects = [
     ["../media/images/dog.webp", "../media/images/cat.webp", "../media/images/parrot.jpg", "Web", "Portfolio", "01/04/2022", "briandavid.nft", "HTML, CSS(SASS), Flexbox, Grid, Animations, RWD & JS", "My personal portfolio where I show all my projects and what technologies I like to implement to them."],
+    ["../media/images/dog.webp", "../media/images/cat.webp", "../media/images/parrot.jpg", "Exercise", "Homer", "17/11/2021", "homer.com", "HTML & CSS", "Draw of homer using HTML & CSS"],
+    ["../media/images/cat.webp", "../media/images/dog.webp", "../media/images/parrot.jpg", "Web", "Drilling Mud Mex", "17/02/2022", "davidgarxa.com/drilling-mud-mex/", "HTML, CSS, Flexbox, Animations & JS", "Petroleum Engineering web app that accurately describe the addition of weight material to clay/water muds."],
     ["../media/images/cat.webp", "../media/images/dog.webp", "../media/images/parrot.jpg", "Web", "Drilling Mud Mex", "17/02/2022", "davidgarxa.com/drilling-mud-mex/", "HTML, CSS, Flexbox, Animations & JS", "Petroleum Engineering web app that accurately describe the addition of weight material to clay/water muds."],
     ["../media/images/dog.webp", "../media/images/cat.webp", "../media/images/parrot.jpg", "Exercise", "Homer", "17/11/2021", "homer.com", "HTML & CSS", "Draw of homer using HTML & CSS"],
+    ["../media/images/dog.webp", "../media/images/cat.webp", "../media/images/parrot.jpg", "Exercise", "Homer", "17/11/2021", "homer.com", "HTML & CSS", "Draw of homer using HTML & CSS"],
+    ["../media/images/cat.webp", "../media/images/dog.webp", "../media/images/parrot.jpg", "Web", "Drilling Mud Mex", "17/02/2022", "davidgarxa.com/drilling-mud-mex/", "HTML, CSS, Flexbox, Animations & JS", "Petroleum Engineering web app that accurately describe the addition of weight material to clay/water muds."],
     ["../media/images/cat.webp", "../media/images/dog.webp", "../media/images/parrot.jpg", "Exercise", "Profile Card", "02/09/2021", "davidgarxa.com", "HTML & CSS", "A profile card made with HTML & CSS"],
 
 ]
@@ -101,22 +105,6 @@ let filterAll = document.getElementById("gallery-filter-all")
 let filterWeb = document.getElementById("gallery-filter-web")
 let filterExercises = document.getElementById("gallery-filter-exercises")
 let filter = ""
-
-
-// un includesel includes regresa true y false)
-
-
-let showWebProjects = () => {
-    projects.forEach(
-        function (project, index) {
-            if (project.includes("Web")) {
-                console.log(index)
-                return index
-            }
-        })
-}
-filterWeb.addEventListener("click", showWebProjects)
-
 
 // Projects with different information
 projects.forEach(
@@ -133,7 +121,7 @@ projects.forEach(
 
         let projectName = document.createElement("div")
         projectName.classList.add("responsive-gallery__item-name")
-        projectName.innerText = project[4]
+        projectName.innerHTML = `<p>${project[4]}</p>`
         projectContainer.appendChild(projectName)
 
         let projectIcon = document.createElement("div")
@@ -144,17 +132,48 @@ projects.forEach(
         //Put a different name to each "+" button
         projectIcon.setAttribute("id", `responsive-gallery__item-icon-${index}`)
 
+
+        // all filter button
+        let showAllProjects = (e) => {
+            e.preventDefault()
+            projectContainer.classList.remove("disappear-display")
+            projectContainer.classList.remove("disappear-class")
+        }
+        filterAll.addEventListener("click", showAllProjects)
+
+        // web filter button
         let showWebProjects = (e) => {
             e.preventDefault()
             if (project.includes("Web")) {
+                projectContainer.classList.remove("disappear-display")
+                projectContainer.classList.remove("disappear-class")
             } else {
-                // You can animate a class but you cant animate a removechild, which one is better?
-                // projectContainer.classList.add("disappear")
-                // responsiveGallery.removeChild(projectContainer)
+                projectContainer.classList.add("disappear-class")
+                let dissapear = () => {
+                    projectContainer.classList.add("disappear-display")
+                }
+                setTimeout(dissapear, 1001)
             }
         }
 
         filterWeb.addEventListener("click", showWebProjects)
+
+        //exercises filter button
+        let showExercisesProjects = (e) => {
+            e.preventDefault()
+            if (project.includes("Exercise")) {
+                projectContainer.classList.remove("disappear-display")
+                projectContainer.classList.remove("disappear-class")
+            } else {
+                projectContainer.classList.add("disappear-class")
+                let dissapear = () => {
+                    projectContainer.classList.add("disappear-display")
+                }
+                setTimeout(dissapear, 1001)
+            }
+        }
+
+        filterExercises.addEventListener("click", showExercisesProjects)
 
         let projectDetailsFather = document.getElementById("responsive-gallery__modal")
         const displayProjectDetails = () => {
