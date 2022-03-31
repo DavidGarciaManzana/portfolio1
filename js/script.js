@@ -1,9 +1,11 @@
 // hamburger button
 const HAMBURGER_BUTTON = document.getElementById("hamburger-button")
 const MENU_OPENED = document.getElementById("menu")
-const showMenu = () => {
+const showMenu = (e) => {
+    e.preventDefault()
     HAMBURGER_BUTTON.classList.toggle("button-clicked")
     MENU_OPENED.classList.toggle("menu-opened")
+    document.body.classList.toggle("not-scrolling")
 }
 HAMBURGER_BUTTON.addEventListener("click", showMenu)
 

@@ -17,6 +17,7 @@
   //todo podemos usar un grid gap para solucionar el problema del margin bottom
   transition: 1s ;
 
+
   &__item {
     width: 90%;
     height: 15rem;
@@ -66,6 +67,7 @@
   }
 
   .display {
+    z-index: var(--z-tooltip);
     background-color: transparent;
     animation: heighta 2s forwards;
     @keyframes heighta {

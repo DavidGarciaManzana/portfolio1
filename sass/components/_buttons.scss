@@ -7,6 +7,7 @@
   height: 2.5rem;
   background-color: var(--color-main);
   border-radius: 25px;
+  z-index: var(--z-normal);
 
   &__slide {
     position: relative;

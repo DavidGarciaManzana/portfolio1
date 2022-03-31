@@ -41,6 +41,7 @@ li {
   height: 2.5rem;
   background-color: var(--color-main);
   border-radius: 25px;
+  z-index: var(--z-normal);
 }
 .hamburger-button__slide {
   position: relative;
@@ -141,6 +142,10 @@ li {
   left: 10%;
 }
 
+body.not-scrolling {
+  overflow: hidden;
+}
+
 .menu {
   background-color: var(--color-secondary);
   position: absolute;
@@ -216,6 +221,12 @@ li {
   left: -10%;
   top: 1rem;
 }
+.navigation a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
 .navigation li {
   padding: 0.7rem;
   display: flex;
@@ -257,7 +268,9 @@ li {
 
 .occupation__title {
   margin-left: 1rem;
-  white-space: pre-wrap;
+}
+.occupation__title span {
+  display: block;
 }
 .occupation__description-initial, .occupation__description-final {
   margin: 0 1rem;
@@ -695,6 +708,7 @@ li {
   margin-bottom: 2rem;
 }
 .portfolio__title {
+  width: 70%;
   margin: 0;
   position: relative;
   top: 1rem;
@@ -766,6 +780,7 @@ li {
   position: fixed;
 }
 .responsive-gallery .display {
+  z-index: var(--z-tooltip);
   background-color: transparent;
   animation: heighta 2s forwards;
 }
@@ -939,6 +954,7 @@ li {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  z-index: var(--z-back);
 }
 .creative-process__diagram-head {
   border-radius: 20px;
@@ -1190,6 +1206,7 @@ li {
   margin: 0 1rem;
 }
 .contact__title {
+  width: 70%;
   margin-top: 0;
   position: relative;
   top: 1rem;

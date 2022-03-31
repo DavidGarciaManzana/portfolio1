@@ -2,6 +2,12 @@
   position: relative;
   left: -10%;
   top: 1rem;
+  & a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+  }
   & li {
     padding: .7rem;
     display: flex;
