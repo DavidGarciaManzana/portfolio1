@@ -297,3 +297,21 @@ projects.forEach(
     }
 )
 
+// "Created scroll function that detects the scrolling with percentage"
+
+
+// ------------------------------------------------------------------------SCROLL----------------------------------------------------------------------------------
+
+let totalHeight = document.documentElement.scrollHeight;
+let viewportHeight =  document.documentElement.clientHeight;
+
+let scrollHeightPercentage = (totalHeight-viewportHeight) / 100;
+
+let percentageScroll = 0;
+
+scrolling = () => {
+    percentageScroll = Math.round(scrollY/scrollHeightPercentage)
+    console.log(percentageScroll);
+}
+
+addEventListener("scroll", scrolling)
