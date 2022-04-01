@@ -1,16 +1,65 @@
-// hamburger button
+// ------------------------------------------------------------------------SCROLL----------------------------------------------------------------------------------
+
+let totalHeight = document.documentElement.scrollHeight;
+let viewportHeight = document.documentElement.clientHeight;
+let scrollHeightPercentage = (totalHeight - viewportHeight) / 100;
+let percentageScroll = 0;
+
+
+scrolling = () => {
+    percentageScroll = Math.round(scrollY / scrollHeightPercentage)
+}
+
+addEventListener("scroll", scrolling)
+
+// --------------------------------------------------------------HAMBURGER BUTTON----------------------------------------
 const HAMBURGER_BUTTON = document.getElementById("hamburger-button")
 const MENU_OPENED = document.getElementById("menu")
-const showMenu = (e) => {
-    e.preventDefault()
+const toggleMenu = (e) => {
     HAMBURGER_BUTTON.classList.toggle("button-clicked")
     MENU_OPENED.classList.toggle("menu-opened")
     document.body.classList.toggle("not-scrolling")
 }
-HAMBURGER_BUTTON.addEventListener("click", showMenu)
+let hamburgerAction = (e) => {
+    e.preventDefault()
+    toggleMenu()
+}
+
+HAMBURGER_BUTTON.addEventListener("click", hamburgerAction)
 
 
-// 3d cube
+
+
+
+
+// --------------------------------------------------------------NAV BAR--------------------------------------------------
+const HOME_BUTTON = document.getElementById("home")
+const ABOUT_BUTTON = document.getElementById("about")
+const SKILLS_BUTTON = document.getElementById("skills")
+const CV_BUTTON = document.getElementById("cv")
+const PORTFOLIO_BUTTON = document.getElementById("portfolio")
+const CONTACT_BUTTON = document.getElementById("contact")
+
+let takeMeToHome = () => {
+    document.body.classList.toggle("not-scrolling")
+    setTimeout(function () {
+        HAMBURGER_BUTTON.classList.toggle("button-clicked")
+        MENU_OPENED.classList.toggle("menu-opened")
+        window.scroll({
+            top: top,
+            behavior: 'smooth'
+        });
+    }, 1)
+}
+
+HOME_BUTTON.addEventListener("click", takeMeToHome)
+ABOUT_BUTTON.addEventListener("click", toggleMenu)
+SKILLS_BUTTON.addEventListener("click", toggleMenu)
+CV_BUTTON.addEventListener("click", toggleMenu)
+PORTFOLIO_BUTTON.addEventListener("click", toggleMenu)
+CONTACT_BUTTON.addEventListener("click", toggleMenu)
+
+// -----------------------------------------------------3D CUBE------------------------------------------------------------
 
 const THREED_CUBE = document.getElementById("threed-cube__cube")
 let htmlText = document.getElementById("html__text")
@@ -297,21 +346,5 @@ projects.forEach(
     }
 )
 
-// "Created scroll function that detects the scrolling with percentage"
 
 
-// ------------------------------------------------------------------------SCROLL----------------------------------------------------------------------------------
-
-let totalHeight = document.documentElement.scrollHeight;
-let viewportHeight =  document.documentElement.clientHeight;
-
-let scrollHeightPercentage = (totalHeight-viewportHeight) / 100;
-
-let percentageScroll = 0;
-
-scrolling = () => {
-    percentageScroll = Math.round(scrollY/scrollHeightPercentage)
-    console.log(percentageScroll);
-}
-
-addEventListener("scroll", scrolling)

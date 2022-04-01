@@ -4,12 +4,12 @@ body.not-scrolling {
 
 .menu {
   background-color: var(--color-secondary);
-  position: absolute;
+  position: fixed;
   top: 0;
   left: -100%;
   height: 100vh;
   width: 80%;
-  transition: transform 1s;
+  transition: transform 2s;
   z-index: var(--z-modal);
 
   &-opened {
