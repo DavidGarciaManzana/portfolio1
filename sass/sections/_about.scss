@@ -1,8 +1,9 @@
 .about {
   @include underline;
   &__image {
-    margin: 1rem;
-    width:18rem;
+    display: block;
+    margin: 1rem auto 2rem;
+    width:90%;
   }
 }
 

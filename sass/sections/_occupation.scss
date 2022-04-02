@@ -18,6 +18,14 @@
     align-items: center;
   }
 
+  &__web-development {
+    margin: 2rem .7rem 1rem;
+  }
+
+  &__mobile-os {
+    margin: 1rem .7rem 2rem;
+  }
+
   strong + span {
     margin-left: 1rem;
   }

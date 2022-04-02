@@ -36,6 +36,10 @@ li {
   --z-modal-supreme: 10000;
 }
 
+:root {
+  --bp-small: ;
+}
+
 .profile-card__button {
   width: 2rem;
   height: 2rem;
@@ -309,8 +313,9 @@ body.not-scrolling {
   margin: 0 1rem;
 }
 .about__image {
-  margin: 1rem;
-  width: 18rem;
+  display: block;
+  margin: 1rem auto 2rem;
+  width: 90%;
 }
 
 .occupation__title {
@@ -326,6 +331,12 @@ body.not-scrolling {
   display: flex;
   margin: 1rem 0.7rem;
   align-items: center;
+}
+.occupation__web-development {
+  margin: 2rem 0.7rem 1rem;
+}
+.occupation__mobile-os {
+  margin: 1rem 0.7rem 2rem;
 }
 .occupation strong + span {
   margin-left: 1rem;

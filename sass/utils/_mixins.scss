@@ -81,3 +81,10 @@
   margin: 1rem;
 }
 
+//---------------------------------------------------RESPONSIVE WEB DESIGN------------------------------------------------
+
+@mixin rwd ($breakpoint) {
+  @media screen and (min-width: $breakpoint) {
+    @content
+  }
+}
