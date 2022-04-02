@@ -102,6 +102,23 @@ li {
   transform: rotate(-45deg);
 }
 
+.up-button.display {
+  position: fixed;
+  top: 37rem;
+  right: 1rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--color-main);
+  border-radius: 25px;
+  z-index: var(--z-normal);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.up-button__image {
+  height: 1rem;
+}
+
 .contact__message-me-button {
   position: relative;
   top: 0.5rem;

@@ -15,7 +15,8 @@
     <div class="profile-card__button">
         <a class="profile-card__button-button-link" href="#about-section">
             <svg class="profile-card__button-icon" viewBox="0 0 24 24">
-                <polyline fill="none" stroke="#DD1335" stroke-width="2" points="7.086 3.174 17.086 13.174 7.086 23.174" transform="scale(1 -1) rotate(-89 -1.32 0)"/>
+                <polyline fill="none" stroke="#DD1335" stroke-width="2" points="7.086 3.174 17.086 13.174 7.086 23.174"
+                          transform="scale(1 -1) rotate(-89 -1.32 0)"/>
             </svg>
         </a>
     </div>
@@ -25,6 +26,12 @@
         <div class="hamburger-button__slide third"></div>
     </a>
     <div class="profile-card__image"></div>
+    <a class="up-button" id="up-button" href="#">
+        <svg class="up-button__image" x="0px" y="0px" viewBox="0 0 483.284 483.284">
+            <polygon style="fill:#fff;"
+                     points="375.784,134.142 241.642,0 107.5,134.142 135.784,162.427 221.888,76.323 221.888,483.284 261.888,483.284 261.888,76.815 347.5,162.426 "/>
+        </svg>
+    </a>
     <div class="menu" id="menu">
         <div class="menu__circle-picture"></div>
         <h1 class="menu__name">Brian Garcia</h1>
@@ -289,9 +296,9 @@
         <span class="portfolio__line"></span>
         <video autoplay loop muted class="portfolio__gif" src="media/videos/spongebob-gif.mp4"></video>
         <div class="gallery__filter">
-            <a class="gallery__filter-all" id="gallery-filter-all" href="">All</a>
-            <a class="gallery__filter-web" id="gallery-filter-web" href="">Web</a>
-            <a class="gallery__filter-exercises" id="gallery-filter-exercises" href="">Exercises</a>
+            <a class="gallery__filter-all" id="gallery-filter-all" href="#">All</a>
+            <a class="gallery__filter-web" id="gallery-filter-web" href="#">Web</a>
+            <a class="gallery__filter-exercises" id="gallery-filter-exercises" href="#">Exercises</a>
         </div>
         <div class="responsive-gallery" id="responsive-gallery">
             <div class="responsive-gallery__modal" id="responsive-gallery__modal"></div>
@@ -388,7 +395,8 @@
                     <input class="contact__message-me-input email" type="email" placeholder="Your Email">
                     <input class="contact__message-me-input subject" type="text" placeholder="Subject">
                     <textarea class="contact__message-me-input message" placeholder="Message"></textarea>
-                <button class="contact__message-me-button">Send message </button>
+                    <button class="contact__message-me-button">Send message</button>
+                </fieldset>
             </form>
         </div>
     </section>

@@ -5,14 +5,19 @@ let viewportHeight = document.documentElement.clientHeight;
 let scrollHeightPercentage = (totalHeight - viewportHeight) / 100;
 let percentageScroll = 0;
 
-
+let upButton = document.getElementById("up-button")
 scrolling = () => {
     percentageScroll = Math.round(scrollY / scrollHeightPercentage)
+    if (percentageScroll>4) {
+        upButton.classList.add("display")
+    } else {
+        upButton.classList.remove("display")
+    }
 }
 
 addEventListener("scroll", scrolling)
 
-// --------------------------------------------------------------HAMBURGER BUTTON----------------------------------------
+// --------------------------------------------------------------HAMBURGER BUTTON & UP BUTTON----------------------------------------
 const HAMBURGER_BUTTON = document.getElementById("hamburger-button")
 const MENU_OPENED = document.getElementById("menu")
 const toggleMenu = (e) => {
@@ -27,9 +32,14 @@ let hamburgerAction = (e) => {
 
 HAMBURGER_BUTTON.addEventListener("click", hamburgerAction)
 
-
-
-
+const UP_BUTTON = document.getElementById("up-button")
+let up = () => {
+    window.scroll({
+        top: top,
+        behavior: 'smooth'
+    });
+}
+UP_BUTTON.addEventListener("click",up)
 
 
 // --------------------------------------------------------------NAV BAR--------------------------------------------------
@@ -45,10 +55,7 @@ let takeMeToHome = () => {
     setTimeout(function () {
         HAMBURGER_BUTTON.classList.toggle("button-clicked")
         MENU_OPENED.classList.toggle("menu-opened")
-        window.scroll({
-            top: top,
-            behavior: 'smooth'
-        });
+        up()
     }, 1)
 }
 
