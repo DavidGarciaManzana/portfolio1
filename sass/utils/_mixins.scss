@@ -39,6 +39,7 @@
   margin-bottom: 0;
   background-color: var(--color-details);
 }
+
 //resume details line and circle
 
 @mixin details {
@@ -76,6 +77,7 @@
   padding: 0;
   list-style-position: inside;
 }
+
 @mixin resume-inside-list-item {
   list-style: disc;
   margin: 1rem;
@@ -83,8 +85,16 @@
 
 //---------------------------------------------------RESPONSIVE WEB DESIGN------------------------------------------------
 
-@mixin rwd ($breakpoint) {
-  @media screen and (min-width: $breakpoint) {
-    @content
+@mixin rwd($bp) {
+  @if (map-has-key($breakpoints, $bp)) {
+    @media screen and (min-width: map-get($breakpoints, $bp)) {
+      @content
+    }
+  } @else {
+    @media screen and (min-width: $bp) {
+      @content
+    }
   }
+
 }
+

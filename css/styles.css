@@ -36,10 +36,6 @@ li {
   --z-modal-supreme: 10000;
 }
 
-:root {
-  --bp-small: ;
-}
-
 .profile-card__button {
   width: 2rem;
   height: 2rem;
@@ -179,6 +175,12 @@ li {
   height: 100vh;
   width: 100%;
   z-index: var(--z-back);
+}
+@media screen and (min-width: 375px) {
+  .profile-card__image {
+    background-size: 150%;
+    background-position: 0 100%;
+  }
 }
 
 .profile-card__title {
@@ -325,7 +327,13 @@ body.not-scrolling {
   display: block;
 }
 .occupation__description-initial, .occupation__description-final {
-  margin: 0 1rem;
+  margin: 2rem 1rem;
+}
+@media screen and (min-width: 375px) {
+  .occupation__description-initial, .occupation__description-final {
+    display: inline-block;
+    margin: 1rem;
+  }
 }
 .occupation__info {
   display: flex;
@@ -366,6 +374,11 @@ body.not-scrolling {
 }
 .skills__description {
   margin: 0 1rem;
+}
+@media screen and (min-width: 375px) {
+  .skills {
+    margin-bottom: 1.8rem;
+  }
 }
 
 .threed-cube {
@@ -509,6 +522,9 @@ body.not-scrolling {
 .resume__sumary-name, .resume__sumary-description, .resume__sumary-list {
   margin-left: 3rem;
 }
+.resume__sumary-description {
+  margin-right: 1rem;
+}
 .resume__sumary-list {
   padding: 0;
   list-style-position: inside;
@@ -535,6 +551,9 @@ body.not-scrolling {
   border: 2px solid var(--color-details-dark);
   border-radius: 100%;
   background-color: #fff;
+  position: absolute;
+  right: 0.95rem;
+  top: 0.2rem;
 }
 .resume__sumary-detail-line {
   display: block;
@@ -543,12 +562,22 @@ body.not-scrolling {
   width: 0.6rem;
   height: 13.5rem;
   border-right: 2px solid var(--color-details-dark);
+  top: 1rem;
+  height: 14.8rem;
 }
 .resume__education-title {
   margin-left: 1rem;
 }
 .resume__education-name, .resume__education-date, .resume__education-place, .resume__education-description {
   margin-left: 3rem;
+}
+.resume__education-place, .resume__education-description {
+  margin-right: 1rem;
+}
+@media screen and (min-width: 375px) {
+  .resume__education-name span {
+    margin-right: 1rem;
+  }
 }
 .resume__education-date {
   width: 7rem;
@@ -592,7 +621,7 @@ body.not-scrolling {
   position: absolute;
   top: 1.2rem;
   right: 1.4rem;
-  height: 16.9rem;
+  height: 18rem;
 }
 .resume__education-details-english {
   position: absolute;
@@ -603,6 +632,7 @@ body.not-scrolling {
   justify-content: center;
   align-items: center;
   justify-content: flex-start;
+  height: 17rem;
 }
 .resume__education-detail-circle-english {
   display: block;
@@ -613,7 +643,10 @@ body.not-scrolling {
   border: 2px solid var(--color-details-dark);
   border-radius: 100%;
   background-color: #fff;
-  top: 0.45rem;
+  z-index: var(--z-normal);
+  position: absolute;
+  right: 0.95rem;
+  top: 0.4rem;
 }
 .resume__education-detail-line-english {
   display: block;
@@ -622,8 +655,13 @@ body.not-scrolling {
   width: 0.6rem;
   height: 13.5rem;
   border-right: 2px solid var(--color-details-dark);
-  height: 14.5rem;
+  height: 16.2rem;
   top: 0.4rem;
+}
+@media screen and (min-width: 375px) {
+  .resume__education-detail-line-english {
+    height: 15rem;
+  }
 }
 .resume__experience-title {
   margin-left: 1rem;
@@ -631,8 +669,12 @@ body.not-scrolling {
 .resume__experience-date, .resume__experience-name, .resume__experience-place, .resume__experience-description, .resume__experience-description-final, .resume__experience-list-freelance {
   margin-left: 3rem;
 }
+.resume__experience-place, .resume__experience-description {
+  margin-right: 1rem;
+}
 .resume__experience-description-final {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
+  margin-right: 1rem;
 }
 .resume__experience-list-freelance {
   padding: 0;
@@ -741,7 +783,12 @@ body.not-scrolling {
   position: absolute;
   right: 1.4rem;
   top: 1.3rem;
-  height: 13rem;
+  height: 12rem;
+}
+@media screen and (min-width: 375px) {
+  .resume__experience-detail-line-ecommerce {
+    height: 9.7rem;
+  }
 }
 
 .portfolio {

@@ -1,3 +1,6 @@
 .skills {
-    @include underline
+    @include underline;
+    @include rwd(xsmall){
+        margin-bottom: 1.8rem;
+    }
 }

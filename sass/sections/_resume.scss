@@ -15,6 +15,10 @@
     @include l-margin3;
   }
 
+  &__sumary-description {
+    margin-right: 1rem;
+  }
+
   &__sumary-list {
     @include resume-inside-list;
   }
@@ -29,10 +33,15 @@
 
   &__sumary-detail-circle {
     @include details-circle;
+    position: absolute;
+    right: 0.95rem;
+    top: 0.2rem;
   }
 
   &__sumary-detail-line {
-    @include details-line
+    @include details-line;
+    top: 1rem;
+    height: 14.8rem;
   }
 
 
@@ -43,6 +52,16 @@
 
   &__education-name, &__education-date, &__education-place, &__education-description {
     @include l-margin3;
+  }
+
+  &__education-place, &__education-description {
+    margin-right: 1rem;
+  }
+
+  &__education-name span {
+    @include rwd(xsmall) {
+      margin-right: 1rem;
+    }
   }
 
   &__education-date {
@@ -65,23 +84,32 @@
     position: absolute;
     top: 1.2rem;
     right: 1.4rem;
-    height: 16.9rem;
+    height: 18rem;
   }
 
   &__education-details-english {
     @include details;
     justify-content: flex-start;
+    height: 17rem;
+
   }
 
   &__education-detail-circle-english {
     @include details-circle;
-    top: .45rem;
+    z-index: var(--z-normal);
+    position: absolute;
+    right: 0.95rem;
+    top: 0.4rem;
   }
 
   &__education-detail-line-english {
     @include details-line;
-    height: 14.5rem;
+    height: 16.2rem;
     top: .4rem;
+
+    @include rwd(xsmall) {
+      height: 15rem;
+    }
   }
 
 
@@ -91,12 +119,17 @@
     @include l-margin1;
   }
 
-  &__experience-date, &__experience-name, &__experience-place, &__experience-description, &__experience-description-final,&__experience-list-freelance {
+  &__experience-date, &__experience-name, &__experience-place, &__experience-description, &__experience-description-final, &__experience-list-freelance {
     @include l-margin3;
   }
 
+  &__experience-place, &__experience-description {
+    margin-right: 1rem;
+  }
+
   &__experience-description-final {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
+    margin-right: 1rem;
   }
 
   &__experience-list-freelance {
@@ -111,6 +144,7 @@
     @include date;
     @include l-margin3;
   }
+
   &__experience-date-internship, &__experience-date-ecommerce {
     @include date;
     @include l-margin3;
@@ -157,7 +191,11 @@
     position: absolute;
     right: 1.4rem;
     top: 1.3rem;
-    height: 13rem;
+    height: 12rem;
+
+    @include rwd(xsmall) {
+      height: 9.7rem;
+    }
   }
 
 }
