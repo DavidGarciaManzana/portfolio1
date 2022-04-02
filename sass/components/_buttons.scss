@@ -80,6 +80,7 @@
 }
 
 .up-button {
+  display: none;
   &.display {
     position: fixed;
     top: 37rem;

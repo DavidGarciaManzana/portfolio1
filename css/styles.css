@@ -102,6 +102,9 @@ li {
   transform: rotate(-45deg);
 }
 
+.up-button {
+  display: none;
+}
 .up-button.display {
   position: fixed;
   top: 37rem;
