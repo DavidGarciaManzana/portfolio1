@@ -63,6 +63,22 @@ li {
   border-radius: 25px;
   z-index: var(--z-normal);
 }
+@media screen and (min-width: 425px) {
+  .hamburger-button {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: var(--color-main);
+    border-radius: 40px;
+    z-index: var(--z-normal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
 .hamburger-button__slide {
   position: relative;
   left: 30%;
@@ -70,15 +86,39 @@ li {
   width: 40%;
   height: 0.1rem;
 }
+@media screen and (min-width: 425px) {
+  .hamburger-button__slide {
+    position: relative;
+    left: 0;
+    background-color: #fff;
+    width: 40%;
+    height: 0.1rem;
+    margin: 0.1rem;
+  }
+}
 .hamburger-button .first {
   top: 0.9rem;
-  left: 30%;
+}
+@media screen and (min-width: 425px) {
+  .hamburger-button .first {
+    top: 0;
+  }
 }
 .hamburger-button .second {
   top: 1.1rem;
 }
+@media screen and (min-width: 425px) {
+  .hamburger-button .second {
+    top: 0;
+  }
+}
 .hamburger-button .third {
   top: 1.3rem;
+}
+@media screen and (min-width: 425px) {
+  .hamburger-button .third {
+    top: 0;
+  }
 }
 .hamburger-button:hover {
   cursor: pointer;
@@ -90,9 +130,28 @@ li {
   width: 50%;
   height: 0.1rem;
 }
+@media screen and (min-width: 425px) {
+  .hamburger-button.button-clicked .hamburger-button__slide {
+    left: 0;
+  }
+}
 .hamburger-button.button-clicked .first {
   top: 1.2rem;
   transform: rotate(45deg);
+}
+@media screen and (min-width: 425px) {
+  .hamburger-button.button-clicked .first {
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    transform: rotate(45deg);
+    width: 1px;
+    height: 2rem;
+    border: 2px solid #fff;
+    background-color: #fff;
+    border-radius: 30px;
+    margin: 0;
+  }
 }
 .hamburger-button.button-clicked .second {
   display: none;
@@ -100,6 +159,20 @@ li {
 .hamburger-button.button-clicked .third {
   top: 1.1rem;
   transform: rotate(-45deg);
+}
+@media screen and (min-width: 425px) {
+  .hamburger-button.button-clicked .third {
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    transform: rotate(-45deg);
+    width: 1px;
+    height: 2rem;
+    border: 2px solid #fff;
+    background-color: #fff;
+    border-radius: 25px;
+    margin: 0;
+  }
 }
 
 .up-button {
@@ -117,6 +190,21 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (min-width: 425px) {
+  .up-button.display {
+    position: fixed;
+    top: 35.5rem;
+    right: 1rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: var(--color-main);
+    border-radius: 35px;
+    z-index: var(--z-normal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .up-button__image {
   height: 1rem;
@@ -319,6 +407,11 @@ body.not-scrolling {
   margin: 1rem auto 2rem;
   width: 90%;
 }
+@media screen and (min-width: 425px) {
+  .about__image {
+    width: 80%;
+  }
+}
 
 .occupation__title {
   margin-left: 1rem;
@@ -391,6 +484,11 @@ body.not-scrolling {
   align-items: center;
   will-change: auto;
   margin: 1rem;
+}
+@media screen and (min-width: 425px) {
+  .threed-cube {
+    margin: 2rem;
+  }
 }
 .threed-cube .threed-cube__face {
   position: absolute;
@@ -565,6 +663,12 @@ body.not-scrolling {
   top: 1rem;
   height: 14.8rem;
 }
+@media screen and (min-width: 425px) {
+  .resume__sumary-detail-line {
+    top: -0.6rem;
+    height: 11.5rem;
+  }
+}
 .resume__education-title {
   margin-left: 1rem;
 }
@@ -577,6 +681,11 @@ body.not-scrolling {
 @media screen and (min-width: 375px) {
   .resume__education-name span {
     margin-right: 1rem;
+  }
+}
+@media screen and (min-width: 425px) {
+  .resume__education-name span {
+    margin-right: 4rem;
   }
 }
 .resume__education-date {
@@ -661,6 +770,11 @@ body.not-scrolling {
 @media screen and (min-width: 375px) {
   .resume__education-detail-line-english {
     height: 15rem;
+  }
+}
+@media screen and (min-width: 425px) {
+  .resume__education-detail-line-english {
+    height: 14rem;
   }
 }
 .resume__experience-title {
@@ -788,6 +902,11 @@ body.not-scrolling {
 @media screen and (min-width: 375px) {
   .resume__experience-detail-line-ecommerce {
     height: 9.7rem;
+  }
+}
+@media screen and (min-width: 425px) {
+  .resume__experience-detail-line-ecommerce {
+    height: 8.3rem;
   }
 }
 

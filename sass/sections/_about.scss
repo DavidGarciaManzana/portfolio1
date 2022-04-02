@@ -4,6 +4,9 @@
     display: block;
     margin: 1rem auto 2rem;
     width:90%;
+    @include rwd(small) {
+      width:80%;
+    }
   }
 }
 

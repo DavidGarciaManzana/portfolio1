@@ -27,25 +27,57 @@
   border-radius: 25px;
   z-index: var(--z-normal);
 
+  @include rwd(small) {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: var(--color-main);
+    border-radius: 40px;
+    z-index: var(--z-normal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+  }
+
   &__slide {
     position: relative;
     left: 30%;
     background-color: #fff;
     width: 40%;
     height: .1rem;
+    @include rwd(small) {
+      position: relative;
+      left: 0;
+      background-color: #fff;
+      width: 40%;
+      height: 0.1rem;
+      margin: 0.1rem;
+    }
   }
 
   .first {
     top: .9rem;
-    left: 30%;
+    @include rwd(small) {
+      top: 0;
+    }
   }
 
   .second {
     top: 1.1rem;
+    @include rwd(small) {
+      top: 0;
+    }
   }
 
   .third {
     top: 1.3rem;
+    @include rwd(small) {
+      top: 0;
+    }
   }
 
   &:hover {
@@ -59,11 +91,27 @@
       background-color: #fff;
       width: 50%;
       height: .1rem;
+      @include rwd(small) {
+        left: 0;
+      }
     }
 
     .first {
       top: 1.2rem;
       transform: rotate(45deg);
+
+      @include rwd(small){
+        position: absolute;
+        top: 20%;
+        left: 45%;
+        transform: rotate(45deg);
+        width: 1px;
+        height: 2rem;
+        border: 2px solid #fff;
+        background-color: #fff;
+        border-radius: 30px;
+        margin: 0;
+      }
 
     }
 
@@ -74,6 +122,18 @@
     .third {
       top: 1.1rem;
       transform: rotate(-45deg);
+      @include rwd(small){
+        position: absolute;
+        top: 20%;
+        left: 45%;
+        transform: rotate(-45deg);
+        width: 1px;
+        height: 2rem;
+        border: 2px solid #fff;
+        background-color: #fff;
+        border-radius: 25px;
+        margin: 0;
+      }
 
     }
   }
@@ -81,6 +141,7 @@
 
 .up-button {
   display: none;
+
   &.display {
     position: fixed;
     top: 37rem;
@@ -93,7 +154,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include rwd(small) {
+      position: fixed;
+      top: 35.5rem;
+      right: 1rem;
+      width: 3.5rem;
+      height: 3.5rem;
+      background-color: var(--color-main);
+      border-radius: 35px;
+      z-index: var(--z-normal);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
+
   &__image {
     height: 1rem;
   }

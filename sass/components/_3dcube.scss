@@ -8,6 +8,9 @@
   align-items: center;
   will-change: auto;
   margin: 1rem;
+  @include rwd(small) {
+    margin: 2rem;
+  }
 
   .threed-cube__face {
     position: absolute;

@@ -42,6 +42,11 @@
     @include details-line;
     top: 1rem;
     height: 14.8rem;
+
+    @include rwd(small) {
+      top: -0.6rem;
+      height: 11.5rem;
+    }
   }
 
 
@@ -61,6 +66,9 @@
   &__education-name span {
     @include rwd(xsmall) {
       margin-right: 1rem;
+    }
+    @include rwd(small) {
+      margin-right: 4rem;
     }
   }
 
@@ -109,6 +117,9 @@
 
     @include rwd(xsmall) {
       height: 15rem;
+    }
+    @include rwd(small) {
+      height: 14rem;
     }
   }
 
@@ -195,6 +206,9 @@
 
     @include rwd(xsmall) {
       height: 9.7rem;
+    }
+    @include rwd(small) {
+      height: 8.3rem;
     }
   }
 
