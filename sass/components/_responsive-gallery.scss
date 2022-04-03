@@ -8,13 +8,25 @@
   align-items: center;
   margin: 1rem auto;
   box-shadow: 5px 5px 10px darkgray;
+  @include rwd(small) {
+    width: 20rem;
+    height: 3rem;
+    border-radius: 40px;
+  }
+
+  & a {
+    @include rwd(small) {
+      font-size: 1.5rem;
+    }
+
+  }
 }
 
 .responsive-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
   justify-items: center;
-  transition: 1s ;
+  transition: 1s;
 
 
   &__item {
@@ -43,6 +55,12 @@
     justify-content: space-between;
     width: 16rem;
     height: 3rem;
+  }
+
+  &__item-name p {
+    @include rwd(small) {
+      font-size: 1.5rem;
+    }
   }
 
   &__item-icon {
@@ -222,7 +240,7 @@
   //todo para tablet y laptop considera cambiar el width y no el height
   margin-bottom: 0;
   height: 0;
-  transition: 1s ;
+  transition: 1s;
 
 
   & img {

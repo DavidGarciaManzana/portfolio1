@@ -1,11 +1,36 @@
 .about {
   @include underline;
+
+  &__title {
+    @include rwd(small) {
+      font-size: 2rem;
+    }
+  }
+
+  &__description {
+    @include rwd(small) {
+      font-size: 1.1rem;
+    }
+    @include rwd(590px) {
+      font-size: 1.3rem;
+    }
+  }
+
   &__image {
     display: block;
     margin: 1rem auto 2rem;
-    width:90%;
-    @include rwd(small) {
-      width:80%;
+    width: 90%;
+    @include rwd(400px) {
+      width: 80%;
+    }
+    @include rwd(570px) {
+      width: 70%;
+    }
+    @include rwd(650px) {
+      width: 60%;
+    }
+    @include rwd(750px) {
+      width: 50%;
     }
   }
 }

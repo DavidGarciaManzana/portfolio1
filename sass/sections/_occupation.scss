@@ -2,9 +2,15 @@
 
   &__title {
     margin-left: 1rem;
+    @include rwd(small) {
+      font-size: 2rem;
+    }
 
     & span {
       display: block;
+      @include rwd(610px) {
+        display: inline;
+      }
     }
   }
 
@@ -15,12 +21,46 @@
       display: inline-block;
       margin: 1rem;
     }
-  }
+    @include rwd(small) {
+      font-size: 1.1rem;
+      margin: 0 1rem;
+    }
+    @include rwd(520px) {
+      font-size: 1.2rem;
+    }
+    @include rwd(565px) {
+      font-size: 1.25rem;
+    }
+    @include rwd(585px) {
+      font-size: 1.27rem;
+    }
 
+  }
+  &__description-final {
+    @include rwd(445px) {
+      margin-bottom: 1rem;
+    }
+    @include rwd(610px) {
+      margin-bottom: 4rem;
+    }
+  }
   &__info {
     display: flex;
     margin: 1rem .7rem;
     align-items: center;
+    @include rwd(small) {
+      font-size: 1.1rem;
+    }
+    @include rwd(520px) {
+      font-size: 1.2rem;
+    }
+    @include rwd(565px) {
+      font-size: 1.25rem;
+    }
+    @include rwd(585px) {
+      font-size: 1.27rem;
+    }
+
   }
 
   &__web-development {

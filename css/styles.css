@@ -63,7 +63,7 @@ li {
   border-radius: 25px;
   z-index: var(--z-normal);
 }
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 400px) {
   .hamburger-button {
     position: fixed;
     top: 1rem;
@@ -86,7 +86,7 @@ li {
   width: 40%;
   height: 0.1rem;
 }
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 400px) {
   .hamburger-button__slide {
     position: relative;
     left: 0;
@@ -99,7 +99,7 @@ li {
 .hamburger-button .first {
   top: 0.9rem;
 }
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 400px) {
   .hamburger-button .first {
     top: 0;
   }
@@ -107,7 +107,7 @@ li {
 .hamburger-button .second {
   top: 1.1rem;
 }
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 400px) {
   .hamburger-button .second {
     top: 0;
   }
@@ -115,7 +115,7 @@ li {
 .hamburger-button .third {
   top: 1.3rem;
 }
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 400px) {
   .hamburger-button .third {
     top: 0;
   }
@@ -130,7 +130,7 @@ li {
   width: 50%;
   height: 0.1rem;
 }
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 400px) {
   .hamburger-button.button-clicked .hamburger-button__slide {
     left: 0;
   }
@@ -139,7 +139,7 @@ li {
   top: 1.2rem;
   transform: rotate(45deg);
 }
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 400px) {
   .hamburger-button.button-clicked .first {
     position: absolute;
     top: 20%;
@@ -160,7 +160,7 @@ li {
   top: 1.1rem;
   transform: rotate(-45deg);
 }
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 400px) {
   .hamburger-button.button-clicked .third {
     position: absolute;
     top: 20%;
@@ -191,7 +191,7 @@ li {
   justify-content: center;
   align-items: center;
 }
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 400px) {
   .up-button.display {
     position: fixed;
     top: 35.5rem;
@@ -270,17 +270,75 @@ li {
     background-position: 0 100%;
   }
 }
+@media screen and (min-width: 520px) {
+  .profile-card__image {
+    background-size: 105%;
+    background-position: 55% 0;
+  }
+}
+@media screen and (min-width: 600px) {
+  .profile-card__image {
+    background-size: 100%;
+    background-position: 0 -10rem;
+  }
+}
 
 .profile-card__title {
   position: absolute;
   top: 40%;
   left: 10%;
 }
+@media screen and (min-width: 600px) {
+  .profile-card__title {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 630px) {
+  .profile-card__title {
+    top: 45%;
+  }
+}
+@media screen and (min-width: 670px) {
+  .profile-card__title {
+    top: 50%;
+  }
+}
+@media screen and (min-width: 730px) {
+  .profile-card__title {
+    top: 25%;
+  }
+}
 
 .profile-card__subtitle {
   position: absolute;
   top: 47%;
   left: 10%;
+}
+@media screen and (min-width: 600px) {
+  .profile-card__subtitle {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 630px) {
+  .profile-card__subtitle {
+    top: 55%;
+  }
+}
+@media screen and (min-width: 670px) {
+  .profile-card__subtitle {
+    top: 60%;
+  }
+}
+@media screen and (min-width: 730px) {
+  .profile-card__subtitle {
+    top: 35%;
+  }
 }
 
 body.not-scrolling {
@@ -402,22 +460,62 @@ body.not-scrolling {
 .about__description {
   margin: 0 1rem;
 }
+@media screen and (min-width: 425px) {
+  .about__title {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 425px) {
+  .about__description {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (min-width: 590px) {
+  .about__description {
+    font-size: 1.3rem;
+  }
+}
 .about__image {
   display: block;
   margin: 1rem auto 2rem;
   width: 90%;
 }
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 400px) {
   .about__image {
     width: 80%;
+  }
+}
+@media screen and (min-width: 570px) {
+  .about__image {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 650px) {
+  .about__image {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 750px) {
+  .about__image {
+    width: 50%;
   }
 }
 
 .occupation__title {
   margin-left: 1rem;
 }
+@media screen and (min-width: 425px) {
+  .occupation__title {
+    font-size: 2rem;
+  }
+}
 .occupation__title span {
   display: block;
+}
+@media screen and (min-width: 610px) {
+  .occupation__title span {
+    display: inline;
+  }
 }
 .occupation__description-initial, .occupation__description-final {
   margin: 2rem 1rem;
@@ -428,10 +526,61 @@ body.not-scrolling {
     margin: 1rem;
   }
 }
+@media screen and (min-width: 425px) {
+  .occupation__description-initial, .occupation__description-final {
+    font-size: 1.1rem;
+    margin: 0 1rem;
+  }
+}
+@media screen and (min-width: 520px) {
+  .occupation__description-initial, .occupation__description-final {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 565px) {
+  .occupation__description-initial, .occupation__description-final {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (min-width: 585px) {
+  .occupation__description-initial, .occupation__description-final {
+    font-size: 1.27rem;
+  }
+}
+@media screen and (min-width: 445px) {
+  .occupation__description-final {
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (min-width: 610px) {
+  .occupation__description-final {
+    margin-bottom: 4rem;
+  }
+}
 .occupation__info {
   display: flex;
   margin: 1rem 0.7rem;
   align-items: center;
+}
+@media screen and (min-width: 425px) {
+  .occupation__info {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (min-width: 520px) {
+  .occupation__info {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 565px) {
+  .occupation__info {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (min-width: 585px) {
+  .occupation__info {
+    font-size: 1.27rem;
+  }
 }
 .occupation__web-development {
   margin: 2rem 0.7rem 1rem;
@@ -473,6 +622,16 @@ body.not-scrolling {
     margin-bottom: 1.8rem;
   }
 }
+@media screen and (min-width: 425px) {
+  .skills__title {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 425px) {
+  .skills__description {
+    font-size: 1.05rem;
+  }
+}
 
 .threed-cube {
   background-color: var(--color-details-dark);
@@ -485,9 +644,19 @@ body.not-scrolling {
   will-change: auto;
   margin: 1rem;
 }
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 400px) {
   .threed-cube {
     margin: 2rem;
+  }
+}
+@media screen and (min-width: 425px) {
+  .threed-cube {
+    margin: 1rem;
+  }
+}
+@media screen and (min-width: 545px) {
+  .threed-cube {
+    margin: 1rem 1rem 4rem;
   }
 }
 .threed-cube .threed-cube__face {
@@ -583,12 +752,12 @@ body.not-scrolling {
   transform: translateY(-5rem) rotateX(90deg) rotateZ(180deg);
   display: flex;
   align-items: flex-end;
-  white-space: pre-wrap;
 }
 .threed-cube .threed-cube__cube {
   position: relative;
   width: 10rem;
   height: 10rem;
+  animation: rotate 2s forwards 5s;
   transform-style: preserve-3d;
 }
 @keyframes rotate {
@@ -611,14 +780,39 @@ body.not-scrolling {
 .resume__description {
   margin: 0 1rem;
 }
+@media screen and (min-width: 425px) {
+  .resume__title {
+    font-size: 2rem;
+  }
+}
 .resume__description {
   margin-bottom: 2rem;
+}
+@media screen and (min-width: 425px) {
+  .resume__description {
+    font-size: 1.1rem;
+  }
 }
 .resume__sumary-title {
   margin-left: 1rem;
 }
+@media screen and (min-width: 425px) {
+  .resume__sumary-title {
+    font-size: 2rem;
+  }
+}
 .resume__sumary-name, .resume__sumary-description, .resume__sumary-list {
   margin-left: 3rem;
+}
+@media screen and (min-width: 425px) {
+  .resume__sumary-description, .resume__sumary-list {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (min-width: 425px) {
+  .resume__sumary-name {
+    font-size: 1.2rem;
+  }
 }
 .resume__sumary-description {
   margin-right: 1rem;
@@ -663,14 +857,43 @@ body.not-scrolling {
   top: 1rem;
   height: 14.8rem;
 }
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 380px) {
   .resume__sumary-detail-line {
-    top: -0.6rem;
-    height: 11.5rem;
+    top: 0.9rem;
+    height: 14.5rem;
+  }
+}
+@media screen and (min-width: 382px) {
+  .resume__sumary-detail-line {
+    top: 0.5rem;
+    height: 13.6rem;
+  }
+}
+@media screen and (min-width: 389px) {
+  .resume__sumary-detail-line {
+    top: 0;
+    height: 12.6rem;
+  }
+}
+@media screen and (min-width: 590px) {
+  .resume__sumary-detail-line {
+    top: -0.7rem;
+    height: 11.3rem;
+  }
+}
+@media screen and (min-width: 598px) {
+  .resume__sumary-detail-line {
+    top: -1.4rem;
+    height: 10rem;
   }
 }
 .resume__education-title {
   margin-left: 1rem;
+}
+@media screen and (min-width: 425px) {
+  .resume__education-title {
+    font-size: 2rem;
+  }
 }
 .resume__education-name, .resume__education-date, .resume__education-place, .resume__education-description {
   margin-left: 3rem;
@@ -678,15 +901,58 @@ body.not-scrolling {
 .resume__education-place, .resume__education-description {
   margin-right: 1rem;
 }
+@media screen and (min-width: 425px) {
+  .resume__education-place, .resume__education-description {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (min-width: 425px) {
+  .resume__education-name {
+    font-size: 1.2rem;
+  }
+}
 @media screen and (min-width: 375px) {
   .resume__education-name span {
     margin-right: 1rem;
   }
 }
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 400px) {
   .resume__education-name span {
     margin-right: 4rem;
   }
+}
+@media screen and (min-width: 435px) {
+  .resume__education-name span {
+    margin-right: 8rem;
+  }
+}
+@media screen and (min-width: 500px) {
+  .resume__education-name span {
+    margin-right: 10rem;
+  }
+}
+@media screen and (min-width: 535px) {
+  .resume__education-name span {
+    margin-right: 11rem;
+  }
+}
+@media screen and (min-width: 550px) {
+  .resume__education-name span {
+    margin-right: 12rem;
+  }
+}
+@media screen and (min-width: 565px) {
+  .resume__education-name span {
+    margin-right: 13rem;
+  }
+}
+@media screen and (min-width: 580px) {
+  .resume__education-name span {
+    margin-right: 0;
+  }
+}
+.resume__education-name strong {
+  display: block;
 }
 .resume__education-date {
   width: 7rem;
@@ -697,6 +963,13 @@ body.not-scrolling {
   margin-top: 0;
   margin-bottom: 0;
   background-color: var(--color-details);
+}
+@media screen and (min-width: 425px) {
+  .resume__education-date {
+    font-size: 1.3rem;
+    width: 8rem;
+    height: 2.5rem;
+  }
 }
 .resume__education-details {
   position: absolute;
@@ -764,27 +1037,67 @@ body.not-scrolling {
   width: 0.6rem;
   height: 13.5rem;
   border-right: 2px solid var(--color-details-dark);
-  height: 16.2rem;
-  top: 0.4rem;
+  display: block;
+  position: absolute;
+  right: 1.4rem;
+  width: 0.6rem;
+  border-right: 2px solid var(--color-details-dark);
+  height: 17.2rem;
+  top: 0.8rem;
 }
 @media screen and (min-width: 375px) {
   .resume__education-detail-line-english {
     height: 15rem;
   }
 }
+@media screen and (min-width: 390px) {
+  .resume__education-detail-line-english {
+    height: 13.7rem;
+  }
+}
+@media screen and (min-width: 415px) {
+  .resume__education-detail-line-english {
+    height: 13.6rem;
+  }
+}
 @media screen and (min-width: 425px) {
   .resume__education-detail-line-english {
-    height: 14rem;
+    height: 15.5rem;
+  }
+}
+@media screen and (min-width: 505px) {
+  .resume__education-detail-line-english {
+    height: 14.3rem;
+  }
+}
+@media screen and (min-width: 555px) {
+  .resume__education-detail-line-english {
+    height: 12.9rem;
   }
 }
 .resume__experience-title {
   margin-left: 1rem;
 }
+@media screen and (min-width: 425px) {
+  .resume__experience-title {
+    font-size: 2rem;
+  }
+}
 .resume__experience-date, .resume__experience-name, .resume__experience-place, .resume__experience-description, .resume__experience-description-final, .resume__experience-list-freelance {
   margin-left: 3rem;
 }
+@media screen and (min-width: 425px) {
+  .resume__experience-name {
+    font-size: 1.2rem;
+  }
+}
 .resume__experience-place, .resume__experience-description {
   margin-right: 1rem;
+}
+@media screen and (min-width: 425px) {
+  .resume__experience-place, .resume__experience-description {
+    font-size: 1.1rem;
+  }
 }
 .resume__experience-description-final {
   margin-bottom: 2rem;
@@ -809,6 +1122,13 @@ body.not-scrolling {
   background-color: var(--color-details);
   margin-left: 3rem;
 }
+@media screen and (min-width: 425px) {
+  .resume__experience-date-freelance {
+    font-size: 1.3rem;
+    width: 8rem;
+    height: 2.5rem;
+  }
+}
 .resume__experience-date-internship, .resume__experience-date-ecommerce {
   width: 7rem;
   height: 1.5rem;
@@ -819,6 +1139,13 @@ body.not-scrolling {
   margin-bottom: 0;
   background-color: var(--color-details);
   margin-left: 3rem;
+}
+@media screen and (min-width: 425px) {
+  .resume__experience-date-internship, .resume__experience-date-ecommerce {
+    font-size: 1.3rem;
+    width: 8rem;
+    height: 2.5rem;
+  }
 }
 .resume__experience-details-freelance, .resume__experience-details-internship, .resume__experience-details-ecommerce {
   position: absolute;
@@ -876,6 +1203,11 @@ body.not-scrolling {
   top: 1.3rem;
   height: 12.6rem;
 }
+@media screen and (min-width: 425px) {
+  .resume__experience-detail-line-internship {
+    height: 14.6rem;
+  }
+}
 .resume__experience-detail-circle-ecommerce {
   display: block;
   position: relative;
@@ -904,9 +1236,24 @@ body.not-scrolling {
     height: 9.7rem;
   }
 }
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 400px) {
+  .resume__experience-detail-line-ecommerce {
+    height: 9.6rem;
+  }
+}
+@media screen and (min-width: 412px) {
   .resume__experience-detail-line-ecommerce {
     height: 8.3rem;
+  }
+}
+@media screen and (min-width: 425px) {
+  .resume__experience-detail-line-ecommerce {
+    height: 9.7rem;
+  }
+}
+@media screen and (min-width: 670px) {
+  .resume__experience-detail-line-ecommerce {
+    height: 8.5rem;
   }
 }
 
@@ -933,11 +1280,14 @@ body.not-scrolling {
 }
 .portfolio__title {
   width: 70%;
-  margin: 0;
+  margin: 0 0 1rem 1rem;
   position: relative;
   top: 1rem;
-  margin-left: 1rem;
-  margin-bottom: 1rem;
+}
+@media screen and (min-width: 425px) {
+  .portfolio__title {
+    font-size: 2rem;
+  }
 }
 .portfolio__gif {
   width: 90%;
@@ -954,6 +1304,18 @@ body.not-scrolling {
   align-items: center;
   margin: 1rem auto;
   box-shadow: 5px 5px 10px darkgray;
+}
+@media screen and (min-width: 425px) {
+  .gallery__filter {
+    width: 20rem;
+    height: 3rem;
+    border-radius: 40px;
+  }
+}
+@media screen and (min-width: 425px) {
+  .gallery__filter a {
+    font-size: 1.5rem;
+  }
 }
 
 .responsive-gallery {
@@ -984,6 +1346,11 @@ body.not-scrolling {
   justify-content: space-between;
   width: 16rem;
   height: 3rem;
+}
+@media screen and (min-width: 425px) {
+  .responsive-gallery__item-name p {
+    font-size: 1.5rem;
+  }
 }
 .responsive-gallery__item-icon {
   color: #fff;
@@ -1169,6 +1536,26 @@ body.not-scrolling {
 .creative-process__description {
   margin: 0 1rem;
 }
+@media screen and (min-width: 375px) {
+  .creative-process__title {
+    margin-top: 2rem;
+  }
+}
+@media screen and (min-width: 425px) {
+  .creative-process__title {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 425px) {
+  .creative-process__description {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (min-width: 450px) {
+  .creative-process__description {
+    margin-bottom: 3rem;
+  }
+}
 
 .creative-process__diagram {
   margin-top: 1rem;
@@ -1180,8 +1567,23 @@ body.not-scrolling {
   align-items: flex-start;
   z-index: var(--z-back);
 }
+@media screen and (min-width: 375px) {
+  .creative-process__diagram {
+    margin-top: 2.5rem;
+  }
+}
+@media screen and (min-width: 400px) {
+  .creative-process__diagram {
+    margin-top: 3.5rem;
+  }
+}
+@media screen and (min-width: 425px) {
+  .creative-process__diagram {
+    margin-top: 1rem;
+  }
+}
 .creative-process__diagram-head {
-  border-radius: 20px;
+  border-radius: 30px;
   position: relative;
   top: 2rem;
   background-color: var(--color-main);
@@ -1208,12 +1610,27 @@ body.not-scrolling {
   min-height: 1rem;
   text-align: center;
 }
+@media screen and (min-width: 425px) {
+  .creative-process__diagram-first-paragraph {
+    left: 3.5%;
+  }
+}
+@media screen and (min-width: 450px) {
+  .creative-process__diagram-first-paragraph {
+    left: 4%;
+  }
+}
+@media screen and (min-width: 620px) {
+  .creative-process__diagram-first-paragraph {
+    left: 4.8%;
+  }
+}
 .creative-process__diagram-first-paragraph h2 {
   margin: 0;
   font-size: 1rem;
 }
 .creative-process__diagram-head-slash {
-  border-radius: 20px;
+  border-radius: 30px;
   position: relative;
   top: 6.5rem;
   background-color: var(--color-gradient1);
@@ -1222,7 +1639,7 @@ body.not-scrolling {
   clip-path: polygon(0% 100%, 100% 0%, 100% 100%);
 }
 .creative-process__diagram-second {
-  border-radius: 20px;
+  border-radius: 30px;
   position: relative;
   top: 6.5rem;
   background-color: var(--color-gradient2);
@@ -1252,8 +1669,33 @@ body.not-scrolling {
   position: absolute;
   left: -20%;
 }
+@media screen and (min-width: 425px) {
+  .creative-process__diagram-second-paragraph h2 {
+    left: -1%;
+  }
+}
+@media screen and (min-width: 450px) {
+  .creative-process__diagram-second-paragraph h2 {
+    left: 3%;
+  }
+}
+@media screen and (min-width: 620px) {
+  .creative-process__diagram-second-paragraph h2 {
+    left: 30%;
+  }
+}
+@media screen and (min-width: 680px) {
+  .creative-process__diagram-second-paragraph h2 {
+    left: 42%;
+  }
+}
+@media screen and (min-width: 730px) {
+  .creative-process__diagram-second-paragraph h2 {
+    left: 45%;
+  }
+}
 .creative-process__diagram-second-slash {
-  border-radius: 20px;
+  border-radius: 30px;
   position: relative;
   top: 9.2rem;
   background-color: var(--color-gradient3);
@@ -1262,7 +1704,7 @@ body.not-scrolling {
   clip-path: polygon(0% 100%, 100% 0%, 100% 100%);
 }
 .creative-process__diagram-third {
-  border-radius: 20px;
+  border-radius: 30px;
   position: relative;
   top: 9.2rem;
   background-color: var(--color-gradient4);
@@ -1292,8 +1734,28 @@ body.not-scrolling {
   position: absolute;
   left: -15%;
 }
+@media screen and (min-width: 425px) {
+  .creative-process__diagram-third-paragraph h2 {
+    left: 3%;
+  }
+}
+@media screen and (min-width: 450px) {
+  .creative-process__diagram-third-paragraph h2 {
+    left: 5%;
+  }
+}
+@media screen and (min-width: 620px) {
+  .creative-process__diagram-third-paragraph h2 {
+    left: 27%;
+  }
+}
+@media screen and (min-width: 680px) {
+  .creative-process__diagram-third-paragraph h2 {
+    left: 43%;
+  }
+}
 .creative-process__diagram-third-slash {
-  border-radius: 20px;
+  border-radius: 30px;
   position: relative;
   top: 12rem;
   background-color: var(--color-gradient5);
@@ -1302,7 +1764,7 @@ body.not-scrolling {
   clip-path: polygon(0% 100%, 100% 0%, 100% 100%);
 }
 .creative-process__diagram-fourth {
-  border-radius: 20px;
+  border-radius: 30px;
   position: relative;
   top: 12rem;
   background-color: var(--color-gradient6);
@@ -1332,8 +1794,33 @@ body.not-scrolling {
   position: absolute;
   left: -30%;
 }
+@media screen and (min-width: 425px) {
+  .creative-process__diagram-fourth-paragraph h2 {
+    left: -10%;
+  }
+}
+@media screen and (min-width: 450px) {
+  .creative-process__diagram-fourth-paragraph h2 {
+    left: -6%;
+  }
+}
+@media screen and (min-width: 570px) {
+  .creative-process__diagram-fourth-paragraph h2 {
+    left: 8%;
+  }
+}
+@media screen and (min-width: 620px) {
+  .creative-process__diagram-fourth-paragraph h2 {
+    left: 18%;
+  }
+}
+@media screen and (min-width: 680px) {
+  .creative-process__diagram-fourth-paragraph h2 {
+    left: 32%;
+  }
+}
 .creative-process__diagram-fourth-slash {
-  border-radius: 20px;
+  border-radius: 30px;
   position: relative;
   top: 14.7rem;
   background-color: var(--color-gradient7);
@@ -1342,7 +1829,7 @@ body.not-scrolling {
   clip-path: polygon(0% 100%, 100% 0%, 100% 100%);
 }
 .creative-process__diagram-fifth {
-  border-radius: 20px;
+  border-radius: 30px;
   position: relative;
   top: 14.7rem;
   background-color: var(--color-gradient8);
@@ -1367,12 +1854,43 @@ body.not-scrolling {
   min-height: 1rem;
   text-align: center;
 }
+@media screen and (min-width: 425px) {
+  .creative-process__diagram-fifth-paragraph {
+    left: 71%;
+  }
+}
 .creative-process__diagram-fifth-paragraph h2 {
   font-size: 1rem;
   margin: 0;
 }
+@media screen and (min-width: 450px) {
+  .creative-process__diagram-fifth-paragraph h2 {
+    position: absolute;
+    left: 30%;
+  }
+}
+@media screen and (min-width: 570px) {
+  .creative-process__diagram-fifth-paragraph h2 {
+    left: 45%;
+  }
+}
+@media screen and (min-width: 620px) {
+  .creative-process__diagram-fifth-paragraph h2 {
+    left: 55%;
+  }
+}
+@media screen and (min-width: 680px) {
+  .creative-process__diagram-fifth-paragraph h2 {
+    left: 52%;
+  }
+}
+@media screen and (min-width: 730px) {
+  .creative-process__diagram-fifth-paragraph h2 {
+    left: 70%;
+  }
+}
 .creative-process__diagram-fifth-slash {
-  border-radius: 20px;
+  border-radius: 30px;
   position: relative;
   top: 17.5rem;
   background-color: var(--color-gradient9);
@@ -1381,7 +1899,7 @@ body.not-scrolling {
   clip-path: polygon(0% 100%, 100% 0%, 100% 100%);
 }
 .creative-process__diagram-sixth {
-  border-radius: 20px;
+  border-radius: 30px;
   position: relative;
   top: 17.5rem;
   background-color: var(--color-gradient10);
@@ -1410,6 +1928,31 @@ body.not-scrolling {
   margin: 0;
   position: absolute;
   left: -23%;
+}
+@media screen and (min-width: 425px) {
+  .creative-process__diagram-sixth-paragraph h2 {
+    left: 0;
+  }
+}
+@media screen and (min-width: 450px) {
+  .creative-process__diagram-sixth-paragraph h2 {
+    left: 14%;
+  }
+}
+@media screen and (min-width: 570px) {
+  .creative-process__diagram-sixth-paragraph h2 {
+    left: 33%;
+  }
+}
+@media screen and (min-width: 570px) {
+  .creative-process__diagram-sixth-paragraph h2 {
+    left: 43%;
+  }
+}
+@media screen and (min-width: 730px) {
+  .creative-process__diagram-sixth-paragraph h2 {
+    left: 65%;
+  }
 }
 
 .contact {

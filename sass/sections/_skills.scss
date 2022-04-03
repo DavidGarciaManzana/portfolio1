@@ -1,6 +1,18 @@
 .skills {
-    @include underline;
-    @include rwd(xsmall){
-        margin-bottom: 1.8rem;
+  @include underline;
+  @include rwd(xsmall) {
+    margin-bottom: 1.8rem;
+  }
+
+  &__title {
+    @include rwd(small) {
+      font-size: 2rem;
     }
+  }
+  &__description {
+    @include rwd(small) {
+      font-size: 1.05rem;
+    }
+  }
+
 }

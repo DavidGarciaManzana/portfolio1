@@ -1,5 +1,24 @@
 .creative-process {
   @include underline;
+
+  &__title {
+    @include rwd(xsmall) {
+      margin-top: 2rem;
+    }
+    @include rwd(small) {
+      font-size: 2rem;
+    }
+
+  }
+
+  &__description {
+    @include rwd(small) {
+      font-size: 1.1rem;
+    }
+    @include rwd(450px) {
+      margin-bottom: 3rem;
+    }
+  }
 }
 
 .creative-process__diagram {
@@ -11,9 +30,18 @@
   justify-content: center;
   align-items: flex-start;
   z-index: var(--z-back);
+  @include rwd(xsmall) {
+    margin-top: 2.5rem;
+  }
+  @include rwd(400px) {
+    margin-top: 3.5rem;
+  }
+  @include rwd(small) {
+    margin-top: 1rem;
+  }
 
   &-head {
-    border-radius: 20px;
+    border-radius: 30px;
     position: relative;
     top: 2rem;
     background-color: var(--color-main);
@@ -42,6 +70,16 @@
     width: 2.2rem;
     min-height: 1rem;
     text-align: center;
+    @include rwd(small) {
+      left: 3.5%;
+    }
+    @include rwd(450px) {
+      left: 4%;
+    }
+    @include rwd(620px) {
+      left: 4.8%;
+    }
+
 
     & h2 {
       margin: 0;
@@ -50,7 +88,7 @@
   }
 
   &-head-slash {
-    border-radius: 20px;
+    border-radius: 30px;
     position: relative;
     top: 6.5rem;
     background-color: var(--color-gradient1);
@@ -60,7 +98,7 @@
   }
 
   &-second {
-    border-radius: 20px;
+    border-radius: 30px;
     position: relative;
     top: 6.5rem;
     background-color: var(--color-gradient2);
@@ -93,11 +131,27 @@
       margin: 0;
       position: absolute;
       left: -20%;
+      @include rwd(small) {
+        left: -1%;
+      }
+      @include rwd(450px) {
+        left: 3%;
+      }
+      @include rwd(620px) {
+        left: 30%;
+      }
+      @include rwd(680px) {
+        left: 42%;
+      }
+      @include rwd(730px) {
+        left: 45%;
+      }
+
     }
   }
 
   &-second-slash {
-    border-radius: 20px;
+    border-radius: 30px;
     position: relative;
     top: 9.2rem;
     background-color: var(--color-gradient3);
@@ -107,7 +161,7 @@
   }
 
   &-third {
-    border-radius: 20px;
+    border-radius: 30px;
     position: relative;
     top: 9.2rem;
     background-color: var(--color-gradient4);
@@ -140,11 +194,24 @@
       margin: 0;
       position: absolute;
       left: -15%;
+      @include rwd(small) {
+        left: 3%;
+      }
+      @include rwd(450px) {
+        left: 5%;
+      }
+      @include rwd(620px) {
+        left: 27%;
+      }
+      @include rwd(680px) {
+        left: 43%;
+      }
+
     }
   }
 
   &-third-slash {
-    border-radius: 20px;
+    border-radius: 30px;
     position: relative;
     top: 12rem;
     background-color: var(--color-gradient5);
@@ -154,7 +221,7 @@
   }
 
   &-fourth {
-    border-radius: 20px;
+    border-radius: 30px;
     position: relative;
     top: 12rem;
     background-color: var(--color-gradient6);
@@ -187,11 +254,28 @@
       margin: 0;
       position: absolute;
       left: -30%;
+      @include rwd(small) {
+        left: -10%;
+      }
+      @include rwd(450px) {
+        left: -6%;
+      }
+      @include rwd(570px) {
+        left: 8%;
+      }
+      @include rwd(620px) {
+        left: 18%;
+      }
+      @include rwd(680px) {
+        left: 32%;
+      }
+
+
     }
   }
 
   &-fourth-slash {
-    border-radius: 20px;
+    border-radius: 30px;
     position: relative;
     top: 14.7rem;
     background-color: var(--color-gradient7);
@@ -201,7 +285,7 @@
   }
 
   &-fifth {
-    border-radius: 20px;
+    border-radius: 30px;
     position: relative;
     top: 14.7rem;
     background-color: var(--color-gradient8);
@@ -229,15 +313,36 @@
     min-height: 1rem;
 
     text-align: center;
+    @include rwd(small) {
+      left: 71%;
+    }
 
     & h2 {
       font-size: 1rem;
       margin: 0;
+      @include rwd(450px) {
+        position: absolute;
+        left: 30%;
+      }
+      @include rwd(570px) {
+        left: 45%;
+      }
+      @include rwd(620px) {
+        left: 55%;
+      }
+      @include rwd(680px) {
+        left: 52%;
+      }
+      @include rwd(730px) {
+        left: 70%;
+      }
+
+
     }
   }
 
   &-fifth-slash {
-    border-radius: 20px;
+    border-radius: 30px;
     position: relative;
     top: 17.5rem;
     background-color: var(--color-gradient9);
@@ -247,7 +352,7 @@
   }
 
   &-sixth {
-    border-radius: 20px;
+    border-radius: 30px;
     position: relative;
     top: 17.5rem;
     background-color: var(--color-gradient10);
@@ -280,6 +385,23 @@
       margin: 0;
       position: absolute;
       left: -23%;
+      @include rwd(small) {
+        left: 0;
+      }
+      @include rwd(450px) {
+        left: 14%;
+      }
+      @include rwd(570px) {
+        left: 33%;
+      }
+      @include rwd(570px) {
+        left: 43%;
+      }
+      @include rwd(730px) {
+        left: 65%;
+      }
+
+
     }
   }
 }

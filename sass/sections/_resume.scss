@@ -1,18 +1,43 @@
 .resume {
   @include underline;
 
+  &__title {
+    @include rwd(small) {
+      font-size: 2rem;
+    }
+  }
+
   &__description {
     margin-bottom: 2rem;
+    @include rwd(small) {
+      font-size: 1.1rem;
+    }
   }
 
   //sumary
 
   &__sumary-title {
     @include l-margin1;
+    @include rwd(small) {
+      font-size: 2rem;
+    }
   }
 
   &__sumary-name, &__sumary-description, &__sumary-list {
     @include l-margin3;
+  }
+
+  &__sumary-description, &__sumary-list {
+    @include rwd(small) {
+      font-size: 1.1rem;
+    }
+  }
+
+  &__sumary-name {
+    @include rwd(small) {
+      font-size: 1.2rem;
+    }
+
   }
 
   &__sumary-description {
@@ -43,16 +68,38 @@
     top: 1rem;
     height: 14.8rem;
 
-    @include rwd(small) {
-      top: -0.6rem;
-      height: 11.5rem;
+    @include rwd(380px) {
+      top: 0.9rem;
+      height: 14.5rem;
     }
+    @include rwd(382px) {
+      top: 0.5rem;
+      height: 13.6rem;
+    }
+    @include rwd(389px) {
+      top: 0;
+      height: 12.6rem;
+    }
+    @include rwd(590px) {
+      top: -0.7rem;
+      height: 11.3rem;
+    }
+    @include rwd(598px) {
+      top: -1.4rem;
+      height: 10rem;
+    }
+
+
+
   }
 
 
   //education
   &__education-title {
     @include l-margin1;
+    @include rwd(small) {
+      font-size: 2rem;
+    }
   }
 
   &__education-name, &__education-date, &__education-place, &__education-description {
@@ -61,19 +108,57 @@
 
   &__education-place, &__education-description {
     margin-right: 1rem;
+
+    @include rwd(small) {
+      font-size: 1.1rem;
+    }
+  }
+
+  &__education-name {
+    @include rwd(small) {
+      font-size: 1.2rem;
+    }
   }
 
   &__education-name span {
     @include rwd(xsmall) {
       margin-right: 1rem;
     }
-    @include rwd(small) {
+    @include rwd(400px) {
       margin-right: 4rem;
     }
+    @include rwd(435px) {
+      margin-right: 8rem;
+    }
+    @include rwd(500px) {
+      margin-right: 10rem;
+    }
+    @include rwd(535px) {
+      margin-right: 11rem;
+    }
+    @include rwd(550px) {
+      margin-right: 12rem;
+    }
+    @include rwd(565px) {
+      margin-right: 13rem;
+    }
+    @include rwd(580px) {
+      margin-right: 0;
+    }
+  }
+
+  &__education-name strong {
+    display: block;
   }
 
   &__education-date {
     @include date;
+    @include rwd(small) {
+      font-size: 1.3rem;
+      width: 8rem;
+      height: 2.5rem;
+    }
+
   }
 
   &__education-details {
@@ -112,15 +197,37 @@
 
   &__education-detail-line-english {
     @include details-line;
-    height: 16.2rem;
-    top: .4rem;
+    display: block;
+    position: absolute;
+    right: 1.4rem;
+    width: 0.6rem;
+    border-right: 2px solid var(--color-details-dark);
+    height: 17.2rem;
+    top: 0.8rem;
 
     @include rwd(xsmall) {
       height: 15rem;
     }
-    @include rwd(small) {
-      height: 14rem;
+    @include rwd(390px) {
+      height: 13.7rem;
     }
+    @include rwd(415px) {
+      height: 13.6rem;
+    }
+    @include rwd(small) {
+      height: 15.5rem;
+    }
+    @include rwd(505px) {
+      height: 14.3rem;
+    }
+    @include rwd(555px) {
+      height: 12.9rem;
+    }
+
+
+
+
+
   }
 
 
@@ -128,14 +235,26 @@
 
   &__experience-title {
     @include l-margin1;
+    @include rwd(small) {
+      font-size: 2rem;
+    }
   }
 
   &__experience-date, &__experience-name, &__experience-place, &__experience-description, &__experience-description-final, &__experience-list-freelance {
     @include l-margin3;
   }
 
+  &__experience-name {
+    @include rwd(small) {
+      font-size: 1.2rem;
+    }
+  }
+
   &__experience-place, &__experience-description {
     margin-right: 1rem;
+    @include rwd(small) {
+      font-size: 1.1rem;
+    }
   }
 
   &__experience-description-final {
@@ -156,9 +275,22 @@
     @include l-margin3;
   }
 
+  &__experience-date-freelance {
+    @include rwd(small) {
+      font-size: 1.3rem;
+      width: 8rem;
+      height: 2.5rem;
+    }
+  }
+
   &__experience-date-internship, &__experience-date-ecommerce {
     @include date;
     @include l-margin3;
+    @include rwd(small) {
+      font-size: 1.3rem;
+      width: 8rem;
+      height: 2.5rem;
+    }
   }
 
   &__experience-details-freelance, &__experience-details-internship, &__experience-details-ecommerce {
@@ -190,6 +322,10 @@
     right: 1.4rem;
     top: 1.3rem;
     height: 12.6rem;
+    @include rwd(small) {
+      height: 14.6rem;
+    }
+
   }
 
   &__experience-detail-circle-ecommerce {
@@ -207,9 +343,20 @@
     @include rwd(xsmall) {
       height: 9.7rem;
     }
-    @include rwd(small) {
+    @include rwd(400px) {
+      height: 9.6rem;
+    }
+    @include rwd(412px) {
       height: 8.3rem;
     }
+    @include rwd(small) {
+      height: 9.7rem;
+    }
+    @include rwd(670px) {
+      height: 8.5rem;
+
+    }
+
   }
 
 }
