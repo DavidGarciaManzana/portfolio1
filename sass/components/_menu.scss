@@ -8,15 +8,23 @@ body.not-scrolling {
   top: 0;
   left: -100%;
   height: 100vh;
-  width: 80%;
+  width: 256px;
   transition: transform 2s;
   z-index: var(--z-modal);
 
   &-opened {
     visibility: visible;
-    position: fixed;
     transform: translateX(125%);
     transition: transform 1s;
+    @include rwd(xsmall) {
+      transform: translateX(146%);
+    }
+    @include rwd(small) {
+      transform: translateX(166%);
+    }
+    @include rwd(medium) {
+      transform: translateX(300%);
+    }
   }
 
   &__circle-picture {
