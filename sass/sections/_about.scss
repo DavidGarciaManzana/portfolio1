@@ -1,5 +1,8 @@
 .about {
   @include underline;
+  @include rwd(large) {
+    margin-left: 256px;
+  }
 
   &__title {
     @include rwd(small) {
@@ -31,6 +34,10 @@
     }
     @include rwd(750px) {
       width: 50%;
+    }
+    @include rwd(large) {
+      margin: 1rem 0 0 1rem;
+      width: 40%;
     }
   }
 }

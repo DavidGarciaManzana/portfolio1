@@ -11,6 +11,10 @@ body.not-scrolling {
   width: 256px;
   transition: transform 2s;
   z-index: var(--z-modal);
+  @include rwd(large) {
+    visibility: visible;
+    left: 0;
+  }
 
   &-opened {
     visibility: visible;

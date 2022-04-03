@@ -1,6 +1,6 @@
 .profile-card__image {
   background-image: url("../../media/images/profile1.jpeg");
-  background-size:200%;
+  background-size: 200%;
   background-position: 5% 80%;
   background-repeat: no-repeat;
   height: 100vh;
@@ -20,8 +20,16 @@
     background-size: 100%;
     background-position: 0 -10rem;
   }
+  @include rwd(large) {
+    width: 80%;
+    position: relative;
+    left: 20%;
+    background-position: 0 35%;
+    background-size: 100%;
+  }
 
 }
+
 .profile-card__title {
   position: absolute;
   top: 40%;
@@ -32,10 +40,21 @@
     left: 30%;
     font-size: 2.5rem;
   }
-  @include rwd(630px) {top: 45%;}
-  @include rwd(670px) {top: 50%;}
-  @include rwd(730px) {top: 25%;}
+  @include rwd(630px) {
+    top: 45%;
+  }
+  @include rwd(670px) {
+    top: 50%;
+  }
+  @include rwd(730px) {
+    top: 25%;
+  }
+  @include rwd(large) {
+    top: 35%;
+    left: 45%;
+  }
 }
+
 .profile-card__subtitle {
   position: absolute;
   top: 47%;
@@ -46,7 +65,17 @@
     left: 30%;
     font-size: 1.8rem;
   }
-  @include rwd(630px) {top: 55%;}
-  @include rwd(670px) {top: 60%;}
-  @include rwd(730px) {top: 35%;}
+  @include rwd(630px) {
+    top: 55%;
+  }
+  @include rwd(670px) {
+    top: 60%;
+  }
+  @include rwd(730px) {
+    top: 35%;
+  }
+  @include rwd(large) {
+    top: 45%;
+    left: 45%;
+  }
 }

@@ -51,6 +51,11 @@ li {
 .profile-card__button-icon {
   width: 2rem;
 }
+@media screen and (min-width: 1024px) {
+  .profile-card__button {
+    display: none;
+  }
+}
 
 .hamburger-button {
   position: fixed;
@@ -77,6 +82,11 @@ li {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+}
+@media screen and (min-width: 400px) and (min-width: 1024px) {
+  .hamburger-button {
+    display: none;
   }
 }
 .hamburger-button__slide {
@@ -287,6 +297,15 @@ li {
     background-position: 0 -10rem;
   }
 }
+@media screen and (min-width: 1024px) {
+  .profile-card__image {
+    width: 80%;
+    position: relative;
+    left: 20%;
+    background-position: 0 35%;
+    background-size: 100%;
+  }
+}
 
 .profile-card__title {
   position: absolute;
@@ -314,6 +333,12 @@ li {
 @media screen and (min-width: 730px) {
   .profile-card__title {
     top: 25%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .profile-card__title {
+    top: 35%;
+    left: 45%;
   }
 }
 
@@ -345,6 +370,12 @@ li {
     top: 35%;
   }
 }
+@media screen and (min-width: 1024px) {
+  .profile-card__subtitle {
+    top: 45%;
+    left: 45%;
+  }
+}
 
 body.not-scrolling {
   overflow: hidden;
@@ -359,6 +390,12 @@ body.not-scrolling {
   width: 256px;
   transition: transform 2s;
   z-index: var(--z-modal);
+}
+@media screen and (min-width: 1024px) {
+  .menu {
+    visibility: visible;
+    left: 0;
+  }
 }
 .menu-opened {
   visibility: visible;
@@ -479,6 +516,11 @@ body.not-scrolling {
 .about__description {
   margin: 0 1rem;
 }
+@media screen and (min-width: 1024px) {
+  .about {
+    margin-left: 256px;
+  }
+}
 @media screen and (min-width: 425px) {
   .about__title {
     font-size: 2rem;
@@ -519,13 +561,33 @@ body.not-scrolling {
     width: 50%;
   }
 }
+@media screen and (min-width: 1024px) {
+  .about__image {
+    margin: 1rem 0 0 1rem;
+    width: 40%;
+  }
+}
 
+@media screen and (min-width: 1024px) {
+  .occupation {
+    position: absolute;
+    top: 52.2rem;
+    left: 36rem;
+    width: 28rem;
+  }
+}
 .occupation__title {
   margin-left: 1rem;
 }
 @media screen and (min-width: 425px) {
   .occupation__title {
     font-size: 2rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .occupation__title {
+    margin: 1rem 0 0.3rem 1rem;
+    font-size: 1.5rem;
   }
 }
 .occupation__title span {
@@ -566,6 +628,11 @@ body.not-scrolling {
     font-size: 1.27rem;
   }
 }
+@media screen and (min-width: 1024px) {
+  .occupation__description-initial, .occupation__description-final {
+    font-size: 1rem;
+  }
+}
 @media screen and (min-width: 445px) {
   .occupation__description-final {
     margin-bottom: 1rem;
@@ -601,11 +668,27 @@ body.not-scrolling {
     font-size: 1.27rem;
   }
 }
+@media screen and (min-width: 1024px) {
+  .occupation__info {
+    font-size: 1rem;
+    margin: 0.5rem 0.7rem;
+  }
+}
 .occupation__web-development {
   margin: 2rem 0.7rem 1rem;
 }
+@media screen and (min-width: 1024px) {
+  .occupation__web-development {
+    margin: 1rem 0.7rem 0.5rem;
+  }
+}
 .occupation__mobile-os {
   margin: 1rem 0.7rem 2rem;
+}
+@media screen and (min-width: 1024px) {
+  .occupation__mobile-os {
+    margin: 0.5rem 0.7rem 1rem;
+  }
 }
 .occupation strong + span {
   margin-left: 1rem;
