@@ -221,6 +221,12 @@ li {
   display: block;
   margin: auto;
 }
+@media screen and (min-width: 425px) {
+  .contact__message-me-button {
+    font-size: 1.1rem;
+    top: 1.5rem;
+  }
+}
 
 :root {
   --color-main: #DD1335;
@@ -2062,6 +2068,21 @@ body.not-scrolling {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.contact__message-me-all {
+  width: 100%;
+}
+@media screen and (min-width: 425px) {
+  .contact__message-me-name-mail {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 425px) {
+  .contact__message-me-mail, .contact__message-me-name {
+    width: 49%;
+    display: inline-block;
+  }
 }
 .contact__message-me-input {
   margin: 0.25rem;
