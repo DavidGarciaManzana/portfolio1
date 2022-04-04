@@ -14,9 +14,7 @@
   &-icon {
     width: 2rem;
   }
-  @include rwd(large) {
-    display: none;
-  }
+
 }
 
 .hamburger-button {
@@ -43,9 +41,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    @include rwd(large) {
-      display: none;
-    }
+
   }
 
   &__slide {

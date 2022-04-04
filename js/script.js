@@ -1,3 +1,6 @@
+onblur = function () { document.title = ' 😓 Are you leaving? 💔'; }
+onfocus = function () { document.title = 'Brian David'; }
+
 // ------------------------------------------------------------------------SCROLL----------------------------------------------------------------------------------
 
 let totalHeight = document.documentElement.scrollHeight;

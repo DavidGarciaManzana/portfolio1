@@ -1,20 +1,12 @@
 .occupation {
-  @include rwd(large) {
-    position: absolute;
-    top: 52.2rem;
-    left: 36rem;
-    width: 28rem;
-  }
+
 
   &__title {
     margin-left: 1rem;
     @include rwd(small) {
       font-size: 2rem;
     }
-    @include rwd(large) {
-      margin: 1rem 0 0.3rem 1rem;
-      font-size: 1.5rem;
-    }
+
 
     & span {
       display: block;
@@ -44,9 +36,7 @@
     @include rwd(585px) {
       font-size: 1.27rem;
     }
-    @include rwd(large) {
-      font-size: 1rem;
-    }
+
 
   }
 
@@ -75,25 +65,18 @@
     @include rwd(585px) {
       font-size: 1.27rem;
     }
-    @include rwd(large) {
-      font-size: 1rem;
-      margin: 0.5rem 0.7rem;
-    }
+
 
   }
 
   &__web-development {
     margin: 2rem .7rem 1rem;
-    @include rwd(large) {
-      margin: 1rem 0.7rem 0.5rem;
-    }
+
   }
 
   &__mobile-os {
     margin: 1rem .7rem 2rem;
-    @include rwd(large) {
-      margin: 0.5rem 0.7rem 1rem;
-    }
+
   }
 
   strong + span {

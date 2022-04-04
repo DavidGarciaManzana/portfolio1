@@ -11,25 +11,28 @@ body.not-scrolling {
   width: 256px;
   transition: transform 2s;
   z-index: var(--z-modal);
-  @include rwd(large) {
-    visibility: visible;
-    left: 0;
-  }
+
 
   &-opened {
     visibility: visible;
     transform: translateX(125%);
     transition: transform 1s;
-    @include rwd(xsmall) {
-      transform: translateX(146%);
+
+    $i: 335px;
+    $e: 129%;
+
+    @while $i >= 335px and $i < 755px {
+      @media screen and (min-width: $i) {
+        transform: translateX($e);
+      }
+      $i: $i + 15;
+      $e: $e + 6;
     }
-    @include rwd(small) {
-      transform: translateX(166%);
-    }
-    @include rwd(medium) {
-      transform: translateX(300%);
+    @include rwd(760px) {
+      transform: translateX(296%);
     }
   }
+
 
   &__circle-picture {
     position: relative;
@@ -46,4 +49,5 @@ body.not-scrolling {
   &__name {
     text-align: center;
   }
+
 }
