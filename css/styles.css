@@ -44,6 +44,11 @@ li {
   left: 50%;
   transform: translate(-50%, 50%);
 }
+@media screen and (min-width: 768px) {
+  .profile-card__button {
+    display: none;
+  }
+}
 .profile-card__button-link {
   width: 2rem;
   height: 2rem;
@@ -77,6 +82,11 @@ li {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hamburger-button {
+    display: none;
   }
 }
 .hamburger-button__slide {
@@ -287,6 +297,14 @@ li {
     background-position: 0 -10rem;
   }
 }
+@media screen and (min-width: 768px) {
+  .profile-card__image {
+    margin-left: 256px;
+    width: 32rem;
+    background-size: cover;
+    background-position: 0;
+  }
+}
 
 .profile-card__title {
   position: absolute;
@@ -314,6 +332,12 @@ li {
 @media screen and (min-width: 730px) {
   .profile-card__title {
     top: 25%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .profile-card__title {
+    top: 10rem;
+    left: 20rem;
   }
 }
 
@@ -345,6 +369,12 @@ li {
     top: 35%;
   }
 }
+@media screen and (min-width: 768px) {
+  .profile-card__subtitle {
+    top: 15rem;
+    left: 20rem;
+  }
+}
 
 body.not-scrolling {
   overflow: hidden;
@@ -359,6 +389,12 @@ body.not-scrolling {
   width: 256px;
   transition: transform 2s;
   z-index: var(--z-modal);
+}
+@media screen and (min-width: 768px) {
+  .menu {
+    left: 0;
+    height: 100%;
+  }
 }
 .menu-opened {
   visibility: visible;
@@ -1439,8 +1475,9 @@ body.not-scrolling {
   }
 }
 .portfolio__gif {
+  display: block;
+  margin: 1rem auto;
   width: 90%;
-  margin: auto 1rem;
 }
 
 .gallery__filter {

@@ -20,6 +20,13 @@
     background-size: 100%;
     background-position: 0 -10rem;
   }
+  @include rwd(medium) {
+    margin-left: 256px;
+    width: 32rem;
+    background-size: cover;
+    background-position: 0;
+
+  }
 
 
 }
@@ -43,6 +50,10 @@
   @include rwd(730px) {
     top: 25%;
   }
+  @include rwd(medium) {
+    top: 10rem;
+    left: 20rem;
+  }
 
 }
 
@@ -64,6 +75,10 @@
   }
   @include rwd(730px) {
     top: 35%;
+  }
+  @include rwd(medium) {
+    top: 15rem;
+    left: 20rem;
   }
 
 }

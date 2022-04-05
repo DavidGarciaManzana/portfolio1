@@ -6,6 +6,10 @@
   left: 50%;
   transform: translate(-50%, 50%);
 
+  @include rwd(medium) {
+    display: none;
+  }
+
   &-link {
     width: 2rem;
     height: 2rem;
@@ -41,7 +45,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
+  }
+  @include rwd(medium) {
+    display: none;
   }
 
   &__slide {
