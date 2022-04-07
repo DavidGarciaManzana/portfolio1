@@ -1,5 +1,9 @@
 body.not-scrolling {
   overflow: hidden;
+
+  @include rwd(large) {
+    overflow: scroll;
+  }
 }
 
 .menu {
@@ -12,6 +16,9 @@ body.not-scrolling {
   transition: transform 2s;
   z-index: var(--z-modal);
 
+  @include rwd(large) {
+    left: 0;
+  }
 
   &-opened {
     visibility: visible;
@@ -28,9 +35,9 @@ body.not-scrolling {
       $i: $i + 15;
       $e: $e + 6;
     }
-    //@include rwd(760px) {
-    //  transform: translateX(296%);
-    //}
+    @include rwd(large) {
+      transform: translateX(0);
+    }
   }
 
 

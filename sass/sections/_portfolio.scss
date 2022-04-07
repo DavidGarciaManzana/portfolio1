@@ -1,5 +1,8 @@
 .portfolio {
   @include underline;
+  @include rwd(large) {
+    margin-left: 256px;
+  }
 
   &__line {
     top: 1rem;

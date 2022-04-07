@@ -1,6 +1,9 @@
 .contact {
   background-color: var(--color-darker-background-secondary);
   @include underline;
+  @include rwd(large) {
+    margin-left: 256px;
+  }
 
   &__title {
     width: 70%;

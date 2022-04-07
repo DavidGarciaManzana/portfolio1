@@ -3,6 +3,9 @@
   @include rwd(665px) {
     margin-top: 1rem;
   }
+  @include rwd(large) {
+    margin-left: 256px;
+  }
 
   &__title {
     @include rwd(xsmall) {

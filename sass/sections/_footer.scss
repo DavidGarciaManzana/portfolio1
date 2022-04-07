@@ -5,4 +5,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  @include rwd(large) {
+    margin-left: 256px;
+  }
 }

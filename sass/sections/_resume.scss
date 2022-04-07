@@ -1,6 +1,10 @@
 .resume {
   @include underline;
 
+  @include rwd(large) {
+    margin-left: 256px;
+  }
+
   &__title {
     @include rwd(small) {
       font-size: 2rem;
@@ -88,7 +92,6 @@
       top: -1.4rem;
       height: 10rem;
     }
-
 
 
   }
@@ -226,10 +229,9 @@
     @include rwd(780px) {
       height: 11.7rem;
     }
-
-
-
-
+    @include rwd(large) {
+      height: 13rem;
+    }
 
   }
 
