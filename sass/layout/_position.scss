@@ -20,12 +20,57 @@
     background-size: 100%;
     background-position: 0 -10rem;
   }
-  @include rwd(medium) {
-    margin-left: 256px;
-    width: 32rem;
-    background-size: cover;
-    background-position: 0;
-
+  @include rwd(820px) {
+    background-size: 101%;
+    background-position: -0.5rem -12rem;
+  }
+  @include rwd(840px) {
+    background-size: 100%;
+    background-position: 0 -12rem;
+  }
+  @include rwd(850px) {
+    background-size: 100%;
+    background-position: 0 -13rem;
+  }
+  @include rwd(870px) {
+    background-size: 100%;
+    background-position: 0 -14rem;
+  }
+  @include rwd(880px) {
+    background-size: 100%;
+    background-position: 0 -15rem;
+  }
+  @include rwd(900px) {
+    background-size: 100%;
+    background-position: 0 -16rem;
+  }
+  @include rwd(910px) {
+    background-size: 100%;
+    background-position: 0 -17rem;
+  }
+  @include rwd(930px) {
+    background-size: 100%;
+    background-position: 0 -18rem;
+  }
+  @include rwd(950px) {
+    background-size: 100%;
+    background-position: 0 -19rem;
+  }
+  @include rwd(970px) {
+    background-size: 100%;
+    background-position: 0 -20rem;
+  }
+  @include rwd(990px) {
+    background-size: 100%;
+    background-position: 0 -21rem;
+  }
+  @include rwd(1000px) {
+    background-size: 100%;
+    background-position: 0 -22rem;
+  }
+  @include rwd(1015px) {
+    background-size: 100%;
+    background-position: 0 -23rem;
   }
 
 
@@ -50,10 +95,7 @@
   @include rwd(730px) {
     top: 25%;
   }
-  @include rwd(medium) {
-    top: 10rem;
-    left: 20rem;
-  }
+
 
 }
 
@@ -76,9 +118,6 @@
   @include rwd(730px) {
     top: 35%;
   }
-  @include rwd(medium) {
-    top: 15rem;
-    left: 20rem;
-  }
+
 
 }

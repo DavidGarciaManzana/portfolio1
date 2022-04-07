@@ -13,6 +13,9 @@
     @include rwd(small) {
       font-size: 1.05rem;
     }
+    @include rwd(medium) {
+      margin: 1rem;
+    }
   }
 
 }

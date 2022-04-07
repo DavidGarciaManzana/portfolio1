@@ -71,11 +71,17 @@
 
   &__web-development {
     margin: 2rem .7rem 1rem;
+    @include rwd(810px) {
+      margin-top: 4rem;
+    }
 
   }
 
   &__mobile-os {
     margin: 1rem .7rem 2rem;
+    @include rwd(810px) {
+      margin-bottom: 4rem;
+    }
 
   }
 

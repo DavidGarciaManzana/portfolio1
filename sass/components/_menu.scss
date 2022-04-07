@@ -11,11 +11,7 @@ body.not-scrolling {
   width: 256px;
   transition: transform 2s;
   z-index: var(--z-modal);
-  @include rwd(medium) {
-    left: 0;
-    height: 100%;
 
-  }
 
   &-opened {
     visibility: visible;
@@ -25,16 +21,16 @@ body.not-scrolling {
     $i: 335px;
     $e: 129%;
 
-    @while $i >= 335px and $i < 755px {
+    @while $i >= 335px and $i < 1024px {
       @media screen and (min-width: $i) {
         transform: translateX($e);
       }
       $i: $i + 15;
       $e: $e + 6;
     }
-    @include rwd(760px) {
-      transform: translateX(296%);
-    }
+    //@include rwd(760px) {
+    //  transform: translateX(296%);
+    //}
   }
 
 
