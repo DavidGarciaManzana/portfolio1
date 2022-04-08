@@ -79,7 +79,100 @@
     background-position: 14rem -10.5rem;
     background-attachment: fixed;
   }
+  @include rwd(1035px) {
+    background-position: 14rem -12rem;
+    width: 76%;
+  }
+  @include rwd(1065px) {
+    background-position: 14rem -14rem;
+  }
+  @include rwd(1100px) {
+    background-position: 14rem -16rem;
+    width: 77%;
+  }
+  @include rwd(1140px) {
+    background-position: 15rem -18rem;
+    width: 78%;
+  }
+  @include rwd(1185px) {
+    width: 58rem;
+    background-position: 15rem -20rem;
+  }
+  @include rwd(1200px) {
+    width: 59rem;
+    background-position: 15rem -20rem;
+  }
+  @include rwd(1215px) {
+    width: 60rem;
+    background-position: 16rem -20rem;
+  }
+  @include rwd(1230px) {
+    width: 61rem;
+    background-position: 16rem -22rem;
+  }
+  @include rwd(1245px) {
+    width: 62rem;
+    background-position: 16rem -22rem;
+  }
+  @include rwd(1260px) {
+    width: 63rem;
+    background-position: 16rem -24rem;
+  }
+  @include rwd(1275px) {
+    width: 64rem;
+    background-position: 16rem -26rem;
+  }
+  @include rwd(1290px) {
+    width: 65rem;
+    background-position: 16rem -26rem;
+  }
+  @include rwd(1300px) {
+    background-size: 81%;
+  }
+  @include rwd(1315px) {
+    width: 66rem;
+  }
+  @include rwd(1330px) {
+    width: 67rem;
+  }
+  @include rwd(1345px) {
+    width: 68rem;
+    background-position: 16rem -28rem;
+  }
+  @include rwd(1360px) {
+    width: 69rem;
+  }
+  @include rwd(1375px) {
+    width: 70rem;
+    background-position: 16rem -30rem;
+  }
+  @include rwd(1390px) {
+    width: 71rem;
+    background-position: 16rem -30rem;
+  }
+  @include rwd(1405px) {
+    width: 72rem;
+    background-position: 16rem -30rem;
+  }
+  @include rwd(1420px) {
+    width: 74rem;
+    background-position: 16rem -32rem;
+  }
 
+  @include rwd(1440px) {
+    width: 74rem;
+    background-position: 16rem -34rem;
+    background-size: 83%;
+  }
+  @include rwd(1500px) {
+    width: 78rem;
+    background-position: 16rem -36rem;
+  }
+  @include rwd(1536px) {
+    width: 80rem;
+    background-position: 16rem -40rem;
+    background-size: 90%;
+  }
 
 }
 

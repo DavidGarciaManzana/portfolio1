@@ -384,6 +384,147 @@ li {
     background-attachment: fixed;
   }
 }
+@media screen and (min-width: 1035px) {
+  .profile-card__image {
+    background-position: 14rem -12rem;
+    width: 76%;
+  }
+}
+@media screen and (min-width: 1065px) {
+  .profile-card__image {
+    background-position: 14rem -14rem;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .profile-card__image {
+    background-position: 14rem -16rem;
+    width: 77%;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .profile-card__image {
+    background-position: 15rem -18rem;
+    width: 78%;
+  }
+}
+@media screen and (min-width: 1185px) {
+  .profile-card__image {
+    width: 58rem;
+    background-position: 15rem -20rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .profile-card__image {
+    width: 59rem;
+    background-position: 15rem -20rem;
+  }
+}
+@media screen and (min-width: 1215px) {
+  .profile-card__image {
+    width: 60rem;
+    background-position: 16rem -20rem;
+  }
+}
+@media screen and (min-width: 1230px) {
+  .profile-card__image {
+    width: 61rem;
+    background-position: 16rem -22rem;
+  }
+}
+@media screen and (min-width: 1245px) {
+  .profile-card__image {
+    width: 62rem;
+    background-position: 16rem -22rem;
+  }
+}
+@media screen and (min-width: 1260px) {
+  .profile-card__image {
+    width: 63rem;
+    background-position: 16rem -24rem;
+  }
+}
+@media screen and (min-width: 1275px) {
+  .profile-card__image {
+    width: 64rem;
+    background-position: 16rem -26rem;
+  }
+}
+@media screen and (min-width: 1290px) {
+  .profile-card__image {
+    width: 65rem;
+    background-position: 16rem -26rem;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .profile-card__image {
+    background-size: 81%;
+  }
+}
+@media screen and (min-width: 1315px) {
+  .profile-card__image {
+    width: 66rem;
+  }
+}
+@media screen and (min-width: 1330px) {
+  .profile-card__image {
+    width: 67rem;
+  }
+}
+@media screen and (min-width: 1345px) {
+  .profile-card__image {
+    width: 68rem;
+    background-position: 16rem -28rem;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .profile-card__image {
+    width: 69rem;
+  }
+}
+@media screen and (min-width: 1375px) {
+  .profile-card__image {
+    width: 70rem;
+    background-position: 16rem -30rem;
+  }
+}
+@media screen and (min-width: 1390px) {
+  .profile-card__image {
+    width: 71rem;
+    background-position: 16rem -30rem;
+  }
+}
+@media screen and (min-width: 1405px) {
+  .profile-card__image {
+    width: 72rem;
+    background-position: 16rem -30rem;
+  }
+}
+@media screen and (min-width: 1420px) {
+  .profile-card__image {
+    width: 74rem;
+    background-position: 16rem -32rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .profile-card__image {
+    width: 74rem;
+    background-position: 16rem -34rem;
+    background-size: 83%;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .profile-card__image {
+    width: 78rem;
+    background-position: 16rem -36rem;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .profile-card__image {
+    width: 80rem;
+    background-position: 16rem -40rem;
+    background-size: 90%;
+  }
+}
 
 .profile-card__title {
   position: absolute;
