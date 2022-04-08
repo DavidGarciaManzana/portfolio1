@@ -23,9 +23,8 @@
   &__sumary-and-education {
     @include rwd(1200px) {
       display: inline-block;
-      width: 25rem;
+      width: 44%;
       height: 67rem;
-      margin-left: 4rem;
     }
   }
 
@@ -269,10 +268,12 @@
   &__experience {
     @include rwd(1200px) {
       display: inline-block;
-      width: 25rem;
+      width: 44%;
       height: 67rem;
       position: absolute;
-      right: 4rem;
+    }
+    @include rwd(1545px) {
+      right: 0;
     }
   }
 
@@ -295,7 +296,7 @@
 
   &__experience-name-internship {
     @include rwd(1200px) {
-      margin-top: 2.5rem;
+      margin-top: 3.5rem;
     }
   }
 
@@ -349,7 +350,7 @@
 
   &__experience-detail-circle-freelance {
     @include details-circle;
-    top: 2px;
+    top: 3px;
   }
 
   &__experience-detail-line-freelance {
@@ -364,7 +365,7 @@
     @include details-circle;
     top: 0.35rem;
     @include rwd(1200px) {
-      top: 1.7rem;
+      top: 2.75rem;
       z-index: var(--z-normal);
     }
   }
@@ -382,14 +383,17 @@
   }
 
   &__experience-name-ecommerce {
-    margin-top: 5rem;
+    @include rwd(1200px) {
+      margin-top: 8rem;
+    }
+
   }
 
   &__experience-detail-circle-ecommerce {
     @include details-circle;
     top: 0.35rem;
     @include rwd(1200px) {
-      top: 4.3rem;
+      top: 7rem;
       z-index: var(--z-normal);
     }
   }
@@ -418,7 +422,7 @@
 
     }
     @include rwd(1200px) {
-      height: 15rem;
+      height: 16.5rem;
     }
 
   }

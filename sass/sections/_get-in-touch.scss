@@ -19,10 +19,30 @@
     top: 0;
   }
 
+  &__forms {
+    @include rwd(1200px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__container-email-me-and-call-me {
+    @include rwd(1200px) {
+      width: 50%;
+      border: 1px solid red;
+      height: 23rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
   &__container-email-me {
     background-color: #fff;
     width: 90%;
-    min-height: 8rem;
+    min-height: 10.4rem;
     margin: 1rem auto;
 
 
@@ -68,7 +88,7 @@
   &__container-call-me {
     background-color: #fff;
     width: 90%;
-    min-height: 8rem;
+    min-height: 10.4rem;
     margin: 1rem auto;
 
 
@@ -112,6 +132,9 @@
 
   &__container-message-me {
     min-height: 24rem;
+    @include rwd(1200px) {
+      width: 50%;
+    }
   }
 
   &__message-me-form {

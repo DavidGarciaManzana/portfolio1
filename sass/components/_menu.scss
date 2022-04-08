@@ -19,6 +19,9 @@ body.not-scrolling {
   @include rwd(large) {
     left: 0;
   }
+  @include rwd(1035px) {
+    height: 101vh;
+  }
 
   &-opened {
     visibility: visible;

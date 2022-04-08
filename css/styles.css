@@ -624,6 +624,11 @@ body.not-scrolling {
     left: 0;
   }
 }
+@media screen and (min-width: 1035px) {
+  .menu {
+    height: 101vh;
+  }
+}
 .menu-opened {
   visibility: visible;
   transform: translateX(125%);
@@ -1405,9 +1410,8 @@ body.not-scrolling {
 @media screen and (min-width: 1200px) {
   .resume__sumary-and-education {
     display: inline-block;
-    width: 25rem;
+    width: 44%;
     height: 67rem;
-    margin-left: 4rem;
   }
 }
 .resume__sumary-title {
@@ -1729,10 +1733,14 @@ body.not-scrolling {
 @media screen and (min-width: 1200px) {
   .resume__experience {
     display: inline-block;
-    width: 25rem;
+    width: 44%;
     height: 67rem;
     position: absolute;
-    right: 4rem;
+  }
+}
+@media screen and (min-width: 1545px) {
+  .resume__experience {
+    right: 0;
   }
 }
 .resume__experience-title {
@@ -1753,7 +1761,7 @@ body.not-scrolling {
 }
 @media screen and (min-width: 1200px) {
   .resume__experience-name-internship {
-    margin-top: 2.5rem;
+    margin-top: 3.5rem;
   }
 }
 .resume__experience-place, .resume__experience-description {
@@ -1831,7 +1839,7 @@ body.not-scrolling {
   border: 2px solid var(--color-details-dark);
   border-radius: 100%;
   background-color: #fff;
-  top: 2px;
+  top: 3px;
 }
 .resume__experience-detail-line-freelance {
   display: block;
@@ -1858,7 +1866,7 @@ body.not-scrolling {
 }
 @media screen and (min-width: 1200px) {
   .resume__experience-detail-circle-internship {
-    top: 1.7rem;
+    top: 2.75rem;
     z-index: var(--z-normal);
   }
 }
@@ -1879,8 +1887,10 @@ body.not-scrolling {
     height: 18rem;
   }
 }
-.resume__experience-name-ecommerce {
-  margin-top: 5rem;
+@media screen and (min-width: 1200px) {
+  .resume__experience-name-ecommerce {
+    margin-top: 8rem;
+  }
 }
 .resume__experience-detail-circle-ecommerce {
   display: block;
@@ -1895,7 +1905,7 @@ body.not-scrolling {
 }
 @media screen and (min-width: 1200px) {
   .resume__experience-detail-circle-ecommerce {
-    top: 4.3rem;
+    top: 7rem;
     z-index: var(--z-normal);
   }
 }
@@ -1938,7 +1948,7 @@ body.not-scrolling {
 }
 @media screen and (min-width: 1200px) {
   .resume__experience-detail-line-ecommerce {
-    height: 15rem;
+    height: 16.5rem;
   }
 }
 
@@ -2842,10 +2852,28 @@ body.not-scrolling {
 .contact__line {
   top: 0;
 }
+@media screen and (min-width: 1200px) {
+  .contact__forms {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact__container-email-me-and-call-me {
+    width: 50%;
+    border: 1px solid red;
+    height: 23rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .contact__container-email-me {
   background-color: #fff;
   width: 90%;
-  min-height: 8rem;
+  min-height: 10.4rem;
   margin: 1rem auto;
 }
 .contact__email-me-father-image {
@@ -2887,7 +2915,7 @@ body.not-scrolling {
 .contact__container-call-me {
   background-color: #fff;
   width: 90%;
-  min-height: 8rem;
+  min-height: 10.4rem;
   margin: 1rem auto;
 }
 .contact__call-me-father-image {
@@ -2928,6 +2956,11 @@ body.not-scrolling {
 }
 .contact__container-message-me {
   min-height: 24rem;
+}
+@media screen and (min-width: 1200px) {
+  .contact__container-message-me {
+    width: 50%;
+  }
 }
 .contact__message-me-form {
   width: 90%;
