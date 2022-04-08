@@ -20,6 +20,16 @@
 
   //sumary
 
+  &__sumary-and-education {
+    @include rwd(1200px) {
+      display: inline-block;
+      width: 25rem;
+      height: 67rem;
+      margin-left: 4rem;
+    }
+  }
+
+
   &__sumary-title {
     @include l-margin1;
     @include rwd(small) {
@@ -65,6 +75,10 @@
     position: absolute;
     right: 0.95rem;
     top: 0.2rem;
+    @include rwd(1200px) {
+      background: #fff;
+      z-index: var(--z-normal);
+    }
   }
 
   &__sumary-detail-line {
@@ -92,12 +106,20 @@
       top: -1.4rem;
       height: 10rem;
     }
+    @include rwd(1200px) {
+      top: 0.6rem;
+      height: 17rem;
+      left: 1rem;
+      position: absolute;
+    }
 
 
   }
 
 
   //education
+
+
   &__education-title {
     @include l-margin1;
     @include rwd(small) {
@@ -232,11 +254,27 @@
     @include rwd(large) {
       height: 13rem;
     }
+    @include rwd(1050px) {
+      height: 11.8rem;
+    }
+    @include rwd(1200px) {
+      height: 16.8rem;
+    }
 
   }
 
 
   //  experience
+
+  &__experience {
+    @include rwd(1200px) {
+      display: inline-block;
+      width: 25rem;
+      height: 67rem;
+      position: absolute;
+      right: 4rem;
+    }
+  }
 
   &__experience-title {
     @include l-margin1;
@@ -252,6 +290,12 @@
   &__experience-name {
     @include rwd(small) {
       font-size: 1.2rem;
+    }
+  }
+
+  &__experience-name-internship {
+    @include rwd(1200px) {
+      margin-top: 2.5rem;
     }
   }
 
@@ -305,7 +349,7 @@
 
   &__experience-detail-circle-freelance {
     @include details-circle;
-    top: 0.2rem;
+    top: 2px;
   }
 
   &__experience-detail-line-freelance {
@@ -313,12 +357,16 @@
     position: absolute;
     right: 1.4rem;
     top: 1.1rem;
-    height: 21.37rem;
+    height: 23rem;
   }
 
   &__experience-detail-circle-internship {
     @include details-circle;
     top: 0.35rem;
+    @include rwd(1200px) {
+      top: 1.7rem;
+      z-index: var(--z-normal);
+    }
   }
 
   &__experience-detail-line-internship {
@@ -328,14 +376,22 @@
     top: 1.3rem;
     height: 12.6rem;
     @include rwd(small) {
-      height: 14.6rem;
+      height: 18rem;
     }
 
+  }
+
+  &__experience-name-ecommerce {
+    margin-top: 5rem;
   }
 
   &__experience-detail-circle-ecommerce {
     @include details-circle;
     top: 0.35rem;
+    @include rwd(1200px) {
+      top: 4.3rem;
+      z-index: var(--z-normal);
+    }
   }
 
   &__experience-detail-line-ecommerce {
@@ -360,6 +416,9 @@
     @include rwd(670px) {
       height: 8.5rem;
 
+    }
+    @include rwd(1200px) {
+      height: 15rem;
     }
 
   }

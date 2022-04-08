@@ -7,5 +7,6 @@ footer {
   align-items: center;
   @include rwd(large) {
     margin-left: 256px;
+    font-size: 1.3rem;
   }
 }

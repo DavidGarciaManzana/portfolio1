@@ -25,5 +25,12 @@
     display: block;
     margin: 1rem auto;
     width: 90%;
+
+    @include rwd(1050px) {
+      width: 80%;
+    }
+    @include rwd(1200px) {
+      width: 70%;
+    }
   }
 }

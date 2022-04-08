@@ -5,6 +5,17 @@
     top: 51.5rem;
     left: 38.5rem;
   }
+  @include rwd(1050px) {
+    left: 37.5rem;
+  }
+  @include rwd(1110px) {
+    top: 49.7rem;
+    left: 36.5rem;
+  }
+  @include rwd(1180px) {
+    top: 50rem;
+    left: 37.5rem;
+  }
 
   &__title {
     margin-left: 1rem;

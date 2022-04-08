@@ -42,6 +42,12 @@
     @include rwd(large) {
       margin: 1rem;
     }
+    @include rwd(1050px) {
+      width: 40%;
+    }
+    @include rwd(1110px) {
+      width: 35%;
+    }
 
   }
 }
