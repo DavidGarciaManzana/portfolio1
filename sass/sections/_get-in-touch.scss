@@ -30,7 +30,6 @@
   &__container-email-me-and-call-me {
     @include rwd(1200px) {
       width: 50%;
-      border: 1px solid red;
       height: 23rem;
       display: flex;
       flex-direction: column;

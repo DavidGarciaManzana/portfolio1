@@ -18,6 +18,9 @@
     @include rwd(590px) {
       font-size: 1.3rem;
     }
+    @include rwd(1470px) {
+      margin: 2rem 1rem;
+    }
   }
 
   &__image {

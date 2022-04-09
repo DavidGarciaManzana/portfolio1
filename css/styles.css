@@ -988,6 +988,11 @@ body.not-scrolling {
     font-size: 1.3rem;
   }
 }
+@media screen and (min-width: 1470px) {
+  .about__description {
+    margin: 2rem 1rem;
+  }
+}
 .about__image {
   display: block;
   margin: 1rem auto 2rem;
@@ -1058,6 +1063,38 @@ body.not-scrolling {
     left: 37.5rem;
   }
 }
+@media screen and (min-width: 1230px) {
+  .occupation {
+    left: 39rem;
+  }
+}
+@media screen and (min-width: 1290px) {
+  .occupation {
+    left: 40rem;
+  }
+}
+@media screen and (min-width: 1350px) {
+  .occupation {
+    left: 41rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .occupation {
+    left: 43rem;
+  }
+}
+@media screen and (min-width: 1470px) {
+  .occupation {
+    top: 51rem;
+    left: 44rem;
+  }
+}
+@media screen and (min-width: 1550px) {
+  .occupation {
+    top: 51.5rem;
+    left: 46rem;
+  }
+}
 .occupation__title {
   margin-left: 1rem;
 }
@@ -1070,6 +1107,12 @@ body.not-scrolling {
   .occupation__title {
     margin: 2rem 1rem 0;
     font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 1350px) {
+  .occupation__title {
+    margin: 2rem 1rem 0;
+    font-size: 2rem;
   }
 }
 .occupation__title span {
@@ -1113,6 +1156,11 @@ body.not-scrolling {
 @media screen and (min-width: 1024px) {
   .occupation__description-initial {
     margin: 1rem;
+  }
+}
+@media screen and (min-width: 1350px) {
+  .occupation__description-initial {
+    margin: 2rem 1rem;
   }
 }
 @media screen and (min-width: 445px) {
@@ -1169,12 +1217,22 @@ body.not-scrolling {
     margin-top: 0;
   }
 }
+@media screen and (min-width: 1290px) {
+  .occupation__web-development {
+    margin-top: 1rem;
+  }
+}
 .occupation__mobile-os {
   margin: 1rem 0.7rem 2rem;
 }
 @media screen and (min-width: 810px) {
   .occupation__mobile-os {
     margin-bottom: 4rem;
+  }
+}
+@media screen and (min-width: 1290px) {
+  .occupation__mobile-os {
+    margin-top: 1rem;
   }
 }
 .occupation strong + span {
@@ -2862,7 +2920,6 @@ body.not-scrolling {
 @media screen and (min-width: 1200px) {
   .contact__container-email-me-and-call-me {
     width: 50%;
-    border: 1px solid red;
     height: 23rem;
     display: flex;
     flex-direction: column;
