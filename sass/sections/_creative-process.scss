@@ -104,6 +104,15 @@
     @include rwd(large) {
       left: 5.2%;
     }
+    @include rwd(1300px) {
+      left: 6%;
+    }
+    @include rwd(1400px) {
+      left: 6.1%;
+    }
+    @include rwd(1600px) {
+      left: 6.3%;
+    }
 
 
     & h2 {
@@ -183,6 +192,18 @@
       @include rwd(1200px) {
         left: 85%;
       }
+      @include rwd(1300px) {
+        left: 97%;
+      }
+      @include rwd(1400px) {
+        left: 113%;
+      }
+      @include rwd(1500px) {
+        left: 130%;
+      }
+      @include rwd(1600px) {
+        left: 140%;
+      }
     }
   }
 
@@ -256,6 +277,18 @@
       }
       @include rwd(1200px) {
         left: 85%;
+      }
+      @include rwd(1300px) {
+        left: 100%;
+      }
+      @include rwd(1400px) {
+        left: 115%;
+      }
+      @include rwd(1500px) {
+        left: 128%;
+      }
+      @include rwd(1600px) {
+        left: 146%;
       }
 
 
@@ -333,6 +366,18 @@
       @include rwd(1200px) {
         left: 65%;
       }
+      @include rwd(1300px) {
+        left: 83%;
+      }
+      @include rwd(1400px) {
+        left: 98%;
+      }
+      @include rwd(1500px) {
+        left: 113%;
+      }
+      @include rwd(1600px) {
+        left: 130%;
+      }
 
 
     }
@@ -408,6 +453,18 @@
       }
       @include rwd(1200px) {
         left: 80%;
+      }
+      @include rwd(1300px) {
+        left: 90%;
+      }
+      @include rwd(1400px) {
+        left: 105%;
+      }
+      @include rwd(1500px) {
+        left: 115%;
+      }
+      @include rwd(1600px) {
+        left: 125%;
       }
 
 
@@ -490,6 +547,18 @@
       }
       @include rwd(1200px) {
         left: 95%;
+      }
+      @include rwd(1300px) {
+        left: 120%;
+      }
+      @include rwd(1400px) {
+        left: 138%;
+      }
+      @include rwd(1500px) {
+        left: 160%;
+      }
+      @include rwd(1600px) {
+        left: 177%;
       }
 
 

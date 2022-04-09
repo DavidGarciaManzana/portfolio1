@@ -21,6 +21,9 @@
     @include rwd(1470px) {
       margin: 2rem 1rem;
     }
+    @include rwd(1500px) {
+      margin: 0 1rem;
+    }
   }
 
   &__image {
@@ -50,6 +53,9 @@
     }
     @include rwd(1110px) {
       width: 35%;
+    }
+    @include rwd(1500px){
+      width: 27%;
     }
 
   }

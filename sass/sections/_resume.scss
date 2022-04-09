@@ -111,6 +111,12 @@
       left: 1rem;
       position: absolute;
     }
+    @include rwd(1300px) {
+      height: 13rem;
+    }
+    @include rwd(1600px){
+      height: 12rem;
+    }
 
 
   }
@@ -258,6 +264,18 @@
     }
     @include rwd(1200px) {
       height: 16.8rem;
+    }
+    @include rwd(1300px) {
+      height: 15.8rem;
+    }
+    @include rwd(1400px){
+      height: 15.7rem;
+    }
+    @include rwd(1500px){
+      height: 14.5rem;
+    }
+    @include rwd(1600px){
+      height: 13.2rem;
     }
 
   }
@@ -423,6 +441,10 @@
     }
     @include rwd(1200px) {
       height: 16.5rem;
+    }
+    @include rwd(1600px) {
+      height: 15.5rem;
+
     }
 
   }

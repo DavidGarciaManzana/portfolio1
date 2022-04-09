@@ -32,10 +32,23 @@
     top: 51rem;
     left: 44rem;
   }
-  @include rwd(1550px) {
-    top: 51.5rem;
-    left: 46rem;
+  @include rwd(1500px) {
+    top: 49rem;
+    left: 38rem;
   }
+  @include rwd(1550px){
+    top: 50rem;
+    left: 39rem;
+  }
+  @include rwd(1600px) {
+    top: 51.5rem;
+    left: 40rem;
+  }
+  @include rwd(1700px){
+    top: 54.5rem;
+    left: 42rem;
+  }
+
 
   &__title {
     margin-left: 1rem;

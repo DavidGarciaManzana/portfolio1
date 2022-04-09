@@ -173,6 +173,11 @@
     background-position: 16rem -40rem;
     background-size: 90%;
   }
+  @include rwd(1600px) {
+    width: 84rem;
+    background-position: 16rem -40rem;
+    background-size: 84%;
+  }
 
 }
 
@@ -198,6 +203,7 @@
   @include rwd(large) {
     left: 25rem;
   }
+
 
 
 }
