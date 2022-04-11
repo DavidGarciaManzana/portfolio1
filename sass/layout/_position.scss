@@ -183,6 +183,10 @@
     background-position: 16rem -40rem;
     background-size: 84%;
   }
+  @include rwd-h(730px) {
+    background-size: 180%;
+    background-position: -10.5rem 0rem;
+  }
   @include rwd-h(760px) {
     background-size: cover;
   }

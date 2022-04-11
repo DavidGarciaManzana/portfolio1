@@ -216,6 +216,91 @@ li {
     align-items: center;
   }
 }
+@media screen and (min-height: 650px) {
+  .up-button.display {
+    top: 36.5rem;
+  }
+}
+@media screen and (min-height: 660px) {
+  .up-button.display {
+    top: 37rem;
+  }
+}
+@media screen and (min-height: 670px) {
+  .up-button.display {
+    top: 38rem;
+  }
+}
+@media screen and (min-height: 680px) {
+  .up-button.display {
+    top: 38.5rem;
+  }
+}
+@media screen and (min-height: 690px) {
+  .up-button.display {
+    top: 39rem;
+  }
+}
+@media screen and (min-height: 700px) {
+  .up-button.display {
+    top: 40rem;
+  }
+}
+@media screen and (min-height: 720px) {
+  .up-button.display {
+    top: 41rem;
+  }
+}
+@media screen and (min-height: 740px) {
+  .up-button.display {
+    top: 42rem;
+  }
+}
+@media screen and (min-height: 760px) {
+  .up-button.display {
+    top: 43rem;
+  }
+}
+@media screen and (min-height: 780px) {
+  .up-button.display {
+    top: 44rem;
+  }
+}
+@media screen and (min-height: 800px) {
+  .up-button.display {
+    top: 45rem;
+  }
+}
+@media screen and (min-height: 820px) {
+  .up-button.display {
+    top: 47rem;
+  }
+}
+@media screen and (min-height: 840px) {
+  .up-button.display {
+    top: 48rem;
+  }
+}
+@media screen and (min-height: 860px) {
+  .up-button.display {
+    top: 49rem;
+  }
+}
+@media screen and (min-height: 880px) {
+  .up-button.display {
+    top: 50rem;
+  }
+}
+@media screen and (min-height: 890px) {
+  .up-button.display {
+    top: 51rem;
+  }
+}
+@media screen and (min-height: 900px) {
+  .up-button.display {
+    top: 52rem;
+  }
+}
 .up-button__image {
   height: 1rem;
 }
@@ -542,6 +627,12 @@ li {
     width: 84rem;
     background-position: 16rem -40rem;
     background-size: 84%;
+  }
+}
+@media screen and (min-height: 730px) {
+  .profile-card__image {
+    background-size: 180%;
+    background-position: -10.5rem 0rem;
   }
 }
 @media screen and (min-height: 760px) {
