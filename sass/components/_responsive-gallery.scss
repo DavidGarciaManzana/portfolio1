@@ -81,6 +81,12 @@
     height: 0;
     width: 100%;
     position: fixed;
+
+    @include rwd(large) {
+      width: 75%;
+      left: 0;
+    }
+
   }
 
   .display {
@@ -89,10 +95,13 @@
     animation: heighta 2s forwards;
     @keyframes heighta {
       100% {
-        top: 0%;
+        top: 0;
         height: 100%;
       }
-
+    }
+    @include rwd(large) {
+      margin-left: 256px;
+      width: calc(100% - 256px);
     }
   }
 
@@ -109,7 +118,7 @@
   &__item-close-icon {
     position: relative;
     top: 0.5rem;
-    right: -17.5rem;
+    right: -88%;
     color: #fff;
     font-size: 2rem;
     width: 2rem;
@@ -118,6 +127,22 @@
     border-radius: 25px;
     cursor: pointer;
     z-index: var(--z-modal-tooltip);
+
+    @include rwd(xsmall) {
+      right: -90%;
+    }
+    @include rwd(small) {
+      right: -91%;
+    }
+    @include rwd(500px) {
+      right: -92%;
+    }
+    @include rwd(600px) {
+      right: -93%;
+    }
+    @include rwd(700px) {
+      right: -94%;
+    }
 
     &-first {
       position: absolute;
@@ -173,6 +198,17 @@
     scrollbar-width: none;
     scroll-behavior: smooth;
 
+    @include rwd(small) {
+      width: 90%;
+      margin: 0 auto;
+    }
+    @include rwd(1200px) {
+      width: 60%;
+      display: inline-flex;
+      margin: 0 1rem;
+
+    }
+
   }
 
   &__image-container::-webkit-scrollbar {
@@ -200,28 +236,100 @@
     box-shadow: 2px 2px 2px var(--color-box-shadow);
     width: 90%;
     margin: 1rem auto;
-    min-height: 17rem;
+    max-height: 19.2rem;
     font-weight: 400;
+    @include rwd(small) {
+      font-size: 1.3rem;
+    }
+    @include rwd(1200px) {
+      width: 30%;
+      display: inline-block;
+      margin: 0 1rem;
+      position: relative;
+
+      min-height: 23.5rem;
+      position: relative;
+      top: -1rem;
+    }
+    @include rwd(1250px){
+      min-height: 25rem;
+    }
+    @include rwd(1300px) {
+      min-height: 26rem;
+    }
+    @include rwd(1350px){
+      min-height: 27.2rem;
+    }
+    @include rwd(1400px){
+      min-height: 28.5rem;
+    }
+    @include rwd(1450px) {
+      min-height: 29.7rem;
+    }
+    @include rwd(1500px) {
+      min-height: 31rem;
+    }
+    @include rwd(1550px) {
+      min-height: 32.2rem;
+    }
+    @include rwd(1600px) {
+      min-height: 33.5rem;
+    }
+    @include rwd(1650px) {
+      min-height: 34.7rem;
+    }
+    @include rwd(1700px) {
+      min-height: 36rem;
+    }
 
     & h1 {
       margin: 0;
       font-size: 1.5rem;
       margin-bottom: 2rem;
-    }
 
-    & span {
-      margin-right: 5rem;
+      @include rwd(small) {
+        font-size: 2rem;
+      }
+      @include rwd(1200px) {
+        font-size: 1.5rem;
+      }
     }
 
     & p {
+
       margin: 0;
+
       margin-bottom: .5rem;
+      @include rwd(large) {
+        font-size: 1.2rem;
+      }
+
     }
+  }
+
+  &__tech {
+    display: block;
+
   }
 
   &__details-description-container {
     background-color: #fff;
     padding: 1em;
+
+    & p {
+      & h1 {
+        @include rwd(small) {
+          font-size: 1.8rem;
+        }
+      }
+
+      & p {
+        @include rwd(small) {
+          font-size: 1.3rem;
+        }
+
+      }
+    }
 
 
   }
@@ -268,3 +376,8 @@
   display: none;
 }
 
+.prueba {
+  @include rwd(1200px) {
+    display: flex;
+  }
+}

@@ -1,5 +1,5 @@
 .profile-card__image {
-  background-image: url("../../media/images/profile1.jpeg");
+  background-image: url("../../media/images/finalimage.webp");
   background-size: 200%;
   background-position: 5% 80%;
   background-repeat: no-repeat;
@@ -11,6 +11,9 @@
     background-size: 150%;
     background-position: 0 100%;
 
+  }
+  @include rwd(small) {
+    background-image: url("../../media/images/profile1rs.jpg");
   }
   @include rwd(520px) {
     background-size: 105%;
@@ -78,6 +81,7 @@
     background-size: 80%;
     background-position: 14rem -10.5rem;
     background-attachment: fixed;
+    background-image: url("../../media/images/profile1bigwp.webp");
   }
   @include rwd(1035px) {
     background-position: 14rem -12rem;

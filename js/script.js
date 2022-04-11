@@ -273,10 +273,13 @@ projects.forEach(
                 `
             projectDetails.appendChild(projectDetailsTitle)
 
+            let prueba = document.createElement("div")
+            prueba.classList.add("prueba")
+            projectDetails.appendChild(prueba)
 
             let projectDetailsImageContainer = document.createElement("div")
             projectDetailsImageContainer.classList.add("responsive-gallery__image-container")
-            projectDetails.appendChild(projectDetailsImageContainer)
+            prueba.appendChild(projectDetailsImageContainer)
 
 
             let projectDetailsFirstImage = document.createElement("img")
@@ -312,7 +315,7 @@ projects.forEach(
 
             let projectDetailsInfoContainer = document.createElement("div")
             projectDetailsInfoContainer.classList.add("responsive-gallery__details-info-container")
-            projectDetails.appendChild(projectDetailsInfoContainer)
+            prueba.appendChild(projectDetailsInfoContainer)
 
             let projectDetailsInfo = document.createElement("h1")
             projectDetailsInfo.innerText = "Project information"
@@ -331,7 +334,7 @@ projects.forEach(
             projectDetailsInfoContainer.appendChild(projectDetailsUrl)
 
             let projectDetailsTechnologies = document.createElement("p")
-            projectDetailsTechnologies.innerHTML = `<p><strong><span>Technologies used: </span></strong>${project[7]}</p>`
+            projectDetailsTechnologies.innerHTML = `<p><strong><span class="responsive-gallery__tech">Technologies used: </span></strong>${project[7]}</p>`
             projectDetailsInfoContainer.appendChild(projectDetailsTechnologies)
 
 

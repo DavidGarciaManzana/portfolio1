@@ -16,10 +16,12 @@
 
 
   &__github img {
+    height: 2rem;
     width: 2rem;
   }
 
   &__telegram img {
+    height: 2rem;
     width: 2rem;
   }
 
@@ -28,6 +30,7 @@
     top: 15%;
     left: 10%;
     width: 1.6rem;
+    height: 1.6rem;
   }
 
   &__linkedin img {
@@ -35,6 +38,7 @@
     top: 15%;
     left: 18%;
     width: 1.3rem;
+    height: 1.3rem;
   }
 
   &__whatsapp img {
@@ -42,5 +46,6 @@
     top: 10%;
     left: 10%;
     width: 1.6rem;
+    height: 1.6rem;
   }
 }
