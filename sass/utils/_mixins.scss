@@ -98,3 +98,16 @@
 
 }
 
+@mixin rwd-h($bp) {
+  @if (map-has-key($breakpointsh, $bp)) {
+    @media screen and (min-height: map-get($breakpointsh, $bp)) {
+      @content
+    }
+  } @else {
+    @media screen and (min-height: $bp) {
+      @content
+    }
+  }
+
+}
+

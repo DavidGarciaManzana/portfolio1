@@ -7,6 +7,7 @@
   width: 100%;
   z-index: var(--z-back);
 
+
   @include rwd(xsmall) {
     background-size: 150%;
     background-position: 0 100%;
@@ -182,6 +183,98 @@
     background-position: 16rem -40rem;
     background-size: 84%;
   }
+  @include rwd-h(760px) {
+    background-size: cover;
+  }
+  @include rwd-h(small) {
+    background-size: 205%;
+    @include rwd(350px) {
+      background-size: 185%;
+    }
+    @include rwd(xsmall) {
+      background-size: 180%;
+      background-position: 0 100%;
+    }
+    @include rwd(600px) {
+      background-size: cover;
+    }
+    @include rwd(large) {
+      background-size: 100%;
+      background-position: 6rem 32%;
+    }
+    @include rwd(1100px) {
+      background-position: 6rem 40%;
+    }
+    @include rwd(1300px) {
+      background-position: 6rem 55%;
+    }
+  }
+  @include rwd-h(900px) {
+    background-size: 210%;
+    @include rwd(375px) {
+      background-size: 190%;
+    }
+    @include rwd(425px) {
+      background-size: 190%;
+    }
+    @include rwd(580px) {
+      background-size: 150%;
+    }
+    @include rwd(610px) {
+      background-size: cover;
+    }
+  }
+  @include rwd-h(910px) {
+    background-position: 10% 80%;
+    background-size: 212%;
+  }
+  @include rwd-h(920px) {
+    background-position: 9% 80%;
+    background-size: 215%;
+  }
+  @include rwd-h(930px) {
+    background-position: 15% 80%;
+    background-size: 230%;
+  }
+  @include rwd-h(990px) {
+    background-position: 20% 80%;
+    background-size: 250%;
+    @include rwd(580px) {
+      background-size: cover;
+    }
+    @include rwd(large) {
+      background-position: 25% 45%;
+      background-size: 140%;
+    }
+    @include rwd(1060px) {
+      background-position: 25% 55%;
+    }
+  }
+  @include rwd-h(1070px) {
+    background-position: 25% 80%;
+    background-size: 270%;
+    @include rwd(500px) {
+      background-size: cover;
+    }
+    @include rwd(1024px) {
+      background-size: 125%;
+      background-position: -1rem 30%;
+    }
+    @include rwd(1040px) {
+      background-position: -1rem 50%;
+    }
+  }
+  @include rwd-h(1160px) {
+    background-position: 27% 80%;
+    background-size: 290%;
+    @include rwd(660px) {
+      background-size: cover;
+    }
+    @include rwd(1024px) {
+      background-size: 150%;
+      background-position: 25% 38%;
+    }
+  }
 
 }
 
@@ -207,7 +300,6 @@
   @include rwd(large) {
     left: 25rem;
   }
-
 
 
 }
