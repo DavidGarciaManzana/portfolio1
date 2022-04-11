@@ -4,17 +4,162 @@
     position: absolute;
     top: 51.5rem;
     left: 38.5rem;
+    @include rwd-h(650px) {
+      top: 52.5rem;
+    }
+    @include rwd-h(670px) {
+      top: 53.5rem;
+    }
+    @include rwd-h(690px) {
+      top: 55rem;
+    }
+    @include rwd-h(710px) {
+      top: 56rem;
+    }
+    @include rwd-h(730px) {
+      top: 57.5rem;
+    }
+    @include rwd-h(750px) {
+      top: 58.5rem;
+    }
+    @include rwd-h(770px) {
+      top: 60rem;
+    }
+    @include rwd-h(790px) {
+      top: 61rem;
+    }
+    @include rwd-h(810px) {
+      top: 62rem;
+    }
+    @include rwd-h(830px) {
+      top: 63.5rem;
+    }
+    @include rwd-h(850px) {
+      top: 65rem;
+    }
+    @include rwd-h(870px) {
+      top: 66rem;
+    }
+    @include rwd-h(890px) {
+      top: 67.5rem;
+    }
+    @include rwd-h(910px) {
+      top: 68.5rem;
+    }
+    @include rwd-h(930px) {
+      top: 70rem;
+    }
+    @include rwd-h(950px) {
+      top: 71rem;
+    }
+    @include rwd-h(970px) {
+      top: 72rem;
+    }
+    @include rwd-h(990px) {
+      top: 73.5rem;
+    }
+    @include rwd-h(1010px) {
+      top: 75rem;
+    }
+    @include rwd-h(1030px) {
+      top: 76rem;
+    }
+    @include rwd-h(1050px) {
+      top: 77.5rem;
+    }
+
   }
   @include rwd(1050px) {
     left: 37.5rem;
   }
+
   @include rwd(1110px) {
     top: 49.7rem;
     left: 36.5rem;
+
+    @include rwd-h(650px) {
+      top: 51rem;
+      left: 36.5rem;
+    }
+    @include rwd-h(670px) {
+      top: 52rem;
+    }
+    @include rwd-h(700px) {
+      top: 54rem;
+    }
+    @include rwd-h(730px) {
+      top: 55.5rem;
+    }
+    @include rwd-h(760px) {
+      top: 57.5rem;
+    }
+    @include rwd-h(790px) {
+      top: 59.5rem;
+    }
+    @include rwd-h(820px) {
+      top: 61.5rem;
+    }
+    @include rwd-h(850px) {
+      top: 63.5rem;
+    }
+    @include rwd-h(880px) {
+      top: 65rem;
+    }
+    @include rwd-h(910px) {
+      top: 67rem;
+    }
+    @include rwd-h(940px) {
+      top: 69rem;
+    }
+    @include rwd-h(970px) {
+      top: 71rem;
+    }
+    @include rwd-h(1000px) {
+      top: 72.5rem;
+    }
   }
   @include rwd(1180px) {
     top: 50rem;
     left: 37.5rem;
+    @include rwd-h(650px) {
+      top: 51rem;
+    }
+    @include rwd-h(680px) {
+      top: 53rem;
+    }
+    @include rwd-h(700px) {
+      top: 54rem;
+    }
+    @include rwd-h(730px) {
+      top: 56rem;
+    }
+    @include rwd-h(760px) {
+      top: 58rem;
+    }
+    @include rwd-h(790px) {
+      top: 60rem;
+    }
+    @include rwd-h(810px) {
+      top: 62rem;
+    }
+    @include rwd-h(850px) {
+      top: 64rem;
+    }
+    @include rwd-h(900px) {
+      top: 67rem;
+    }
+    @include rwd-h(940px) {
+      top: 69rem;
+    }
+    @include rwd-h(980px) {
+      top: 72rem;
+    }
+    @include rwd-h(1010px) {
+      top: 74rem;
+    }
+    @include rwd-h(1030px) {
+      top: 75rem;
+    }
   }
   @include rwd(1230px) {
     left: 39rem;
@@ -31,20 +176,149 @@
   @include rwd(1470px) {
     top: 51rem;
     left: 44rem;
+    @include rwd-h(650px) {
+      top: 52.5rem;
+    }
+    @include rwd-h(670px) {
+      top: 53.5rem;
+    }
+    @include rwd-h(700px) {
+      top: 55.5rem;
+    }
+    @include rwd-h(730px) {
+      top: 57.5rem;
+    }
+    @include rwd-h(760px) {
+      top: 59.5rem;
+    }
+    @include rwd-h(800px) {
+      top: 61.5rem;
+    }
+    @include rwd-h(830px) {
+      top: 63.5rem;
+    }
+    @include rwd-h(860px) {
+      top: 65.5rem;
+    }
+    @include rwd-h(900px) {
+      top: 68rem;
+    }
+    @include rwd-h(930px) {
+      top: 70rem;
+    }
+    @include rwd-h(960px) {
+      top: 72rem;
+    }
+    @include rwd-h(1000px) {
+      top: 74rem;
+    }
+    @include rwd-h(1030px) {
+      top: 76rem;
+    }
   }
   @include rwd(1500px) {
     top: 49rem;
     left: 38rem;
+    @include rwd-h(650px) {
+      top: 50rem;
+    }
+    @include rwd-h(670px) {
+      top: 51rem;
+    }
+    @include rwd-h(700px) {
+      top: 53rem;
+    }
+    @include rwd-h(730px) {
+      top: 54rem;
+    }
+    @include rwd-h(760px) {
+      top: 56rem;
+    }
+    @include rwd-h(800px) {
+      top: 59rem;
+    }
+    @include rwd-h(850px) {
+      top: 62rem;
+    }
+    @include rwd-h(900px) {
+      top: 65rem;
+    }
+    @include rwd-h(950px) {
+      top: 68rem;
+    }
+    @include rwd-h(1000px) {
+      top: 71rem;
+    }
   }
-  @include rwd(1550px){
+  @include rwd(1550px) {
     top: 50rem;
     left: 39rem;
+    @include rwd-h(650px) {
+      top: 50rem;
+    }
+    @include rwd-h(670px) {
+      top: 51rem;
+    }
+    @include rwd-h(700px) {
+      top: 53rem;
+    }
+    @include rwd-h(730px) {
+      top: 54rem;
+    }
+    @include rwd-h(760px) {
+      top: 56rem;
+    }
+    @include rwd-h(800px) {
+      top: 59rem;
+    }
+    @include rwd-h(850px) {
+      top: 62rem;
+    }
+    @include rwd-h(900px) {
+      top: 65rem;
+    }
+    @include rwd-h(950px) {
+      top: 68rem;
+    }
+    @include rwd-h(1000px) {
+      top: 71rem;
+    }
   }
   @include rwd(1600px) {
     top: 51.5rem;
     left: 40rem;
+    @include rwd-h(650px) {
+      top: 50rem;
+    }
+    @include rwd-h(670px) {
+      top: 51rem;
+    }
+    @include rwd-h(700px) {
+      top: 53rem;
+    }
+    @include rwd-h(730px) {
+      top: 54rem;
+    }
+    @include rwd-h(760px) {
+      top: 56rem;
+    }
+    @include rwd-h(800px) {
+      top: 59rem;
+    }
+    @include rwd-h(850px) {
+      top: 62rem;
+    }
+    @include rwd-h(900px) {
+      top: 65rem;
+    }
+    @include rwd-h(950px) {
+      top: 68rem;
+    }
+    @include rwd-h(1000px) {
+      top: 71rem;
+    }
   }
-  @include rwd(1700px){
+  @include rwd(1700px) {
     top: 54.5rem;
     left: 42rem;
   }

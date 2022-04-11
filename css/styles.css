@@ -1311,6 +1311,111 @@ body.not-scrolling {
     left: 38.5rem;
   }
 }
+@media screen and (min-width: 1024px) and (min-height: 650px) {
+  .occupation {
+    top: 52.5rem;
+  }
+}
+@media screen and (min-width: 1024px) and (min-height: 670px) {
+  .occupation {
+    top: 53.5rem;
+  }
+}
+@media screen and (min-width: 1024px) and (min-height: 690px) {
+  .occupation {
+    top: 55rem;
+  }
+}
+@media screen and (min-width: 1024px) and (min-height: 710px) {
+  .occupation {
+    top: 56rem;
+  }
+}
+@media screen and (min-width: 1024px) and (min-height: 730px) {
+  .occupation {
+    top: 57.5rem;
+  }
+}
+@media screen and (min-width: 1024px) and (min-height: 750px) {
+  .occupation {
+    top: 58.5rem;
+  }
+}
+@media screen and (min-width: 1024px) and (min-height: 770px) {
+  .occupation {
+    top: 60rem;
+  }
+}
+@media screen and (min-width: 1024px) and (min-height: 790px) {
+  .occupation {
+    top: 61rem;
+  }
+}
+@media screen and (min-width: 1024px) and (min-height: 810px) {
+  .occupation {
+    top: 62rem;
+  }
+}
+@media screen and (min-width: 1024px) and (min-height: 830px) {
+  .occupation {
+    top: 63.5rem;
+  }
+}
+@media screen and (min-width: 1024px) and (min-height: 850px) {
+  .occupation {
+    top: 65rem;
+  }
+}
+@media screen and (min-width: 1024px) and (min-height: 870px) {
+  .occupation {
+    top: 66rem;
+  }
+}
+@media screen and (min-width: 1024px) and (min-height: 890px) {
+  .occupation {
+    top: 67.5rem;
+  }
+}
+@media screen and (min-width: 1024px) and (min-height: 910px) {
+  .occupation {
+    top: 68.5rem;
+  }
+}
+@media screen and (min-width: 1024px) and (min-height: 930px) {
+  .occupation {
+    top: 70rem;
+  }
+}
+@media screen and (min-width: 1024px) and (min-height: 950px) {
+  .occupation {
+    top: 71rem;
+  }
+}
+@media screen and (min-width: 1024px) and (min-height: 970px) {
+  .occupation {
+    top: 72rem;
+  }
+}
+@media screen and (min-width: 1024px) and (min-height: 990px) {
+  .occupation {
+    top: 73.5rem;
+  }
+}
+@media screen and (min-width: 1024px) and (min-height: 1010px) {
+  .occupation {
+    top: 75rem;
+  }
+}
+@media screen and (min-width: 1024px) and (min-height: 1030px) {
+  .occupation {
+    top: 76rem;
+  }
+}
+@media screen and (min-width: 1024px) and (min-height: 1050px) {
+  .occupation {
+    top: 77.5rem;
+  }
+}
 @media screen and (min-width: 1050px) {
   .occupation {
     left: 37.5rem;
@@ -1322,10 +1427,141 @@ body.not-scrolling {
     left: 36.5rem;
   }
 }
+@media screen and (min-width: 1110px) and (min-height: 650px) {
+  .occupation {
+    top: 51rem;
+    left: 36.5rem;
+  }
+}
+@media screen and (min-width: 1110px) and (min-height: 670px) {
+  .occupation {
+    top: 52rem;
+  }
+}
+@media screen and (min-width: 1110px) and (min-height: 700px) {
+  .occupation {
+    top: 54rem;
+  }
+}
+@media screen and (min-width: 1110px) and (min-height: 730px) {
+  .occupation {
+    top: 55.5rem;
+  }
+}
+@media screen and (min-width: 1110px) and (min-height: 760px) {
+  .occupation {
+    top: 57.5rem;
+  }
+}
+@media screen and (min-width: 1110px) and (min-height: 790px) {
+  .occupation {
+    top: 59.5rem;
+  }
+}
+@media screen and (min-width: 1110px) and (min-height: 820px) {
+  .occupation {
+    top: 61.5rem;
+  }
+}
+@media screen and (min-width: 1110px) and (min-height: 850px) {
+  .occupation {
+    top: 63.5rem;
+  }
+}
+@media screen and (min-width: 1110px) and (min-height: 880px) {
+  .occupation {
+    top: 65rem;
+  }
+}
+@media screen and (min-width: 1110px) and (min-height: 910px) {
+  .occupation {
+    top: 67rem;
+  }
+}
+@media screen and (min-width: 1110px) and (min-height: 940px) {
+  .occupation {
+    top: 69rem;
+  }
+}
+@media screen and (min-width: 1110px) and (min-height: 970px) {
+  .occupation {
+    top: 71rem;
+  }
+}
+@media screen and (min-width: 1110px) and (min-height: 1000px) {
+  .occupation {
+    top: 72.5rem;
+  }
+}
 @media screen and (min-width: 1180px) {
   .occupation {
     top: 50rem;
     left: 37.5rem;
+  }
+}
+@media screen and (min-width: 1180px) and (min-height: 650px) {
+  .occupation {
+    top: 51rem;
+  }
+}
+@media screen and (min-width: 1180px) and (min-height: 680px) {
+  .occupation {
+    top: 53rem;
+  }
+}
+@media screen and (min-width: 1180px) and (min-height: 700px) {
+  .occupation {
+    top: 54rem;
+  }
+}
+@media screen and (min-width: 1180px) and (min-height: 730px) {
+  .occupation {
+    top: 56rem;
+  }
+}
+@media screen and (min-width: 1180px) and (min-height: 760px) {
+  .occupation {
+    top: 58rem;
+  }
+}
+@media screen and (min-width: 1180px) and (min-height: 790px) {
+  .occupation {
+    top: 60rem;
+  }
+}
+@media screen and (min-width: 1180px) and (min-height: 810px) {
+  .occupation {
+    top: 62rem;
+  }
+}
+@media screen and (min-width: 1180px) and (min-height: 850px) {
+  .occupation {
+    top: 64rem;
+  }
+}
+@media screen and (min-width: 1180px) and (min-height: 900px) {
+  .occupation {
+    top: 67rem;
+  }
+}
+@media screen and (min-width: 1180px) and (min-height: 940px) {
+  .occupation {
+    top: 69rem;
+  }
+}
+@media screen and (min-width: 1180px) and (min-height: 980px) {
+  .occupation {
+    top: 72rem;
+  }
+}
+@media screen and (min-width: 1180px) and (min-height: 1010px) {
+  .occupation {
+    top: 74rem;
+  }
+}
+@media screen and (min-width: 1180px) and (min-height: 1030px) {
+  .occupation {
+    top: 75rem;
   }
 }
 @media screen and (min-width: 1230px) {
@@ -1354,10 +1590,125 @@ body.not-scrolling {
     left: 44rem;
   }
 }
+@media screen and (min-width: 1470px) and (min-height: 650px) {
+  .occupation {
+    top: 52.5rem;
+  }
+}
+@media screen and (min-width: 1470px) and (min-height: 670px) {
+  .occupation {
+    top: 53.5rem;
+  }
+}
+@media screen and (min-width: 1470px) and (min-height: 700px) {
+  .occupation {
+    top: 55.5rem;
+  }
+}
+@media screen and (min-width: 1470px) and (min-height: 730px) {
+  .occupation {
+    top: 57.5rem;
+  }
+}
+@media screen and (min-width: 1470px) and (min-height: 760px) {
+  .occupation {
+    top: 59.5rem;
+  }
+}
+@media screen and (min-width: 1470px) and (min-height: 800px) {
+  .occupation {
+    top: 61.5rem;
+  }
+}
+@media screen and (min-width: 1470px) and (min-height: 830px) {
+  .occupation {
+    top: 63.5rem;
+  }
+}
+@media screen and (min-width: 1470px) and (min-height: 860px) {
+  .occupation {
+    top: 65.5rem;
+  }
+}
+@media screen and (min-width: 1470px) and (min-height: 900px) {
+  .occupation {
+    top: 68rem;
+  }
+}
+@media screen and (min-width: 1470px) and (min-height: 930px) {
+  .occupation {
+    top: 70rem;
+  }
+}
+@media screen and (min-width: 1470px) and (min-height: 960px) {
+  .occupation {
+    top: 72rem;
+  }
+}
+@media screen and (min-width: 1470px) and (min-height: 1000px) {
+  .occupation {
+    top: 74rem;
+  }
+}
+@media screen and (min-width: 1470px) and (min-height: 1030px) {
+  .occupation {
+    top: 76rem;
+  }
+}
 @media screen and (min-width: 1500px) {
   .occupation {
     top: 49rem;
     left: 38rem;
+  }
+}
+@media screen and (min-width: 1500px) and (min-height: 650px) {
+  .occupation {
+    top: 50rem;
+  }
+}
+@media screen and (min-width: 1500px) and (min-height: 670px) {
+  .occupation {
+    top: 51rem;
+  }
+}
+@media screen and (min-width: 1500px) and (min-height: 700px) {
+  .occupation {
+    top: 53rem;
+  }
+}
+@media screen and (min-width: 1500px) and (min-height: 730px) {
+  .occupation {
+    top: 54rem;
+  }
+}
+@media screen and (min-width: 1500px) and (min-height: 760px) {
+  .occupation {
+    top: 56rem;
+  }
+}
+@media screen and (min-width: 1500px) and (min-height: 800px) {
+  .occupation {
+    top: 59rem;
+  }
+}
+@media screen and (min-width: 1500px) and (min-height: 850px) {
+  .occupation {
+    top: 62rem;
+  }
+}
+@media screen and (min-width: 1500px) and (min-height: 900px) {
+  .occupation {
+    top: 65rem;
+  }
+}
+@media screen and (min-width: 1500px) and (min-height: 950px) {
+  .occupation {
+    top: 68rem;
+  }
+}
+@media screen and (min-width: 1500px) and (min-height: 1000px) {
+  .occupation {
+    top: 71rem;
   }
 }
 @media screen and (min-width: 1550px) {
@@ -1366,10 +1717,110 @@ body.not-scrolling {
     left: 39rem;
   }
 }
+@media screen and (min-width: 1550px) and (min-height: 650px) {
+  .occupation {
+    top: 50rem;
+  }
+}
+@media screen and (min-width: 1550px) and (min-height: 670px) {
+  .occupation {
+    top: 51rem;
+  }
+}
+@media screen and (min-width: 1550px) and (min-height: 700px) {
+  .occupation {
+    top: 53rem;
+  }
+}
+@media screen and (min-width: 1550px) and (min-height: 730px) {
+  .occupation {
+    top: 54rem;
+  }
+}
+@media screen and (min-width: 1550px) and (min-height: 760px) {
+  .occupation {
+    top: 56rem;
+  }
+}
+@media screen and (min-width: 1550px) and (min-height: 800px) {
+  .occupation {
+    top: 59rem;
+  }
+}
+@media screen and (min-width: 1550px) and (min-height: 850px) {
+  .occupation {
+    top: 62rem;
+  }
+}
+@media screen and (min-width: 1550px) and (min-height: 900px) {
+  .occupation {
+    top: 65rem;
+  }
+}
+@media screen and (min-width: 1550px) and (min-height: 950px) {
+  .occupation {
+    top: 68rem;
+  }
+}
+@media screen and (min-width: 1550px) and (min-height: 1000px) {
+  .occupation {
+    top: 71rem;
+  }
+}
 @media screen and (min-width: 1600px) {
   .occupation {
     top: 51.5rem;
     left: 40rem;
+  }
+}
+@media screen and (min-width: 1600px) and (min-height: 650px) {
+  .occupation {
+    top: 50rem;
+  }
+}
+@media screen and (min-width: 1600px) and (min-height: 670px) {
+  .occupation {
+    top: 51rem;
+  }
+}
+@media screen and (min-width: 1600px) and (min-height: 700px) {
+  .occupation {
+    top: 53rem;
+  }
+}
+@media screen and (min-width: 1600px) and (min-height: 730px) {
+  .occupation {
+    top: 54rem;
+  }
+}
+@media screen and (min-width: 1600px) and (min-height: 760px) {
+  .occupation {
+    top: 56rem;
+  }
+}
+@media screen and (min-width: 1600px) and (min-height: 800px) {
+  .occupation {
+    top: 59rem;
+  }
+}
+@media screen and (min-width: 1600px) and (min-height: 850px) {
+  .occupation {
+    top: 62rem;
+  }
+}
+@media screen and (min-width: 1600px) and (min-height: 900px) {
+  .occupation {
+    top: 65rem;
+  }
+}
+@media screen and (min-width: 1600px) and (min-height: 950px) {
+  .occupation {
+    top: 68rem;
+  }
+}
+@media screen and (min-width: 1600px) and (min-height: 1000px) {
+  .occupation {
+    top: 71rem;
   }
 }
 @media screen and (min-width: 1700px) {
