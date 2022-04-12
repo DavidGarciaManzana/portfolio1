@@ -7,7 +7,6 @@
   width: 100%;
   z-index: var(--z-back);
 
-
   @include rwd(xsmall) {
     background-size: 150%;
     background-position: 0 100%;
@@ -184,11 +183,146 @@
     background-size: 84%;
   }
   @include rwd-h(730px) {
-    background-size: 180%;
-    background-position: -10.5rem 0rem;
+    @include rwd(320px) {
+      background-size: 203%;
+    }
+    @include rwd(375px) {
+      background-size: 188%;
+    }
+    @include rwd(400px) {
+      background-size: 182%;
+      background-position: -10.5rem -3rem;
+    }
+    @include rwd(440px) {
+      background-size: 174%;
+    }
+    @include rwd(460px) {
+      background-size: 171%;
+      background-position: -10.5rem -8rem;
+    }
+    @include rwd(515px) {
+      background-size: 163%;
+    }
+    @include rwd(540px) {
+      background-size: 160%;
+      background-position: -10.5rem -10rem;
+    }
+    @include rwd(575px) {
+      background-size: 156%;
+      background-position: -10.5rem -12rem;
+    }
+    @include rwd(610px) {
+      background-size: 153%;
+    }
+    @include rwd(630px) {
+      background-size: 102%;
+      background-position: -0.5rem -2rem;
+    }
+    @include rwd(770px) {
+      background-position: -0.5rem -7rem;
+    }
+    @include rwd(850px) {
+      background-position: -0.8rem -14rem;
+    }
+    @include rwd(950px) {
+      background-position: -0.8rem -20rem;
+    }
+    @include rwd(1055px) {
+      background-position: 15.2rem -9rem;
+      background-size: 80%;
+    }
+    @include rwd(1130px) {
+      background-position: 15.2rem -12rem;
+    }
+    @include rwd(1190px) {
+      background-position: 15.2rem -16rem;
+    }
+    @include rwd(1270px) {
+      background-position: 12.2rem -27rem;
+      background-size: 90%;
+    }
+    @include rwd(1320px) {
+      background-position: 10rem -29rem;
+      background-size: 90%;
+    }
+    @include rwd(1365px) {
+      background-position: 12rem -31rem;
+      background-size: 86%;
+    }
+    @include rwd(1440px) {
+      width: calc(100% - 256px);
+      background-position: 16rem -51rem;
+    }
   }
   @include rwd-h(760px) {
-    background-size: cover;
+    background-size: 200%;
+    @include rwd(xsmall) {
+      background-size: 190%;
+    }
+    @include rwd(440px) {
+      background-size: 174%;
+    }
+    @include rwd(525px) {
+      background-size: 162%;
+    }
+    @include rwd(605px) {
+      background-size: 154%;
+    }
+    @include rwd(630px) {
+      background-size: 100%;
+      background-position: 0 0;
+    }
+    @include rwd(780px) {
+      background-size: 120%;
+      background-position: -5rem -15rem;
+    }
+    @include rwd(860px) {
+      background-position: -5.5rem -22rem;
+    }
+    @include rwd(960px) {
+      background-position: -6.5rem -27rem;
+    }
+    @include rwd(large) {
+      background-position: 1rem -30rem;
+    }
+    @include rwd(1065px) {
+      background-position: 0rem -32rem;
+    }
+    @include rwd(1100px) {
+      background-position: 6rem -24rem;
+      background-size: 100%;
+    }
+    @include rwd(1180px) {
+      background-position: 10rem -24rem;
+      background-size: 90%;
+    }
+    @include rwd(1300px) {
+      background-position: 10rem -28rem;
+      width: 81%;
+    }
+    @include rwd(1380px) {
+      background-position: 9rem -31rem;
+    }
+    @include rwd(1440px) {
+      background-position: 9rem -33rem;
+      width: 82%;
+    }
+    @include rwd(1460px) {
+      width: 83%;
+    }
+    @include rwd(1480px) {
+      background-position: 9rem -36rem;
+    }
+    @include rwd(1530px) {
+      background-position: 9rem -40rem;
+
+    }
+    @include rwd(1600px) {
+      background-position: 16rem -40rem;
+      width: 84%;
+      background-size: 85%;
+
+    }
   }
   @include rwd-h(small) {
     background-size: 205%;

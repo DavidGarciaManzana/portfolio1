@@ -629,15 +629,222 @@ li {
     background-size: 84%;
   }
 }
-@media screen and (min-height: 730px) {
+@media screen and (min-height: 730px) and (min-width: 320px) {
   .profile-card__image {
-    background-size: 180%;
-    background-position: -10.5rem 0rem;
+    background-size: 203%;
+  }
+}
+@media screen and (min-height: 730px) and (min-width: 375px) {
+  .profile-card__image {
+    background-size: 188%;
+  }
+}
+@media screen and (min-height: 730px) and (min-width: 400px) {
+  .profile-card__image {
+    background-size: 182%;
+    background-position: -10.5rem -3rem;
+  }
+}
+@media screen and (min-height: 730px) and (min-width: 440px) {
+  .profile-card__image {
+    background-size: 174%;
+  }
+}
+@media screen and (min-height: 730px) and (min-width: 460px) {
+  .profile-card__image {
+    background-size: 171%;
+    background-position: -10.5rem -8rem;
+  }
+}
+@media screen and (min-height: 730px) and (min-width: 515px) {
+  .profile-card__image {
+    background-size: 163%;
+  }
+}
+@media screen and (min-height: 730px) and (min-width: 540px) {
+  .profile-card__image {
+    background-size: 160%;
+    background-position: -10.5rem -10rem;
+  }
+}
+@media screen and (min-height: 730px) and (min-width: 575px) {
+  .profile-card__image {
+    background-size: 156%;
+    background-position: -10.5rem -12rem;
+  }
+}
+@media screen and (min-height: 730px) and (min-width: 610px) {
+  .profile-card__image {
+    background-size: 153%;
+  }
+}
+@media screen and (min-height: 730px) and (min-width: 630px) {
+  .profile-card__image {
+    background-size: 102%;
+    background-position: -0.5rem -2rem;
+  }
+}
+@media screen and (min-height: 730px) and (min-width: 770px) {
+  .profile-card__image {
+    background-position: -0.5rem -7rem;
+  }
+}
+@media screen and (min-height: 730px) and (min-width: 850px) {
+  .profile-card__image {
+    background-position: -0.8rem -14rem;
+  }
+}
+@media screen and (min-height: 730px) and (min-width: 950px) {
+  .profile-card__image {
+    background-position: -0.8rem -20rem;
+  }
+}
+@media screen and (min-height: 730px) and (min-width: 1055px) {
+  .profile-card__image {
+    background-position: 15.2rem -9rem;
+    background-size: 80%;
+  }
+}
+@media screen and (min-height: 730px) and (min-width: 1130px) {
+  .profile-card__image {
+    background-position: 15.2rem -12rem;
+  }
+}
+@media screen and (min-height: 730px) and (min-width: 1190px) {
+  .profile-card__image {
+    background-position: 15.2rem -16rem;
+  }
+}
+@media screen and (min-height: 730px) and (min-width: 1270px) {
+  .profile-card__image {
+    background-position: 12.2rem -27rem;
+    background-size: 90%;
+  }
+}
+@media screen and (min-height: 730px) and (min-width: 1320px) {
+  .profile-card__image {
+    background-position: 10rem -29rem;
+    background-size: 90%;
+  }
+}
+@media screen and (min-height: 730px) and (min-width: 1365px) {
+  .profile-card__image {
+    background-position: 12rem -31rem;
+    background-size: 86%;
+  }
+}
+@media screen and (min-height: 730px) and (min-width: 1440px) {
+  .profile-card__image {
+    width: calc(100% - 256px);
+    background-position: 16rem -51rem;
   }
 }
 @media screen and (min-height: 760px) {
   .profile-card__image {
-    background-size: cover;
+    background-size: 200%;
+  }
+}
+@media screen and (min-height: 760px) and (min-width: 375px) {
+  .profile-card__image {
+    background-size: 190%;
+  }
+}
+@media screen and (min-height: 760px) and (min-width: 440px) {
+  .profile-card__image {
+    background-size: 174%;
+  }
+}
+@media screen and (min-height: 760px) and (min-width: 525px) {
+  .profile-card__image {
+    background-size: 162%;
+  }
+}
+@media screen and (min-height: 760px) and (min-width: 605px) {
+  .profile-card__image {
+    background-size: 154%;
+  }
+}
+@media screen and (min-height: 760px) and (min-width: 630px) {
+  .profile-card__image {
+    background-size: 100%;
+    background-position: 0 0;
+  }
+}
+@media screen and (min-height: 760px) and (min-width: 780px) {
+  .profile-card__image {
+    background-size: 120%;
+    background-position: -5rem -15rem;
+  }
+}
+@media screen and (min-height: 760px) and (min-width: 860px) {
+  .profile-card__image {
+    background-position: -5.5rem -22rem;
+  }
+}
+@media screen and (min-height: 760px) and (min-width: 960px) {
+  .profile-card__image {
+    background-position: -6.5rem -27rem;
+  }
+}
+@media screen and (min-height: 760px) and (min-width: 1024px) {
+  .profile-card__image {
+    background-position: 1rem -30rem;
+  }
+}
+@media screen and (min-height: 760px) and (min-width: 1065px) {
+  .profile-card__image {
+    background-position: 0rem -32rem;
+  }
+}
+@media screen and (min-height: 760px) and (min-width: 1100px) {
+  .profile-card__image {
+    background-position: 6rem -24rem;
+    background-size: 100%;
+  }
+}
+@media screen and (min-height: 760px) and (min-width: 1180px) {
+  .profile-card__image {
+    background-position: 10rem -24rem;
+    background-size: 90%;
+  }
+}
+@media screen and (min-height: 760px) and (min-width: 1300px) {
+  .profile-card__image {
+    background-position: 10rem -28rem;
+    width: 81%;
+  }
+}
+@media screen and (min-height: 760px) and (min-width: 1380px) {
+  .profile-card__image {
+    background-position: 9rem -31rem;
+  }
+}
+@media screen and (min-height: 760px) and (min-width: 1440px) {
+  .profile-card__image {
+    background-position: 9rem -33rem;
+    width: 82%;
+  }
+}
+@media screen and (min-height: 760px) and (min-width: 1460px) {
+  .profile-card__image {
+    width: 83%;
+  }
+}
+@media screen and (min-height: 760px) and (min-width: 1480px) {
+  .profile-card__image {
+    background-position: 9rem -36rem;
+  }
+}
+@media screen and (min-height: 760px) and (min-width: 1530px) {
+  .profile-card__image {
+    background-position: 9rem -40rem;
+  }
+}
+@media screen and (min-height: 760px) and (min-width: 1600px) {
+  .profile-card__image {
+    background-position: 16rem -40rem;
+    width: 84%;
+    background-size: 85%;
   }
 }
 @media screen and (min-height: 860px) {
