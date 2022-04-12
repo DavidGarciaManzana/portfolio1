@@ -37,6 +37,7 @@
     background-repeat: no-repeat;
     transform: translateZ(5rem);
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
   }
 
   .front-flip {
