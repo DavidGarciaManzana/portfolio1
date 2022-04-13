@@ -74,9 +74,9 @@
     position: absolute;
     right: 0.95rem;
     top: 0.2rem;
+    z-index: var(--z-normal);
     @include rwd(1200px) {
       background: #fff;
-      z-index: var(--z-normal);
     }
   }
 
@@ -114,8 +114,40 @@
     @include rwd(1300px) {
       height: 13rem;
     }
-    @include rwd(1600px){
+    @include rwd(1600px) {
       height: 12rem;
+    }
+    @include rwd-h(650px) {
+      @include rwd(390px) {
+        height: 12.3rem;
+        top: -1.2rem;
+      }
+      @include rwd(425px) {
+        height: 13rem;
+        top: -0.5rem;
+      }
+      @include rwd(590px) {
+        height: 11.5rem;
+        top: -1rem;
+      }
+      @include rwd(600px) {
+        height: 9.8rem;
+        top: -1.5rem;
+      }
+      @include rwd(1200px) {
+        height: 15.7rem;
+        top: 0.5rem;
+      }
+      @include rwd(1220px) {
+        height: 13rem;
+      }
+      @include rwd(1600px) {
+        height: 12rem;
+      }
+      @include rwd(1615px) {
+        height: 10.5rem;
+
+      }
     }
 
 
@@ -208,6 +240,7 @@
     top: 1.2rem;
     right: 1.4rem;
     height: 18rem;
+
   }
 
   &__education-details-english {
@@ -268,14 +301,31 @@
     @include rwd(1300px) {
       height: 15.8rem;
     }
-    @include rwd(1400px){
+    @include rwd(1400px) {
       height: 15.7rem;
     }
-    @include rwd(1500px){
+    @include rwd(1500px) {
       height: 14.5rem;
     }
-    @include rwd(1600px){
+    @include rwd(1600px) {
       height: 13.2rem;
+    }
+    @include rwd-h(650px) {
+      @include rwd(1036px) {
+        height: 11.7rem;
+      }
+      @include rwd(1200px) {
+        height: 16.7rem;
+      }
+      @include rwd(1217px) {
+        height: 15.7rem;
+      }
+      @include rwd(1405px) {
+        height: 14.5rem;
+      }
+      @include rwd(1523px) {
+        height: 13.4rem;
+      }
     }
 
   }
@@ -437,15 +487,14 @@
     }
     @include rwd(670px) {
       height: 8.5rem;
-
     }
     @include rwd(1200px) {
       height: 16.5rem;
     }
     @include rwd(1600px) {
       height: 15.5rem;
-
     }
+
 
   }
 

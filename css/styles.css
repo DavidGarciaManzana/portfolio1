@@ -2611,11 +2611,11 @@ body.not-scrolling {
   position: absolute;
   right: 0.95rem;
   top: 0.2rem;
+  z-index: var(--z-normal);
 }
 @media screen and (min-width: 1200px) {
   .resume__sumary-detail-circle {
     background: #fff;
-    z-index: var(--z-normal);
   }
 }
 .resume__sumary-detail-line {
@@ -2674,6 +2674,51 @@ body.not-scrolling {
 @media screen and (min-width: 1600px) {
   .resume__sumary-detail-line {
     height: 12rem;
+  }
+}
+@media screen and (min-height: 650px) and (min-width: 390px) {
+  .resume__sumary-detail-line {
+    height: 12.3rem;
+    top: -1.2rem;
+  }
+}
+@media screen and (min-height: 650px) and (min-width: 425px) {
+  .resume__sumary-detail-line {
+    height: 13rem;
+    top: -0.5rem;
+  }
+}
+@media screen and (min-height: 650px) and (min-width: 590px) {
+  .resume__sumary-detail-line {
+    height: 11.5rem;
+    top: -1rem;
+  }
+}
+@media screen and (min-height: 650px) and (min-width: 600px) {
+  .resume__sumary-detail-line {
+    height: 9.8rem;
+    top: -1.5rem;
+  }
+}
+@media screen and (min-height: 650px) and (min-width: 1200px) {
+  .resume__sumary-detail-line {
+    height: 15.7rem;
+    top: 0.5rem;
+  }
+}
+@media screen and (min-height: 650px) and (min-width: 1220px) {
+  .resume__sumary-detail-line {
+    height: 13rem;
+  }
+}
+@media screen and (min-height: 650px) and (min-width: 1600px) {
+  .resume__sumary-detail-line {
+    height: 12rem;
+  }
+}
+@media screen and (min-height: 650px) and (min-width: 1615px) {
+  .resume__sumary-detail-line {
+    height: 10.5rem;
   }
 }
 .resume__education-title {
@@ -2902,6 +2947,31 @@ body.not-scrolling {
 @media screen and (min-width: 1600px) {
   .resume__education-detail-line-english {
     height: 13.2rem;
+  }
+}
+@media screen and (min-height: 650px) and (min-width: 1036px) {
+  .resume__education-detail-line-english {
+    height: 11.7rem;
+  }
+}
+@media screen and (min-height: 650px) and (min-width: 1200px) {
+  .resume__education-detail-line-english {
+    height: 16.7rem;
+  }
+}
+@media screen and (min-height: 650px) and (min-width: 1217px) {
+  .resume__education-detail-line-english {
+    height: 15.7rem;
+  }
+}
+@media screen and (min-height: 650px) and (min-width: 1405px) {
+  .resume__education-detail-line-english {
+    height: 14.5rem;
+  }
+}
+@media screen and (min-height: 650px) and (min-width: 1523px) {
+  .resume__education-detail-line-english {
+    height: 13.4rem;
   }
 }
 @media screen and (min-width: 1200px) {
