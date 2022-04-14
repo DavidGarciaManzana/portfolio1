@@ -150,14 +150,10 @@ THREED_CUBE.addEventListener("animationend", jsBar)
 const responsiveGallery = document.getElementById("responsive-gallery")
 
 let projects = [
-    ["../media/images/dog.webp", "../media/images/cat.webp", "../media/images/parrot.jpg", "Web", "Portfolio", "01/04/2022", "briandavid.nft", "HTML, CSS(SASS), Flexbox, Grid, Animations, RWD & JS", "My personal portfolio where I show all my projects and what technologies I like to implement to them."],
-    ["../media/images/dog.webp", "../media/images/cat.webp", "../media/images/parrot.jpg", "Exercise", "Homer", "17/11/2021", "homer.com", "HTML & CSS", "Draw of homer using HTML & CSS"],
-    ["../media/images/cat.webp", "../media/images/dog.webp", "../media/images/parrot.jpg", "Web", "Drilling Mud Mex", "17/02/2022", "davidgarxa.com/drilling-mud-mex/", "HTML, CSS, Flexbox, Animations & JS", "Petroleum Engineering web app that accurately describe the addition of weight material to clay/water muds."],
-    ["../media/images/cat.webp", "../media/images/dog.webp", "../media/images/parrot.jpg", "Web", "Drilling Mud Mex", "17/02/2022", "davidgarxa.com/drilling-mud-mex/", "HTML, CSS, Flexbox, Animations & JS", "Petroleum Engineering web app that accurately describe the addition of weight material to clay/water muds."],
-    ["../media/images/dog.webp", "../media/images/cat.webp", "../media/images/parrot.jpg", "Exercise", "Homer", "17/11/2021", "homer.com", "HTML & CSS", "Draw of homer using HTML & CSS"],
-    ["../media/images/dog.webp", "../media/images/cat.webp", "../media/images/parrot.jpg", "Exercise", "Homer", "17/11/2021", "homer.com", "HTML & CSS", "Draw of homer using HTML & CSS"],
-    ["../media/images/cat.webp", "../media/images/dog.webp", "../media/images/parrot.jpg", "Web", "Drilling Mud Mex", "17/02/2022", "davidgarxa.com/drilling-mud-mex/", "HTML, CSS, Flexbox, Animations & JS", "Petroleum Engineering web app that accurately describe the addition of weight material to clay/water muds."],
-    ["../media/images/cat.webp", "../media/images/dog.webp", "../media/images/parrot.jpg", "Exercise", "Profile Card", "02/09/2021", "davidgarxa.com", "HTML & CSS", "A profile card made with HTML & CSS"],
+    ["../media/images/dog.webp", "../media/images/cat.webp", "../media/images/parrot.jpg", "Web", "Portfolio", "01/04/2022", "davidgarxa.com", "HTML, CSS(SASS), Flexbox, Grid, Animations, RWD & JS", "My personal portfolio where I show all my projects and what technologies I like to implement to them."],
+    ["../media/images/homer.webp", "../media/images/homer-mobile.webp", "../media/images/homer-light.webp", "Exercise", "Homer", "17/11/2021", "davidgarxa.com/homer.com", "HTML & CSS", "Draw of homer using HTML & CSS"],
+    ["../media/images/dmm-web.webp", "../media/images/dmm-mobile.webp", "../media/images/dmm-light.webp", "Web", "Drilling Mud Mex", "17/02/2022", "davidgarxa.com/drilling-mud-mex/", "HTML, CSS, Flexbox, Animations & JS", "Petroleum Engineering web app that accurately describe the addition of weight material to clay/water muds."],
+    ["../media/images/profile-web.webp", "../media/images/profile-mobile.webp", "../media/images/profile-light.webp", "Exercise", "Profile Card", "02/09/2021", "davidgarxa.com/profile-card", "HTML & CSS", "A profile card made with HTML & CSS"]
 
 ]
 
