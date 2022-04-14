@@ -3444,6 +3444,7 @@ body.not-scrolling {
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
   scroll-behavior: smooth;
+  max-height: 31rem;
 }
 @media screen and (min-width: 425px) {
   .responsive-gallery__image-container {
