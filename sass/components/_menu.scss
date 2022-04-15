@@ -7,6 +7,9 @@ body.not-scrolling {
 }
 
 .menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: var(--color-secondary);
   position: fixed;
   top: 0;
@@ -24,6 +27,7 @@ body.not-scrolling {
   }
 
   &-opened {
+
     visibility: visible;
     transform: translateX(125%);
     transition: transform 1s;
