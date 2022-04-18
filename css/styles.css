@@ -9,6 +9,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 a {
@@ -2241,6 +2242,11 @@ body.not-scrolling {
     top: 53rem;
   }
 }
+@media screen and (min-width: 1500px) and (min-height: 715px) {
+  .occupation {
+    top: 54rem;
+  }
+}
 @media screen and (min-width: 1500px) and (min-height: 730px) {
   .occupation {
     top: 54rem;
@@ -2351,6 +2357,11 @@ body.not-scrolling {
 @media screen and (min-width: 1600px) and (min-height: 700px) {
   .occupation {
     top: 53rem;
+  }
+}
+@media screen and (min-width: 1600px) and (min-height: 715px) {
+  .occupation {
+    top: 54rem;
   }
 }
 @media screen and (min-width: 1600px) and (min-height: 730px) {
