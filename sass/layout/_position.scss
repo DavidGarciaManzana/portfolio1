@@ -168,8 +168,21 @@
     background-position: 16rem -34rem;
     background-size: 83%;
   }
+  @include rwd(1450px) {
+    width: 75rem;
+  }
+  @include rwd(1470px) {
+    width: 76rem;
+  }
+  @include rwd(1490px) {
+    width: 77rem;
+  }
   @include rwd(1500px) {
     width: 78rem;
+    background-position: 16rem -36rem;
+  }
+  @include rwd(1520px) {
+    width: 79rem;
     background-position: 16rem -36rem;
   }
   @include rwd(1536px) {
@@ -182,6 +195,121 @@
     background-position: 16rem -40rem;
     background-size: 84%;
   }
+  @include rwd-h(650px) {
+    @include rwd(375px) {
+      background-size: 175%;
+      background-position: 0 95%;
+    }
+    @include rwd(425px) {
+      background-size: 150%;
+      background-position: -7rem 0rem;
+    }
+    @include rwd(450px) {
+      background-size: 140%;
+      background-position: -5.9rem 0rem;
+    }
+    @include rwd(480px) {
+      background-size: 137%;
+    }
+    @include rwd(500px) {
+      background-size: 130%;
+      background-position: -4.9rem 0rem;
+    }
+    @include rwd(520px) {
+      background-size: 120%;
+      background-position: -3.5rem 0rem;
+    }
+    @include rwd(560px) {
+      background-size: 110%;
+      background-position: -2rem 0rem;
+    }
+    @include rwd(610px) {
+      background-size: 100%;
+      background-position: 0rem 0rem;
+    }
+    @include rwd(670px) {
+      background-size: 120%;
+      background-position: -4.5rem -12rem;
+    }
+    @include rwd(720px) {
+      background-size: 110%;
+      background-position: -2.5rem -9rem;
+    }
+    @include rwd(750px) {
+      background-size: 105%;
+      background-position: -1.5rem -9rem;
+    }
+    @include rwd(780px) {
+      background-size: 120%;
+      background-position: -5.5rem -19rem;
+    }
+    @include rwd(820px) {
+      background-position: -5.5rem -23rem;
+    }
+    @include rwd(880px) {
+      background-size: 100%;
+      background-position: center;
+    }
+    @include rwd(1024px) {
+      background-position: 6rem;
+    }
+    @include rwd(1080px) {
+      background-position: 6rem -28rem;
+    }
+    @include rwd(1140px) {
+      background-position: 5rem -31rem;
+    }
+    @include rwd(1190px) {
+      background-position: 5rem -33rem;
+    }
+    @include rwd(1220px) {
+      background-position: 4rem -35rem;
+    }
+    @include rwd(1250px) {
+      background-position: 3rem -36rem;
+    }
+    @include rwd(1270px) {
+      background-size: 120%;
+      background-position: 3rem -54rem;
+    }
+    @include rwd(1300px) {
+      background-size: 93%;
+      background-position: 9rem -34rem;
+    }
+    @include rwd(1330px) {
+      background-position: 9rem -36rem;
+    }
+    @include rwd(1360px) {
+      background-position: 8rem -39rem;
+    }
+    @include rwd(1420px) {
+      background-position: 6rem -42rem;
+    }
+
+  }
+  @include rwd-h(700px) {
+    @include rwd(1350px) {
+      background-position: 8rem -33rem;
+      background-size: 90%;
+    }
+    @include rwd(1400px) {
+      background-position: 3rem -42rem;
+      background-size: 100%;
+    }
+    @include rwd(1420px) {
+      background-position: 13rem -33rem;
+      background-size: 85%;
+    }
+    @include rwd(1490px) {
+      background-position: 9rem -39rem;
+      background-size: 90%;
+    }
+    @include rwd(1520px) {
+      background-position: 16rem -37rem;
+      background-size: 85%;
+    }
+  }
+
   @include rwd-h(730px) {
     @include rwd(320px) {
       background-size: 203%;
@@ -193,6 +321,11 @@
       background-size: 182%;
       background-position: -10.5rem -3rem;
     }
+    @include rwd(425px) {
+      background-size: 180%;
+      background-position: -11rem -3rem;
+    }
+
     @include rwd(440px) {
       background-size: 174%;
     }
@@ -226,6 +359,9 @@
     }
     @include rwd(950px) {
       background-position: -0.8rem -20rem;
+    }
+    @include rwd(1024px) {
+      background-position: 5rem -18rem;
     }
     @include rwd(1055px) {
       background-position: 15.2rem -9rem;
@@ -537,7 +673,11 @@
     left: 25rem;
   }
 
-
+  @include rwd-h(650px) {
+    @include rwd(670px) {
+      top: 20%;
+    }
+  }
 }
 
 .profile-card__subtitle {
@@ -561,6 +701,11 @@
   }
   @include rwd(large) {
     left: 25rem;
+  }
+  @include rwd-h(650px) {
+    @include rwd(670px) {
+      top: 30%;
+    }
   }
 
 

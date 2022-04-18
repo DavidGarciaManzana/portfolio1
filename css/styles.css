@@ -609,9 +609,30 @@ li {
     background-size: 83%;
   }
 }
+@media screen and (min-width: 1450px) {
+  .profile-card__image {
+    width: 75rem;
+  }
+}
+@media screen and (min-width: 1470px) {
+  .profile-card__image {
+    width: 76rem;
+  }
+}
+@media screen and (min-width: 1490px) {
+  .profile-card__image {
+    width: 77rem;
+  }
+}
 @media screen and (min-width: 1500px) {
   .profile-card__image {
     width: 78rem;
+    background-position: 16rem -36rem;
+  }
+}
+@media screen and (min-width: 1520px) {
+  .profile-card__image {
+    width: 79rem;
     background-position: 16rem -36rem;
   }
 }
@@ -629,6 +650,175 @@ li {
     background-size: 84%;
   }
 }
+@media screen and (min-height: 650px) and (min-width: 375px) {
+  .profile-card__image {
+    background-size: 175%;
+    background-position: 0 95%;
+  }
+}
+@media screen and (min-height: 650px) and (min-width: 425px) {
+  .profile-card__image {
+    background-size: 150%;
+    background-position: -7rem 0rem;
+  }
+}
+@media screen and (min-height: 650px) and (min-width: 450px) {
+  .profile-card__image {
+    background-size: 140%;
+    background-position: -5.9rem 0rem;
+  }
+}
+@media screen and (min-height: 650px) and (min-width: 480px) {
+  .profile-card__image {
+    background-size: 137%;
+  }
+}
+@media screen and (min-height: 650px) and (min-width: 500px) {
+  .profile-card__image {
+    background-size: 130%;
+    background-position: -4.9rem 0rem;
+  }
+}
+@media screen and (min-height: 650px) and (min-width: 520px) {
+  .profile-card__image {
+    background-size: 120%;
+    background-position: -3.5rem 0rem;
+  }
+}
+@media screen and (min-height: 650px) and (min-width: 560px) {
+  .profile-card__image {
+    background-size: 110%;
+    background-position: -2rem 0rem;
+  }
+}
+@media screen and (min-height: 650px) and (min-width: 610px) {
+  .profile-card__image {
+    background-size: 100%;
+    background-position: 0rem 0rem;
+  }
+}
+@media screen and (min-height: 650px) and (min-width: 670px) {
+  .profile-card__image {
+    background-size: 120%;
+    background-position: -4.5rem -12rem;
+  }
+}
+@media screen and (min-height: 650px) and (min-width: 720px) {
+  .profile-card__image {
+    background-size: 110%;
+    background-position: -2.5rem -9rem;
+  }
+}
+@media screen and (min-height: 650px) and (min-width: 750px) {
+  .profile-card__image {
+    background-size: 105%;
+    background-position: -1.5rem -9rem;
+  }
+}
+@media screen and (min-height: 650px) and (min-width: 780px) {
+  .profile-card__image {
+    background-size: 120%;
+    background-position: -5.5rem -19rem;
+  }
+}
+@media screen and (min-height: 650px) and (min-width: 820px) {
+  .profile-card__image {
+    background-position: -5.5rem -23rem;
+  }
+}
+@media screen and (min-height: 650px) and (min-width: 880px) {
+  .profile-card__image {
+    background-size: 100%;
+    background-position: center;
+  }
+}
+@media screen and (min-height: 650px) and (min-width: 1024px) {
+  .profile-card__image {
+    background-position: 6rem;
+  }
+}
+@media screen and (min-height: 650px) and (min-width: 1080px) {
+  .profile-card__image {
+    background-position: 6rem -28rem;
+  }
+}
+@media screen and (min-height: 650px) and (min-width: 1140px) {
+  .profile-card__image {
+    background-position: 5rem -31rem;
+  }
+}
+@media screen and (min-height: 650px) and (min-width: 1190px) {
+  .profile-card__image {
+    background-position: 5rem -33rem;
+  }
+}
+@media screen and (min-height: 650px) and (min-width: 1220px) {
+  .profile-card__image {
+    background-position: 4rem -35rem;
+  }
+}
+@media screen and (min-height: 650px) and (min-width: 1250px) {
+  .profile-card__image {
+    background-position: 3rem -36rem;
+  }
+}
+@media screen and (min-height: 650px) and (min-width: 1270px) {
+  .profile-card__image {
+    background-size: 120%;
+    background-position: 3rem -54rem;
+  }
+}
+@media screen and (min-height: 650px) and (min-width: 1300px) {
+  .profile-card__image {
+    background-size: 93%;
+    background-position: 9rem -34rem;
+  }
+}
+@media screen and (min-height: 650px) and (min-width: 1330px) {
+  .profile-card__image {
+    background-position: 9rem -36rem;
+  }
+}
+@media screen and (min-height: 650px) and (min-width: 1360px) {
+  .profile-card__image {
+    background-position: 8rem -39rem;
+  }
+}
+@media screen and (min-height: 650px) and (min-width: 1420px) {
+  .profile-card__image {
+    background-position: 6rem -42rem;
+  }
+}
+@media screen and (min-height: 700px) and (min-width: 1350px) {
+  .profile-card__image {
+    background-position: 8rem -33rem;
+    background-size: 90%;
+  }
+}
+@media screen and (min-height: 700px) and (min-width: 1400px) {
+  .profile-card__image {
+    background-position: 3rem -42rem;
+    background-size: 100%;
+  }
+}
+@media screen and (min-height: 700px) and (min-width: 1420px) {
+  .profile-card__image {
+    background-position: 13rem -33rem;
+    background-size: 85%;
+  }
+}
+@media screen and (min-height: 700px) and (min-width: 1490px) {
+  .profile-card__image {
+    background-position: 9rem -39rem;
+    background-size: 90%;
+  }
+}
+@media screen and (min-height: 700px) and (min-width: 1520px) {
+  .profile-card__image {
+    background-position: 16rem -37rem;
+    background-size: 85%;
+  }
+}
 @media screen and (min-height: 730px) and (min-width: 320px) {
   .profile-card__image {
     background-size: 203%;
@@ -643,6 +833,12 @@ li {
   .profile-card__image {
     background-size: 182%;
     background-position: -10.5rem -3rem;
+  }
+}
+@media screen and (min-height: 730px) and (min-width: 425px) {
+  .profile-card__image {
+    background-size: 180%;
+    background-position: -11rem -3rem;
   }
 }
 @media screen and (min-height: 730px) and (min-width: 440px) {
@@ -697,6 +893,11 @@ li {
 @media screen and (min-height: 730px) and (min-width: 950px) {
   .profile-card__image {
     background-position: -0.8rem -20rem;
+  }
+}
+@media screen and (min-height: 730px) and (min-width: 1024px) {
+  .profile-card__image {
+    background-position: 5rem -18rem;
   }
 }
 @media screen and (min-height: 730px) and (min-width: 1055px) {
@@ -1166,6 +1367,11 @@ li {
     left: 25rem;
   }
 }
+@media screen and (min-height: 650px) and (min-width: 670px) {
+  .profile-card__title {
+    top: 20%;
+  }
+}
 
 .profile-card__subtitle {
   position: absolute;
@@ -1198,6 +1404,11 @@ li {
 @media screen and (min-width: 1024px) {
   .profile-card__subtitle {
     left: 25rem;
+  }
+}
+@media screen and (min-height: 650px) and (min-width: 670px) {
+  .profile-card__subtitle {
+    top: 30%;
   }
 }
 
@@ -3302,6 +3513,7 @@ body.not-scrolling {
   width: 16rem;
   height: 10rem;
   margin-bottom: 0.5rem;
+  object-fit: cover;
 }
 .responsive-gallery__item-name {
   display: flex;

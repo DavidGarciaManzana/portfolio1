@@ -47,6 +47,7 @@
     width: 16rem;
     height: 10rem;
     margin-bottom: .5rem;
+    object-fit: cover;
   }
 
   &__item-name {
@@ -252,16 +253,16 @@
       position: relative;
       top: -1rem;
     }
-    @include rwd(1250px){
+    @include rwd(1250px) {
       min-height: 25rem;
     }
     @include rwd(1300px) {
       min-height: 26rem;
     }
-    @include rwd(1350px){
+    @include rwd(1350px) {
       min-height: 27.2rem;
     }
-    @include rwd(1400px){
+    @include rwd(1400px) {
       min-height: 28.5rem;
     }
     @include rwd(1450px) {
