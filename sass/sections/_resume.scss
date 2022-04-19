@@ -150,8 +150,8 @@
       }
       @include rwd-h(730px) {
         background-color: magenta;
-        @include rwd(400px){
-          background-color: greenyellow;
+        @include rwd(410px){
+          background-color: goldenrod;
         }
       }
 
