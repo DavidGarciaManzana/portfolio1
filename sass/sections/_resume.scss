@@ -151,6 +151,9 @@
       @include rwd-h(700px) {
         background-color: green;
       }
+      @include rwd-h(750px) {
+        background-color: blue;
+      }
     }
 
 
