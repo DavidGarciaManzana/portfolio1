@@ -18,6 +18,8 @@ let aboutImage = document.getElementById("about__image")
 let aboutImagePosition = aboutImage.getBoundingClientRect().top
 let occupation = document.getElementById("occupation")
 let occupationPosition = occupation.getBoundingClientRect().top
+threeDCube = document.getElementById("threed-cube")
+let threeDCubePosition = threeDCube.getBoundingClientRect().top
 
 let scrolling = () => {
     percentageScroll = Math.round(scrollY / scrollHeightPercentage)
@@ -28,13 +30,21 @@ let scrolling = () => {
     }
 }
 let scrolling2 = () => {
-
-    if (aboutImagePosition + scrollY > viewportHeight) {
+    let dinamicAboutImagePosition = scrollY / aboutImagePosition
+    if (dinamicAboutImagePosition > .25) {
         aboutImage.classList.add("animated")
     }
-    if (occupationPosition + scrollY > viewportHeight) {
+    let dinamicOccupationPosition = scrollY / occupationPosition
+    if (dinamicOccupationPosition > .4) {
         occupation.classList.add("animated")
     }
+
+    let dinamicThreeDCubePosition = scrollY / threeDCubePosition
+    if (dinamicThreeDCubePosition > .6) {
+        threeDCube.classList.add("animated")
+    }
+
+
 
 }
 addEventListener("scroll", scrolling)

@@ -2491,7 +2491,7 @@ body.not-scrolling {
 }
 
 .occupation.animated {
-  animation: moveRight 2s forwards;
+  animation: moveRight 4s forwards;
 }
 @media screen and (min-width: 1024px) {
   .occupation.animated {
@@ -3363,7 +3363,145 @@ body.not-scrolling {
   position: relative;
   width: 10rem;
   height: 10rem;
-  animation: rotate 2s forwards 5s;
+  transform-style: preserve-3d;
+}
+@keyframes rotate {
+  100% {
+    transform: rotateX(-25deg) rotateY(-225deg);
+  }
+}
+
+.threed-cube.animated {
+  background-color: var(--color-details-dark);
+  border: 1px solid black;
+  width: auto;
+  height: 22rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  will-change: auto;
+  margin: 1rem;
+}
+@media screen and (min-width: 400px) {
+  .threed-cube.animated {
+    margin: 2rem;
+  }
+}
+@media screen and (min-width: 425px) {
+  .threed-cube.animated {
+    margin: 1rem;
+  }
+}
+@media screen and (min-width: 545px) {
+  .threed-cube.animated {
+    margin: 1rem 1rem 4rem;
+  }
+}
+@media screen and (min-width: 810px) {
+  .threed-cube.animated {
+    min-height: 28rem;
+  }
+}
+.threed-cube.animated .threed-cube__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.threed-cube.animated .front {
+  background-image: url("../../media/images/skills.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  transform: translateZ(5rem);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.threed-cube.animated .front-flip {
+  background-image: url("../../media/images/react-loading.png");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  transform: translateZ(5rem) rotateY(180deg);
+  backface-visibility: hidden;
+}
+.threed-cube.animated .back {
+  background-color: var(--color-bone);
+  transform: translateZ(-5rem) rotateY(180deg);
+  backface-visibility: hidden;
+}
+.threed-cube.animated .threed-cube__skills-bar {
+  color: black;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0.5rem 0;
+}
+.threed-cube.animated .title {
+  margin-left: 0.5rem;
+}
+.threed-cube.animated .bar {
+  margin-left: 0.5rem;
+  width: 0;
+  height: 0.5rem;
+  background-image: linear-gradient(90deg, var(--color-details-dark) 0rem, var(--color-details-dark) 9rem, var(--color-alert) 9rem);
+  background-repeat: no-repeat;
+}
+.threed-cube.animated .bar__html {
+  width: 90%;
+  transition: 1s;
+}
+.threed-cube.animated .bar__css {
+  width: 54%;
+  margin-left: 0.5rem;
+  transition: 1s 1s;
+}
+.threed-cube.animated .bar__flexbox {
+  width: 72%;
+  transition: 0.5s;
+}
+.threed-cube.animated .bar__grid {
+  width: 90%;
+  transition: 0.5s;
+}
+.threed-cube.animated .bar__sass {
+  width: 99%;
+  transition: 0.5s;
+}
+.threed-cube.animated .bar__animations {
+  width: 108%;
+  transition: 0.5s;
+}
+.threed-cube.animated .bar__rwd {
+  width: 117%;
+  transition: 0.5s;
+}
+.threed-cube.animated .bar__js {
+  width: 36%;
+  transition: 1s 8s;
+}
+.threed-cube.animated .bar__dom {
+  width: 54%;
+  transition: 0.5s;
+}
+.threed-cube.animated .left {
+  background-color: transparent;
+  transform: translateX(-5rem) rotateY(-90deg);
+  display: flex;
+  align-items: flex-end;
+}
+.threed-cube.animated .top {
+  background-color: transparent;
+  transform: translateY(-5rem) rotateX(90deg) rotateZ(180deg);
+  display: flex;
+  align-items: flex-end;
+}
+.threed-cube.animated .threed-cube__cube {
+  position: relative;
+  width: 10rem;
+  height: 10rem;
+  animation: rotate 2s forwards 2s;
   transform-style: preserve-3d;
 }
 @keyframes rotate {
