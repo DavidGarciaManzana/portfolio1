@@ -26,46 +26,6 @@ let scrolling = () => {
 addEventListener("scroll", scrolling)
 
 
-//------------------------------------------------------------
-
-let aboutImage = document.getElementById("about__image")
-let occupation = document.getElementById("occupation")
-let threeDCube = document.getElementById("threed-cube")
-let sumaryAndEducation = document.getElementById("sumary-and-education")
-let profesionalExperience = document.getElementById("resume__experience")
-
-
-const elementInView = (el) => {
-    const elementTop = el.getBoundingClientRect().top;
-
-    return (
-        elementTop <= (window.innerHeight || document.documentElement.clientHeight)
-    );
-};
-
-let scrolling2 = () => {
-    if (elementInView(aboutImage)) {
-        aboutImage.classList.add("animated")
-    }
-    if (elementInView(occupation)) {
-        occupation.classList.add("animated")
-    }
-    if (elementInView(threeDCube)) {
-        threeDCube.classList.add("animated")
-    }
-    if (elementInView(sumaryAndEducation)) {
-        sumaryAndEducation.classList.add("animated")
-    }
-    if (elementInView(profesionalExperience)) {
-        profesionalExperience.classList.add("animated")
-    }
-
-}
-
-
-addEventListener("scroll", scrolling2)
-
-
 // --------------------------------------------------------------HAMBURGER BUTTON & UP BUTTON----------------------------------------
 const HAMBURGER_BUTTON = document.getElementById("hamburger-button")
 const MENU_OPENED = document.getElementById("menu")
@@ -207,7 +167,6 @@ let projects = [
 let filterAll = document.getElementById("gallery-filter-all")
 let filterWeb = document.getElementById("gallery-filter-web")
 let filterExercises = document.getElementById("gallery-filter-exercises")
-let filter = ""
 
 // Projects with different information
 projects.forEach(
@@ -401,5 +360,50 @@ projects.forEach(
     }
 )
 
+//------------------------------------------------------------
 
+let aboutImage = document.getElementById("about__image")
+let occupation = document.getElementById("occupation")
+let threeDCube = document.getElementById("threed-cube")
+let sumaryAndEducation = document.getElementById("sumary-and-education")
+let profesionalExperience = document.getElementById("resume__experience")
+let galleryFilter = document.getElementById("gallery__filter")
+let galleryItems = Array.from(document.querySelectorAll(".responsive-gallery__item"))
+
+
+const elementInView = (el) => {
+    const elementTop = el.getBoundingClientRect().top;
+
+    return (
+        elementTop <= (window.innerHeight || document.documentElement.clientHeight)
+    );
+};
+
+let scrolling2 = () => {
+    if (elementInView(aboutImage)) {
+        aboutImage.classList.add("animated")
+    }
+    if (elementInView(occupation)) {
+        occupation.classList.add("animated")
+    }
+    if (elementInView(threeDCube)) {
+        threeDCube.classList.add("animated")
+    }
+    if (elementInView(sumaryAndEducation)) {
+        sumaryAndEducation.classList.add("animated")
+    }
+    if (elementInView(profesionalExperience)) {
+        profesionalExperience.classList.add("animated")
+    }
+    if (elementInView(galleryFilter)) {
+        galleryFilter.classList.add("animated")
+        galleryItems.forEach(item =>  item.classList.add("animated"))
+
+    }
+
+
+}
+
+
+addEventListener("scroll", scrolling2)
 
