@@ -21,6 +21,17 @@
   //sumary
 
   &__sumary-and-education {
+    transform: translateY(25%);
+    opacity: 0;
+    @include rwd(1200px) {
+      display: inline-block;
+      width: 44%;
+      height: 67rem;
+    }
+  }
+
+  &__sumary-and-education.animated {
+    animation: goTop 1s forwards;
     @include rwd(1200px) {
       display: inline-block;
       width: 44%;
@@ -352,6 +363,8 @@
   //  experience
 
   &__experience {
+    transform: translateY(25%);
+    opacity: 0;
     @include rwd(1200px) {
       display: inline-block;
       width: 44%;
@@ -361,6 +374,18 @@
     @include rwd(1545px) {
       right: 0;
     }
+  }
+
+  &__experience.animated {
+    animation: goTop 1s forwards;
+  }
+
+  @keyframes goTop {
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
   }
 
   &__experience-title {

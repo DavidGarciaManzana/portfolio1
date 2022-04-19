@@ -2491,7 +2491,7 @@ body.not-scrolling {
 }
 
 .occupation.animated {
-  animation: moveRight 4s forwards;
+  animation: moveRight 2.5s forwards;
 }
 @media screen and (min-width: 1024px) {
   .occupation.animated {
@@ -3501,7 +3501,7 @@ body.not-scrolling {
   position: relative;
   width: 10rem;
   height: 10rem;
-  animation: rotate 2s forwards 2s;
+  animation: rotate 2s forwards 1s;
   transform-style: preserve-3d;
 }
 @keyframes rotate {
@@ -3542,8 +3542,22 @@ body.not-scrolling {
     font-size: 1.1rem;
   }
 }
+.resume__sumary-and-education {
+  transform: translateY(25%);
+  opacity: 0;
+}
 @media screen and (min-width: 1200px) {
   .resume__sumary-and-education {
+    display: inline-block;
+    width: 44%;
+    height: 67rem;
+  }
+}
+.resume__sumary-and-education.animated {
+  animation: goTop 1s forwards;
+}
+@media screen and (min-width: 1200px) {
+  .resume__sumary-and-education.animated {
     display: inline-block;
     width: 44%;
     height: 67rem;
@@ -3983,6 +3997,10 @@ body.not-scrolling {
     height: 17rem;
   }
 }
+.resume__experience {
+  transform: translateY(25%);
+  opacity: 0;
+}
 @media screen and (min-width: 1200px) {
   .resume__experience {
     display: inline-block;
@@ -3994,6 +4012,15 @@ body.not-scrolling {
 @media screen and (min-width: 1545px) {
   .resume__experience {
     right: 0;
+  }
+}
+.resume__experience.animated {
+  animation: goTop 1s forwards;
+}
+@keyframes goTop {
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 .resume__experience-title {

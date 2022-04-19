@@ -14,13 +14,6 @@ let percentageScroll = 0;
 
 let upButton = document.getElementById("up-button")
 
-let aboutImage = document.getElementById("about__image")
-let aboutImagePosition = aboutImage.getBoundingClientRect().top
-let occupation = document.getElementById("occupation")
-let occupationPosition = occupation.getBoundingClientRect().top
-threeDCube = document.getElementById("threed-cube")
-let threeDCubePosition = threeDCube.getBoundingClientRect().top
-
 let scrolling = () => {
     percentageScroll = Math.round(scrollY / scrollHeightPercentage)
     if (percentageScroll > 4) {
@@ -29,25 +22,47 @@ let scrolling = () => {
         upButton.classList.remove("display")
     }
 }
+
+addEventListener("scroll", scrolling)
+
+
+//------------------------------------------------------------
+
+let aboutImage = document.getElementById("about__image")
+let occupation = document.getElementById("occupation")
+let threeDCube = document.getElementById("threed-cube")
+let sumaryAndEducation = document.getElementById("sumary-and-education")
+let profesionalExperience = document.getElementById("resume__experience")
+
+
+const elementInView = (el) => {
+    const elementTop = el.getBoundingClientRect().top;
+
+    return (
+        elementTop <= (window.innerHeight || document.documentElement.clientHeight)
+    );
+};
+
 let scrolling2 = () => {
-    let dinamicAboutImagePosition = scrollY / aboutImagePosition
-    if (dinamicAboutImagePosition > .25) {
+    if (elementInView(aboutImage)) {
         aboutImage.classList.add("animated")
     }
-    let dinamicOccupationPosition = scrollY / occupationPosition
-    if (dinamicOccupationPosition > .4) {
+    if (elementInView(occupation)) {
         occupation.classList.add("animated")
     }
-
-    let dinamicThreeDCubePosition = scrollY / threeDCubePosition
-    if (dinamicThreeDCubePosition > .6) {
+    if (elementInView(threeDCube)) {
         threeDCube.classList.add("animated")
     }
-
-
+    if (elementInView(sumaryAndEducation)) {
+        sumaryAndEducation.classList.add("animated")
+    }
+    if (elementInView(profesionalExperience)) {
+        profesionalExperience.classList.add("animated")
+    }
 
 }
-addEventListener("scroll", scrolling)
+
+
 addEventListener("scroll", scrolling2)
 
 

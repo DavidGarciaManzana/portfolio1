@@ -462,7 +462,7 @@
 }
 
 .occupation.animated {
-  animation: moveRight 4s forwards;
+  animation: moveRight 2.5s forwards;
   @include rwd(large) {
     position: absolute;
     top: 51.5rem;
