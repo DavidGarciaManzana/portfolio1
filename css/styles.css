@@ -2865,9 +2865,9 @@ body.not-scrolling {
     background-color: green;
   }
 }
-@media screen and (min-height: 650px) and (min-height: 720px) {
+@media screen and (min-height: 650px) and (min-height: 730px) {
   .resume__sumary-detail-line {
-    background-color: blue;
+    background-color: yellow;
   }
 }
 .resume__education-title {
