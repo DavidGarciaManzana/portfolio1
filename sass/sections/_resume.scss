@@ -121,6 +121,8 @@
       @include rwd(390px) {
         height: 12.3rem;
         top: -1.2rem;
+        background-color: red;
+
       }
       @include rwd(425px) {
         height: 13rem;
