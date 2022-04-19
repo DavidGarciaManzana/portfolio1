@@ -2865,7 +2865,7 @@ body.not-scrolling {
     background-color: green;
   }
 }
-@media screen and (min-height: 650px) and (min-height: 750px) {
+@media screen and (min-height: 650px) and (min-height: 720px) {
   .resume__sumary-detail-line {
     background-color: blue;
   }
