@@ -191,7 +191,7 @@ li {
 }
 .up-button.display {
   position: fixed;
-  top: 37rem;
+  bottom: 1rem;
   right: 1rem;
   width: 2.5rem;
   height: 2.5rem;
@@ -205,7 +205,6 @@ li {
 @media screen and (min-width: 400px) {
   .up-button.display {
     position: fixed;
-    top: 35.5rem;
     right: 1rem;
     width: 3.5rem;
     height: 3.5rem;
@@ -215,91 +214,6 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-}
-@media screen and (min-height: 650px) {
-  .up-button.display {
-    top: 37.5rem;
-  }
-}
-@media screen and (min-height: 660px) {
-  .up-button.display {
-    top: 38rem;
-  }
-}
-@media screen and (min-height: 670px) {
-  .up-button.display {
-    top: 39rem;
-  }
-}
-@media screen and (min-height: 680px) {
-  .up-button.display {
-    top: 39.5rem;
-  }
-}
-@media screen and (min-height: 690px) {
-  .up-button.display {
-    top: 40rem;
-  }
-}
-@media screen and (min-height: 700px) {
-  .up-button.display {
-    top: 41rem;
-  }
-}
-@media screen and (min-height: 720px) {
-  .up-button.display {
-    top: 42rem;
-  }
-}
-@media screen and (min-height: 740px) {
-  .up-button.display {
-    top: 43rem;
-  }
-}
-@media screen and (min-height: 760px) {
-  .up-button.display {
-    top: 44.5rem;
-  }
-}
-@media screen and (min-height: 780px) {
-  .up-button.display {
-    top: 46rem;
-  }
-}
-@media screen and (min-height: 800px) {
-  .up-button.display {
-    top: 47rem;
-  }
-}
-@media screen and (min-height: 820px) {
-  .up-button.display {
-    top: 48.5rem;
-  }
-}
-@media screen and (min-height: 840px) {
-  .up-button.display {
-    top: 50rem;
-  }
-}
-@media screen and (min-height: 860px) {
-  .up-button.display {
-    top: 51rem;
-  }
-}
-@media screen and (min-height: 880px) {
-  .up-button.display {
-    top: 52rem;
-  }
-}
-@media screen and (min-height: 890px) {
-  .up-button.display {
-    top: 53rem;
-  }
-}
-@media screen and (min-height: 900px) {
-  .up-button.display {
-    top: 53.5rem;
   }
 }
 .up-button__image {
