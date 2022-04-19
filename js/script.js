@@ -8,12 +8,18 @@ onfocus = function () {
 // ------------------------------------------------------------------------SCROLL----------------------------------------------------------------------------------
 
 let totalHeight = document.documentElement.scrollHeight;
-let viewportHeight = document.documentElement.clientHeight;
+let viewportHeight = window.innerHeight
 let scrollHeightPercentage = (totalHeight - viewportHeight) / 100;
 let percentageScroll = 0;
 
 let upButton = document.getElementById("up-button")
-scrolling = () => {
+
+let aboutImage = document.getElementById("about__image")
+let aboutImagePosition = aboutImage.getBoundingClientRect().top
+let occupation = document.getElementById("occupation")
+let occupationPosition = occupation.getBoundingClientRect().top
+
+let scrolling = () => {
     percentageScroll = Math.round(scrollY / scrollHeightPercentage)
     if (percentageScroll > 4) {
         upButton.classList.add("display")
@@ -21,8 +27,19 @@ scrolling = () => {
         upButton.classList.remove("display")
     }
 }
+let scrolling2 = () => {
 
+    if (aboutImagePosition + scrollY > viewportHeight) {
+        aboutImage.classList.add("animated")
+    }
+    if (occupationPosition + scrollY > viewportHeight) {
+        occupation.classList.add("animated")
+    }
+
+}
 addEventListener("scroll", scrolling)
+addEventListener("scroll", scrolling2)
+
 
 // --------------------------------------------------------------HAMBURGER BUTTON & UP BUTTON----------------------------------------
 const HAMBURGER_BUTTON = document.getElementById("hamburger-button")

@@ -1,5 +1,5 @@
 .occupation {
-
+  transform: scale(0);
   @include rwd(large) {
     position: absolute;
     top: 51.5rem;
@@ -459,4 +459,474 @@
     margin-right: 1rem;
     margin-left: .3em;
   }
+}
+
+.occupation.animated {
+  animation: moveRight 2s forwards;
+  @include rwd(large) {
+    position: absolute;
+    top: 51.5rem;
+    left: 38.5rem;
+    @include rwd-h(650px) {
+      top: 52.5rem;
+    }
+    @include rwd-h(670px) {
+      top: 53.5rem;
+    }
+    @include rwd-h(690px) {
+      top: 55rem;
+    }
+    @include rwd-h(710px) {
+      top: 56rem;
+    }
+    @include rwd-h(730px) {
+      top: 57.5rem;
+    }
+    @include rwd-h(750px) {
+      top: 58.5rem;
+    }
+    @include rwd-h(770px) {
+      top: 60rem;
+    }
+    @include rwd-h(790px) {
+      top: 61rem;
+    }
+    @include rwd-h(810px) {
+      top: 62rem;
+    }
+    @include rwd-h(830px) {
+      top: 63.5rem;
+    }
+    @include rwd-h(850px) {
+      top: 65rem;
+    }
+    @include rwd-h(870px) {
+      top: 66rem;
+    }
+    @include rwd-h(890px) {
+      top: 67.5rem;
+    }
+    @include rwd-h(910px) {
+      top: 68.5rem;
+    }
+    @include rwd-h(930px) {
+      top: 70rem;
+    }
+    @include rwd-h(950px) {
+      top: 71rem;
+    }
+    @include rwd-h(970px) {
+      top: 72rem;
+    }
+    @include rwd-h(990px) {
+      top: 73.5rem;
+    }
+    @include rwd-h(1010px) {
+      top: 75rem;
+    }
+    @include rwd-h(1030px) {
+      top: 76rem;
+    }
+    @include rwd-h(1050px) {
+      top: 77.5rem;
+    }
+
+  }
+  @include rwd(1050px) {
+    left: 37.5rem;
+  }
+
+  @include rwd(1110px) {
+    top: 49.7rem;
+    left: 36.5rem;
+
+    @include rwd-h(650px) {
+      top: 51rem;
+      left: 36.5rem;
+    }
+    @include rwd-h(670px) {
+      top: 52rem;
+    }
+    @include rwd-h(700px) {
+      top: 54rem;
+    }
+    @include rwd-h(730px) {
+      top: 55.5rem;
+    }
+    @include rwd-h(760px) {
+      top: 57.5rem;
+    }
+    @include rwd-h(790px) {
+      top: 59.5rem;
+    }
+    @include rwd-h(820px) {
+      top: 61.5rem;
+    }
+    @include rwd-h(850px) {
+      top: 63.5rem;
+    }
+    @include rwd-h(880px) {
+      top: 65rem;
+    }
+    @include rwd-h(910px) {
+      top: 67rem;
+    }
+    @include rwd-h(940px) {
+      top: 69rem;
+    }
+    @include rwd-h(970px) {
+      top: 71rem;
+    }
+    @include rwd-h(1000px) {
+      top: 72.5rem;
+    }
+  }
+  @include rwd(1180px) {
+    top: 50rem;
+    left: 37.5rem;
+    @include rwd-h(650px) {
+      top: 51rem;
+    }
+    @include rwd-h(680px) {
+      top: 53rem;
+    }
+    @include rwd-h(700px) {
+      top: 54rem;
+    }
+    @include rwd-h(730px) {
+      top: 56rem;
+    }
+    @include rwd-h(760px) {
+      top: 58rem;
+    }
+    @include rwd-h(790px) {
+      top: 60rem;
+    }
+    @include rwd-h(810px) {
+      top: 62rem;
+    }
+    @include rwd-h(850px) {
+      top: 64rem;
+    }
+    @include rwd-h(900px) {
+      top: 67rem;
+    }
+    @include rwd-h(940px) {
+      top: 69rem;
+    }
+    @include rwd-h(980px) {
+      top: 72rem;
+    }
+    @include rwd-h(1010px) {
+      top: 74rem;
+    }
+    @include rwd-h(1030px) {
+      top: 75rem;
+    }
+  }
+  @include rwd(1230px) {
+    left: 39rem;
+  }
+  @include rwd(1290px) {
+    left: 40rem;
+  }
+  @include rwd(1350px) {
+    left: 41rem;
+  }
+  @include rwd(1400px) {
+    left: 43rem;
+  }
+  @include rwd(1470px) {
+    top: 51rem;
+    left: 44rem;
+    @include rwd-h(650px) {
+      top: 52.5rem;
+    }
+    @include rwd-h(670px) {
+      top: 53.5rem;
+    }
+    @include rwd-h(700px) {
+      top: 55.5rem;
+    }
+    @include rwd-h(730px) {
+      top: 57.5rem;
+    }
+    @include rwd-h(760px) {
+      top: 59.5rem;
+    }
+    @include rwd-h(800px) {
+      top: 61.5rem;
+    }
+    @include rwd-h(830px) {
+      top: 63.5rem;
+    }
+    @include rwd-h(860px) {
+      top: 65.5rem;
+    }
+    @include rwd-h(900px) {
+      top: 68rem;
+    }
+    @include rwd-h(930px) {
+      top: 70rem;
+    }
+    @include rwd-h(960px) {
+      top: 72rem;
+    }
+    @include rwd-h(1000px) {
+      top: 74rem;
+    }
+    @include rwd-h(1030px) {
+      top: 76rem;
+    }
+  }
+  @include rwd(1500px) {
+    top: 49rem;
+    left: 38rem;
+    @include rwd-h(650px) {
+      top: 50rem;
+    }
+    @include rwd-h(670px) {
+      top: 51rem;
+    }
+    @include rwd-h(700px) {
+      top: 53rem;
+    }
+    @include rwd-h(715px) {
+      top: 54rem;
+    }
+    @include rwd-h(730px) {
+      top: 54rem;
+    }
+    @include rwd-h(760px) {
+      top: 56rem;
+    }
+    @include rwd-h(800px) {
+      top: 59rem;
+    }
+    @include rwd-h(850px) {
+      top: 62rem;
+    }
+    @include rwd-h(900px) {
+      top: 65rem;
+    }
+    @include rwd-h(950px) {
+      top: 68rem;
+    }
+    @include rwd-h(1000px) {
+      top: 71rem;
+    }
+  }
+  @include rwd(1550px) {
+    top: 50rem;
+    left: 39rem;
+    @include rwd-h(650px) {
+      top: 50rem;
+    }
+    @include rwd-h(670px) {
+      top: 51rem;
+    }
+    @include rwd-h(700px) {
+      top: 53rem;
+    }
+    @include rwd-h(730px) {
+      top: 54rem;
+    }
+    @include rwd-h(760px) {
+      top: 56rem;
+    }
+    @include rwd-h(800px) {
+      top: 59rem;
+    }
+    @include rwd-h(850px) {
+      top: 62rem;
+    }
+    @include rwd-h(900px) {
+      top: 65rem;
+    }
+    @include rwd-h(950px) {
+      top: 68rem;
+    }
+    @include rwd-h(1000px) {
+      top: 71rem;
+    }
+  }
+  @include rwd(1600px) {
+    top: 51.5rem;
+    left: 40rem;
+    @include rwd-h(650px) {
+      top: 50rem;
+    }
+    @include rwd-h(670px) {
+      top: 51rem;
+    }
+    @include rwd-h(700px) {
+      top: 53rem;
+    }
+    @include rwd-h(715px) {
+      top: 54rem;
+    }
+    @include rwd-h(730px) {
+      top: 54rem;
+    }
+    @include rwd-h(760px) {
+      top: 56rem;
+    }
+    @include rwd-h(800px) {
+      top: 59rem;
+    }
+    @include rwd-h(850px) {
+      top: 62rem;
+    }
+    @include rwd-h(900px) {
+      top: 65rem;
+    }
+    @include rwd-h(950px) {
+      top: 68rem;
+    }
+    @include rwd-h(1000px) {
+      top: 71rem;
+    }
+  }
+  @include rwd(1700px) {
+    top: 54.5rem;
+    left: 42rem;
+  }
+
+
+  &__title {
+    margin-left: 1rem;
+    @include rwd(small) {
+      font-size: 2rem;
+    }
+    @include rwd(large) {
+      margin: 2rem 1rem 0;
+      font-size: 1.5rem;
+    }
+    @include rwd(1350px) {
+      margin: 2rem 1rem 0;
+      font-size: 2rem;
+    }
+
+    & span {
+      display: block;
+      @include rwd(610px) {
+        display: inline;
+      }
+    }
+  }
+
+  &__description-initial, &__description-final {
+    margin: 2rem 1rem;
+
+    @include rwd(xsmall) {
+      display: inline-block;
+      margin: 1rem;
+    }
+    @include rwd(small) {
+      font-size: 1.1rem;
+      margin: 0 1rem;
+    }
+    @include rwd(520px) {
+      font-size: 1.2rem;
+    }
+    @include rwd(565px) {
+      font-size: 1.25rem;
+    }
+    @include rwd(585px) {
+      font-size: 1.27rem;
+    }
+
+
+  }
+
+  &__description-initial {
+    @include rwd(large) {
+      margin: 1rem;
+    }
+    @include rwd(1350px) {
+      margin: 2rem 1rem;
+    }
+
+  }
+
+  &__description-final {
+    @include rwd(445px) {
+      margin-bottom: 1rem;
+    }
+    @include rwd(610px) {
+      margin-bottom: 4rem;
+    }
+    @include rwd(large) {
+      margin-bottom: 0;
+      display: none;
+    }
+
+  }
+
+  &__info {
+    display: flex;
+    margin: 1rem .7rem;
+    align-items: center;
+    @include rwd(small) {
+      font-size: 1.1rem;
+    }
+    @include rwd(520px) {
+      font-size: 1.2rem;
+    }
+    @include rwd(565px) {
+      font-size: 1.25rem;
+    }
+    @include rwd(585px) {
+      font-size: 1.27rem;
+    }
+
+
+  }
+
+  &__web-development {
+    margin: 2rem .7rem 1rem;
+    @include rwd(810px) {
+      margin-top: 4rem;
+    }
+    @include rwd(large) {
+      margin-top: 0;
+    }
+    @include rwd(1290px) {
+      margin-top: 1rem;
+    }
+  }
+
+  &__mobile-os {
+    margin: 1rem .7rem 2rem;
+    @include rwd(810px) {
+      margin-bottom: 4rem;
+    }
+    @include rwd(1290px) {
+      margin-top: 1rem;
+    }
+
+  }
+
+  strong + span {
+    margin-left: 1rem;
+  }
+
+  &__info::before {
+    display: block;
+    width: .5rem;
+    height: .5rem;
+    border-top: 2px solid var(--color-details-dark);
+    border-right: 2px solid var(--color-details-dark);
+    content: "";
+    transform: rotate(40deg);
+    margin-right: 1rem;
+    margin-left: .3em;
+  }
+}
+
+@keyframes moveRight {
+  to {
+    transform: scale(1);
+  }
+
 }

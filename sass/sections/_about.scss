@@ -30,6 +30,15 @@
     display: block;
     margin: 1rem auto 2rem;
     width: 90%;
+    transform: translateX(-150%);
+
+  }
+
+  &__image.animated {
+    display: block;
+    margin: 1rem auto 2rem;
+    width: 90%;
+    animation: leftMove 2s forwards;
     @include rwd(400px) {
       width: 80%;
     }
@@ -54,10 +63,16 @@
     @include rwd(1110px) {
       width: 35%;
     }
-    @include rwd(1500px){
+    @include rwd(1500px) {
       width: 27%;
     }
 
+  }
+
+  @keyframes leftMove {
+    to {
+      transform: translateX(0);
+    }
   }
 }
 

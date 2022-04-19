@@ -10,6 +10,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  width: 100vw;
 }
 
 a {
@@ -1737,53 +1738,68 @@ body.not-scrolling {
   display: block;
   margin: 1rem auto 2rem;
   width: 90%;
+  transform: translateX(-150%);
+}
+.about__image.animated {
+  display: block;
+  margin: 1rem auto 2rem;
+  width: 90%;
+  animation: leftMove 2s forwards;
 }
 @media screen and (min-width: 400px) {
-  .about__image {
+  .about__image.animated {
     width: 80%;
   }
 }
 @media screen and (min-width: 570px) {
-  .about__image {
+  .about__image.animated {
     width: 70%;
   }
 }
 @media screen and (min-width: 650px) {
-  .about__image {
+  .about__image.animated {
     width: 60%;
   }
 }
 @media screen and (min-width: 750px) {
-  .about__image {
+  .about__image.animated {
     width: 50%;
   }
 }
 @media screen and (min-width: 960px) {
-  .about__image {
+  .about__image.animated {
     width: 45%;
   }
 }
 @media screen and (min-width: 1024px) {
-  .about__image {
+  .about__image.animated {
     margin: 1rem;
   }
 }
 @media screen and (min-width: 1050px) {
-  .about__image {
+  .about__image.animated {
     width: 40%;
   }
 }
 @media screen and (min-width: 1110px) {
-  .about__image {
+  .about__image.animated {
     width: 35%;
   }
 }
 @media screen and (min-width: 1500px) {
-  .about__image {
+  .about__image.animated {
     width: 27%;
   }
 }
+@keyframes leftMove {
+  to {
+    transform: translateX(0);
+  }
+}
 
+.occupation {
+  transform: scale(0);
+}
 @media screen and (min-width: 1024px) {
   .occupation {
     position: absolute;
@@ -2474,6 +2490,704 @@ body.not-scrolling {
   margin-left: 0.3em;
 }
 
+.occupation.animated {
+  animation: moveRight 2s forwards;
+}
+@media screen and (min-width: 1024px) {
+  .occupation.animated {
+    position: absolute;
+    top: 51.5rem;
+    left: 38.5rem;
+  }
+}
+@media screen and (min-width: 1024px) and (min-height: 650px) {
+  .occupation.animated {
+    top: 52.5rem;
+  }
+}
+@media screen and (min-width: 1024px) and (min-height: 670px) {
+  .occupation.animated {
+    top: 53.5rem;
+  }
+}
+@media screen and (min-width: 1024px) and (min-height: 690px) {
+  .occupation.animated {
+    top: 55rem;
+  }
+}
+@media screen and (min-width: 1024px) and (min-height: 710px) {
+  .occupation.animated {
+    top: 56rem;
+  }
+}
+@media screen and (min-width: 1024px) and (min-height: 730px) {
+  .occupation.animated {
+    top: 57.5rem;
+  }
+}
+@media screen and (min-width: 1024px) and (min-height: 750px) {
+  .occupation.animated {
+    top: 58.5rem;
+  }
+}
+@media screen and (min-width: 1024px) and (min-height: 770px) {
+  .occupation.animated {
+    top: 60rem;
+  }
+}
+@media screen and (min-width: 1024px) and (min-height: 790px) {
+  .occupation.animated {
+    top: 61rem;
+  }
+}
+@media screen and (min-width: 1024px) and (min-height: 810px) {
+  .occupation.animated {
+    top: 62rem;
+  }
+}
+@media screen and (min-width: 1024px) and (min-height: 830px) {
+  .occupation.animated {
+    top: 63.5rem;
+  }
+}
+@media screen and (min-width: 1024px) and (min-height: 850px) {
+  .occupation.animated {
+    top: 65rem;
+  }
+}
+@media screen and (min-width: 1024px) and (min-height: 870px) {
+  .occupation.animated {
+    top: 66rem;
+  }
+}
+@media screen and (min-width: 1024px) and (min-height: 890px) {
+  .occupation.animated {
+    top: 67.5rem;
+  }
+}
+@media screen and (min-width: 1024px) and (min-height: 910px) {
+  .occupation.animated {
+    top: 68.5rem;
+  }
+}
+@media screen and (min-width: 1024px) and (min-height: 930px) {
+  .occupation.animated {
+    top: 70rem;
+  }
+}
+@media screen and (min-width: 1024px) and (min-height: 950px) {
+  .occupation.animated {
+    top: 71rem;
+  }
+}
+@media screen and (min-width: 1024px) and (min-height: 970px) {
+  .occupation.animated {
+    top: 72rem;
+  }
+}
+@media screen and (min-width: 1024px) and (min-height: 990px) {
+  .occupation.animated {
+    top: 73.5rem;
+  }
+}
+@media screen and (min-width: 1024px) and (min-height: 1010px) {
+  .occupation.animated {
+    top: 75rem;
+  }
+}
+@media screen and (min-width: 1024px) and (min-height: 1030px) {
+  .occupation.animated {
+    top: 76rem;
+  }
+}
+@media screen and (min-width: 1024px) and (min-height: 1050px) {
+  .occupation.animated {
+    top: 77.5rem;
+  }
+}
+@media screen and (min-width: 1050px) {
+  .occupation.animated {
+    left: 37.5rem;
+  }
+}
+@media screen and (min-width: 1110px) {
+  .occupation.animated {
+    top: 49.7rem;
+    left: 36.5rem;
+  }
+}
+@media screen and (min-width: 1110px) and (min-height: 650px) {
+  .occupation.animated {
+    top: 51rem;
+    left: 36.5rem;
+  }
+}
+@media screen and (min-width: 1110px) and (min-height: 670px) {
+  .occupation.animated {
+    top: 52rem;
+  }
+}
+@media screen and (min-width: 1110px) and (min-height: 700px) {
+  .occupation.animated {
+    top: 54rem;
+  }
+}
+@media screen and (min-width: 1110px) and (min-height: 730px) {
+  .occupation.animated {
+    top: 55.5rem;
+  }
+}
+@media screen and (min-width: 1110px) and (min-height: 760px) {
+  .occupation.animated {
+    top: 57.5rem;
+  }
+}
+@media screen and (min-width: 1110px) and (min-height: 790px) {
+  .occupation.animated {
+    top: 59.5rem;
+  }
+}
+@media screen and (min-width: 1110px) and (min-height: 820px) {
+  .occupation.animated {
+    top: 61.5rem;
+  }
+}
+@media screen and (min-width: 1110px) and (min-height: 850px) {
+  .occupation.animated {
+    top: 63.5rem;
+  }
+}
+@media screen and (min-width: 1110px) and (min-height: 880px) {
+  .occupation.animated {
+    top: 65rem;
+  }
+}
+@media screen and (min-width: 1110px) and (min-height: 910px) {
+  .occupation.animated {
+    top: 67rem;
+  }
+}
+@media screen and (min-width: 1110px) and (min-height: 940px) {
+  .occupation.animated {
+    top: 69rem;
+  }
+}
+@media screen and (min-width: 1110px) and (min-height: 970px) {
+  .occupation.animated {
+    top: 71rem;
+  }
+}
+@media screen and (min-width: 1110px) and (min-height: 1000px) {
+  .occupation.animated {
+    top: 72.5rem;
+  }
+}
+@media screen and (min-width: 1180px) {
+  .occupation.animated {
+    top: 50rem;
+    left: 37.5rem;
+  }
+}
+@media screen and (min-width: 1180px) and (min-height: 650px) {
+  .occupation.animated {
+    top: 51rem;
+  }
+}
+@media screen and (min-width: 1180px) and (min-height: 680px) {
+  .occupation.animated {
+    top: 53rem;
+  }
+}
+@media screen and (min-width: 1180px) and (min-height: 700px) {
+  .occupation.animated {
+    top: 54rem;
+  }
+}
+@media screen and (min-width: 1180px) and (min-height: 730px) {
+  .occupation.animated {
+    top: 56rem;
+  }
+}
+@media screen and (min-width: 1180px) and (min-height: 760px) {
+  .occupation.animated {
+    top: 58rem;
+  }
+}
+@media screen and (min-width: 1180px) and (min-height: 790px) {
+  .occupation.animated {
+    top: 60rem;
+  }
+}
+@media screen and (min-width: 1180px) and (min-height: 810px) {
+  .occupation.animated {
+    top: 62rem;
+  }
+}
+@media screen and (min-width: 1180px) and (min-height: 850px) {
+  .occupation.animated {
+    top: 64rem;
+  }
+}
+@media screen and (min-width: 1180px) and (min-height: 900px) {
+  .occupation.animated {
+    top: 67rem;
+  }
+}
+@media screen and (min-width: 1180px) and (min-height: 940px) {
+  .occupation.animated {
+    top: 69rem;
+  }
+}
+@media screen and (min-width: 1180px) and (min-height: 980px) {
+  .occupation.animated {
+    top: 72rem;
+  }
+}
+@media screen and (min-width: 1180px) and (min-height: 1010px) {
+  .occupation.animated {
+    top: 74rem;
+  }
+}
+@media screen and (min-width: 1180px) and (min-height: 1030px) {
+  .occupation.animated {
+    top: 75rem;
+  }
+}
+@media screen and (min-width: 1230px) {
+  .occupation.animated {
+    left: 39rem;
+  }
+}
+@media screen and (min-width: 1290px) {
+  .occupation.animated {
+    left: 40rem;
+  }
+}
+@media screen and (min-width: 1350px) {
+  .occupation.animated {
+    left: 41rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .occupation.animated {
+    left: 43rem;
+  }
+}
+@media screen and (min-width: 1470px) {
+  .occupation.animated {
+    top: 51rem;
+    left: 44rem;
+  }
+}
+@media screen and (min-width: 1470px) and (min-height: 650px) {
+  .occupation.animated {
+    top: 52.5rem;
+  }
+}
+@media screen and (min-width: 1470px) and (min-height: 670px) {
+  .occupation.animated {
+    top: 53.5rem;
+  }
+}
+@media screen and (min-width: 1470px) and (min-height: 700px) {
+  .occupation.animated {
+    top: 55.5rem;
+  }
+}
+@media screen and (min-width: 1470px) and (min-height: 730px) {
+  .occupation.animated {
+    top: 57.5rem;
+  }
+}
+@media screen and (min-width: 1470px) and (min-height: 760px) {
+  .occupation.animated {
+    top: 59.5rem;
+  }
+}
+@media screen and (min-width: 1470px) and (min-height: 800px) {
+  .occupation.animated {
+    top: 61.5rem;
+  }
+}
+@media screen and (min-width: 1470px) and (min-height: 830px) {
+  .occupation.animated {
+    top: 63.5rem;
+  }
+}
+@media screen and (min-width: 1470px) and (min-height: 860px) {
+  .occupation.animated {
+    top: 65.5rem;
+  }
+}
+@media screen and (min-width: 1470px) and (min-height: 900px) {
+  .occupation.animated {
+    top: 68rem;
+  }
+}
+@media screen and (min-width: 1470px) and (min-height: 930px) {
+  .occupation.animated {
+    top: 70rem;
+  }
+}
+@media screen and (min-width: 1470px) and (min-height: 960px) {
+  .occupation.animated {
+    top: 72rem;
+  }
+}
+@media screen and (min-width: 1470px) and (min-height: 1000px) {
+  .occupation.animated {
+    top: 74rem;
+  }
+}
+@media screen and (min-width: 1470px) and (min-height: 1030px) {
+  .occupation.animated {
+    top: 76rem;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .occupation.animated {
+    top: 49rem;
+    left: 38rem;
+  }
+}
+@media screen and (min-width: 1500px) and (min-height: 650px) {
+  .occupation.animated {
+    top: 50rem;
+  }
+}
+@media screen and (min-width: 1500px) and (min-height: 670px) {
+  .occupation.animated {
+    top: 51rem;
+  }
+}
+@media screen and (min-width: 1500px) and (min-height: 700px) {
+  .occupation.animated {
+    top: 53rem;
+  }
+}
+@media screen and (min-width: 1500px) and (min-height: 715px) {
+  .occupation.animated {
+    top: 54rem;
+  }
+}
+@media screen and (min-width: 1500px) and (min-height: 730px) {
+  .occupation.animated {
+    top: 54rem;
+  }
+}
+@media screen and (min-width: 1500px) and (min-height: 760px) {
+  .occupation.animated {
+    top: 56rem;
+  }
+}
+@media screen and (min-width: 1500px) and (min-height: 800px) {
+  .occupation.animated {
+    top: 59rem;
+  }
+}
+@media screen and (min-width: 1500px) and (min-height: 850px) {
+  .occupation.animated {
+    top: 62rem;
+  }
+}
+@media screen and (min-width: 1500px) and (min-height: 900px) {
+  .occupation.animated {
+    top: 65rem;
+  }
+}
+@media screen and (min-width: 1500px) and (min-height: 950px) {
+  .occupation.animated {
+    top: 68rem;
+  }
+}
+@media screen and (min-width: 1500px) and (min-height: 1000px) {
+  .occupation.animated {
+    top: 71rem;
+  }
+}
+@media screen and (min-width: 1550px) {
+  .occupation.animated {
+    top: 50rem;
+    left: 39rem;
+  }
+}
+@media screen and (min-width: 1550px) and (min-height: 650px) {
+  .occupation.animated {
+    top: 50rem;
+  }
+}
+@media screen and (min-width: 1550px) and (min-height: 670px) {
+  .occupation.animated {
+    top: 51rem;
+  }
+}
+@media screen and (min-width: 1550px) and (min-height: 700px) {
+  .occupation.animated {
+    top: 53rem;
+  }
+}
+@media screen and (min-width: 1550px) and (min-height: 730px) {
+  .occupation.animated {
+    top: 54rem;
+  }
+}
+@media screen and (min-width: 1550px) and (min-height: 760px) {
+  .occupation.animated {
+    top: 56rem;
+  }
+}
+@media screen and (min-width: 1550px) and (min-height: 800px) {
+  .occupation.animated {
+    top: 59rem;
+  }
+}
+@media screen and (min-width: 1550px) and (min-height: 850px) {
+  .occupation.animated {
+    top: 62rem;
+  }
+}
+@media screen and (min-width: 1550px) and (min-height: 900px) {
+  .occupation.animated {
+    top: 65rem;
+  }
+}
+@media screen and (min-width: 1550px) and (min-height: 950px) {
+  .occupation.animated {
+    top: 68rem;
+  }
+}
+@media screen and (min-width: 1550px) and (min-height: 1000px) {
+  .occupation.animated {
+    top: 71rem;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .occupation.animated {
+    top: 51.5rem;
+    left: 40rem;
+  }
+}
+@media screen and (min-width: 1600px) and (min-height: 650px) {
+  .occupation.animated {
+    top: 50rem;
+  }
+}
+@media screen and (min-width: 1600px) and (min-height: 670px) {
+  .occupation.animated {
+    top: 51rem;
+  }
+}
+@media screen and (min-width: 1600px) and (min-height: 700px) {
+  .occupation.animated {
+    top: 53rem;
+  }
+}
+@media screen and (min-width: 1600px) and (min-height: 715px) {
+  .occupation.animated {
+    top: 54rem;
+  }
+}
+@media screen and (min-width: 1600px) and (min-height: 730px) {
+  .occupation.animated {
+    top: 54rem;
+  }
+}
+@media screen and (min-width: 1600px) and (min-height: 760px) {
+  .occupation.animated {
+    top: 56rem;
+  }
+}
+@media screen and (min-width: 1600px) and (min-height: 800px) {
+  .occupation.animated {
+    top: 59rem;
+  }
+}
+@media screen and (min-width: 1600px) and (min-height: 850px) {
+  .occupation.animated {
+    top: 62rem;
+  }
+}
+@media screen and (min-width: 1600px) and (min-height: 900px) {
+  .occupation.animated {
+    top: 65rem;
+  }
+}
+@media screen and (min-width: 1600px) and (min-height: 950px) {
+  .occupation.animated {
+    top: 68rem;
+  }
+}
+@media screen and (min-width: 1600px) and (min-height: 1000px) {
+  .occupation.animated {
+    top: 71rem;
+  }
+}
+@media screen and (min-width: 1700px) {
+  .occupation.animated {
+    top: 54.5rem;
+    left: 42rem;
+  }
+}
+.occupation.animated__title {
+  margin-left: 1rem;
+}
+@media screen and (min-width: 425px) {
+  .occupation.animated__title {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .occupation.animated__title {
+    margin: 2rem 1rem 0;
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 1350px) {
+  .occupation.animated__title {
+    margin: 2rem 1rem 0;
+    font-size: 2rem;
+  }
+}
+.occupation.animated__title span {
+  display: block;
+}
+@media screen and (min-width: 610px) {
+  .occupation.animated__title span {
+    display: inline;
+  }
+}
+.occupation.animated__description-initial, .occupation.animated__description-final {
+  margin: 2rem 1rem;
+}
+@media screen and (min-width: 375px) {
+  .occupation.animated__description-initial, .occupation.animated__description-final {
+    display: inline-block;
+    margin: 1rem;
+  }
+}
+@media screen and (min-width: 425px) {
+  .occupation.animated__description-initial, .occupation.animated__description-final {
+    font-size: 1.1rem;
+    margin: 0 1rem;
+  }
+}
+@media screen and (min-width: 520px) {
+  .occupation.animated__description-initial, .occupation.animated__description-final {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 565px) {
+  .occupation.animated__description-initial, .occupation.animated__description-final {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (min-width: 585px) {
+  .occupation.animated__description-initial, .occupation.animated__description-final {
+    font-size: 1.27rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .occupation.animated__description-initial {
+    margin: 1rem;
+  }
+}
+@media screen and (min-width: 1350px) {
+  .occupation.animated__description-initial {
+    margin: 2rem 1rem;
+  }
+}
+@media screen and (min-width: 445px) {
+  .occupation.animated__description-final {
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (min-width: 610px) {
+  .occupation.animated__description-final {
+    margin-bottom: 4rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .occupation.animated__description-final {
+    margin-bottom: 0;
+    display: none;
+  }
+}
+.occupation.animated__info {
+  display: flex;
+  margin: 1rem 0.7rem;
+  align-items: center;
+}
+@media screen and (min-width: 425px) {
+  .occupation.animated__info {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (min-width: 520px) {
+  .occupation.animated__info {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 565px) {
+  .occupation.animated__info {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (min-width: 585px) {
+  .occupation.animated__info {
+    font-size: 1.27rem;
+  }
+}
+.occupation.animated__web-development {
+  margin: 2rem 0.7rem 1rem;
+}
+@media screen and (min-width: 810px) {
+  .occupation.animated__web-development {
+    margin-top: 4rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .occupation.animated__web-development {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 1290px) {
+  .occupation.animated__web-development {
+    margin-top: 1rem;
+  }
+}
+.occupation.animated__mobile-os {
+  margin: 1rem 0.7rem 2rem;
+}
+@media screen and (min-width: 810px) {
+  .occupation.animated__mobile-os {
+    margin-bottom: 4rem;
+  }
+}
+@media screen and (min-width: 1290px) {
+  .occupation.animated__mobile-os {
+    margin-top: 1rem;
+  }
+}
+.occupation.animated strong + span {
+  margin-left: 1rem;
+}
+.occupation.animated__info::before {
+  display: block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-top: 2px solid var(--color-details-dark);
+  border-right: 2px solid var(--color-details-dark);
+  content: "";
+  transform: rotate(40deg);
+  margin-right: 1rem;
+  margin-left: 0.3em;
+}
+
+@keyframes moveRight {
+  to {
+    transform: scale(1);
+  }
+}
 .skills__title {
   margin-left: 1rem;
 }
