@@ -57,6 +57,8 @@
 
 
   &-head {
+    transform: translateY(-45%);
+    opacity: 0;
     border-radius: 30px;
     position: relative;
     top: 2rem;
@@ -79,7 +81,13 @@
     }
   }
 
+  &-head.animated {
+    animation: goDown 2s forwards;
+  }
+
+
   &-first-paragraph {
+    opacity: 0;
     position: absolute;
     top: 35%;
     left: 2%;
@@ -121,7 +129,15 @@
     }
   }
 
+  &-first-paragraph.animated {
+    opacity: 1;
+    transition: 1s;
+
+  }
+
   &-head-slash {
+    opacity: 0;
+    transform: translateY(-45%);
     border-radius: 30px;
     position: relative;
     top: 6.5rem;
@@ -131,7 +147,13 @@
     clip-path: polygon(0% 100%, 100% 0%, 100% 100%);
   }
 
+  &-head-slash.animated {
+    animation: goDown .3s forwards;
+  }
+
   &-second {
+    transform: translateY(-45%);
+    opacity: 0;
     border-radius: 30px;
     position: relative;
     top: 6.5rem;
@@ -152,7 +174,13 @@
     }
   }
 
+  &-second.animated {
+    animation: goDown 1s forwards;
+  }
+
+
   &-second-paragraph {
+    opacity: 0;
     position: absolute;
     top: 48%;
     left: 19%;
@@ -207,7 +235,14 @@
     }
   }
 
+  &-second-paragraph.animated {
+    opacity: 1;
+    transition: 1s;
+  }
+
   &-second-slash {
+    opacity: 0;
+    transform: translateY(-45%);
     border-radius: 30px;
     position: relative;
     top: 9.2rem;
@@ -217,7 +252,13 @@
     clip-path: polygon(0% 100%, 100% 0%, 100% 100%);
   }
 
+  &-second-slash.animated {
+    animation: goDown .3s forwards;
+  }
+
   &-third {
+    transform: translateY(-45%);
+    opacity: 0;
     border-radius: 30px;
     position: relative;
     top: 9.2rem;
@@ -238,7 +279,13 @@
     }
   }
 
+  &-third.animated {
+    animation: goDown 1s forwards;
+  }
+
+
   &-third-paragraph {
+    opacity: 0;
     position: absolute;
     top: 59%;
     left: 36%;
@@ -295,7 +342,14 @@
     }
   }
 
+  &-third-paragraph.animated {
+    transition: 1s;
+    opacity: 1;
+  }
+
   &-third-slash {
+    opacity: 0;
+    transform: translateY(-45%);
     border-radius: 30px;
     position: relative;
     top: 12rem;
@@ -305,7 +359,13 @@
     clip-path: polygon(0% 100%, 100% 0%, 100% 100%);
   }
 
+  &-third-slash.animated {
+    animation: goDown .3s forwards;
+  }
+
   &-fourth {
+    transform: translateY(-45%);
+    opacity: 0;
     border-radius: 30px;
     position: relative;
     top: 12rem;
@@ -326,7 +386,13 @@
     }
   }
 
+  &-fourth.animated {
+    animation: goDown 1s forwards;
+  }
+
+
   &-fourth-paragraph {
+    opacity: 0;
     position: absolute;
     top: 43%;
     left: 53%;
@@ -383,7 +449,14 @@
     }
   }
 
+  &-fourth-paragraph.animated {
+    transition: 1s;
+    opacity: 1;
+  }
+
   &-fourth-slash {
+    opacity: 0;
+    transform: translateY(-45%);
     border-radius: 30px;
     position: relative;
     top: 14.7rem;
@@ -393,7 +466,13 @@
     clip-path: polygon(0% 100%, 100% 0%, 100% 100%);
   }
 
+  &-fourth-slash.animated {
+    animation: goDown .3s forwards;
+  }
+
   &-fifth {
+    transform: translateY(-45%);
+    opacity: 0;
     border-radius: 30px;
     position: relative;
     top: 14.7rem;
@@ -414,7 +493,13 @@
     }
   }
 
+  &-fifth.animated {
+    animation: goDown 1s forwards;
+  }
+
+
   &-fifth-paragraph {
+    opacity: 0;
     position: absolute;
     top: 54%;
     left: 70%;
@@ -471,7 +556,14 @@
     }
   }
 
+  &-fifth-paragraph.animated {
+    opacity: 1;
+    transition: 1s;
+  }
+
   &-fifth-slash {
+    opacity: 0;
+    transform: translateY(-45%);
     border-radius: 30px;
     position: relative;
     top: 17.5rem;
@@ -481,7 +573,13 @@
     clip-path: polygon(0% 100%, 100% 0%, 100% 100%);
   }
 
+  &-fifth-slash.animated {
+    animation: goDown .3s forwards;
+  }
+
   &-sixth {
+    transform: translateY(-45%);
+    opacity: 0;
     border-radius: 30px;
     position: relative;
     top: 17.5rem;
@@ -502,7 +600,20 @@
     }
   }
 
+  &-sixth.animated {
+    animation: goDown 1s forwards;
+  }
+
+  @keyframes goDown {
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+  }
+
   &-sixth-paragraph {
+    opacity: 0;
     position: absolute;
     top: 67%;
     left: 86%;
@@ -563,5 +674,10 @@
 
 
     }
+  }
+
+  &-sixth-paragraph.animated {
+    opacity: 1;
+    transition: 1s;
   }
 }

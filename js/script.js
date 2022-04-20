@@ -369,7 +369,25 @@ let sumaryAndEducation = document.getElementById("sumary-and-education")
 let profesionalExperience = document.getElementById("resume__experience")
 let galleryFilter = document.getElementById("gallery__filter")
 let galleryItems = Array.from(document.querySelectorAll(".responsive-gallery__item"))
+let diagramHead = document.getElementById("diagram-head")
+let headText = document.getElementById("head-text")
+let diagramSecond = document.getElementById("diagram-second")
+let secondText = document.getElementById("second-paragraph")
+let diagramThird = document.getElementById("diagram-third")
+let thirdText = document.getElementById("third-paragraph")
+let diagramFourth = document.getElementById("diagram-fourth")
+let fourthText = document.getElementById("fourth-paragraph")
+let diagramFifth = document.getElementById("diagram-fifth")
+let fifthText = document.getElementById("fifth-paragraph")
+let diagramSixth = document.getElementById("diagram-sixth")
+let sixthText = document.getElementById("sixth-paragraph")
 
+let headSlash = document.getElementById("head-slash")
+let secondSlash = document.getElementById("second-slash")
+let thirdSlash = document.getElementById("third-slash")
+let fourthSlash = document.getElementById("fourth-slash")
+let fifthSlash = document.getElementById("fifth-slash")
+let sixthSlash = document.getElementById("sixth-slash")
 
 const elementInView = (el) => {
     const elementTop = el.getBoundingClientRect().top;
@@ -397,10 +415,60 @@ let scrolling2 = () => {
     }
     if (elementInView(galleryFilter)) {
         galleryFilter.classList.add("animated")
-        galleryItems.forEach(item =>  item.classList.add("animated"))
-
+        galleryItems.forEach(item => item.classList.add("animated"))
     }
-
+    if (elementInView(diagramHead)) {
+        diagramHead.classList.add("animated")
+    }
+    let chain = () => {
+        diagramSecond.classList.add("animated")
+        headText.classList.add("animated")
+        let chain2 = () => {
+            diagramThird.classList.add("animated")
+            secondText.classList.add("animated")
+            let chain3 = () => {
+                diagramFourth.classList.add("animated")
+                thirdText.classList.add("animated")
+                let chain4 = () => {
+                    diagramFifth.classList.add("animated")
+                    fourthText.classList.add("animated")
+                    let chain5 = () => {
+                        diagramSixth.classList.add("animated")
+                        fifthText.classList.add("animated")
+                        let chain6 = () => {
+                            sixthText.classList.add("animated")
+                            let chain7 = () => {
+                                headSlash.classList.add("animated")
+                                let chain8 = () => {
+                                    secondSlash.classList.add("animated")
+                                    let chain9 = ()=> {
+                                        thirdSlash.classList.add("animated")
+                                        let chain10 =()=> {
+                                            fourthSlash.classList.add("animated")
+                                            let chain11 =()=> {
+                                                fifthSlash.classList.add("animated")
+                                            }
+                                            fourthSlash.addEventListener("animationend", chain11)
+                                        }
+                                        thirdSlash.addEventListener("animationend", chain10)
+                                    }
+                                    secondSlash.addEventListener("animationend" , chain9)
+                                }
+                                headSlash.addEventListener("animationend", chain8)
+                            }
+                            sixthText.addEventListener("transitionend", chain7)
+                        }
+                        diagramSixth.addEventListener("animationend", chain6)
+                    }
+                    diagramFifth.addEventListener("animationend", chain5)
+                }
+                diagramFourth.addEventListener("animationend", chain4)
+            }
+            diagramThird.addEventListener("animationend", chain3)
+        }
+        diagramSecond.addEventListener("animationend", chain2)
+    }
+    diagramHead.addEventListener("animationend", chain)
 
 }
 
