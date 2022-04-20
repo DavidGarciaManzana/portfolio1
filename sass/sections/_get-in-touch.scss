@@ -39,12 +39,16 @@
   }
 
   &__container-email-me {
+    transform: scale(0);
     background-color: #fff;
     width: 90%;
     min-height: 10.4rem;
     margin: 1rem auto;
+  }
 
-
+  &__container-email-me.animated {
+    transform: scale(1);
+    transition: 1s;
   }
 
   &__email-me-father-image {
@@ -85,12 +89,16 @@
 
 
   &__container-call-me {
+    transform: scale(0);
     background-color: #fff;
     width: 90%;
     min-height: 10.4rem;
     margin: 1rem auto;
+  }
 
-
+  &__container-call-me.animated {
+    transform: scale(1);
+    transition: .5s;
   }
 
   &__call-me-father-image {
@@ -130,10 +138,16 @@
   }
 
   &__container-message-me {
+    transform: scale(0);
     min-height: 24rem;
     @include rwd(1200px) {
       width: 50%;
     }
+  }
+
+  &__container-message-me.animated {
+    transform: scale(1);
+    transition: .5s;
   }
 
   &__message-me-form {

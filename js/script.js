@@ -44,8 +44,7 @@ HAMBURGER_BUTTON.addEventListener("click", hamburgerAction)
 const UP_BUTTON = document.getElementById("up-button")
 let up = () => {
     window.scroll({
-        top: top,
-        behavior: 'smooth'
+        top: top, behavior: 'smooth'
     });
 }
 UP_BUTTON.addEventListener("click", up)
@@ -155,11 +154,7 @@ THREED_CUBE.addEventListener("animationend", jsBar)
 
 const responsiveGallery = document.getElementById("responsive-gallery")
 
-let projects = [
-    ["../media/images/dog.webp", "../media/images/cat.webp", "../media/images/parrot.jpg", "Web", "Portfolio", "01/04/2022", "https://davidgarxa.com", "HTML, CSS(SASS), Flexbox, Grid, Animations, RWD & JS", "My personal portfolio where I show all my projects and what technologies I like to implement to them."],
-    ["../media/images/homer.webp", "../media/images/homer-mobile.webp", "../media/images/homer-light.webp", "Exercise", "Homer", "17/11/2021", "https://davidgarxa.com/homer", "HTML & CSS", "Draw of homer using HTML & CSS"],
-    ["../media/images/dmm-web.webp", "../media/images/dmm-mobile.webp", "../media/images/dmm-light.webp", "Web", "Drilling Mud Mex", "17/02/2022", "https://davidgarxa.com/drilling-mud-mex/", "HTML, CSS, Flexbox, Animations & JS", "Petroleum Engineering web app that accurately describe the addition of weight material to clay/water muds."],
-    ["../media/images/profile-web.webp", "../media/images/profile-mobile.webp", "../media/images/profile-light.webp", "Exercise", "Profile Card", "02/09/2021", "https://davidgarxa.com/profile-card", "HTML & CSS", "A profile card made with HTML & CSS"]
+let projects = [["../media/images/dog.webp", "../media/images/cat.webp", "../media/images/parrot.jpg", "Web", "Portfolio", "01/04/2022", "https://davidgarxa.com", "HTML, CSS(SASS), Flexbox, Grid, Animations, RWD & JS", "My personal portfolio where I show all my projects and what technologies I like to implement to them."], ["../media/images/homer.webp", "../media/images/homer-mobile.webp", "../media/images/homer-light.webp", "Exercise", "Homer", "17/11/2021", "https://davidgarxa.com/homer", "HTML & CSS", "Draw of homer using HTML & CSS"], ["../media/images/dmm-web.webp", "../media/images/dmm-mobile.webp", "../media/images/dmm-light.webp", "Web", "Drilling Mud Mex", "17/02/2022", "https://davidgarxa.com/drilling-mud-mex/", "HTML, CSS, Flexbox, Animations & JS", "Petroleum Engineering web app that accurately describe the addition of weight material to clay/water muds."], ["../media/images/profile-web.webp", "../media/images/profile-mobile.webp", "../media/images/profile-light.webp", "Exercise", "Profile Card", "02/09/2021", "https://davidgarxa.com/profile-card", "HTML & CSS", "A profile card made with HTML & CSS"]
 
 ]
 
@@ -169,196 +164,192 @@ let filterWeb = document.getElementById("gallery-filter-web")
 let filterExercises = document.getElementById("gallery-filter-exercises")
 
 // Projects with different information
-projects.forEach(
-    function (project, index) {
-        let projectContainer = document.createElement("div")
-        projectContainer.classList.add("responsive-gallery__item")
-        responsiveGallery.appendChild(projectContainer)
+projects.forEach(function (project, index) {
+    let projectContainer = document.createElement("div")
+    projectContainer.classList.add("responsive-gallery__item")
+    responsiveGallery.appendChild(projectContainer)
 
-        let projectImage = document.createElement("img")
-        projectImage.classList.add("responsive-gallery__item-image")
-        projectImage.setAttribute("alt", project[8])
-        projectImage.setAttribute("src", project[0])
-        projectContainer.appendChild(projectImage)
+    let projectImage = document.createElement("img")
+    projectImage.classList.add("responsive-gallery__item-image")
+    projectImage.setAttribute("alt", project[8])
+    projectImage.setAttribute("src", project[0])
+    projectContainer.appendChild(projectImage)
 
-        let projectName = document.createElement("div")
-        projectName.classList.add("responsive-gallery__item-name")
-        projectName.innerHTML = `<p>${project[4]}</p>`
-        projectContainer.appendChild(projectName)
+    let projectName = document.createElement("div")
+    projectName.classList.add("responsive-gallery__item-name")
+    projectName.innerHTML = `<p>${project[4]}</p>`
+    projectContainer.appendChild(projectName)
 
-        let projectIcon = document.createElement("div")
-        projectIcon.classList.add("responsive-gallery__item-icon")
-        projectIcon.innerText = "+"
-        projectName.appendChild(projectIcon)
+    let projectIcon = document.createElement("div")
+    projectIcon.classList.add("responsive-gallery__item-icon")
+    projectIcon.innerText = "+"
+    projectName.appendChild(projectIcon)
 
-        //Put a different name to each "+" button
-        projectIcon.setAttribute("id", `responsive-gallery__item-icon-${index}`)
+    //Put a different name to each "+" button
+    projectIcon.setAttribute("id", `responsive-gallery__item-icon-${index}`)
 
 
-        // all filter button
-        let showAllProjects = (e) => {
-            e.preventDefault()
+    // all filter button
+    let showAllProjects = (e) => {
+        e.preventDefault()
+        projectContainer.classList.remove("disappear-display")
+        projectContainer.classList.remove("disappear-class")
+    }
+    filterAll.addEventListener("click", showAllProjects)
+
+    // web filter button
+    let showWebProjects = (e) => {
+        e.preventDefault()
+        if (project.includes("Web")) {
             projectContainer.classList.remove("disappear-display")
             projectContainer.classList.remove("disappear-class")
-        }
-        filterAll.addEventListener("click", showAllProjects)
-
-        // web filter button
-        let showWebProjects = (e) => {
-            e.preventDefault()
-            if (project.includes("Web")) {
-                projectContainer.classList.remove("disappear-display")
-                projectContainer.classList.remove("disappear-class")
-            } else {
-                projectContainer.classList.add("disappear-class")
-                let dissapear = () => {
-                    projectContainer.classList.add("disappear-display")
-                }
-                setTimeout(dissapear, 1001)
+        } else {
+            projectContainer.classList.add("disappear-class")
+            let dissapear = () => {
+                projectContainer.classList.add("disappear-display")
             }
+            setTimeout(dissapear, 1001)
         }
+    }
 
-        filterWeb.addEventListener("click", showWebProjects)
+    filterWeb.addEventListener("click", showWebProjects)
 
-        //exercises filter button
-        let showExercisesProjects = (e) => {
-            e.preventDefault()
-            if (project.includes("Exercise")) {
-                projectContainer.classList.remove("disappear-display")
-                projectContainer.classList.remove("disappear-class")
-            } else {
-                projectContainer.classList.add("disappear-class")
-                let dissapear = () => {
-                    projectContainer.classList.add("disappear-display")
-                }
-                setTimeout(dissapear, 1001)
+    //exercises filter button
+    let showExercisesProjects = (e) => {
+        e.preventDefault()
+        if (project.includes("Exercise")) {
+            projectContainer.classList.remove("disappear-display")
+            projectContainer.classList.remove("disappear-class")
+        } else {
+            projectContainer.classList.add("disappear-class")
+            let dissapear = () => {
+                projectContainer.classList.add("disappear-display")
             }
+            setTimeout(dissapear, 1001)
         }
+    }
 
-        filterExercises.addEventListener("click", showExercisesProjects)
+    filterExercises.addEventListener("click", showExercisesProjects)
 
-        let projectDetailsFather = document.getElementById("responsive-gallery__modal")
-        const displayProjectDetails = () => {
-            projectDetailsFather.classList.add("display")
+    let projectDetailsFather = document.getElementById("responsive-gallery__modal")
+    const displayProjectDetails = () => {
+        projectDetailsFather.classList.add("display")
 
-            let projectDetails = document.createElement("div")
-            projectDetails.classList.add("responsive-gallery__modal-details")
-            projectDetailsFather.appendChild(projectDetails)
+        let projectDetails = document.createElement("div")
+        projectDetails.classList.add("responsive-gallery__modal-details")
+        projectDetailsFather.appendChild(projectDetails)
 
-            document.body.style.overflow = "hidden"
+        document.body.style.overflow = "hidden"
 
-            let buttonCloseProjectDetails = document.createElement("div")
-            buttonCloseProjectDetails.innerHTML =
-                `
+        let buttonCloseProjectDetails = document.createElement("div")
+        buttonCloseProjectDetails.innerHTML = `
                 <div class="responsive-gallery__item-close-icon-first"></div>
                 <div class="responsive-gallery__item-close-icon-second"></div>
                 `
-            buttonCloseProjectDetails.classList.add("responsive-gallery__item-close-icon")
-            projectDetails.appendChild(buttonCloseProjectDetails)
+        buttonCloseProjectDetails.classList.add("responsive-gallery__item-close-icon")
+        projectDetails.appendChild(buttonCloseProjectDetails)
 
-            const closeProjectDetails = () => {
-                //Here's where the magic happens
-                projectDetailsFather.removeChild(projectDetails)
-                projectDetailsFather.classList.remove("display")
-                document.body.style.overflow = "scroll"
-            }
-            buttonCloseProjectDetails.addEventListener("click", closeProjectDetails)
+        const closeProjectDetails = () => {
+            //Here's where the magic happens
+            projectDetailsFather.removeChild(projectDetails)
+            projectDetailsFather.classList.remove("display")
+            document.body.style.overflow = "scroll"
+        }
+        buttonCloseProjectDetails.addEventListener("click", closeProjectDetails)
 
-            let projectDetailsTitle = document.createElement("p")
-            projectDetailsTitle.innerHTML =
-                `
+        let projectDetailsTitle = document.createElement("p")
+        projectDetailsTitle.innerHTML = `
                 <div class="responsive-gallery__title">
                     <h1>Portfolio Details</h1>
                     <h2>${project[4]}</h2>
                 </div>
                 `
-            projectDetails.appendChild(projectDetailsTitle)
+        projectDetails.appendChild(projectDetailsTitle)
 
-            let prueba = document.createElement("div")
-            prueba.classList.add("prueba")
-            projectDetails.appendChild(prueba)
+        let prueba = document.createElement("div")
+        prueba.classList.add("prueba")
+        projectDetails.appendChild(prueba)
 
-            let projectDetailsImageContainer = document.createElement("div")
-            projectDetailsImageContainer.classList.add("responsive-gallery__image-container")
-            prueba.appendChild(projectDetailsImageContainer)
+        let projectDetailsImageContainer = document.createElement("div")
+        projectDetailsImageContainer.classList.add("responsive-gallery__image-container")
+        prueba.appendChild(projectDetailsImageContainer)
 
 
-            let projectDetailsFirstImage = document.createElement("img")
-            projectDetailsFirstImage.setAttribute("src", project[0])
-            projectDetailsFirstImage.setAttribute("alt", "Website Image")
-            projectDetailsFirstImage.classList.add("responsive-gallery__first-image")
-            projectDetailsImageContainer.appendChild(projectDetailsFirstImage)
+        let projectDetailsFirstImage = document.createElement("img")
+        projectDetailsFirstImage.setAttribute("src", project[0])
+        projectDetailsFirstImage.setAttribute("alt", "Website Image")
+        projectDetailsFirstImage.classList.add("responsive-gallery__first-image")
+        projectDetailsImageContainer.appendChild(projectDetailsFirstImage)
 
-            let projectDetailsSecondImage = document.createElement("img")
-            projectDetailsSecondImage.setAttribute("src", project[1])
-            projectDetailsSecondImage.setAttribute("alt", "Mobile Image")
-            projectDetailsSecondImage.classList.add("responsive-gallery__second-image")
-            projectDetailsImageContainer.appendChild(projectDetailsSecondImage)
+        let projectDetailsSecondImage = document.createElement("img")
+        projectDetailsSecondImage.setAttribute("src", project[1])
+        projectDetailsSecondImage.setAttribute("alt", "Mobile Image")
+        projectDetailsSecondImage.classList.add("responsive-gallery__second-image")
+        projectDetailsImageContainer.appendChild(projectDetailsSecondImage)
 
-            let projectDetailsThirdImage = document.createElement("img")
-            projectDetailsThirdImage.setAttribute("src", project[2])
-            projectDetailsThirdImage.setAttribute("alt", "Lighthouse Image")
-            projectDetailsThirdImage.classList.add("responsive-gallery__third-image")
-            projectDetailsImageContainer.appendChild(projectDetailsThirdImage)
+        let projectDetailsThirdImage = document.createElement("img")
+        projectDetailsThirdImage.setAttribute("src", project[2])
+        projectDetailsThirdImage.setAttribute("alt", "Lighthouse Image")
+        projectDetailsThirdImage.classList.add("responsive-gallery__third-image")
+        projectDetailsImageContainer.appendChild(projectDetailsThirdImage)
 
-            //automatic swipe between images
-            let swipeProjectImages = () => {
-                let swipeRight = () => {
-                    projectDetailsImageContainer.scrollTo(250, 0)
-                    let swipeRightPlus = () => {
-                        projectDetailsImageContainer.scrollTo(500, 0)
-                    }
-                    setTimeout(swipeRightPlus, 2000);
+        //automatic swipe between images
+        let swipeProjectImages = () => {
+            let swipeRight = () => {
+                projectDetailsImageContainer.scrollTo(250, 0)
+                let swipeRightPlus = () => {
+                    projectDetailsImageContainer.scrollTo(500, 0)
                 }
-                setTimeout(swipeRight, 2000);
+                setTimeout(swipeRightPlus, 2000);
             }
-            swipeProjectImages()
-
-            let projectDetailsInfoContainer = document.createElement("div")
-            projectDetailsInfoContainer.classList.add("responsive-gallery__details-info-container")
-            prueba.appendChild(projectDetailsInfoContainer)
-
-            let projectDetailsInfo = document.createElement("h1")
-            projectDetailsInfo.innerText = "Project information"
-            projectDetailsInfoContainer.appendChild(projectDetailsInfo)
-
-            let projectDetailsCategory = document.createElement("p")
-            projectDetailsCategory.innerHTML = `<p><strong>Category: </strong>${project[3]}</p>`
-            projectDetailsInfoContainer.appendChild(projectDetailsCategory)
-
-            let projectDetailsDate = document.createElement("p")
-            projectDetailsDate.innerHTML = `<p><strong>Released date: </strong>${project[5]}</p>`
-            projectDetailsInfoContainer.appendChild(projectDetailsDate)
-
-            let projectDetailsUrl = document.createElement("p")
-            projectDetailsUrl.innerHTML = `<strong>Url: </strong><a target="_blank" href="${project[6]}">${project[6]}</a>`
-            projectDetailsInfoContainer.appendChild(projectDetailsUrl)
-
-            let projectDetailsTechnologies = document.createElement("p")
-            projectDetailsTechnologies.innerHTML = `<p><strong><span class="responsive-gallery__tech">Technologies used: </span></strong>${project[7]}</p>`
-            projectDetailsInfoContainer.appendChild(projectDetailsTechnologies)
-
-
-            let projectDetailsDescriptionContainer = document.createElement("div")
-            projectDetailsDescriptionContainer.classList.add("responsive-gallery__details-description-container")
-            projectDetails.appendChild(projectDetailsDescriptionContainer)
-
-            let projectDetailsDescription = document.createElement("p")
-            projectDetailsDescription.innerHTML = `<h1>Description: </h1> <p>${project[8]}</p>`
-            projectDetailsDescriptionContainer.appendChild(projectDetailsDescription)
-
-            let projectDetailsFooter = document.createElement("footer")
-            projectDetailsFooter.classList.add("responsive-gallery__details-footer")
-            projectDetailsFooter.innerText = `© Copyright briandavid.nft`
-            projectDetails.appendChild(projectDetailsFooter)
-
-
+            setTimeout(swipeRight, 2000);
         }
-        projectIcon.addEventListener("click", displayProjectDetails)
+        swipeProjectImages()
+
+        let projectDetailsInfoContainer = document.createElement("div")
+        projectDetailsInfoContainer.classList.add("responsive-gallery__details-info-container")
+        prueba.appendChild(projectDetailsInfoContainer)
+
+        let projectDetailsInfo = document.createElement("h1")
+        projectDetailsInfo.innerText = "Project information"
+        projectDetailsInfoContainer.appendChild(projectDetailsInfo)
+
+        let projectDetailsCategory = document.createElement("p")
+        projectDetailsCategory.innerHTML = `<p><strong>Category: </strong>${project[3]}</p>`
+        projectDetailsInfoContainer.appendChild(projectDetailsCategory)
+
+        let projectDetailsDate = document.createElement("p")
+        projectDetailsDate.innerHTML = `<p><strong>Released date: </strong>${project[5]}</p>`
+        projectDetailsInfoContainer.appendChild(projectDetailsDate)
+
+        let projectDetailsUrl = document.createElement("p")
+        projectDetailsUrl.innerHTML = `<strong>Url: </strong><a target="_blank" href="${project[6]}">${project[6]}</a>`
+        projectDetailsInfoContainer.appendChild(projectDetailsUrl)
+
+        let projectDetailsTechnologies = document.createElement("p")
+        projectDetailsTechnologies.innerHTML = `<p><strong><span class="responsive-gallery__tech">Technologies used: </span></strong>${project[7]}</p>`
+        projectDetailsInfoContainer.appendChild(projectDetailsTechnologies)
+
+
+        let projectDetailsDescriptionContainer = document.createElement("div")
+        projectDetailsDescriptionContainer.classList.add("responsive-gallery__details-description-container")
+        projectDetails.appendChild(projectDetailsDescriptionContainer)
+
+        let projectDetailsDescription = document.createElement("p")
+        projectDetailsDescription.innerHTML = `<h1>Description: </h1> <p>${project[8]}</p>`
+        projectDetailsDescriptionContainer.appendChild(projectDetailsDescription)
+
+        let projectDetailsFooter = document.createElement("footer")
+        projectDetailsFooter.classList.add("responsive-gallery__details-footer")
+        projectDetailsFooter.innerText = `© Copyright briandavid.nft`
+        projectDetails.appendChild(projectDetailsFooter)
 
 
     }
-)
+    projectIcon.addEventListener("click", displayProjectDetails)
+
+
+})
 
 //------------------------------------------------------------
 
@@ -387,14 +378,15 @@ let secondSlash = document.getElementById("second-slash")
 let thirdSlash = document.getElementById("third-slash")
 let fourthSlash = document.getElementById("fourth-slash")
 let fifthSlash = document.getElementById("fifth-slash")
-let sixthSlash = document.getElementById("sixth-slash")
+
+let emailMe = document.getElementById("email-me")
+let callMe = document.getElementById("call-me")
+let messageMe = document.getElementById("message-me")
 
 const elementInView = (el) => {
     const elementTop = el.getBoundingClientRect().top;
 
-    return (
-        elementTop <= (window.innerHeight || document.documentElement.clientHeight)
-    );
+    return (elementTop <= (window.innerHeight || document.documentElement.clientHeight));
 };
 
 let scrolling2 = () => {
@@ -441,18 +433,18 @@ let scrolling2 = () => {
                                 headSlash.classList.add("animated")
                                 let chain8 = () => {
                                     secondSlash.classList.add("animated")
-                                    let chain9 = ()=> {
+                                    let chain9 = () => {
                                         thirdSlash.classList.add("animated")
-                                        let chain10 =()=> {
+                                        let chain10 = () => {
                                             fourthSlash.classList.add("animated")
-                                            let chain11 =()=> {
+                                            let chain11 = () => {
                                                 fifthSlash.classList.add("animated")
                                             }
                                             fourthSlash.addEventListener("animationend", chain11)
                                         }
                                         thirdSlash.addEventListener("animationend", chain10)
                                     }
-                                    secondSlash.addEventListener("animationend" , chain9)
+                                    secondSlash.addEventListener("animationend", chain9)
                                 }
                                 headSlash.addEventListener("animationend", chain8)
                             }
@@ -469,7 +461,17 @@ let scrolling2 = () => {
         diagramSecond.addEventListener("animationend", chain2)
     }
     diagramHead.addEventListener("animationend", chain)
-
+    if (elementInView(emailMe)) {
+        emailMe.classList.add("animated")
+    }
+    let contactChain1 = () => {
+        callMe.classList.add("animated")
+        let contactChain2 = () => {
+            messageMe.classList.add("animated")
+        }
+        callMe.addEventListener("transitionend", contactChain2)
+    }
+    emailMe.addEventListener("transitionend", contactChain1)
 }
 
 
