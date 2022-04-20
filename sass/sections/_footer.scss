@@ -9,3 +9,9 @@ footer {
     font-size: 1.3rem;
   }
 }
+
+.footer {
+  @include rwd(large) {
+    margin-left: 256px;
+  }
+}

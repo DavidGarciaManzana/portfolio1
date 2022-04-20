@@ -341,7 +341,7 @@ projects.forEach(function (project, index) {
 
         let projectDetailsFooter = document.createElement("footer")
         projectDetailsFooter.classList.add("responsive-gallery__details-footer")
-        projectDetailsFooter.innerText = `© Copyright briandavid.nft`
+        projectDetailsFooter.innerText = `© Copyright davidgarxa.com`
         projectDetails.appendChild(projectDetailsFooter)
 
 
