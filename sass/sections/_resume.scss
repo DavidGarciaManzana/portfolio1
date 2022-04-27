@@ -203,29 +203,11 @@
   }
 
   &__education-name span {
-    @include rwd(xsmall) {
-      margin-right: 1rem;
+    @media screen and (min-width: 300px) {
+      display: block;
     }
-    @include rwd(400px) {
-      margin-right: 4rem;
-    }
-    @include rwd(435px) {
-      margin-right: 8rem;
-    }
-    @include rwd(500px) {
-      margin-right: 10rem;
-    }
-    @include rwd(535px) {
-      margin-right: 11rem;
-    }
-    @include rwd(550px) {
-      margin-right: 12rem;
-    }
-    @include rwd(565px) {
-      margin-right: 13rem;
-    }
-    @include rwd(580px) {
-      margin-right: 0;
+    @media screen and (min-width: 525px) {
+      display: inline;
     }
   }
 

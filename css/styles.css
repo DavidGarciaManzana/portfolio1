@@ -3758,44 +3758,14 @@ body.not-scrolling {
     font-size: 1.2rem;
   }
 }
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 300px) {
   .resume__education-name span {
-    margin-right: 1rem;
+    display: block;
   }
 }
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 525px) {
   .resume__education-name span {
-    margin-right: 4rem;
-  }
-}
-@media screen and (min-width: 435px) {
-  .resume__education-name span {
-    margin-right: 8rem;
-  }
-}
-@media screen and (min-width: 500px) {
-  .resume__education-name span {
-    margin-right: 10rem;
-  }
-}
-@media screen and (min-width: 535px) {
-  .resume__education-name span {
-    margin-right: 11rem;
-  }
-}
-@media screen and (min-width: 550px) {
-  .resume__education-name span {
-    margin-right: 12rem;
-  }
-}
-@media screen and (min-width: 565px) {
-  .resume__education-name span {
-    margin-right: 13rem;
-  }
-}
-@media screen and (min-width: 580px) {
-  .resume__education-name span {
-    margin-right: 0;
+    display: inline;
   }
 }
 .resume__education-name strong {
