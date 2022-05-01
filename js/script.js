@@ -159,13 +159,26 @@ let projects = [
     ["../media/images/homer.webp", "../media/images/homer-mobile.webp", "../media/images/homer-light.webp", "Exercise", "Homer", "17/11/2021", "https://davidgarxa.com/homer", "HTML & CSS", "Draw of homer using HTML & CSS"],
     ["../media/images/dmm-web.webp", "../media/images/dmm-mobile.webp", "../media/images/dmm-light.webp", "Web", "Drilling Mud Mex", "17/02/2022", "https://davidgarxa.com/drilling-mud-mex/", "HTML, CSS, Flexbox, Animations & JS", "Petroleum Engineering web app that accurately describe the addition of weight material to clay/water muds."],
     ["../media/images/profile-web.webp", "../media/images/profile-mobile.webp", "../media/images/profile-light.webp", "Exercise", "Profile Card", "02/09/2021", "https://davidgarxa.com/profile-card", "HTML & CSS", "A profile card made with HTML & CSS"],
-    ["../media/images/supermarketq-web.webp", "../media/images/supermarketq-mobile.webp", "../media/images/supermarketq-light.webp", "Exercise", "Code challenge (Arrays)", "30/04/2022", "https://www.codewars.com/kata/57b06f90e298a7b53d000a86", "Javascript & NodeJS", `There is a queue for the self-checkout tills at the supermarket. Your task is write a function to calculate the total time required for all the customers to check out!
+    ["../media/images/supermarketq-web.webp", "../media/images/supermarketq-mobile.webp", "../media/images/supermarketq-light.webp", "Exercise", "Code challenge (Arrays)", "30/04/2022", "https://www.codewars.com/kata/57b06f90e298a7b53d000a86", "Javascript & NodeJS",
+`WHAT IS THIS?
 <br>
-Go to the link on the URL section of this segment, subscribe to codewars (It only takes 30 seconds!), copy the code below and paste it at the section "SOLUTION" then click on test & attempt to make it work.
+1.- This is a "code challenge", I had to solve a specific problem using Javascript
 <br>
-***IMPORTANT: ERASE EVERYTHING IN THE SOLUTION SECTION BEFORE YOU PASTE THE CODE
+2.- Here is the problem : There is a queue for the self-checkout tills at the supermarket. Your task is to write a function to calculate the total time required for all the customers to check out!
+<br>
+3.- Go to the URL on this section <a href="https://www.codewars.com/kata/57b06f90e298a7b53d000a86">https://www.codewars.com/kata/57b06f90e298a7b53d000a86</a> 
+<br>
+4.- Subscribe to codewars (It only takes 30 seconds!)
+<br>
+5.- Once you have logged to codewars, go back to the URL 
+<br>
+6.- Click on "TRAIN", this webpage is going to ask for a code that solves the problem
+<br>
+7.- Copy the code below and paste it at the section "SOLUTION" then click on test & attempt to make it work.
+<br>
+8.-***IMPORTANT: ERASE EVERYTHING IN THE SOLUTION SECTION BEFORE YOU PASTE THE CODE
    <pre><code>
-// My solution - by Brian David Garcia Manzanarez
+// My solution - by Brian David Garcia ManzanarezN
 let isFirstRunFlag = false
 let noMoreCustomersFlag = false
 let fastestNextCustomer = ""
@@ -422,7 +435,7 @@ projects.forEach(function (project, index) {
         projectDetailsInfoContainer.appendChild(projectDetailsDate)
 
         let projectDetailsUrl = document.createElement("p")
-        projectDetailsUrl.innerHTML = `<strong>Url: </strong><br><a target="_blank" href="${project[6]}">${project[6]}</a>`
+        projectDetailsUrl.innerHTML = `<strong>Url: </strong><a target="_blank" href="${project[6]}">${project[6]}</a>`
         projectDetailsInfoContainer.appendChild(projectDetailsUrl)
 
         let projectDetailsTechnologies = document.createElement("p")
