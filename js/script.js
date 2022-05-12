@@ -159,7 +159,7 @@ let projects = [
     ["../media/images/homer.webp", "../media/images/homer-mobile.webp", "../media/images/homer-light.webp", "Exercise", "Homer", "17/11/2021", "https://davidgarxa.com/homer", "HTML & CSS", "Draw of homer using HTML & CSS"],
     ["../media/images/dmm-web.webp", "../media/images/dmm-mobile.webp", "../media/images/dmm-light.webp", "Web", "Drilling Mud Mex", "17/02/2022", "https://davidgarxa.com/drilling-mud-mex/", "HTML, CSS, Flexbox, Animations & JS", "Petroleum Engineering web app that accurately describe the addition of weight material to clay/water muds."],
     ["../media/images/profile-web.webp", "../media/images/profile-mobile.webp", "../media/images/profile-light.webp", "Exercise", "Profile Card", "02/09/2021", "https://davidgarxa.com/profile-card", "HTML & CSS", "A profile card made with HTML & CSS"],
-    ["../media/images/supermarketq-web.webp", "../media/images/supermarketq-mobile.webp", "../media/images/supermarketq-light.webp", "Exercise", "Code challenge (Arrays)", "30/04/2022", "https://www.codewars.com/kata/57b06f90e298a7b53d000a86", "Javascript & NodeJS",
+    ["../media/images/supermarketq-web.webp", "../media/images/supermarketq-mobile.webp", "../media/images/supermarketq-light.webp", "Exercise", "Code challenge (Arrays)", "30/04/2022", "https://davidgarxa.com/code-challenge/arrays", "Javascript & NodeJS",
 `WHAT IS THIS?
 <br>
 1.- This is a "code challenge", I had to solve a specific problem using Javascript
