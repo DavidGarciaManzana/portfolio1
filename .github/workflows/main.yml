@@ -26,4 +26,4 @@ jobs:
             cp -R css/ $DEPLOYPATH
             cp -R media/ $DEPLOYPATH
             cp -R js/ $DEPLOYPATH
-            cp -R code-challenge $DEPLOYPATH
+            cp -R code-challenge/ $DEPLOYPATH
