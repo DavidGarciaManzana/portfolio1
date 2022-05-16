@@ -497,6 +497,7 @@ let checkSpam = (e) => {
     let robot = messageReady.includes("robot")
     if (nameHenry === "HenryClouh" || money || rich || robot) {
         e.preventDefault()
+        window.open("https://google.com", "_self")
         return false
     } else {
         return true
