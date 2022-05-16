@@ -494,7 +494,7 @@ let checkSpam = (e) => {
     let nameHenry = name.value.replace(/\s+/g, '');
     let money = messageReady.includes("money")
     let rich = messageReady.includes("rich")
-    let robot = messageReady.includes("Robot")
+    let robot = messageReady.includes("robot")
     if (nameHenry === "HenryClouh" || money || rich || robot) {
         e.preventDefault()
         return false
