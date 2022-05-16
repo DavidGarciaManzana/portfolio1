@@ -497,10 +497,8 @@ let checkSpam = (e) => {
     let robot = messageReady.includes("Robot")
     if (nameHenry === "HenryClouh" || money || rich || robot) {
         e.preventDefault()
-        console.log("is working")
         return false
     } else {
-        console.log("didnst work")
         return true
     }
 }
