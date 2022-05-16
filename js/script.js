@@ -482,14 +482,27 @@ let scrolling2 = () => {
 
 addEventListener("scroll", scrolling2)
 
+
+// STOP SPAM
+
+
 let name = document.getElementById("name")
+let message = document.getElementById("message")
 let form = document.getElementById("form")
 let checkSpam = (e) => {
-    if (name.value === "HenryClouh") {
+    let messageReady = message.value.toLowerCase()
+    let nameHenry = name.value.replace(/\s+/g, '');
+    let money = messageReady.includes("money")
+    let rich = messageReady.includes("rich")
+    let robot = messageReady.includes("Robot")
+    if (nameHenry === "HenryClouh" || money || rich || robot) {
         e.preventDefault()
+        console.log("is working")
         return false
     } else {
+        console.log("didnst work")
         return true
     }
 }
 form.addEventListener("submit", checkSpam)
+message.value.toLowerCase()
