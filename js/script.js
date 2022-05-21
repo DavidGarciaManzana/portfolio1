@@ -484,8 +484,6 @@ addEventListener("scroll", scrolling2)
 
 
 // STOP SPAM
-
-
 let name = document.getElementById("name")
 let message = document.getElementById("message")
 let form = document.getElementById("form")
