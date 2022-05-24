@@ -160,7 +160,7 @@ let projects = [
     ["../media/images/dmm-web.webp", "../media/images/dmm-mobile.webp", "../media/images/dmm-light.webp", "Web", "Drilling Mud Mex", "17/02/2022", "https://davidgarxa.com/drilling-mud-mex/", "HTML, CSS, Flexbox, Animations & JS", "Petroleum Engineering web app that accurately describe the addition of weight material to clay/water muds."],
     ["../media/images/profile-web.webp", "../media/images/profile-mobile.webp", "../media/images/profile-light.webp", "Exercise", "Profile Card", "02/09/2021", "https://davidgarxa.com/profile-card", "HTML & CSS", "A profile card made with HTML & CSS"],
     ["../media/images/arrays-web.webp", "../media/images/arrays-mobile.webp", "../media/images/arrays-light.webp", "Exercise", "Code challenge (Arrays)", "30/04/2022", "https://davidgarxa.com/code-challenge/arrays", "Javascript & NodeJS", "A series of algorithms build to solve specific problems or challenges using Javascript"],
-
+    ["../media/images/rick-and-morty-web.webp", "../media/images/rick-and-morty-mobile.webp", "../media/images/rick-and-morty-light.webp", "Exercise", "Consuming API", "20/05/2022", "https://davidgarxa.com/code-challenge/API/rick_and_morty", "HTML, CSS,RWD, JAVASCRIPT & API", "A small exercise consuming rick and morty's API"],
 ]
 
 // filter button for finding projects
