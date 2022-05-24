@@ -167,12 +167,12 @@ let openMenu = () => {
 
     let portfolio = document.createElement("div")
     portfolio.classList.add("mobile-menu-portfolio")
-    portfolio.innerHTML = `<a href="https://www.davidgarxa.com" target="_blank">Visit my portfolio!!!</a>`
+    portfolio.innerHTML = `<a href="https://www.davidgarxa.com" target="_blank"></a>`
     menuModal.appendChild(portfolio)
 
     let api = document.createElement("div")
     api.classList.add("mobile-menu-api")
-    api.innerHTML = `<a href="https://rickandmortyapi.com/" target="_blank">Rick and Morty API</a>`
+    api.innerHTML = `<a href="https://rickandmortyapi.com/" target="_blank"></a>`
     menuModal.appendChild(api)
 
     let closeMenu = () => {

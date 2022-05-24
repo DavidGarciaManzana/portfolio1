@@ -84,33 +84,25 @@ header {
 }
 
 .mobile-menu-portfolio {
-    background-color : black;
-    width            : 10rem;
-    border-radius    : 25px;
+    background-image : url("media/images/briefcase.png");
+    width            : 3rem;
 }
 
 .mobile-menu-portfolio a {
-    text-decoration : none;
-    color           : white;
-    padding         : 1rem;
-    display         : block;
-    width           : 10rem;
-    height          : 3rem;
+    display : block;
+    width   : 3rem;
+    height  : 3rem;
 }
 
 .mobile-menu-api {
-    background-color : black;
-    width            : 10rem;
-    border-radius    : 25px;
+    background-image : url("media/images/api.png");
+    width            : 3rem;
 }
 
 .mobile-menu-api a {
-    display         : block;
-    width           : 10rem;
-    height          : 3rem;
-    text-decoration : none;
-    color           : white;
-    padding         : 1rem;
+    display : block;
+    width   : 3rem;
+    height  : 3rem;
 }
 
 
