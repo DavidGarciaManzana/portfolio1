@@ -514,7 +514,7 @@ let interviewContainer = document.getElementById("interview-container")
 
 let showInterview = () => {
     let interviewModal = document.createElement("div")
-    interviewModal.innerHTML = `<video src="https://youtu.be/n5WNDFKSHGI" width="50%" controls autoplay poster="../media/images/tom.jpg" muted></video>`
+    interviewModal.innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/n5WNDFKSHGI?start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
     interviewModal.classList.add("interview-modal")
     interviewContainer.appendChild(interviewModal)
     let heyo = ()=> {
