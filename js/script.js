@@ -514,7 +514,7 @@ let interviewContainer = document.getElementById("interview-container")
 
 let showInterview = () => {
     let interviewModal = document.createElement("div")
-    interviewModal.innerHTML = `<video src="../media/videos/Interview.webm" width="50%" controls autoplay poster="../media/images/tom.jpg" muted></video>`
+    interviewModal.innerHTML = `<video src="https://youtu.be/n5WNDFKSHGI" width="50%" controls autoplay poster="../media/images/tom.jpg" muted></video>`
     interviewModal.classList.add("interview-modal")
     interviewContainer.appendChild(interviewModal)
     let heyo = ()=> {
