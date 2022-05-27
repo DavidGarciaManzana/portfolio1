@@ -503,3 +503,24 @@ let checkSpam = (e) => {
 }
 form.addEventListener("submit", checkSpam)
 message.value.toLowerCase()
+
+
+
+
+//------------------------------INTERVIEW BUTTON
+
+let interviewButton = document.getElementById("interview-button")
+let interviewContainer = document.getElementById("interview-container")
+
+let showInterview = () => {
+    let interviewModal = document.createElement("div")
+    interviewModal.innerHTML = `<video src="../media/videos/Interview.webm" width="50%" controls autoplay poster="../media/images/tom.jpg" muted></video>`
+    interviewModal.classList.add("interview-modal")
+    interviewContainer.appendChild(interviewModal)
+    let heyo = ()=> {
+        interviewModal.remove()
+    }
+    interviewModal.addEventListener("click",heyo)
+
+}
+interviewButton.addEventListener("click",showInterview)

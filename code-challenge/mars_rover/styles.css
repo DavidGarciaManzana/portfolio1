@@ -1,0 +1,40 @@
+body {
+    height: 300vh;
+    box-sizing: border-box;
+    margin: 0;
+}
+header {
+    background-color: black;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+header div {
+    width: 25px;
+    height: 25px;
+    background-color: gray;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    margin-right: 2rem;
+    cursor: pointer;
+    background-size: 104% 103%;
+    background-position: -0.5px -2.5px;
+}
+header div:hover {
+    background-color: white;
+}
+.user {
+
+    background-image: url("media/icons/user.png");
+}
+.mark {
+    background-image: url("media/icons/mark.png");
+
+}
+.arrow {
+    background-image: url("media/icons/arrow.png");
+    background-size: 104% 103%;
+    background-position: -0.5px -0.5px;
+}
