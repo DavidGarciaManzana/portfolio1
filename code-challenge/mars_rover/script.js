@@ -1,158 +1,87 @@
-let roverPosition = [0, 0]
-let roverDirection = "N"
+let hamburgerButton = document.getElementById("hamburger-button")
+let secondHeader = document.getElementById("unreal-games")
+let openMenu = (e) => {
+    e.preventDefault()
+    let menu = document.createElement("div")
+    menu.classList.add("menu")
+    secondHeader.insertAdjacentElement("beforebegin", menu)
+    document.body.classList.add("stop-scroll")
 
-let F = 1
-let B = 1
-let L = "Left"
-let R = "Right"
+    let menuHeader = document.createElement("div")
+    menuHeader.classList.add("menu-header")
+    menuHeader.innerHTML = `<p class="title">Unreal BGames</p>`
+    menu.appendChild(menuHeader)
 
-let N = "N"
-let S = "S"
-let E = "E"
-let W = "W"
-
-
-
-//---------------------------------------MARS IS A SPHERE
-
-let marsIsASphere = (position) => {
-    if (position[0] === -1) {
-        roverPosition[0] = 100
+    let closeButton = document.createElement("button")
+    closeButton.classList.add("menu-close-button")
+    menuHeader.appendChild(closeButton)
+    let closeMenu = () => {
+        menu.remove()
+        document.body.classList.remove("stop-scroll")
     }
-    if (position[1] === -1) {
-        roverPosition[1] = 100
-    }
-    if (position[0] === 101) {
-        roverPosition[0] = 0
-    }
-    if (position[1] === 101) {
-        roverPosition[1] = 0
-    }
+    closeButton.addEventListener("click", closeMenu)
+
+    let moreExperiences = document.createElement("div")
+    moreExperiences.classList.add("more-exp")
+    moreExperiences.innerHTML = `
+<div class="faqs-container">
+
+<details class="faqs">
+<summary class="faq-item">Games<div class="down"></div></summary>
+<p>Mars-Rover</p>
+</details>
+
+<details class="faqs">
+<summary class="faq-item">More experiences<div class="down"></div></summary>
+<p>Portfolio</p>
+</details>
+
+<details class="faqs">
+<summary class="faq-item">About<div class="down"></div></summary>
+<p><a href="https://davidgarxa.com" target="_blank">Davidgarxa.com</a></p>
+</details>
+
+<details class="faqs">
+<summary class="faq-item">Commitments<div class="down"></div></summary>
+<p>Build wonderful apps</p>
+<p>Create a great user experience (UX)</p>
+<p>Create a great user interface (UI)</p>
+</details>
+
+<details class="faqs">
+<summary class="faq-item">Resources<div class="down"></div></summary>
+<p>Javascript</p>
+</details>
+
+
+</div>
+    `
+    menu.appendChild(moreExperiences)
 }
+hamburgerButton.addEventListener("click", openMenu)
 
-//-----------------------------------------DETECTING OBSTACLES
+let marsGame = document.getElementById("mars-rover")
+let openGame = (e) => {
+    e.preventDefault()
+    let workingOnIt = document.createElement("div")
+    workingOnIt.classList.add("working-on-it")
+    workingOnIt.innerHTML = `
+    <a class="hamburger-button white-version" id="close-working-on-it" href="#" aria-label="Hamburger button">
+     <div class="cross"></div>
+    </a>
+`
+    document.body.appendChild(workingOnIt)
 
-let IsThereAnAlienHere = (alien) => {
-    if (alien) {
-        console.log("%cHelp!, there is an Alien here and its trying to eat me!","font-size:30px;color:red")
-        throw roverPosition;
+    let workInProgress = document.createElement("div")
+    workInProgress.classList.add("work-in-progress")
+    workingOnIt.appendChild(workInProgress)
+
+    let closeModalWorikingOnIt = document.getElementById("close-working-on-it")
+    closeModalWoriking = () => {
+        workingOnIt.remove()
+        document.body.classList.remove("stop-scroll")
     }
+    closeModalWorikingOnIt.addEventListener("click", closeModalWoriking)
+    document.body.classList.add("stop-scroll")
 }
-
-//-----------------------------------------MOVE ROVER
-
-
-let moveRover = (direction, move, alien = false) => {
-    if (direction === "N") {
-        if (move === "F") {
-            IsThereAnAlienHere(alien)
-            roverPosition[1] += F
-            marsIsASphere(roverPosition)
-            return roverPosition
-        }
-        if (move === "B") {
-            IsThereAnAlienHere(alien)
-            roverPosition[1] -= B
-            marsIsASphere(roverPosition)
-            return roverPosition
-        }
-    }
-    if (direction === "S") {
-        if (move === "F") {
-            IsThereAnAlienHere(alien)
-            roverPosition[1] -= F
-            marsIsASphere(roverPosition)
-            return roverPosition
-        }
-        if (move === "B") {
-            IsThereAnAlienHere(alien)
-            roverPosition[1] += B
-            marsIsASphere(roverPosition)
-            return roverPosition
-        }
-    }
-    if (direction === "E") {
-        if (move === "F") {
-            IsThereAnAlienHere(alien)
-            roverPosition[0] += F
-            marsIsASphere(roverPosition)
-            return roverPosition
-        }
-        if (move === "B") {
-            IsThereAnAlienHere(alien)
-            roverPosition[0] -= B
-            marsIsASphere(roverPosition)
-            return roverPosition
-        }
-    }
-    if (direction === "W") {
-        if (move === "F") {
-            IsThereAnAlienHere(alien)
-            roverPosition[0] -= F
-            marsIsASphere(roverPosition)
-            return roverPosition
-        }
-        if (move === "B") {
-            IsThereAnAlienHere(alien)
-            roverPosition[0] += B
-            marsIsASphere(roverPosition)
-            return roverPosition
-        }
-    }
-}
-
-
-// -------------------------------------------ROTATE ROVER
-
-let rotateRover = (actualDirection = "N", rotateDirection = R) => {
-    if (actualDirection === "N") {
-        if (rotateDirection === R) {
-            return roverDirection = "E"
-        }
-        if (rotateDirection === L) {
-            return roverDirection = "W"
-        }
-    }
-    if (actualDirection === "E") {
-        if (rotateDirection === R) {
-            return roverDirection = "S"
-        }
-        if (rotateDirection === L) {
-            return roverDirection = "N"
-        }
-    }
-    if (actualDirection === "S") {
-        if (rotateDirection === R) {
-            return roverDirection = "W"
-        }
-        if (rotateDirection === L) {
-            return roverDirection = "E"
-        }
-    }
-    if (actualDirection === "W") {
-        if (rotateDirection === R) {
-            return roverDirection = "N"
-        }
-        if (rotateDirection === L) {
-            return roverDirection = "S"
-        }
-    }
-
-}
-
-//------------------------------------------------TESTING
-
-rotateRover(roverDirection, R)
-rotateRover(roverDirection, R)
-console.log("dir", roverDirection)
-console.log("pos", roverPosition)
-moveRover(roverDirection.toString(), "F")
-moveRover(roverDirection.toString(), "F")
-rotateRover(roverDirection, L)
-rotateRover(roverDirection, L)
-moveRover(roverDirection.toString(), "F")
-rotateRover(roverDirection, R)
-moveRover(roverDirection.toString(), "F", true)
-// moveRover(roverDirection.toString(), "B")
-console.log("dir", roverDirection)
-console.log("pos", roverPosition)
+marsGame.addEventListener("click", openGame)

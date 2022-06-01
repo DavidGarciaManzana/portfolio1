@@ -1,40 +1,542 @@
-body {
-    height: 300vh;
-    box-sizing: border-box;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
 header {
-    background-color: black;
-    height: 40px;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+  z-index: 10;
+  position: fixed;
+  background-color: black;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 header div {
-    width: 25px;
-    height: 25px;
-    background-color: gray;
-    border-radius: 100%;
-    background-repeat: no-repeat;
-    margin-right: 2rem;
-    cursor: pointer;
-    background-size: 104% 103%;
-    background-position: -0.5px -2.5px;
+  width: 25px;
+  height: 25px;
+  background-color: gray;
+  border-radius: 100%;
+  background-repeat: no-repeat;
+  margin-right: 2rem;
+  cursor: pointer;
+  background-size: 104% 103%;
+  background-position: -0.5px -2.5px;
 }
 header div:hover {
-    background-color: white;
+  background-color: white;
 }
+
 .user {
-
-    background-image: url("media/icons/user.png");
+  background-image: url("media/icons/user.png");
 }
+
 .mark {
-    background-image: url("media/icons/mark.png");
+  background-position: -0.5px -0.5px;
+  background-image: url("media/icons/mark.png");
+}
 
-}
 .arrow {
-    background-image: url("media/icons/arrow.png");
-    background-size: 104% 103%;
-    background-position: -0.5px -0.5px;
+  background-image: url("media/icons/arrow.png");
+  background-size: 104% 103%;
+  background-position: -0.5px -0.5px;
 }
+
+.hamburger-button {
+  position: relative;
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+}
+.hamburger-button__slide {
+  position: relative;
+  left: 30%;
+  background-color: black;
+  width: 40%;
+  height: 0.1rem;
+}
+.hamburger-button .first {
+  top: 0.9rem;
+}
+.hamburger-button .second {
+  top: 1.1rem;
+}
+.hamburger-button .third {
+  top: 1.3rem;
+}
+.hamburger-button:hover {
+  cursor: pointer;
+}
+
+.white-version {
+  background-color: white;
+  border-radius: 25px;
+}
+.white-version .cross {
+  background-image: url("media/icons/cross.png");
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  background-position: 47% 47%;
+  width: 100%;
+  height: 100%;
+}
+
+.unreal-games {
+  z-index: 10;
+  position: fixed;
+  top: 40px;
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.unreal-games p {
+  color: red;
+}
+
+.games {
+  position: relative;
+  top: 80px;
+  background-color: black;
+  color: white;
+}
+@media screen and (min-width: 768px) {
+  .games {
+    height: 60rem;
+  }
+}
+@media screen and (min-width: 1250px) {
+  .games {
+    height: 65rem;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .games {
+    height: 70rem;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .games {
+    height: 75rem;
+  }
+}
+.games .logo-parent {
+  width: 100%;
+  height: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 767px) {
+  .games .logo-parent {
+    position: relative;
+    top: -16rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .games .logo-parent {
+    position: relative;
+    top: -22rem;
+  }
+}
+.games .logo {
+  background-image: url("media/images/bg.png");
+  background-size: 80%;
+  background-position: 1.1rem 2rem;
+  background-repeat: no-repeat;
+  width: 10rem;
+  height: 10rem;
+  border: 10px solid white;
+  border-radius: 100%;
+}
+@media screen and (min-width: 768px) {
+  .games .logo {
+    width: 8rem;
+    height: 8rem;
+    background-position: 0.7rem 1.7rem;
+  }
+}
+.games h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+@media screen and (min-width: 768px) {
+  .games h1 {
+    position: relative;
+    top: -20rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .games h1 {
+    top: -26rem;
+  }
+}
+.games p {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 0 1rem;
+}
+@media screen and (min-width: 768px) {
+  .games p {
+    position: relative;
+    top: -20rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .games p {
+    top: -27rem;
+  }
+}
+.games p span {
+  color: red;
+}
+.games .mars-rover-container {
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .games .mars-rover-container {
+    position: relative;
+    height: 12rem;
+    top: 13rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .games .mars-rover-container {
+    top: 5rem;
+  }
+}
+@media screen and (min-width: 1070px) {
+  .games .mars-rover-container {
+    top: 0;
+  }
+}
+.games .mars-rover {
+  cursor: pointer;
+  width: 18rem;
+  height: 18rem;
+  background-image: url("media/images/rover.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .games .mars-rover {
+    width: 25rem;
+    height: 25rem;
+    position: relative;
+    top: -26rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .games .mars-rover {
+    width: 20rem;
+    height: 20rem;
+    top: -23rem;
+  }
+}
+@media screen and (min-width: 1070px) {
+  .games .mars-rover {
+    top: -19rem;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .games .mars-rover {
+    top: -19.5rem;
+    width: 18rem;
+    height: 18rem;
+  }
+}
+@media screen and (min-width: 1150px) {
+  .games .mars-rover {
+    top: -20rem;
+    width: 15rem;
+    height: 15rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .games .mars-rover {
+    top: -21rem;
+  }
+}
+@media screen and (min-width: 1250px) {
+  .games .mars-rover {
+    top: -20rem;
+    width: 18rem;
+    height: 18rem;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .games .mars-rover {
+    top: -18rem;
+    width: 20rem;
+    height: 20rem;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .games .mars-rover {
+    top: -17rem;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .games .mars-rover {
+    top: -19rem;
+  }
+}
+.games .logo-game {
+  background-color: white;
+  background-image: url("media/images/bg-black.png");
+  background-size: 60%;
+  background-position: 0.4rem 0.55rem;
+  background-repeat: no-repeat;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+}
+
+.visit {
+  position: relative;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 15rem;
+  background: #060640 linear-gradient(45deg, #060640 50%, #9a5e00 100%);
+}
+.visit h1 {
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  margin: 0 2rem;
+}
+.visit button {
+  min-width: 18rem;
+  max-width: 25rem;
+  height: 3rem;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: darkgray;
+  height: 3rem;
+  width: 100%;
+}
+
+.menu {
+  z-index: 20;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  margin-top: 40px;
+}
+.menu-header {
+  background-color: #F3F3F3;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu .title {
+  position: relative;
+  left: 1rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: red;
+}
+.menu-close-button {
+  position: relative;
+  right: 1rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  border: 2px solid black;
+  background-image: url("media/icons/cross.png");
+  background-size: 50%;
+  background-position: 45% 50%;
+  background-repeat: no-repeat;
+  background-color: #F3F3F3;
+  cursor: pointer;
+}
+.menu .more-exp {
+  width: 100%;
+  height: 100vh;
+  background: white;
+  display: flex;
+}
+
+.stop-scroll {
+  overflow: hidden;
+}
+
+.faqs-container {
+  width: 100%;
+  height: 34rem;
+}
+.faqs-container p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #A3A3A3;
+}
+.faqs-container a {
+  text-decoration: none;
+  color: #A3A3A3;
+}
+
+.faqs {
+  margin: 1rem;
+  border-bottom: 1px solid black;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+.faqs summary {
+  cursor: pointer;
+}
+.faqs .down {
+  background-image: url("media/icons/down.png");
+  width: 1.5rem;
+  height: 1.5rem;
+  background-size: contain;
+}
+
+.faq-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .video {
+    display: none;
+  }
+}
+.video video {
+  width: 100%;
+}
+
+.video:after {
+  position: absolute;
+  top: 409px;
+  left: 0;
+  width: 100%;
+  height: 4%;
+  content: "";
+  background-image: radial-gradient(circle at 36% 48%, #000000, rgba(11, 39, 65, 0.32) 87%, rgba(0, 0, 0, 0));
+}
+@media screen and (min-width: 767px) {
+  .video:after {
+    top: 560px;
+  }
+}
+@media screen and (min-width: 1070px) {
+  .video:after {
+    top: 590px;
+  }
+}
+@media screen and (min-width: 1150px) {
+  .video:after {
+    top: 630px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .video:after {
+    top: 655px;
+  }
+}
+@media screen and (min-width: 1250px) {
+  .video:after {
+    top: 680px;
+  }
+}
+@media screen and (min-width: 1250px) {
+  .video:after {
+    top: 705px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .video:after {
+    top: 765px;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .video:after {
+    top: 735px;
+    height: 12%;
+  }
+}
+
+.portfolio a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.working-on-it {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.work-in-progress {
+  width: 100%;
+  height: 12rem;
+  background-image: url("media/images/work.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+@media screen and (min-width: 425px) {
+  .work-in-progress {
+    height: 13rem;
+  }
+}
+@media screen and (min-width: 530px) {
+  .work-in-progress {
+    height: 15rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .work-in-progress {
+    height: 35rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .work-in-progress {
+    height: 36rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .work-in-progress {
+    height: 42rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
