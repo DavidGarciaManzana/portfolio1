@@ -44,6 +44,31 @@ header div:hover {
   background-position: -0.5px -0.5px;
 }
 
+.modal-meme {
+  width: 10rem;
+  height: 10rem;
+  background-color: transparent;
+  border-radius: 100%;
+  position: fixed;
+  top: 6rem;
+  right: 1rem;
+  overflow: hidden;
+}
+.modal-meme img {
+  object-fit: contain;
+  width: 140%;
+  height: 100%;
+  position: relative;
+  right: 2rem;
+}
+.modal-meme.empty video {
+  width: 180%;
+  height: 100%;
+  position: relative;
+  object-fit: contain;
+  right: 6rem;
+}
+
 .hamburger-button {
   position: relative;
   display: block;

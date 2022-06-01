@@ -1,3 +1,45 @@
+//--------------------------------HEADER BUTTONS
+
+let user = document.getElementById("user")
+let mark = document.getElementById("mark")
+let arrow = document.getElementById("arrow")
+
+
+let showUserMeme = (x) => {
+    let exist = document.getElementById("modal-meme")
+    if (exist === null) {
+        let modalMeme = document.createElement("div")
+        modalMeme.classList.add("modal-meme")
+        modalMeme.setAttribute("id", "modal-meme")
+        if (x === "a") {
+            modalMeme.innerHTML = `<img src="media/videos/sully.gif">`
+        }
+        if (x === "b"){
+            modalMeme.innerHTML = `<img src="media/images/po.jpg">`
+            modalMeme.classList.add("po")
+        }
+        if(x === "c") {
+            modalMeme.innerHTML = `<video src="media/videos/empty.mp4" autoplay ></video>`
+            modalMeme.classList.add("empty")
+        }
+
+
+        document.body.appendChild(modalMeme)
+    } else {
+        exist.remove()
+    }
+}
+user.addEventListener("click", () => {
+    showUserMeme("a")
+});
+mark.addEventListener("click", () => {
+    showUserMeme("b")
+});
+arrow.addEventListener("click", () => {
+    showUserMeme("c")
+});
+
+
 let hamburgerButton = document.getElementById("hamburger-button")
 let secondHeader = document.getElementById("unreal-games")
 let openMenu = (e) => {
