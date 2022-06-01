@@ -9,7 +9,7 @@ let openMenu = (e) => {
 
     let menuHeader = document.createElement("div")
     menuHeader.classList.add("menu-header")
-    menuHeader.innerHTML = `<p class="title">BáaxalGames</p>`
+    menuHeader.innerHTML = `<p class="title">Báaxal Games</p>`
     menu.appendChild(menuHeader)
 
     let closeButton = document.createElement("button")
