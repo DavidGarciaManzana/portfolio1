@@ -3,156 +3,157 @@ let roverDirection = "N"
 
 let F = 1
 let B = 1
-let L = "Left"
-let R = "Right"
 
-let N = "N"
-let S = "S"
-let E = "E"
-let W = "W"
+let rover = document.getElementById("rover")
 
+//---------------------------------------MOVE THE ROVER
+let up = document.getElementById("up")
+let down = document.getElementById("down")
 
+let move = (direction, move) => {
+    let roverPositionHeigth = rover.style.bottom
+    let roverPositionMoveH = roverPositionHeigth.slice(0, -3)
 
-//---------------------------------------MARS IS A SPHERE
-
-let marsIsASphere = (position) => {
-    if (position[0] === -1) {
-        roverPosition[0] = 100
-    }
-    if (position[1] === -1) {
-        roverPosition[1] = 100
-    }
-    if (position[0] === 101) {
-        roverPosition[0] = 0
-    }
-    if (position[1] === 101) {
-        roverPosition[1] = 0
-    }
-}
-
-//-----------------------------------------DETECTING OBSTACLES
-
-let IsThereAnAlienHere = (alien) => {
-    if (alien) {
-        console.log("%cHelp!, there is an Alien here and its trying to eat me!","font-size:30px;color:red")
-        throw roverPosition;
-    }
-}
-
-//-----------------------------------------MOVE ROVER
-
-
-let moveRover = (direction, move, alien = false) => {
+    let roverPositionWidth = rover.style.left
+    let roverPositionMoveW = roverPositionWidth.slice(0, -3)
     if (direction === "N") {
         if (move === "F") {
-            IsThereAnAlienHere(alien)
             roverPosition[1] += F
-            marsIsASphere(roverPosition)
+            rover.style.bottom = Number(roverPositionMoveH) + 1.5 + "rem";
+            if (roverPositionMoveH > 14) {
+                rover.style.bottom = 0.5 + "rem"
+            }
             return roverPosition
         }
         if (move === "B") {
-            IsThereAnAlienHere(alien)
             roverPosition[1] -= B
-            marsIsASphere(roverPosition)
+            rover.style.bottom = Number(roverPositionMoveH) - 1.5 + "rem";
+            if (roverPositionMoveH < 1) {
+                rover.style.bottom = 15.5 + "rem"
+            }
             return roverPosition
         }
     }
     if (direction === "S") {
         if (move === "F") {
-            IsThereAnAlienHere(alien)
             roverPosition[1] -= F
-            marsIsASphere(roverPosition)
+            rover.style.bottom = Number(roverPositionMoveH) - 1.5 + "rem";
+            if (roverPositionMoveH < 1) {
+                rover.style.bottom = 15.5 + "rem"
+            }
             return roverPosition
         }
         if (move === "B") {
-            IsThereAnAlienHere(alien)
             roverPosition[1] += B
-            marsIsASphere(roverPosition)
+            rover.style.bottom = Number(roverPositionMoveH) + 1.5 + "rem";
+            if (roverPositionMoveH > 14) {
+                rover.style.bottom = 0.5 + "rem"
+            }
             return roverPosition
         }
     }
     if (direction === "E") {
         if (move === "F") {
-            IsThereAnAlienHere(alien)
             roverPosition[0] += F
-            marsIsASphere(roverPosition)
+            rover.style.left = Number(roverPositionMoveW) + 1.5 + "rem";
+            if (roverPositionMoveW > 13) {
+                rover.style.left = -0.7 + "rem"
+            }
             return roverPosition
         }
         if (move === "B") {
-            IsThereAnAlienHere(alien)
             roverPosition[0] -= B
-            marsIsASphere(roverPosition)
+            rover.style.left = Number(roverPositionMoveW) - 1.5 + "rem";
+            if (roverPositionMoveW < 0) {
+                rover.style.left = 14.3 + "rem"
+            }
             return roverPosition
         }
     }
     if (direction === "W") {
         if (move === "F") {
-            IsThereAnAlienHere(alien)
             roverPosition[0] -= F
-            marsIsASphere(roverPosition)
+            rover.style.left = Number(roverPositionMoveW) - 1.5 + "rem";
+            if (roverPositionMoveW < 0) {
+                rover.style.left = 14.3 + "rem"
+            }
             return roverPosition
         }
         if (move === "B") {
-            IsThereAnAlienHere(alien)
             roverPosition[0] += B
-            marsIsASphere(roverPosition)
+            rover.style.left = Number(roverPositionMoveW) + 1.5 + "rem";
+            if (roverPositionMoveW > 13) {
+                rover.style.left = -0.7 + "rem"
+            }
             return roverPosition
         }
     }
 }
+up.addEventListener("click", () => {
+    move(roverDirection, "F")
+})
+down.addEventListener("click", () => {
+    move(roverDirection, "B")
+})
 
+//----------------------------------ROTATE THE ROVER
 
-// -------------------------------------------ROTATE ROVER
+let left = document.getElementById("left");
+let right = document.getElementById("right");
 
-let rotateRover = (actualDirection = "N", rotateDirection = R) => {
+let rotate = (actualDirection = "N", rotateDirection = R) => {
     if (actualDirection === "N") {
-        if (rotateDirection === R) {
+        if (rotateDirection === "R") {
+            rover.style.transform = "rotate(90deg)";
             return roverDirection = "E"
         }
-        if (rotateDirection === L) {
+        if (rotateDirection === "L") {
+            rover.style.transform = "rotate(-90deg)";
             return roverDirection = "W"
         }
     }
     if (actualDirection === "E") {
-        if (rotateDirection === R) {
+        if (rotateDirection === "R") {
+            rover.style.transform = "rotate(180deg)";
             return roverDirection = "S"
         }
-        if (rotateDirection === L) {
+        if (rotateDirection === "L") {
+            rover.style.transform = "rotate(0deg)";
             return roverDirection = "N"
         }
     }
     if (actualDirection === "S") {
-        if (rotateDirection === R) {
+        if (rotateDirection === "R") {
+            rover.style.transform = "rotate(-90deg)";
             return roverDirection = "W"
         }
-        if (rotateDirection === L) {
+        if (rotateDirection === "L") {
+            rover.style.transform = "rotate(90deg)";
             return roverDirection = "E"
         }
     }
     if (actualDirection === "W") {
-        if (rotateDirection === R) {
+        if (rotateDirection === "R") {
+            rover.style.transform = "rotate(0deg)";
             return roverDirection = "N"
         }
-        if (rotateDirection === L) {
+        if (rotateDirection === "L") {
+            rover.style.transform = "rotate(180deg)";
             return roverDirection = "S"
         }
     }
-
 }
+right.addEventListener("click", () => {
+    rotate(roverDirection, "R")
+})
+left.addEventListener("click", () => {
+    rotate(roverDirection, "L")
+})
+//---------------------------WHERES THE ROVER
 
-//------------------------------------------------TESTING
-
-rotateRover(roverDirection, R)
-rotateRover(roverDirection, R)
-console.log("dir", roverDirection)
-console.log("pos", roverPosition)
-moveRover(roverDirection.toString(), "F")
-moveRover(roverDirection.toString(), "F")
-rotateRover(roverDirection, L)
-rotateRover(roverDirection, L)
-moveRover(roverDirection.toString(), "F")
-rotateRover(roverDirection, R)
-moveRover(roverDirection.toString(), "F", true)
-// moveRover(roverDirection.toString(), "B")
-console.log("dir", roverDirection)
-console.log("pos", roverPosition)
+let mayday = document.getElementById("show-data")
+let showData =()=> {
+    alert(`Rover position: ${roverPosition}`)
+    alert(`Rover direction: ${roverDirection}`)
+}
+mayday.addEventListener("click",showData)

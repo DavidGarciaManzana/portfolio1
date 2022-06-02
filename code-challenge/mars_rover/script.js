@@ -104,26 +104,27 @@ hamburgerButton.addEventListener("click", openMenu)
 
 let marsGame = document.getElementById("mars-rover")
 let openGame = (e) => {
-    e.preventDefault()
-    let workingOnIt = document.createElement("div")
-    workingOnIt.classList.add("working-on-it")
-    workingOnIt.innerHTML = `
-    <a class="hamburger-button white-version" id="close-working-on-it" href="#" aria-label="Hamburger button">
-     <div class="cross"></div>
-    </a>
-`
-    document.body.appendChild(workingOnIt)
-
-    let workInProgress = document.createElement("div")
-    workInProgress.classList.add("work-in-progress")
-    workingOnIt.appendChild(workInProgress)
-
-    let closeModalWorikingOnIt = document.getElementById("close-working-on-it")
-    closeModalWoriking = () => {
-        workingOnIt.remove()
-        document.body.classList.remove("stop-scroll")
-    }
-    closeModalWorikingOnIt.addEventListener("click", closeModalWoriking)
-    document.body.classList.add("stop-scroll")
+//     e.preventDefault()
+//     let workingOnIt = document.createElement("div")
+//     workingOnIt.classList.add("working-on-it")
+//     workingOnIt.innerHTML = `
+//     <a class="hamburger-button white-version" id="close-working-on-it" href="#" aria-label="Hamburger button">
+//      <div class="cross"></div>
+//     </a>
+// `
+//     document.body.appendChild(workingOnIt)
+//
+//     let workInProgress = document.createElement("div")
+//     workInProgress.classList.add("work-in-progress")
+//     workingOnIt.appendChild(workInProgress)
+//
+//     let closeModalWorikingOnIt = document.getElementById("close-working-on-it")
+//     closeModalWoriking = () => {
+//         workingOnIt.remove()
+//         document.body.classList.remove("stop-scroll")
+//     }
+//     closeModalWorikingOnIt.addEventListener("click", closeModalWoriking)
+//     document.body.classList.add("stop-scroll")
+    window.open("game.html")
 }
 marsGame.addEventListener("click", openGame)

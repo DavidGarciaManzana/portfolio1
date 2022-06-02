@@ -1,0 +1,98 @@
+body {
+    height           : 97vh;
+    background-color : black;
+    display          : flex;
+    flex-direction   : column;
+    justify-content  : center;
+    align-items      : center;
+}
+
+.mars {
+    display               : grid;
+    grid-template-columns : repeat(10, 1.5rem);
+    grid-template-rows    : repeat(11, 1.5rem);
+    grid-column-gap       : 0;
+    justify-items         : center;
+}
+
+.node {
+    width  : 1.5rem;
+    height : 1.5rem;
+    border : 1px solid white;
+}
+
+.rover {
+    position          : relative;
+    /*left: -0.7rem;*/
+    width             : 1rem;
+    height            : 1rem;
+    background-color  : white;
+    border-radius     : 5px;
+    background-image  : url("media/icons/rover.png");
+    background-repeat : no-repeat;
+    background-size   : contain;
+}
+
+
+/*CONTROLS*/
+
+
+.controls {
+    width      : 15rem;
+    height     : 15rem;
+    border     : 1px solid aqua;
+    margin-top : 2rem;
+
+}
+
+.up, .down, .left, .right {
+    cursor            : pointer;
+    position          : relative;
+    width             : 4rem;
+    height            : 4rem;
+    background-color  : #fff;
+    background-repeat : no-repeat;
+    clip-path         : polygon(0% 0%, 100% 50%, 0% 100%, 25% 50%);
+}
+
+.up {
+    top               : 2rem;
+    left              : 1rem;
+    transform         : rotateZ(-90deg);
+}
+
+.down {
+    top               : 4rem;
+    left              : 1rem;
+    transform         : rotateZ(90deg);
+}
+
+.left {
+    right     : -6rem;
+    bottom    : 3rem;
+    transform : rotateZ(180deg);
+}
+
+.right {
+    bottom            : 7rem;
+    left              : 10.5rem;
+    clip-path         : polygon(0% 0%, 100% 50%, 0% 100%, 25% 50%);
+}
+
+.up:active, .down:active, .left:active, .right:active {
+    background-color : wheat;
+}
+
+.show-data {
+    cursor           : pointer;
+    position         : relative;
+    bottom           : 6rem;
+    border-radius    : 10px;
+    left             : 6.3rem;
+    width            : 8rem;
+    height           : 2rem;
+    background-color : #fff;
+    display          : flex;
+    justify-content  : center;
+    align-items      : center;
+}
