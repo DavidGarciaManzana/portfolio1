@@ -161,6 +161,7 @@ let projects = [
     ["../media/images/profile-web.webp", "../media/images/profile-mobile.webp", "../media/images/profile-light.webp", "Exercise", "Profile Card", "02/09/2021", "https://davidgarxa.com/profile-card", "HTML & CSS", "A profile card made with HTML & CSS"],
     ["../media/images/arrays-web.webp", "../media/images/arrays-mobile.webp", "../media/images/arrays-light.webp", "Exercise", "Code challenge (Arrays)", "30/04/2022", "https://davidgarxa.com/code-challenge/arrays", "Javascript & NodeJS", "A series of algorithms build to solve specific problems or challenges using Javascript"],
     ["../media/images/rick-and-morty-web.webp", "../media/images/rick-and-morty-mobile.webp", "../media/images/rick-and-morty-light.webp", "Exercise", "Consuming API", "20/05/2022", "https://davidgarxa.com/code-challenge/API/rick_and_morty", "HTML, CSS,RWD, JAVASCRIPT & API", "A small exercise consuming rick and morty's API"],
+    ["../media/images/mars-web.webp", "../media/images/mars-mobile.webp", "../media/images/mars-light.webp", "Web", "Game", "02/06/2022", "https://davidgarxa.com/code-challenge/mars_rover", "HTML, CSS & JAVASCRIPT", "A game where you can control the rover over the surface of mars!!!"],
 ]
 
 // filter button for finding projects
