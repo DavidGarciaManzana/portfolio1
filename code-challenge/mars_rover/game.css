@@ -55,15 +55,15 @@ body {
 }
 
 .up {
-    top               : 2rem;
-    left              : 1rem;
-    transform         : rotateZ(-90deg);
+    top       : 2rem;
+    left      : 1rem;
+    transform : rotateZ(-90deg);
 }
 
 .down {
-    top               : 4rem;
-    left              : 1rem;
-    transform         : rotateZ(90deg);
+    top       : 4rem;
+    left      : 1rem;
+    transform : rotateZ(90deg);
 }
 
 .left {
@@ -73,9 +73,9 @@ body {
 }
 
 .right {
-    bottom            : 7rem;
-    left              : 10.5rem;
-    clip-path         : polygon(0% 0%, 100% 50%, 0% 100%, 25% 50%);
+    bottom    : 7rem;
+    left      : 10.5rem;
+    clip-path : polygon(0% 0%, 100% 50%, 0% 100%, 25% 50%);
 }
 
 .up:active, .down:active, .left:active, .right:active {
@@ -83,6 +83,7 @@ body {
 }
 
 .show-data {
+    font-size        : .9rem;
     cursor           : pointer;
     position         : relative;
     bottom           : 6rem;
