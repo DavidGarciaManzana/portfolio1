@@ -6,6 +6,23 @@ let B = 1
 
 let rover = document.getElementById("rover")
 
+
+let marsIsASphere = (position) => {
+    if (position[0] === -1) {
+        roverPosition[0] = 10
+    }
+    if (position[1] === -1) {
+        roverPosition[1] = 10
+    }
+    if (position[0] === 11) {
+        roverPosition[0] = 0
+    }
+    if (position[1] === 11) {
+        roverPosition[1] = 0
+    }
+}
+
+
 //---------------------------------------MOVE THE ROVER
 let up = document.getElementById("up")
 let down = document.getElementById("down")
@@ -20,6 +37,7 @@ let move = (direction, move) => {
         if (move === "F") {
             roverPosition[1] += F
             rover.style.bottom = Number(roverPositionMoveH) + 1.5 + "rem";
+            marsIsASphere(roverPosition)
             if (roverPositionMoveH > 14) {
                 rover.style.bottom = 0.5 + "rem"
             }
@@ -28,6 +46,7 @@ let move = (direction, move) => {
         if (move === "B") {
             roverPosition[1] -= B
             rover.style.bottom = Number(roverPositionMoveH) - 1.5 + "rem";
+            marsIsASphere(roverPosition)
             if (roverPositionMoveH < 1) {
                 rover.style.bottom = 15.5 + "rem"
             }
@@ -38,6 +57,7 @@ let move = (direction, move) => {
         if (move === "F") {
             roverPosition[1] -= F
             rover.style.bottom = Number(roverPositionMoveH) - 1.5 + "rem";
+            marsIsASphere(roverPosition)
             if (roverPositionMoveH < 1) {
                 rover.style.bottom = 15.5 + "rem"
             }
@@ -46,6 +66,7 @@ let move = (direction, move) => {
         if (move === "B") {
             roverPosition[1] += B
             rover.style.bottom = Number(roverPositionMoveH) + 1.5 + "rem";
+            marsIsASphere(roverPosition)
             if (roverPositionMoveH > 14) {
                 rover.style.bottom = 0.5 + "rem"
             }
@@ -56,6 +77,7 @@ let move = (direction, move) => {
         if (move === "F") {
             roverPosition[0] += F
             rover.style.left = Number(roverPositionMoveW) + 1.5 + "rem";
+            marsIsASphere(roverPosition)
             if (roverPositionMoveW > 13) {
                 rover.style.left = -0.7 + "rem"
             }
@@ -64,6 +86,7 @@ let move = (direction, move) => {
         if (move === "B") {
             roverPosition[0] -= B
             rover.style.left = Number(roverPositionMoveW) - 1.5 + "rem";
+            marsIsASphere(roverPosition)
             if (roverPositionMoveW < 0) {
                 rover.style.left = 14.3 + "rem"
             }
@@ -74,6 +97,7 @@ let move = (direction, move) => {
         if (move === "F") {
             roverPosition[0] -= F
             rover.style.left = Number(roverPositionMoveW) - 1.5 + "rem";
+            marsIsASphere(roverPosition)
             if (roverPositionMoveW < 0) {
                 rover.style.left = 14.3 + "rem"
             }
@@ -82,6 +106,7 @@ let move = (direction, move) => {
         if (move === "B") {
             roverPosition[0] += B
             rover.style.left = Number(roverPositionMoveW) + 1.5 + "rem";
+            marsIsASphere(roverPosition)
             if (roverPositionMoveW > 13) {
                 rover.style.left = -0.7 + "rem"
             }
