@@ -13,6 +13,9 @@ body {
     grid-template-rows    : repeat(11, 1.5rem);
     grid-column-gap       : 0;
     justify-items         : center;
+    background-image      : url("media/images/mars surface.gif");
+    background-repeat     : no-repeat;
+    background-size      : 146%;
 }
 
 .node {
@@ -40,7 +43,6 @@ body {
 .controls {
     width      : 15rem;
     height     : 15rem;
-    border     : 1px solid aqua;
     margin-top : 2rem;
 
 }
@@ -56,15 +58,15 @@ body {
 }
 
 .up {
-    top               : 2rem;
-    left              : 1rem;
-    transform         : rotateZ(-90deg);
+    top       : 2rem;
+    left      : 1rem;
+    transform : rotateZ(-90deg);
 }
 
 .down {
-    top               : 4rem;
-    left              : 1rem;
-    transform         : rotateZ(90deg);
+    top       : 4rem;
+    left      : 1rem;
+    transform : rotateZ(90deg);
 }
 
 .left {
@@ -74,9 +76,9 @@ body {
 }
 
 .right {
-    bottom            : 7rem;
-    left              : 10.5rem;
-    clip-path         : polygon(0% 0%, 100% 50%, 0% 100%, 25% 50%);
+    bottom    : 7rem;
+    left      : 10.5rem;
+    clip-path : polygon(0% 0%, 100% 50%, 0% 100%, 25% 50%);
 }
 
 .up:active, .down:active, .left:active, .right:active {
