@@ -155,13 +155,11 @@ THREED_CUBE.addEventListener("animationend", jsBar)
 const responsiveGallery = document.getElementById("responsive-gallery")
 
 let projects = [
-    ["../media/images/portfolio-web.webp", "../media/images/portfolio-mobile.webp", "../media/images/portfolio-light.webp", "Web", "Portfolio", "01/04/2022", "https://davidgarxa.com", "HTML, CSS(SASS), Flexbox, Grid, Animations, RWD & JS", "My personal portfolio where I show all my projects and what technologies I like to implement to them."],
     ["../media/images/homer.webp", "../media/images/homer-mobile.webp", "../media/images/homer-light.webp", "Exercise", "Homer", "17/11/2021", "https://davidgarxa.com/homer", "HTML & CSS", "Draw of homer using HTML & CSS"],
-    ["../media/images/dmm-web.webp", "../media/images/dmm-mobile.webp", "../media/images/dmm-light.webp", "Web", "Drilling Mud Mex", "17/02/2022", "https://davidgarxa.com/drilling-mud-mex/", "HTML, CSS, Flexbox, Animations & JS", "Petroleum Engineering web app that accurately describe the addition of weight material to clay/water muds."],
     ["../media/images/profile-web.webp", "../media/images/profile-mobile.webp", "../media/images/profile-light.webp", "Exercise", "Profile Card", "02/09/2021", "https://davidgarxa.com/profile-card", "HTML & CSS", "A profile card made with HTML & CSS"],
-    ["../media/images/arrays-web.webp", "../media/images/arrays-mobile.webp", "../media/images/arrays-light.webp", "Exercise", "Code challenge (Arrays)", "30/04/2022", "https://davidgarxa.com/code-challenge/arrays", "Javascript & NodeJS", "A series of algorithms build to solve specific problems or challenges using Javascript"],
     ["../media/images/rick-and-morty-web.webp", "../media/images/rick-and-morty-mobile.webp", "../media/images/rick-and-morty-light.webp", "Exercise", "Consuming API", "20/05/2022", "https://davidgarxa.com/code-challenge/API/rick_and_morty", "HTML, CSS,RWD, JAVASCRIPT & API", "A small exercise consuming rick and morty's API"],
     ["../media/images/mars-web.webp", "../media/images/mars-mobile.webp", "../media/images/mars-light.webp", "Web", "Game", "02/06/2022", "https://davidgarxa.com/code-challenge/mars_rover", "HTML, CSS & JAVASCRIPT", "A game where you can control the rover over the surface of mars!!!"],
+    ["../media/images/rock_game.png", "../media/images/rock_game_mobile.png", "../media/images/rock_game_light.png", "Web", "React Game", "10/03/2023", "https://davidgarxa.com/code-challenge/rock_game", "React", "A game where you can play rock, paper, scissors"],
 ]
 
 // filter button for finding projects
