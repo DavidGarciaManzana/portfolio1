@@ -158,7 +158,7 @@ let projects = [
     ["../media/images/homer.webp", "../media/images/homer-mobile.webp", "../media/images/homer-light.webp", "Exercise", "Homer", "17/11/2021", "https://davidgarxa.com/homer", "HTML & CSS", "Draw of homer using HTML & CSS"],
     ["../media/images/profile-web.webp", "../media/images/profile-mobile.webp", "../media/images/profile-light.webp", "Exercise", "Profile Card", "02/09/2021", "https://davidgarxa.com/profile-card", "HTML & CSS", "A profile card made with HTML & CSS"],
     ["../media/images/rick-and-morty-web.webp", "../media/images/rick-and-morty-mobile.webp", "../media/images/rick-and-morty-light.webp", "Exercise", "Consuming API", "20/05/2022", "https://davidgarxa.com/code-challenge/API/rick_and_morty", "HTML, CSS,RWD, JAVASCRIPT & API", "A small exercise consuming rick and morty's API"],
-    ["../media/images/mars-web.webp", "../media/images/mars-mobile.webp", "../media/images/mars-light.webp", "Web", "Game", "02/06/2022", "https://davidgarxa.com/code-challenge/mars_rover", "HTML, CSS & JAVASCRIPT", "A game where you can control the rover over the surface of mars!!!"],
+    ["../media/images/mars-web.webp", "../media/images/mars-mobile.webp", "../media/images/mars-light.webp", "Web", "JavaScript Game", "02/06/2022", "https://davidgarxa.com/code-challenge/mars_rover", "HTML, CSS & JAVASCRIPT", "A game where you can control the rover over the surface of mars!!!"],
     ["../media/images/rock_game.png", "../media/images/rock_game_mobile.png", "../media/images/rock_game_light.png", "Web", "React Game", "10/03/2023", "https://davidgarxa.com/code-challenge/rock_game", "React", "A game where you can play rock, paper, scissors"],
 ]
 
